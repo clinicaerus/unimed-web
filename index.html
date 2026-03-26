@@ -7,7 +7,11 @@
   <meta name="description" content="UNIMED Consulting — Consultoría en Holomedicina, Medicina Personalizada de Precisión y Nutrigenómica. El conocimiento de tu salud te permite volver a tomar las riendas de tu vida. Barcelona."/>
   <meta name="keywords" content="holomedicina, medicina personalizada de precisión, nutrigenómica, sujeto holónico, HoloMed, consultoría médica Barcelona, CAPS Digital, UNIMED"/>
   <link rel="canonical" href="https://www.unimed-consulting.es/"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalBusiness","name":"UNIMED Consulting","description":"Holomedicina y Medicina Personalizada de Precisión","url":"https://www.unimed-consulting.es","telephone":"+34673815148","address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"founder":{"@type":"Person","name":"Samuel Carmona Aguirre"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalBusiness","name":"UNIMED Consulting","description":"Holomedicina y Medicina Personalizada de Precisión","url":"https://www.unimed-consulting.es","telephone":"+34673815148","address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"founder":{"@type":"Person","name":"Samuel Carmona Aguirre"}}
+var _hslides=document.querySelectorAll('.hslide'),_hdots=document.querySelectorAll('.hdot'),_hcur=0;
+function goSlide(n){_hslides[_hcur].classList.remove('active');_hdots[_hcur].classList.remove('active');_hcur=n;_hslides[_hcur].classList.add('active');_hdots[_hcur].classList.add('active');}
+setInterval(function(){goSlide((_hcur+1)%_hslides.length);},5000);
+</script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -228,6 +232,11 @@
     .fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
     .fbtm em{color:var(--rose-s);font-style:normal}
 
+
+    .hslide{display:none}.hslide.active{display:block}
+    .hero-dots{display:flex;gap:.6rem;margin-top:1.5rem}
+    .hdot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);cursor:pointer;transition:background .3s}
+    .hdot.active{background:var(--rose)}
     .reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
     .reveal.in{opacity:1;transform:translateY(0)}
     .reveal[data-d="1"]{transition-delay:.08s}
@@ -254,7 +263,7 @@
     <li><a href="recursos.html">Recursos</a></li>
     <li><a href="blog/index.html">Blog</a></li>
     <li><a href="contacto.html">Contacto</a></li>
-    <a href="contacto.html" class="nbtn">Pide Cita</a>
+    <li><a href="contacto.html" class="nbtn">Pide Cita</a></li>
   </ul>
 </div></nav>
 
@@ -263,7 +272,25 @@
   <div class="w"><div class="hgrid">
     <div class="reveal">
       <div class="htag"><i></i>UNIMED Consulting · Barcelona</div>
-      <h1>Tu salud,<br/><em>tu vida.</em></h1>
+      <div class="hero-rotating" id="heroRotating">
+  <div class="hslide active">
+    <h1>¿Tu médico te trata como<br/>un diagnóstico o como<br/><em>una persona?</em></h1>
+    <p class="hdesc">Tu salud es un sistema vivo. Mereces ser comprendido/a como tal. UNIMED aplica las 8 dimensiones del Sujeto Holónico para que vuelvas a tomar las riendas de tu vida.</p>
+  </div>
+  <div class="hslide">
+    <h1>¿Y si el tratamiento<br/>que te recetaron<br/><em>no es el adecuado para ti?</em></h1>
+    <p class="hdesc">Tu genética, tu entorno, tu historia. UNIMED Consulting te da el conocimiento para decidir sobre tu propia salud.</p>
+  </div>
+  <div class="hslide">
+    <h1>La medicina convencional<br/>trata enfermedades.<br/><em>UNIMED trata personas.</em></h1>
+    <p class="hdesc">Conoce tu salud desde las 8 dimensiones que ningún protocolo estándar contempla.</p>
+  </div>
+</div>
+<div class="hero-dots">
+  <span class="hdot active" onclick="goSlide(0)"></span>
+  <span class="hdot" onclick="goSlide(1)"></span>
+  <span class="hdot" onclick="goSlide(2)"></span>
+</div>
       <p class="hdesc">El conocimiento de tu salud te permite volver a tomar las riendas de tu vida y <strong>decidir por ti mismo.</strong> Ya es hora de evolucionar.</p>
       <div class="hbtns">
         <a href="#caps" class="btnp">Pide Cita <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -288,9 +315,9 @@
 <section id="nosotros"><div class="w">
   <div class="reveal"><div class="ey">Nosotros</div><h2>Vivir más, <em>vivir mejor</em></h2><p class="sdesc">No solo cantidad de años sino también con calidad. Aborda tu salud teniendo en cuenta todas las dimensiones de tu persona.</p></div>
   <div class="nosg reveal" data-d="1">
-    <div class="nosb"><div class="nico">🎯</div><h3>Tu salud, <em>tu vida</em></h3><p>El conocimiento de tu salud te permite volver a tomar las riendas de tu vida y decidir por ti mismo. Aborda tu salud teniendo en cuenta todas las dimensiones de tu persona: biológica-epigenómica, factores ambientales, psicosociales y cultural.</p></div>
+    <div class="nosb"><div class="nico">🎯</div><h3>Tú decides, <em>con conocimiento real</em></h3><p>La mayoría de personas salen de la consulta con un diagnóstico y sin entender qué significa. En UNIMED te explicamos qué pasa en tu cuerpo, por qué, y qué opciones tienes. Porque la decisión es tuya.</p></div>
     <div class="nosb"><div class="nico">🔄</div><h3>De <em>paciente a persona</em></h3><p>Te facilitamos aprendizaje para que ganes en salud y en calidad de vida. Empodérate, cambia tu forma de pensar y pasa de ser paciente a ser una persona que participa activamente en la toma de decisiones sobre tu propia salud.</p></div>
-    <div class="nosb"><div class="nico">🧬</div><h3><em>Vivir más,</em> vivir mejor</h3><p>No solo cantidad de años sino también con calidad. Aborda tu salud con menos enfermedades teniendo en cuenta la dimensión biológica-epigenómica, los factores ambientales, psicosociales y cultural.</p></div>
+    <div class="nosb"><div class="nico">🧬</div><h3>Más años, <em>con más vida dentro</em></h3><p>El 80% de las enfermedades crónicas son prevenibles si se actúa antes. La medicina de precisión nos permite ver los riesgos antes de que se conviertan en diagnóstico. Ese es el trabajo de UNIMED.</p></div>
     <div class="nosb"><div class="nico">💡</div><h3>La <em>Holomedicina</em></h3><p>La Holomedicina es dar atención, terapéutica y tratamiento adecuado, en el momento adecuado y a la persona adecuada. Un espacio entre tu salud y tus decisiones: conocimiento, certeza, confianza y acción.</p></div>
   </div>
 </div></section>
@@ -386,13 +413,12 @@
 
 <section id="blog"><div class="w">
   <div class="bloghdr">
-    <div class="reveal"><div class="ey">Blog</div><h2>Conocimiento que <em>empodera</em></h2></div>
+    <div class="reveal"><div class="ey">Blog</div><h2>Conocimiento que <em>activa</em></h2></div>
     <a href="#" class="btng reveal" style="font-size:.78rem;padding:.65rem 1.3rem">Ver todos →</a>
   </div>
   <div class="blogg">
-    <div class="blogc reveal" data-d="1"><div class="bthumb">H</div><div class="bbody"><span class="btag">Holomedicina</span><h4>¿Qué es la Holomedicina?</h4><p>Una introducción al paradigma científico que supera la medicina positivista clásica integrando todas las dimensiones del ser humano.</p><div class="bmeta">Publicado · UNIMED Consulting</div></div></div>
-    <div class="blogc reveal" data-d="2"><div class="bthumb">🧬</div><div class="bbody"><span class="btag">Nutrigenómica</span><h4>Tu genoma y tu dieta</h4><p>Cómo la nutrigenómica personaliza tu alimentación desde tu biología única.</p><div class="bmeta">Próximamente</div></div></div>
-    <div class="blogc reveal" data-d="3"><div class="bthumb">🧠</div><div class="bbody"><span class="btag">Neurocognitivo</span><h4>Salud cerebral y bienestar cognitivo</h4><p>Neurociencias aplicadas al cuidado del cerebro a lo largo de la vida.</p><div class="bmeta">Próximamente</div></div></div>
+    </div>
+    </div>
   </div>
 </div></section>
 
