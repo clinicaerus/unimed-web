@@ -234,9 +234,10 @@ setInterval(function(){goSlide((_hcur+1)%_hslides.length);},5000);
 
 
     .hslide{display:none}.hslide.active{display:block}
-    .hslide h1{font-family:var(--serif);font-size:clamp(1.4rem,2.8vw,2.2rem);font-weight:300;line-height:1.2;color:#fff;max-width:680px;margin-bottom:1rem}
-    .hslide h1 em{font-style:italic;color:var(--rose-s)}
-    .hslide .hdesc{font-size:.88rem;color:rgba(255,255,255,.55);line-height:1.78;max-width:560px}
+    .hero-rotating{margin:.8rem 0 1.2rem}
+    .hslide h1{font-family:var(--serif)!important;font-size:clamp(1.5rem,3vw,2.4rem)!important;font-weight:300!important;line-height:1.2!important;color:#fff!important;max-width:680px!important;margin-bottom:.8rem!important}
+    .hslide h1 em{font-style:italic!important;color:var(--rose-s)!important}
+    .hslide p.hdesc{font-size:.88rem!important;color:rgba(255,255,255,.6)!important;line-height:1.78!important;max-width:540px!important;font-weight:300!important}
     .hero-dots{display:flex;gap:.6rem;margin-top:1.5rem}
     .hdot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);cursor:pointer;transition:background .3s}
     .hdot.active{background:var(--rose)}
