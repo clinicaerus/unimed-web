@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Profesionales · Colaboraciones y Formación · UNIMED Consulting</title>
+  <meta name="description" content="UNIMED Consulting colabora con instituciones académicas y científicas en medicina de precisión, HoloMedicina y ciencias de la complejidad. Formación y red profesional."/>
+  <link rel="canonical" href="https://www.unimed-consulting.es/profesionales.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--rose:#e8356d;--rose-s:#f07098;--rose-xs:rgba(232,53,109,.07);--rose-gl:rgba(232,53,109,.14);--bg:#ffffff;--bg2:#f8f7f9;--bg3:#f2eff5;--ink:#1a0f24;--ink2:#3a2d48;--ink3:#7a6880;--line:rgba(0,0,0,.08);--liner:rgba(232,53,109,.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--max:1140px;--r:8px;--rxl:24px;--ease:cubic-bezier(.22,1,.36,1)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .w{max-width:var(--max);margin:0 auto;padding:0 2rem}
+    nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+    .nl{display:flex;align-items:center;gap:2rem;list-style:none}
+    .nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
+    .nl a:hover{color:var(--ink)}
+    .nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
+    .nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+    .breadcrumb{background:var(--bg2);padding:.75rem 0;border-bottom:1px solid var(--line)}
+    .breadcrumb p{font-size:.75rem;color:var(--ink3)}
+    .breadcrumb a{color:var(--rose)}
+    .breadcrumb span{margin:0 .4rem}
+    /* HERO */
+    .phero{background:var(--ink);padding:5rem 0 4rem;position:relative;overflow:hidden}
+    .phero::before{content:'';position:absolute;right:-80px;top:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,53,109,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
+    .ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:.9rem}
+    .ey::before{content:'';width:16px;height:1.5px;background:var(--rose-s)}
+    .phero h1{font-family:var(--serif);font-size:clamp(2rem,4vw,3.4rem);font-weight:300;line-height:1.15;color:#fff;max-width:700px}
+    .phero h1 em{font-style:italic;color:var(--rose-s)}
+    .phero p{font-size:.9rem;color:rgba(255,255,255,.5);margin-top:1rem;max-width:560px;line-height:1.78}
+    /* SECCIONES */
+    section{padding:5rem 0}
+    .sec-ey{font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.6rem}
+    .sec-h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:var(--ink);margin-bottom:.8rem}
+    .sec-h2 em{font-style:italic;color:var(--rose)}
+    .sec-lead{font-size:.9rem;color:var(--ink3);line-height:1.82;max-width:680px;margin-bottom:3rem}
+    /* COLABORACIÓN CARD DESTACADA */
+    #formacion{background:var(--bg)}
+    .colab-card{background:var(--bg2);border:2px solid var(--liner);border-radius:var(--rxl);padding:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:2rem}
+    .colab-card.star{background:var(--rose-xs);border-color:var(--rose)}
+    .colab-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.65rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;background:var(--rose);color:#fff;padding:.3rem .8rem;border-radius:99px;margin-bottom:1rem}
+    .colab-card h3{font-family:var(--serif);font-size:1.5rem;font-weight:300;color:var(--ink);line-height:1.2;margin-bottom:.8rem}
+    .colab-card h3 em{font-style:italic;color:var(--rose)}
+    .colab-card p{font-size:.88rem;color:var(--ink2);line-height:1.8;margin-bottom:.5rem}
+    .colab-meta{display:flex;flex-direction:column;gap:.4rem;margin:1.2rem 0}
+    .colab-meta span{font-size:.78rem;color:var(--ink3)}
+    .colab-meta strong{color:var(--ink);font-weight:500}
+    .btn-p{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:500;padding:.82rem 1.7rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);box-shadow:0 4px 16px var(--rose-gl)}
+    .btn-p:hover{background:#c82c5c;transform:translateY(-1px)}
+    .btn-g{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:var(--ink2);border:1.5px solid var(--line);transition:all .25s var(--ease)}
+    .btn-g:hover{border-color:var(--rose);color:var(--rose)}
+    .colab-img{background:linear-gradient(135deg,#1a3a5c 0%,#0d2035 100%);border-radius:var(--r);padding:2rem;text-align:center}
+    .colab-img .inst-logo{font-family:var(--serif);font-size:1.1rem;color:#fff;line-height:1.4;font-weight:300}
+    .colab-img .inst-logo em{font-style:italic;color:var(--rose-s)}
+    .colab-img .inst-sub{font-size:.72rem;color:rgba(255,255,255,.4);letter-spacing:.1em;margin-top:.5rem}
+    .colab-img .inst-icon{font-size:3rem;margin-bottom:1rem}
+    /* DETALLES DIPLOMADO */
+    .dip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0}
+    .dip-card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem;text-align:center}
+    .dip-card .dico{font-size:1.5rem;margin-bottom:.5rem}
+    .dip-card h4{font-family:var(--serif);font-size:.95rem;font-weight:400;color:var(--ink);margin-bottom:.3rem}
+    .dip-card p{font-size:.75rem;color:var(--ink3);line-height:1.4;margin:0}
+    /* RED PROFESIONAL */
+    #red{background:var(--bg2)}
+    .red-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+    .red-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--rxl);padding:1.8rem;transition:all .3s var(--ease)}
+    .red-card:hover{border-color:var(--liner);box-shadow:0 8px 32px rgba(232,53,109,.07);transform:translateY(-2px)}
+    .red-card .rico{font-size:1.5rem;margin-bottom:.8rem}
+    .red-card h3{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink);margin-bottom:.5rem}
+    .red-card h3 em{font-style:italic;color:var(--rose)}
+    .red-card p{font-size:.82rem;color:var(--ink3);line-height:1.65}
+    /* CTA */
+    .page-cta{background:var(--ink);padding:5rem 0;text-align:center;position:relative;overflow:hidden}
+    .page-cta::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(232,53,109,.12) 0%,transparent 70%);pointer-events:none}
+    .page-cta h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:#fff;margin-bottom:1rem;position:relative;z-index:1}
+    .page-cta h2 em{font-style:italic;color:var(--rose-s)}
+    .page-cta p{font-size:.88rem;color:rgba(255,255,255,.5);max-width:440px;margin:0 auto 2rem;line-height:1.78;position:relative;z-index:1}
+    .cta-row{display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;position:relative;z-index:1}
+    .btn-p-lg{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.9rem;font-weight:500;padding:.95rem 2rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease)}
+    .btn-p-lg:hover{background:#c82c5c;transform:translateY(-2px)}
+    .btn-g-inv{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:rgba(255,255,255,.6);border:1.5px solid rgba(255,255,255,.15);transition:all .25s var(--ease)}
+    .btn-g-inv:hover{border-color:var(--rose-s);color:var(--rose-s)}
+    /* FOOTER */
+    footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
+    .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+    .flogo{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:#fff;margin-bottom:.6rem}
+    .flogo em{font-style:italic;color:var(--rose-s)}
+    .fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.4rem 0 1.2rem}
+    .fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+    .fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
+    .fc ul{list-style:none}
+    .fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem}
+    .fc li a{color:rgba(255,255,255,.45)}
+    .fc li a:hover{color:var(--rose-s)}
+    .fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+    .fbtm em{color:var(--rose-s);font-style:normal}
+    @media(max-width:1024px){.colab-card{grid-template-columns:1fr}.dip-grid{grid-template-columns:repeat(2,1fr)}.red-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:768px){.nl{display:none}.dip-grid{grid-template-columns:1fr 1fr}.red-grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+
+<nav><div class="w navi">
+  <a href="index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+  <ul class="nl">
+    <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+    <li><a href="index.html#servicios">Servicios</a></li>
+    <li><a href="profesionales.html" style="color:var(--rose)">Profesionales</a></li>
+    <li><a href="recursos.html">Recursos</a></li>
+    <li><a href="blog/index.html">Blog</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="contacto.html" class="nbtn">Pide Cita</a></li>
+  </ul>
+</div></nav>
+
+<div class="breadcrumb"><div class="w">
+  <p><a href="index.html">Inicio</a><span>/</span>Para Profesionales</p>
+</div></div>
+
+<div class="phero"><div class="w">
+  <div class="ey">Para Profesionales · Colaboraciones · Formación</div>
+  <h1>UNIMED en la frontera<br/>entre la ciencia y <em>la práctica clínica.</em></h1>
+  <p>Colaboramos con instituciones académicas, profesionales de la salud y organismos de investigación comprometidos con el paradigma de la complejidad en medicina.</p>
+</div></div>
+
+<section id="formacion"><div class="w">
+  <div class="sec-ey">Colaboración Institucional Destacada</div>
+  <h2 class="sec-h2">Ciencias Médicas y <em>Ciencias de la Complejidad</em></h2>
+  <p class="sec-lead">UNIMED Consulting es colaborador del Diplomado en Ciencia Médica y Ciencia de la Complejidad, impartido por la Facultad de Medicina de la Universidad Nacional Autónoma de México — una de las instituciones académicas más prestigiosas del mundo hispanohablante.</p>
+
+  <div class="colab-card star">
+    <div>
+      <div class="colab-badge">✦ Colaboración Institucional</div>
+      <h3>Diplomado en Ciencia Médica<br/>y <em>Ciencia de la Complejidad</em></h3>
+      <p>Un programa académico pionero que aborda la medicina desde el paradigma de la complejidad — el mismo marco científico en el que se fundamenta la HoloMedicina de UNIMED. Dirigido a médicos, biólogos, biomédicos, matemáticos, físicos y profesionales afines.</p>
+      <div class="colab-meta">
+        <span>🏛️ <strong>Institución:</strong> Facultad de Medicina · Universidad Nacional Autónoma de México (UNAM)</span>
+        <span>📅 <strong>Período:</strong> 22 de abril — 30 de septiembre de 2026</span>
+        <span>🗓️ <strong>Horario:</strong> Miércoles de 9:00 a 15:00 hrs · Modalidad online (Zoom)</span>
+        <span>⏱️ <strong>Duración:</strong> 120 horas · 20 sesiones</span>
+        <span>💰 <strong>Inversión:</strong> $12.000 MXN · Pagos diferidos disponibles</span>
+        <span>📋 <strong>Requisito:</strong> Grado mínimo de licenciatura reconocida</span>
+      </div>
+      <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem">
+        <a href="https://medicinaycomplejidad.online/requisitos.html" target="_blank" class="btn-p">Ver programa completo <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="contacto.html" class="btn-g">Preguntar a UNIMED</a>
+      </div>
+      <p style="font-size:.72rem;color:var(--ink3);margin-top:1rem">Informes e inscripciones: Mtra. Rosa María Mendoza · romanero@unam.mx · cel. 55-8676-9662</p>
+    </div>
+    <div class="colab-img">
+      <div class="inst-icon">🎓</div>
+      <div class="inst-logo">Universidad Nacional<br/>Autónoma de <em>México</em></div>
+      <div class="inst-sub" style="margin-top:.5rem">Facultad de Medicina</div>
+      <div style="width:100%;height:1px;background:rgba(255,255,255,.1);margin:1.2rem 0"></div>
+      <div class="inst-logo" style="font-size:.9rem">Colaborador <em>UNIMED</em></div>
+      <div class="inst-sub">HoloMedicina · Medicina de Precisión</div>
+    </div>
+  </div>
+
+  <div class="dip-grid">
+    <div class="dip-card">
+      <div class="dico">📚</div>
+      <h4>120 horas</h4>
+      <p>Programa completo de formación avanzada</p>
+    </div>
+    <div class="dip-card">
+      <div class="dico">💻</div>
+      <h4>Online</h4>
+      <p>Zoom Meeting · acceso desde cualquier país</p>
+    </div>
+    <div class="dip-card">
+      <div class="dico">🗓️</div>
+      <h4>20 sesiones</h4>
+      <p>Miércoles de 9:00 a 15:00 hrs</p>
+    </div>
+    <div class="dip-card">
+      <div class="dico">🌍</div>
+      <h4>Internacional</h4>
+      <p>UNAM · institución de referencia mundial</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="red"><div class="w">
+  <div class="sec-ey">Red Profesional UNIMED</div>
+  <h2 class="sec-h2">Para profesionales de <em>la salud y la ciencia</em></h2>
+  <p class="sec-lead">UNIMED trabaja con y para profesionales que sienten que el paradigma convencional no responde a la complejidad real de sus pacientes. Si eres médico, investigador, psicólogo, nutricionista o profesional afín, aquí tienes tu espacio.</p>
+
+  <div class="red-grid">
+    <div class="red-card">
+      <div class="rico">🔬</div>
+      <h3>Segunda opinión <em>integrativa</em></h3>
+      <p>Derivación de casos complejos que superan los límites de una especialidad. UNIMED aporta la perspectiva holónica de sistema completo donde el modelo lineal no llega.</p>
+    </div>
+    <div class="red-card">
+      <div class="rico">🤝</div>
+      <h3>Colaboración <em>institucional</em></h3>
+      <p>Alianzas con centros de investigación, universidades y organismos de salud interesados en integrar el paradigma de la complejidad y la medicina personalizada de precisión.</p>
+    </div>
+    <div class="red-card">
+      <div class="rico">📖</div>
+      <h3>Formación y <em>divulgación</em></h3>
+      <p>Charlas, seminarios y colaboraciones editoriales sobre HoloMedicina, farmacogenómica, nutrigenómica y ciencias de la complejidad aplicadas a la salud.</p>
+    </div>
+  </div>
+</div></section>
+
+<div class="page-cta">
+  <h2>¿Eres profesional de la salud<br/>y quieres <em>saber más?</em></h2>
+  <p>Escríbenos. Exploramos juntos cómo colaborar desde el paradigma de la complejidad.</p>
+  <div class="cta-row">
+    <a href="contacto.html" class="btn-p-lg">Contactar con UNIMED <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="https://medicinaycomplejidad.online/requisitos.html" target="_blank" class="btn-g-inv">Ver Diplomado UNAM</a>
+  </div>
+</div>
+
+<footer><div class="w">
+  <div class="fg">
+    <div>
+      <div class="flogo">UNI<em>MED</em> Consulting</div>
+      <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
+      <div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ info@unimed-consulting.es</span></div>
+    </div>
+    <div class="fc"><h5>Servicios</h5><ul>
+      <li><a href="servicios/atencion-consultiva.html">Atención Consultiva</a></li>
+      <li><a href="servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+      <li><a href="servicios/nutrigenomica.html">Nutrigenómica</a></li>
+      <li><a href="servicios/neurocognitivo.html">Neurocognitivo</a></li>
+      <li><a href="servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+    </ul></div>
+    <div class="fc"><h5>Profesionales</h5><ul>
+      <li><a href="profesionales.html#formacion">Diplomado UNAM · Complejidad</a></li>
+      <li><a href="profesionales.html#red">Red Profesional</a></li>
+      <li><a href="contacto.html">Colaborar con UNIMED</a></li>
+    </ul></div>
+    <div class="fc"><h5>Legal</h5><ul>
+      <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+      <li><a href="aviso-legal.html">Aviso Legal</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul></div>
+  </div>
+  <div class="fbtm">
+    <p>© 2025 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+    <p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+  </div>
+</div></footer>
+
+</body>
+</html>
