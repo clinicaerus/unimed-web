@@ -107,11 +107,6 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .btn-submit{width:100%;justify-content:center;font-size:.9rem;padding:.9rem}
 .form-note{font-size:.72rem;color:var(--ink3);text-align:center;margin-top:1rem;line-height:1.5}
 
-/* Mensaje de éxito */
-.form-success{display:none;background:rgba(232,53,109,.07);border:1px solid var(--liner);border-radius:var(--r);padding:1.2rem 1.5rem;text-align:center;margin-top:1rem}
-.form-success p{font-size:.88rem;color:var(--ink2);line-height:1.6}
-.form-success strong{color:var(--rose)}
-
 /* FOOTER */
 footer{background:var(--ink);padding:3.5rem 0 2rem}
 .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
@@ -208,51 +203,47 @@ Iniciar conversación — gratis
 <p class="fdesc">Te responderemos en menos de 24 horas. Cuéntanos qué necesitas y cómo podemos acompañarte.</p>
 
 <form id="contactForm" action="https://formspree.io/f/xbdpdpjp" method="POST">
-  <input type="hidden" name="_subject" value="Nueva consulta — UNIMED Consulting"/>
+<input type="hidden" name="_subject" value="Nueva consulta — UNIMED Consulting"/>
 
-  <div class="form-group">
-    <label>Nombre completo</label>
-    <input type="text" name="nombre" placeholder="Tu nombre" required/>
-  </div>
-  <div class="form-group">
-    <label>Correo electrónico</label>
-    <input type="email" name="email" placeholder="tu@email.com" required/>
-  </div>
-  <div class="form-group">
-    <label>Teléfono (opcional)</label>
-    <input type="tel" name="telefono" placeholder="+34 600 000 000"/>
-  </div>
-  <div class="form-group">
-    <label>¿Qué servicio te interesa?</label>
-    <select name="servicio">
-      <option value="">— Selecciona una opción —</option>
-      <option>Consultoría de Salud y Bienestar</option>
-      <option>Asesoramiento Genético y Medicina de Precisión</option>
-      <option>Nutrigenómica y Nutrición Personalizada</option>
-      <option>Asesoramiento Neurocognitivo</option>
-      <option>Asesoramiento en Enfermedades Crónicas</option>
-      <option>Para Profesionales e Instituciones</option>
-      <option>Otro / No lo sé todavía</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label>Mensaje</label>
-    <textarea name="mensaje" placeholder="Cuéntanos qué necesitas..." required></textarea>
-  </div>
-  <div class="form-check">
-    <input type="checkbox" id="privacidad" name="privacidad" required/>
-    <label for="privacidad">He leído y acepto la <a href="politica-de-privacidad.html">Política de Privacidad</a> de UNIMED Consulting. Consiento el tratamiento de mis datos para gestionar mi consulta.</label>
-  </div>
-  <button type="submit" class="btn-p btn-submit">
-    Enviar mensaje
-    <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </button>
-  <p class="form-note">Tus datos se tratan conforme al RGPD. No los compartimos con terceros.</p>
-</form>
-
-<div class="form-success" id="formSuccess">
-  <p>✅ <strong>Mensaje enviado correctamente.</strong><br/>Te responderemos en menos de 24 horas.</p>
+<div class="form-group">
+<label>Nombre completo</label>
+<input type="text" name="nombre" placeholder="Tu nombre" required/>
 </div>
+<div class="form-group">
+<label>Correo electrónico</label>
+<input type="email" name="email" placeholder="tu@email.com" required/>
+</div>
+<div class="form-group">
+<label>Teléfono (opcional)</label>
+<input type="tel" name="telefono" placeholder="+34 600 000 000"/>
+</div>
+<div class="form-group">
+<label>¿Qué servicio te interesa?</label>
+<select name="servicio">
+<option value="">— Selecciona una opción —</option>
+<option>Consultoría de Salud y Bienestar</option>
+<option>Asesoramiento Genético y Medicina de Precisión</option>
+<option>Nutrigenómica y Nutrición Personalizada</option>
+<option>Asesoramiento Neurocognitivo</option>
+<option>Asesoramiento en Enfermedades Crónicas</option>
+<option>Para Profesionales e Instituciones</option>
+<option>Otro / No lo sé todavía</option>
+</select>
+</div>
+<div class="form-group">
+<label>Mensaje</label>
+<textarea name="mensaje" placeholder="Cuéntanos qué necesitas..." required></textarea>
+</div>
+<div class="form-check">
+<input type="checkbox" id="privacidad" name="privacidad" required/>
+<label for="privacidad">He leído y acepto la <a href="politica-de-privacidad.html">Política de Privacidad</a> de UNIMED Consulting. Consiento el tratamiento de mis datos para gestionar mi consulta.</label>
+</div>
+<button type="submit" class="btn-p btn-submit">
+Enviar mensaje
+<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<p class="form-note">Tus datos se tratan conforme al RGPD. No los compartimos con terceros.</p>
+</form>
 </div>
 
 </div>
@@ -299,7 +290,6 @@ Iniciar conversación — gratis
 
 <script>
 const form = document.getElementById('contactForm');
-const successMsg = document.getElementById('formSuccess');
 
 form.addEventListener('submit', async function(e) {
   e.preventDefault();
@@ -310,8 +300,7 @@ form.addEventListener('submit', async function(e) {
     headers: { 'Accept': 'application/json' }
   });
   if (response.ok) {
-    form.style.display = 'none';
-    successMsg.style.display = 'block';
+    window.location.href = 'gracias.html';
   } else {
     alert('Hubo un problema al enviar. Por favor inténtalo de nuevo o escríbenos directamente a salud@unimed-consulting.es');
   }
