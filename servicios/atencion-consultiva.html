@@ -154,4 +154,292 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .cta-row{display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;position:relative;z-index:1}
 .btn-p-lg{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.9rem;font-weight:500;padding:.95rem 2rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);border:none;cursor:pointer;box-shadow:0 4px 16px var(--rose-gl)}
 .btn-p-lg:hover{background:#c82c5c;transform:translateY(-2px)}
-.btn-g-inv{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:rgba(255,255,255,.6);border:1.5px solid
+.btn-g-inv{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:rgba(255,255,255,.6);border:1.5px solid rgba(255,255,255,.15);transition:all .25s var(--ease);cursor:pointer}
+.btn-g-inv:hover{border-color:var(--rose-s);color:var(--rose-s)}
+
+/* FOOTER */
+footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fff}
+.flogo em{font-style:italic;color:var(--rose-s)}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem;cursor:pointer;transition:color .2s}
+.fc li:hover{color:var(--rose-s)}
+.fc li a{color:rgba(255,255,255,.45)}
+.fc li a:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+
+.reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal[data-d="1"]{transition-delay:.08s}
+.reveal[data-d="2"]{transition-delay:.16s}
+
+@media(max-width:1024px){.page-layout{grid-template-columns:1fr;gap:3rem}.sidebar{position:static}.porque-grid{grid-template-columns:1fr;gap:3rem}}
+@media(max-width:768px){.nl{display:none}.formato-grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<nav><div class="w navi">
+<a href="../index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="../index.html#servicios" style="color:var(--rose)">Servicios</a></li>
+<li><a href="../index.html#pro">Profesionales</a></li>
+<li><a href="../recursos.html">Recursos</a></li>
+<li><a href="../blog/index.html">Blog</a></li>
+<li><a href="../contacto.html">Contacto</a></li>
+<a href="../contacto.html" class="nbtn">Pide Cita</a>
+</ul>
+</div></nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb"><div class="w">
+<p><a href="../index.html">Inicio</a><span>/</span><a href="../index.html#servicios">Servicios</a><span>/</span>Atención Consultiva Biomédica y Clínica</p>
+</div></div>
+
+<!-- HERO -->
+<div class="phero"><div class="w">
+<div class="ey">Servicio 01 · Consultoría Biomédica</div>
+<h1>El sistema sanitario te ha dado un diagnóstico.<br/><em>Nosotros te damos una respuesta.</em></h1>
+<p class="sub">Atención Consultiva Biomédica y Clínica · Paradigma HoloMedicina · Medicina Personalizada de Precisión</p>
+</div></div>
+
+<!-- LAYOUT PRINCIPAL -->
+<div class="w"><div class="page-layout">
+
+<!-- COLUMNA CONTENIDO -->
+<div class="content-col reveal">
+
+<p>Tienes análisis normales, pero algo no va bien. Tienes un diagnóstico, pero nadie te ha explicado por qué. Llevas años tomando medicación que no termina de funcionar. Eres médico, biólogo o profesional de la salud y necesitas un segundo par de ojos que piense como tú.</p>
+<p>Eso no es un fallo tuyo. Es un <strong>fallo estructural del sistema sanitario</strong>: diseñado para tratar diagnósticos, no personas.</p>
+<p>La Atención Consultiva Biomédica y Clínica de UNIMED es el proceso que falta.</p>
+
+<h2>Esta consulta es para ti <em>si...</em></h2>
+<ul>
+<li>Llevas tiempo sin respuestas claras dentro del sistema sanitario convencional</li>
+<li>Tienes un diagnóstico complejo (autoinmune, neurológico, metabólico, psiquiátrico) y quieres entender el cuadro completo</li>
+<li>Necesitas orientación sobre pruebas genómicas, farmacogenómica o evaluación neurocognitiva</li>
+<li>Eres familiar o cuidador de una persona que necesita un plan de salud integrado</li>
+<li>Eres profesional de la salud y buscas una perspectiva complementaria con enfoque de medicina de precisión</li>
+<li>Simplemente sientes que tu cuerpo te está diciendo algo que nadie ha sabido escuchar todavía</li>
+</ul>
+
+<div class="pull-quote">
+<p>«No venimos a reemplazar a tu médico. Venimos a darte el mapa que el sistema no tiene tiempo de dibujar.»</p>
+<cite>— Samuel Carmona Aguirre, MSc · Científico Biomédico Clínico</cite>
+</div>
+
+<h2>Una consulta UNIMED no es una visita.<br/><em>Es un proceso.</em></h2>
+<p>Trabajamos desde el paradigma <strong>HoloMed 8D</strong>: evaluamos tu salud como sistema vivo en ocho dimensiones simultáneas — biológica, genómica, neurocognitiva, metabólica, emocional, social, familiar y transgeneracional.</p>
+
+<div class="steps">
+<div class="step">
+<div class="step-num">①</div>
+<div class="step-body">
+<h4>Escucha activa y anamnesis holónica</h4>
+<p>No rellenamos formularios. Escuchamos el relato completo de tu historia de salud como sistema complejo, buscando los patrones que las especialidades aisladas no pueden ver.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">②</div>
+<div class="step-body">
+<h4>Revisión e integración de tu historial clínico</h4>
+<p>Analizamos pruebas previas, diagnósticos, tratamientos y resultados bajo una lente de medicina de precisión. Lo que ya tienes, bien interpretado, vale más que nuevas pruebas mal contextualizadas.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">③</div>
+<div class="step-body">
+<h4>Hipótesis diagnóstica diferencial holónica</h4>
+<p>Construimos contigo un mapa de hipótesis fundamentadas, ordenadas por probabilidad y evidencia, que puedes llevar a tu equipo médico o usar como guía de decisión personal.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">④</div>
+<div class="step-body">
+<h4>Orientación sobre pruebas de precisión</h4>
+<p>Farmacogenómica (PGx) · Genómica nutricional · Neuroimagen · Marcadores inflamatorios · Microbioma. Te explicamos qué tiene sentido pedir, por qué y cómo interpretar los resultados.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">⑤</div>
+<div class="step-body">
+<h4>Plan de acción personalizado</h4>
+<p>Un documento estructurado con los pasos concretos que recomendamos: derivaciones, pruebas, cambios, seguimiento. No un consejo genérico — un plan tuyo.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">⑥</div>
+<div class="step-body">
+<h4>Coordinación asistencial (si procede)</h4>
+<p>Si necesitas navegar el sistema sanitario — derivaciones, segunda opinión especializada, coordinación entre profesionales — te acompañamos en ese proceso.</p>
+</div>
+</div>
+</div>
+
+<h2>Formato y <em>precio</em></h2>
+<div class="formato-grid">
+<div class="fcard">
+<div class="ficon">🏥</div>
+<h4>Presencial</h4>
+<p>Medical Center Tuset 34 · Barcelona</p>
+</div>
+<div class="fcard">
+<div class="ficon">💻</div>
+<h4>Videollamada</h4>
+<p>Whereby · Zoom · desde cualquier lugar del mundo</p>
+</div>
+<div class="fcard">
+<div class="ficon">⏱</div>
+<h4>45–60 minutos</h4>
+<p>Primera consulta incluye revisión previa de historial</p>
+</div>
+</div>
+<div class="precio-box">
+<div class="precio-num">Desde 90€</div>
+<div class="precio-desc">Sesión única o formato de seguimiento · Primera consulta incluye revisión previa del historial si se facilita documentación antes de la sesión.</div>
+</div>
+<div class="disclaimer">
+<p>⚠️ La consulta UNIMED no sustituye a la atención médica urgente ni al seguimiento de tu médico de cabecera. Es un servicio de asesoramiento y apoyo a la decisión clínica con supervisión humana experta.</p>
+</div>
+
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar reveal" data-d="1">
+<div class="scard" style="background:var(--ink);border-color:rgba(255,255,255,.08)">
+<h3 style="color:#fff">¿Listo para entender tu salud como <em>sistema complejo?</em></h3>
+<p style="color:rgba(255,255,255,.5)">Reserva tu consulta o cuéntanos tu caso primero. Te respondemos en menos de 24h.</p>
+<a href="../contacto.html" class="btn-p" style="width:100%;justify-content:center;box-sizing:border-box">
+Reservar consulta
+<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-g-inv" style="width:100%;justify-content:center;box-sizing:border-box;margin-top:.6rem">
+Cuéntanos tu caso primero
+</a>
+</div>
+
+<div class="scard">
+<h3>Otros <em>servicios</em></h3>
+<div class="servicios-list">
+<div class="srv-link active"><span>Atención Consultiva Biomédica</span><span class="srv-arr">←</span></div>
+<a href="asesoramiento-genetico.html" class="srv-link"><span>Asesoramiento Genético y Medicina de Precisión</span><span class="srv-arr">→</span></a>
+<a href="nutrigenomica.html" class="srv-link"><span>Nutrigenómica y Nutrición Personalizada</span><span class="srv-arr">→</span></a>
+<a href="neurocognitivo.html" class="srv-link"><span>Asesoramiento Neurocognitivo</span><span class="srv-arr">→</span></a>
+<a href="enfermedades-cronicas.html" class="srv-link"><span>Enfermedades Crónicas</span><span class="srv-arr">→</span></a>
+</div>
+</div>
+
+<div class="scard">
+<h3>Tu asesor de salud <em>digital</em></h3>
+<p>CAPS Digital está disponible ahora mismo, sin registro y sin coste. Te orienta y prepara tu consulta.</p>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-p" style="width:100%;justify-content:center;box-sizing:border-box;font-size:.78rem">
+Iniciar — gratis
+</a>
+</div>
+</div>
+
+</div></div>
+
+<!-- POR QUÉ UNIMED -->
+<section id="porque"><div class="w">
+<div class="reveal"><div class="ey">¿Por qué UNIMED?</div><h2>No diagnosticamos. <em>Cartografiamos.</em> Tú decides.</h2></div>
+<div class="porque-grid">
+<div class="porque-txt reveal">
+<p><strong>Samuel Carmona Aguirre, MSc</strong>, es Científico Biomédico Clínico, creador del paradigma HoloMedicina (IP registrada OEPM, clases 42 y 44), presentado en la Maison de l'UNESCO y adoptado en congresos médicos internacionales.</p>
+<p>UNIMED aplica a la salud humana el mismo paradigma de complejidad que organizaciones como BiosGroup o Icosystem aplicaron a empresas Fortune 500. <strong>Somos el primer actor en España y Europa en hacerlo a nivel de la persona individual.</strong></p>
+<p>Ford, Boeing y P&G pagaron millones por consultoría basada en complejidad hace 25 años. UNIMED es el primer actor en aplicar ese mismo paradigma a la salud personalizada de la persona.</p>
+</div>
+<div class="credenciales reveal" data-d="1">
+<div class="cred">
+<div class="cred-ico">🏛️</div>
+<div class="cred-txt">
+<h4>UNESCO · Congreso Mundial Pensée Complexe</h4>
+<p>Contribución aceptada · Edgar Morin · Daniel Janicot · 2016</p>
+</div>
+</div>
+<div class="cred">
+<div class="cred-ico">📖</div>
+<div class="cred-txt">
+<h4>«Medicina y Salud basada en la Complejidad»</h4>
+<p>Publicación · VII Congreso Iberoamericano · UB/UAB · 2016</p>
+</div>
+</div>
+<div class="cred">
+<div class="cred-ico">🎓</div>
+<div class="cred-txt">
+<h4>MSc en Ciencias Cognitivas · 9/10</h4>
+<p>Tesis: HoloMedicina y Método Holónico MH-AIAP · U. Málaga · 2017</p>
+</div>
+</div>
+<div class="cred">
+<div class="cred-ico">®️</div>
+<div class="cred-txt">
+<h4>IP registrada OEPM · Clases 42 y 44</h4>
+<p>HoloMedicina · HoloMed · PERSONÓMICAONLINE · desde 2014</p>
+</div>
+</div>
+<div class="cred">
+<div class="cred-ico">🌐</div>
+<div class="cred-txt">
+<h4>UNAM · Diplomado Ciencia Médica y Complejidad</h4>
+<p>Anteproyecto Web Semántica + IA + HoloMedicina · 2021</p>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+
+<!-- CTA FINAL -->
+<div class="page-cta">
+<h2>¿Listo para entender tu salud<br/><em>como sistema complejo?</em></h2>
+<p>Reserva tu consulta o empieza ahora con CAPS Digital — gratis, sin registro.</p>
+<div class="cta-row">
+<a href="../contacto.html" class="btn-p-lg">
+Reservar consulta
+<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-g-inv">Cuéntanos tu caso primero</a>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer><div class="w">
+<div class="fg">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
+<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ samuel@unimed-consulting.es</span></div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul>
+<li><a href="atencion-consultiva.html">Atención Consultiva</a></li>
+<li><a href="asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+<li><a href="nutrigenomica.html">Nutrigenómica</a></li>
+<li><a href="neurocognitivo.html">Neurocognitivo</a></li>
+<li><a href="enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+</ul></div>
+<div class="fc"><h5>Recursos</h5><ul><li>Sanalogía</li><li>Guías Personas-Pacientes</li><li>CAPS Digital</li><li>Blog</li></ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="../aviso-legal.html">Aviso Legal</a></li>
+<li>Política de Cookies</li>
+<li><a href="../contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+</div>
+</div></footer>
+
+<script>
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
