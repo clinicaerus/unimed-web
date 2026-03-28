@@ -1,265 +1,321 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contacto — UNIMED Consulting | Pide Cita</title>
-  <meta name="description" content="Contacta con UNIMED Consulting. Pide cita con Samuel Carmona Aguirre, habla con CAPS Digital o escríbenos. Barcelona."/>
-  <link rel="canonical" href="https://www.unimed-consulting.es/contacto.html"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <style>
-    :root {
-      --rose:   #e8356d;
-      --rose-s: #f07098;
-      --rose-xs:rgba(232,53,109,.07);
-      --rose-gl:rgba(232,53,109,.14);
-      --bg:     #ffffff;
-      --bg2:    #f8f7f9;
-      --bg3:    #f2eff5;
-      --card:   #ffffff;
-      --ink:    #1a0f24;
-      --ink2:   #3a2d48;
-      --ink3:   #7a6880;
-      --line:   rgba(0,0,0,.08);
-      --liner:  rgba(232,53,109,.18);
-      --serif:  'Cormorant Garamond',Georgia,serif;
-      --sans:   'Inter',system-ui,sans-serif;
-      --max:    1140px;
-      --r:      8px;
-      --rxl:    24px;
-      --ease:   cubic-bezier(.22,1,.36,1);
-    }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
-    a{color:inherit;text-decoration:none}
-    .w{max-width:var(--max);margin:0 auto;padding:0 2rem}
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contacto — UNIMED Consulting | Pide Cita</title>
+<meta name="description" content="Contacta con UNIMED Consulting. Pide cita con Samuel Carmona Aguirre, habla con CAPS Digital o escríbenos. Barcelona."/>
+<link rel="canonical" href="https://www.unimed-consulting.es/contacto.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+--rose:   #e8356d;
+--rose-s: #f07098;
+--rose-xs:rgba(232,53,109,.07);
+--rose-gl:rgba(232,53,109,.14);
+--bg:     #ffffff;
+--bg2:    #f8f7f9;
+--bg3:    #f2eff5;
+--card:   #ffffff;
+--ink:    #1a0f24;
+--ink2:   #3a2d48;
+--ink3:   #7a6880;
+--line:   rgba(0,0,0,.08);
+--liner:  rgba(232,53,109,.18);
+--serif:  'Cormorant Garamond',Georgia,serif;
+--sans:   'Inter',system-ui,sans-serif;
+--max:    1140px;
+--r:      8px;
+--rxl:    24px;
+--ease:   cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--max);margin:0 auto;padding:0 2rem}
 
-    /* NAV */
-    nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .navi{display:flex;align-items:center;justify-content:space-between;height:70px}
-    .nl{display:flex;align-items:center;gap:2rem;list-style:none}
-    .nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
-    .nl a:hover{color:var(--ink)}
-    .nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
-    .nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+/* NAV */
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
 
-    /* PAGE HERO */
-    .phero{background:var(--bg2);padding:4rem 0 3rem;border-bottom:1px solid var(--line)}
-    .ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.9rem}
-    .ey::before{content:'';width:16px;height:1.5px;background:var(--rose)}
-    .phero h1{font-family:var(--serif);font-size:clamp(1.8rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink)}
-    .phero h1 em{font-style:italic;color:var(--rose)}
-    .phero p{font-size:.95rem;color:var(--ink3);margin-top:.8rem;max-width:520px;line-height:1.78}
+/* FLOGO */
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fff}
+.flogo em{font-style:italic;color:var(--rose-s)}
 
-    /* MAIN GRID */
-    .main{padding:5rem 0 7rem}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+/* PAGE HERO */
+.phero{background:var(--bg2);padding:4rem 0 3rem;border-bottom:1px solid var(--line)}
+.ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.9rem}
+.ey::before{content:'';width:16px;height:1.5px;background:var(--rose)}
+.phero h1{font-family:var(--serif);font-size:clamp(1.8rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink)}
+.phero h1 em{font-style:italic;color:var(--rose)}
+.phero p{font-size:.95rem;color:var(--ink3);margin-top:.8rem;max-width:520px;line-height:1.78}
 
-    /* LEFT — FORMAS DE CONTACTO */
-    .contact-ways{display:flex;flex-direction:column;gap:1.5rem}
-    .cway{background:var(--card);border:1px solid var(--line);border-radius:var(--rxl);padding:2rem 2rem;position:relative;overflow:hidden;transition:all .3s var(--ease)}
-    .cway::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--rose),var(--rose-s));transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
-    .cway:hover{box-shadow:0 8px 32px rgba(232,53,109,.09);transform:translateY(-3px);border-color:var(--liner)}
-    .cway:hover::before{transform:scaleX(1)}
-    .cway-icon{font-size:1.5rem;margin-bottom:.9rem}
-    .cway h3{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:var(--ink);margin-bottom:.5rem}
-    .cway h3 em{font-style:italic;color:var(--rose)}
-    .cway p{font-size:.85rem;color:var(--ink2);line-height:1.75;margin-bottom:1.2rem}
-    .btn-p{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:500;padding:.78rem 1.6rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);border:none;cursor:pointer;box-shadow:0 4px 16px var(--rose-gl)}
-    .btn-p:hover{background:#c82c5c;transform:translateY(-1px);box-shadow:0 8px 24px var(--rose-gl)}
-    .btn-g{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:400;padding:.78rem 1.6rem;border-radius:var(--r);background:transparent;color:var(--ink2);border:1.5px solid var(--line);transition:all .25s var(--ease);cursor:pointer}
-    .btn-g:hover{border-color:var(--rose);color:var(--rose)}
-    .contact-data{display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem}
-    .cdata{display:flex;align-items:center;gap:.75rem;font-size:.88rem;color:var(--ink2)}
-    .cdata span{font-size:1.1rem}
-    .cdata a{color:var(--rose);font-weight:500}
-    .cdata a:hover{text-decoration:underline}
+/* MAIN GRID */
+.main{padding:5rem 0 7rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 
-    /* Calendly placeholder */
-    .calendly-ph{background:var(--bg3);border:1.5px dashed var(--liner);border-radius:var(--r);padding:1.5rem;text-align:center}
-    .calendly-ph p{font-size:.8rem;color:var(--ink3);line-height:1.6}
-    .calendly-ph strong{color:var(--rose);font-weight:500}
+/* LEFT */
+.contact-ways{display:flex;flex-direction:column;gap:1.5rem}
+.cway{background:var(--card);border:1px solid var(--line);border-radius:var(--rxl);padding:2rem;position:relative;overflow:hidden;transition:all .3s var(--ease)}
+.cway::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--rose),var(--rose-s));transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.cway:hover{box-shadow:0 8px 32px rgba(232,53,109,.09);transform:translateY(-3px);border-color:var(--liner)}
+.cway:hover::before{transform:scaleX(1)}
+.cway-icon{font-size:1.5rem;margin-bottom:.9rem}
+.cway h3{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:var(--ink);margin-bottom:.5rem}
+.cway h3 em{font-style:italic;color:var(--rose)}
+.cway p{font-size:.85rem;color:var(--ink2);line-height:1.75;margin-bottom:1.2rem}
+.btn-p{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:500;padding:.78rem 1.6rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);border:none;cursor:pointer;box-shadow:0 4px 16px var(--rose-gl)}
+.btn-p:hover{background:#c82c5c;transform:translateY(-1px);box-shadow:0 8px 24px var(--rose-gl)}
+.btn-g{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:400;padding:.78rem 1.6rem;border-radius:var(--r);background:transparent;color:var(--ink2);border:1.5px solid var(--line);transition:all .25s var(--ease);cursor:pointer}
+.btn-g:hover{border-color:var(--rose);color:var(--rose)}
+.contact-data{display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem}
+.cdata{display:flex;align-items:center;gap:.75rem;font-size:.88rem;color:var(--ink2)}
+.cdata span{font-size:1.1rem}
+.cdata a{color:var(--rose);font-weight:500}
+.cdata a:hover{text-decoration:underline}
+.calendly-ph{background:var(--bg3);border:1.5px dashed var(--liner);border-radius:var(--r);padding:1.5rem;text-align:center}
+.calendly-ph p{font-size:.8rem;color:var(--ink3);line-height:1.6}
+.calendly-ph strong{color:var(--rose);font-weight:500}
 
-    /* RIGHT — FORMULARIO */
-    .form-wrap{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:2.8rem 2.5rem;position:sticky;top:6rem}
-    .form-wrap h2{font-family:var(--serif);font-size:1.8rem;font-weight:300;color:var(--ink);margin-bottom:.5rem}
-    .form-wrap h2 em{font-style:italic;color:var(--rose)}
-    .form-wrap .fdesc{font-size:.85rem;color:var(--ink3);margin-bottom:2rem;line-height:1.7}
-    .form-group{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.2rem}
-    .form-group label{font-size:.75rem;font-weight:500;color:var(--ink2);letter-spacing:.05em;text-transform:uppercase}
-    .form-group input,
-    .form-group textarea,
-    .form-group select{
-      font-family:var(--sans);font-size:.88rem;font-weight:300;
-      color:var(--ink);background:var(--bg);
-      border:1.5px solid var(--line);border-radius:var(--r);
-      padding:.75rem 1rem;transition:border-color .2s;
-      outline:none;width:100%;
-    }
-    .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus{border-color:var(--rose)}
-    .form-group textarea{resize:vertical;min-height:130px;line-height:1.6}
-    .form-group select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23b0a0bc' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center}
-    .form-check{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:1.5rem}
-    .form-check input[type=checkbox]{margin-top:.2rem;accent-color:var(--rose);width:15px;height:15px;flex-shrink:0;cursor:pointer}
-    .form-check label{font-size:.78rem;color:var(--ink3);line-height:1.55}
-    .form-check label a{color:var(--rose)}
-    .btn-submit{width:100%;justify-content:center;font-size:.9rem;padding:.9rem}
-    .form-note{font-size:.72rem;color:var(--ink3);text-align:center;margin-top:1rem;line-height:1.5}
+/* RIGHT — FORMULARIO */
+.form-wrap{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:2.8rem 2.5rem;position:sticky;top:6rem}
+.form-wrap h2{font-family:var(--serif);font-size:1.8rem;font-weight:300;color:var(--ink);margin-bottom:.5rem}
+.form-wrap h2 em{font-style:italic;color:var(--rose)}
+.form-wrap .fdesc{font-size:.85rem;color:var(--ink3);margin-bottom:2rem;line-height:1.7}
+.form-group{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.2rem}
+.form-group label{font-size:.75rem;font-weight:500;color:var(--ink2);letter-spacing:.05em;text-transform:uppercase}
+.form-group input,
+.form-group textarea,
+.form-group select{font-family:var(--sans);font-size:.88rem;font-weight:300;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:var(--r);padding:.75rem 1rem;transition:border-color .2s;outline:none;width:100%}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{border-color:var(--rose)}
+.form-group textarea{resize:vertical;min-height:130px;line-height:1.6}
+.form-group select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23b0a0bc' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center}
+.form-check{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:1.5rem}
+.form-check input[type=checkbox]{margin-top:.2rem;accent-color:var(--rose);width:15px;height:15px;flex-shrink:0;cursor:pointer}
+.form-check label{font-size:.78rem;color:var(--ink3);line-height:1.55}
+.form-check label a{color:var(--rose)}
+.btn-submit{width:100%;justify-content:center;font-size:.9rem;padding:.9rem}
+.form-note{font-size:.72rem;color:var(--ink3);text-align:center;margin-top:1rem;line-height:1.5}
 
-    /* FOOTER */
-    footer{background:var(--ink);padding:3.5rem 0 2rem}
-    .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
-    .fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
-    .fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
-    .fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
-    .fc ul{list-style:none}
-    .fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem;cursor:pointer;transition:color .2s}
-    .fc li:hover{color:var(--rose-s)}
-    .fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
-    .fbtm em{color:var(--rose-s);font-style:normal}
+/* Mensaje de éxito */
+.form-success{display:none;background:rgba(232,53,109,.07);border:1px solid var(--liner);border-radius:var(--r);padding:1.2rem 1.5rem;text-align:center;margin-top:1rem}
+.form-success p{font-size:.88rem;color:var(--ink2);line-height:1.6}
+.form-success strong{color:var(--rose)}
 
-    @media(max-width:1024px){.grid{grid-template-columns:1fr;gap:3rem}.form-wrap{position:static}}
-    @media(max-width:768px){.nl{display:none}.fg{grid-template-columns:1fr 1fr}}
-  </style>
+/* FOOTER */
+footer{background:var(--ink);padding:3.5rem 0 2rem}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem;cursor:pointer;transition:color .2s}
+.fc li a{color:rgba(255,255,255,.45)}
+.fc li a:hover,.fc li:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+
+@media(max-width:1024px){.grid{grid-template-columns:1fr;gap:3rem}.form-wrap{position:static}}
+@media(max-width:768px){.nl{display:none}.fg{grid-template-columns:1fr 1fr}}
+</style>
 </head>
 <body>
 
 <nav><div class="w navi">
-  <a href="index.html" style="font-family:\'Cormorant Garamond\',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
-  <ul class="nl">
-    <li><a href="index.html#nosotros">¿Quiénes Somos?</a></li>
-    <li><a href="index.html#servicios">Servicios</a></li>
-    <li><a href="index.html#pro">Profesionales</a></li>
-    <li><a href="index.html#recursos">Recursos</a></li>
-    <li><a href="index.html#blog">Blog</a></li>
-    <a href="contacto.html" class="nbtn">Pide Cita</a>
-  </ul>
+<a href="index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="index.html#servicios">Servicios</a></li>
+<li><a href="index.html#pro">Profesionales</a></li>
+<li><a href="recursos.html">Recursos</a></li>
+<li><a href="blog/index.html">Blog</a></li>
+<a href="contacto.html" class="nbtn">Pide Cita</a>
+</ul>
 </div></nav>
 
 <!-- PAGE HERO -->
 <div class="phero">
-  <div class="w">
-    <div class="ey">Contacto</div>
-    <h1>Estamos aquí<br/><em>para acompañarte.</em></h1>
-    <p>Elige la forma que más te convenga. Puedes empezar ahora mismo con CAPS Digital — gratis y sin registro — o escribirnos directamente.</p>
-  </div>
+<div class="w">
+<div class="ey">Contacto</div>
+<h1>Estamos aquí<br/><em>para acompañarte.</em></h1>
+<p>Elige la forma que más te convenga. Puedes empezar ahora mismo con CAPS Digital — gratis y sin registro — o escribirnos directamente.</p>
+</div>
 </div>
 
 <!-- MAIN -->
 <div class="main"><div class="w">
-  <div class="grid">
+<div class="grid">
 
-    <!-- IZQUIERDA: formas de contacto -->
-    <div class="contact-ways">
+<!-- IZQUIERDA -->
+<div class="contact-ways">
 
-      <!-- CAPS Digital -->
-      <div class="cway">
-        <div class="cway-icon">💬</div>
-        <h3>Tu asesor de salud <em>digital</em></h3>
-        <p>Tu asesor de salud digital está disponible ahora mismo, sin registro y sin coste. Te orienta desde las 8 dimensiones del Sujeto Holónico y, cuando sea necesario, te conecta con Samuel directamente.</p>
-        <a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-p">
-          Iniciar conversación — gratis
-          <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
+<div class="cway">
+<div class="cway-icon">💬</div>
+<h3>Tu asesor de salud <em>digital</em></h3>
+<p>Tu asesor de salud digital está disponible ahora mismo, sin registro y sin coste. Te orienta desde las 8 dimensiones del Sujeto Holónico y, cuando sea necesario, te conecta con Samuel directamente.</p>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-p">
+Iniciar conversación — gratis
+<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+</div>
 
-      <!-- Pide Cita -->
-      <div class="cway">
-        <div class="cway-icon">📅</div>
-        <h3>Pide <em>Cita</em></h3>
-        <p>Reserva una consulta directamente con Samuel Carmona Aguirre. Sesiones de 45-60 minutos. Consulta presencial o videollamada.</p>
-        <div class="calendly-ph">
-          <p>🔜 <strong>Sistema de citas en configuración.</strong><br/>Mientras tanto, escríbenos a info@unimed-consulting.es o llámanos al <a href="tel:+34673815148" style="color:var(--rose)">+34 673 815 148</a> y te agendamos.</p>
-        </div>
-      </div>
+<div class="cway">
+<div class="cway-icon">📅</div>
+<h3>Pide <em>Cita</em></h3>
+<p>Reserva una consulta directamente con Samuel Carmona Aguirre. Sesiones de 45-60 minutos. Consulta presencial o videollamada.</p>
+<div class="calendly-ph">
+<p>🔜 <strong>Sistema de citas en configuración.</strong><br/>Mientras tanto, escríbenos a <a href="mailto:salud@unimed-consulting.es" style="color:var(--rose)">salud@unimed-consulting.es</a> o llámanos al <a href="tel:+34673815148" style="color:var(--rose)">+34 673 815 148</a> y te agendamos.</p>
+</div>
+</div>
 
-      <!-- Datos de contacto -->
-      <div class="cway">
-        <div class="cway-icon">📞</div>
-        <h3>Contacto <em>directo</em></h3>
-        <p>Si prefieres hablar directamente con nosotros.</p>
-        <div class="contact-data">
-          <div class="cdata">
-            <span>📞</span>
-            <div>📞 <a href="tel:+34673815148" style="color:var(--rose)">+34 673 815 148</a></div><div>💬 WhatsApp: <a href="https://wa.me/46760871352" style="color:var(--rose)">+46 760 871 352</a></div>
-          </div>
-          <div class="cdata">
-            <span>✉️</span>
-            <div>✉️ info@unimed-consulting.es</div><div>✉️ salud@unimed-consulting.es</div>
-          </div>
-          <div class="cdata">
-            <span>🏛️</span>
-            <div>🏛️ Barcelona, España · Västerås, Suecia</div>
-          </div>
-        </div>
-      </div>
+<div class="cway">
+<div class="cway-icon">📞</div>
+<h3>Contacto <em>directo</em></h3>
+<p>Si prefieres hablar directamente con nosotros.</p>
+<div class="contact-data">
+<div class="cdata">
+<span>📞</span>
+<div>📞 <a href="tel:+34673815148">+34 673 815 148</a></div>
+<div>💬 WhatsApp: <a href="https://wa.me/46760871352">+46 760 871 352</a></div>
+</div>
+<div class="cdata">
+<span>✉️</span>
+<div>✉️ <a href="mailto:salud@unimed-consulting.es">salud@unimed-consulting.es</a></div>
+<div>✉️ <a href="mailto:info@unimed-consulting.es">info@unimed-consulting.es</a></div>
+</div>
+<div class="cdata">
+<span>🏛️</span>
+<div>🏛️ Barcelona, España · Västerås, Suecia</div>
+</div>
+</div>
+</div>
 
-    </div>
+</div>
 
-    <!-- DERECHA: formulario -->
-    <div class="form-wrap">
-      <h2>Escríbenos <em>directamente</em></h2>
-      <p class="fdesc">Te responderemos en menos de 24 horas. Cuéntanos qué necesitas y cómo podemos acompañarte.</p>
+<!-- DERECHA: FORMULARIO CON FORMSPREE -->
+<div class="form-wrap">
+<h2>Escríbenos <em>directamente</em></h2>
+<p class="fdesc">Te responderemos en menos de 24 horas. Cuéntanos qué necesitas y cómo podemos acompañarte.</p>
 
-      <form action="mailto:info@unimed-consulting.es" method="post" enctype="text/plain">
-        <div class="form-group">
-          <label>Nombre completo</label>
-          <input type="text" name="nombre" placeholder="Tu nombre" required/>
-        </div>
-        <div class="form-group">
-          <label>Correo electrónico</label>
-          <input type="email" name="email" placeholder="tu@email.com" required/>
-        </div>
-        <div class="form-group">
-          <label>Teléfono (opcional)</label>
-          <input type="tel" name="telefono" placeholder="+34 600 000 000"/>
-        </div>
-        <div class="form-group">
-          <label>¿Qué servicio te interesa?</label>
-          <select name="servicio">
-            <option value="">— Selecciona una opción —</option>
-            <option>Consultoría de Salud y Bienestar</option>
-            <option>Asesoramiento Genético y Medicina de Precisión</option>
-            <option>Nutrigenómica y Nutrición Personalizada</option>
-            <option>Asesoramiento Neurocognitivo</option>
-            <option>Asesoramiento en Enfermedades Crónicas</option>
-            <option>Para Profesionales e Instituciones</option>
-            <option>Otro / No lo sé todavía</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Mensaje</label>
-          <textarea name="mensaje" placeholder="Cuéntanos qué necesitas..." required></textarea>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" id="privacidad" name="privacidad" required/>
-          <label for="privacidad">He leído y acepto la <a href="politica-de-privacidad.html">Política de Privacidad</a> de UNIMED Consulting. Consiento el tratamiento de mis datos para gestionar mi consulta.</label>
-        </div>
-        <button type="submit" class="btn-p btn-submit">
-          Enviar mensaje
-          <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <p class="form-note">Tus datos se tratan conforme al RGPD. No los compartimos con terceros.</p>
-      </form>
-    </div>
+<form id="contactForm" action="https://formspree.io/f/xbdpdpjp" method="POST">
+  <input type="hidden" name="_subject" value="Nueva consulta — UNIMED Consulting"/>
 
+  <div class="form-group">
+    <label>Nombre completo</label>
+    <input type="text" name="nombre" placeholder="Tu nombre" required/>
   </div>
+  <div class="form-group">
+    <label>Correo electrónico</label>
+    <input type="email" name="email" placeholder="tu@email.com" required/>
+  </div>
+  <div class="form-group">
+    <label>Teléfono (opcional)</label>
+    <input type="tel" name="telefono" placeholder="+34 600 000 000"/>
+  </div>
+  <div class="form-group">
+    <label>¿Qué servicio te interesa?</label>
+    <select name="servicio">
+      <option value="">— Selecciona una opción —</option>
+      <option>Consultoría de Salud y Bienestar</option>
+      <option>Asesoramiento Genético y Medicina de Precisión</option>
+      <option>Nutrigenómica y Nutrición Personalizada</option>
+      <option>Asesoramiento Neurocognitivo</option>
+      <option>Asesoramiento en Enfermedades Crónicas</option>
+      <option>Para Profesionales e Instituciones</option>
+      <option>Otro / No lo sé todavía</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Mensaje</label>
+    <textarea name="mensaje" placeholder="Cuéntanos qué necesitas..." required></textarea>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" id="privacidad" name="privacidad" required/>
+    <label for="privacidad">He leído y acepto la <a href="politica-de-privacidad.html">Política de Privacidad</a> de UNIMED Consulting. Consiento el tratamiento de mis datos para gestionar mi consulta.</label>
+  </div>
+  <button type="submit" class="btn-p btn-submit">
+    Enviar mensaje
+    <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <p class="form-note">Tus datos se tratan conforme al RGPD. No los compartimos con terceros.</p>
+</form>
+
+<div class="form-success" id="formSuccess">
+  <p>✅ <strong>Mensaje enviado correctamente.</strong><br/>Te responderemos en menos de 24 horas.</p>
+</div>
+</div>
+
+</div>
 </div></div>
 
 <!-- FOOTER -->
 <footer><div class="w">
-  <div class="fg">
-    <div>
-      <div class="flogo">UNI<em>MED</em> Consulting</div>
-      <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona.</p>
-      <div class="fcon"><span>📍 Barcelona, España · Västerås, Suecia</span><span>📞 +34 673 815 148</span><span>💬 WhatsApp empresa: +46 760 871 352</span><span>✉️ info@unimed-consulting.es</span></div>
-    </div>
-    <div class="fc"><h5>Servicios</h5><ul><li>Atención Consultiva</li><li>Asesoramiento Genético</li><li>Nutrigenómica</li><li>Neurocognitivo</li><li>Enfermedades Crónicas</li></ul></div>
-    <div class="fc"><h5>Recursos</h5><ul><li>Sanalogía</li><li>Guías Personas-Pacientes</li><li>CAPS Digital</li><li>Blog</li></ul></div>
-    <div class="fc"><h5>Legal</h5><ul>
-      <li><a href="politica-de-privacidad.html" style="color:rgba(255,255,255,.45)">Política de P
+<div class="fg">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona.</p>
+<div class="fcon">
+<span>📍 Barcelona, España · Västerås, Suecia</span>
+<span>📞 +34 673 815 148</span>
+<span>💬 WhatsApp empresa: +46 760 871 352</span>
+<span>✉️ salud@unimed-consulting.es</span>
+</div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul>
+<li><a href="servicios/atencion-consultiva.html">Atención Consultiva</a></li>
+<li><a href="servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+<li><a href="servicios/nutrigenomica.html">Nutrigenómica</a></li>
+<li><a href="servicios/neurocognitivo.html">Neurocognitivo</a></li>
+<li><a href="servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+</ul></div>
+<div class="fc"><h5>Recursos</h5><ul>
+<li>Sanalogía</li>
+<li>Guías Personas-Pacientes</li>
+<li>CAPS Digital</li>
+<li>Blog</li>
+</ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="aviso-legal.html">Aviso Legal</a></li>
+<li>Política de Cookies</li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+</div>
+</div></footer>
+
+<script>
+const form = document.getElementById('contactForm');
+const successMsg = document.getElementById('formSuccess');
+
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const data = new FormData(form);
+  const response = await fetch(form.action, {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  });
+  if (response.ok) {
+    form.style.display = 'none';
+    successMsg.style.display = 'block';
+  } else {
+    alert('Hubo un problema al enviar. Por favor inténtalo de nuevo o escríbenos directamente a salud@unimed-consulting.es');
+  }
+});
+</script>
+</body>
+</html>
