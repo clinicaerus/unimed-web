@@ -76,9 +76,9 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .btn-p:hover{background:#c82c5c;transform:translateY(-1px);box-shadow:0 8px 24px var(--rose-gl)}
 .btn-g{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:400;padding:.78rem 1.6rem;border-radius:var(--r);background:transparent;color:var(--ink2);border:1.5px solid var(--line);transition:all .25s var(--ease);cursor:pointer}
 .btn-g:hover{border-color:var(--rose);color:var(--rose)}
-.contact-data{display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem}
+.contact-data{display:flex;flex-direction:column;gap:.75rem;margin-top:.5rem}
 .cdata{display:flex;align-items:center;gap:.75rem;font-size:.88rem;color:var(--ink2)}
-.cdata span{font-size:1.1rem}
+.cdata span{font-size:1rem;flex-shrink:0;width:20px;text-align:center}
 .cdata a{color:var(--rose);font-weight:500}
 .cdata a:hover{text-decoration:underline}
 .calendly-ph{background:var(--bg3);border:1.5px dashed var(--liner);border-radius:var(--r);padding:1.5rem;text-align:center}
@@ -178,20 +178,26 @@ Iniciar conversación — gratis
 <h3>Contacto <em>directo</em></h3>
 <p>Si prefieres hablar directamente con nosotros.</p>
 <div class="contact-data">
-<div class="cdata">
-<span>📞</span>
-<div>📞 <a href="tel:+34673815148">+34 673 815 148</a></div>
-<div>💬 WhatsApp: <a href="https://wa.me/46760871352">+46 760 871 352</a></div>
-</div>
-<div class="cdata">
-<span>✉️</span>
-<div>✉️ <a href="mailto:salud@unimed-consulting.es">salud@unimed-consulting.es</a></div>
-<div>✉️ <a href="mailto:info@unimed-consulting.es">info@unimed-consulting.es</a></div>
-</div>
-<div class="cdata">
-<span>🏛️</span>
-<div>🏛️ Barcelona, España · Västerås, Suecia</div>
-</div>
+  <div class="cdata">
+    <span>📞</span>
+    <div><a href="tel:+34673815148">+34 673 815 148</a></div>
+  </div>
+  <div class="cdata">
+    <span>💬</span>
+    <div>WhatsApp: <a href="https://wa.me/46760871352">+46 760 871 352</a></div>
+  </div>
+  <div class="cdata">
+    <span>✉️</span>
+    <div><a href="mailto:salud@unimed-consulting.es">salud@unimed-consulting.es</a></div>
+  </div>
+  <div class="cdata">
+    <span>✉️</span>
+    <div><a href="mailto:info@unimed-consulting.es">info@unimed-consulting.es</a></div>
+  </div>
+  <div class="cdata">
+    <span>🏛️</span>
+    <div>Barcelona, España · Västerås, Suecia</div>
+  </div>
 </div>
 </div>
 
@@ -307,4 +313,4 @@ form.addEventListener('submit', async function(e) {
 });
 </script>
 </body>
-</html>
+</html> 
