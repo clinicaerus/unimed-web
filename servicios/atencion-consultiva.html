@@ -11,7 +11,6 @@
 "@context":"https://schema.org/",
 "@type":"MedicalBusiness",
 "name":"UNIMED Consulting",
-"medicalSpecialty":"Precision Medicine",
 "availableService":{
 "@type":"Service",
 "name":"Atención Consultiva Biomédica y Clínica",
@@ -113,6 +112,10 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .precio-desc{font-size:.83rem;color:var(--ink2);line-height:1.6}
 .disclaimer{background:var(--bg2);border-radius:var(--r);padding:1rem 1.2rem;margin-top:1rem}
 .disclaimer p{font-size:.75rem;color:var(--ink3);line-height:1.55;margin:0}
+
+/* SUBSERVICIOS */
+.sub-srv-link{color:var(--ink);display:flex;gap:1.2rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--rxl);padding:1.5rem 1.5rem;transition:all .25s var(--ease)}
+.sub-srv-link:hover{border-color:var(--liner);box-shadow:0 4px 20px rgba(232,53,109,.07);transform:translateX(4px)}
 
 /* SIDEBAR */
 .sidebar{position:sticky;top:6rem;display:flex;flex-direction:column;gap:1.2rem}
@@ -308,6 +311,18 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <p>⚠️ La consulta UNIMED no sustituye a la atención médica urgente ni al seguimiento de tu médico de cabecera. Es un servicio de asesoramiento y apoyo a la decisión clínica con supervisión humana experta.</p>
 </div>
 
+<!-- SUBSERVICIOS -->
+<h2>Servicios <em>especializados</em> dentro de esta área</h2>
+<div class="steps">
+<a href="atencion-consultiva/segunda-opinion-medica.html" class="sub-srv-link">
+<div class="step-num">→</div>
+<div class="step-body">
+<h4>Segunda Opinión Médica Especializada</h4>
+<p>Revisamos tu historial clínico en profundidad y te entregamos un informe escrito personalizado con orientación clínica basada en medicina de precisión. <strong>Desde 150€.</strong></p>
+</div>
+</a>
+</div>
+
 </div>
 
 <!-- SIDEBAR -->
@@ -414,7 +429,7 @@ Reservar consulta
 <div>
 <div class="flogo">UNI<em>MED</em> Consulting</div>
 <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
-<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ samuel@unimed-consulting.es</span></div>
+<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ salud@unimed-consulting.es</span></div>
 </div>
 <div class="fc"><h5>Servicios</h5><ul>
 <li><a href="atencion-consultiva.html">Atención Consultiva</a></li>
@@ -442,4 +457,4 @@ const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.targe
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
-</html>
+</html> 
