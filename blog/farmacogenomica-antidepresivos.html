@@ -1,362 +1,341 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Por qué el mismo antidepresivo cura a unos y destruye a otros · UNIMED</title>
-  <meta name="description" content="La farmacogenómica explica por qué los antidepresivos no funcionan igual en todos. Tu genoma determina cómo metabolizas los fármacos. Samuel Carmona Aguirre, MSc · UNIMED Consulting."/>
-  <meta name="keywords" content="farmacogenómica antidepresivos, por qué antidepresivos no funcionan, genes metabolismo fármacos, CYP2D6 CYP2C19, farmacogenómica psiquiatría España, medicina personalizada precisión"/>
-  <link rel="canonical" href="https://www.unimed-consulting.es/blog/farmacogenomica-antidepresivos.html"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Por qué el mismo antidepresivo cura a unos y destruye a otros: la farmacogenómica que tu psiquiatra debería conocer","author":{"@type":"Person","name":"Samuel Carmona Aguirre","jobTitle":"Científico Biomédico Clínico","url":"https://www.unimed-consulting.es/quienes-somos.html"},"publisher":{"@type":"Organization","name":"UNIMED Consulting","url":"https://www.unimed-consulting.es"},"datePublished":"2026-03-23","medicalAudience":{"@type":"MedicalAudience","audienceType":"Patient"},"about":[{"@type":"MedicalCondition","name":"Farmacogenómica"},{"@type":"Drug","name":"Antidepresivos"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es la farmacogenómica?","acceptedAnswer":{"@type":"Answer","text":"La farmacogenómica es la ciencia que estudia cómo los genes de cada persona afectan a la forma en que su cuerpo metaboliza, responde y tolera los medicamentos. Permite personalizar tratamientos farmacológicos en función del perfil genético individual."}},{"@type":"Question","name":"¿Por qué los antidepresivos no funcionan igual en todos?","acceptedAnswer":{"@type":"Answer","text":"Los antidepresivos se metabolizan principalmente a través de enzimas hepáticas codificadas por genes como CYP2D6 y CYP2C19. Variantes genéticas en estos genes determinan si una persona es metabolizadora lenta, normal, rápida o ultrarrápida, lo que cambia radicalmente los niveles del fármaco en sangre y por tanto su eficacia y toxicidad."}},{"@type":"Question","name":"¿Se puede hacer un test genético para saber qué antidepresivo me va mejor?","acceptedAnswer":{"@type":"Answer","text":"Sí. Los tests de farmacogenómica (PGx) analizan variantes en genes clave como CYP2D6, CYP2C19, CYP2C9 y SLC6A4, entre otros, para orientar la selección y dosificación de fármacos psiquiátricos. UNIMED Consulting ofrece asesoramiento genético con interpretación clínica integrativa de estos resultados."}}]}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <style>
-    :root{--rose:#e8356d;--rose-s:#f07098;--rose-xs:rgba(232,53,109,.07);--rose-gl:rgba(232,53,109,.14);--bg:#ffffff;--bg2:#f8f7f9;--bg3:#f2eff5;--ink:#1a0f24;--ink2:#3a2d48;--ink3:#7a6880;--line:rgba(0,0,0,.08);--liner:rgba(232,53,109,.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--max:1140px;--r:8px;--rxl:24px;--ease:cubic-bezier(.22,1,.36,1)}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
-    a{color:inherit;text-decoration:none}
-    .w{max-width:var(--max);margin:0 auto;padding:0 2rem}
-    nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .navi{display:flex;align-items:center;justify-content:space-between;height:70px}
-    .nl{display:flex;align-items:center;gap:2rem;list-style:none}
-    .nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
-    .nl a:hover{color:var(--ink)}
-    .nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
-    .nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
-    .breadcrumb{background:var(--bg2);padding:.75rem 0;border-bottom:1px solid var(--line)}
-    .breadcrumb p{font-size:.75rem;color:var(--ink3)}
-    .breadcrumb a{color:var(--rose)}
-    .breadcrumb span{margin:0 .4rem}
-    /* ARTICLE HERO */
-    .ahero{background:var(--ink);padding:5rem 0 4rem;position:relative;overflow:hidden}
-    .ahero::before{content:'';position:absolute;right:-80px;top:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,53,109,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
-    .ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:.9rem}
-    .ey::before{content:'';width:16px;height:1.5px;background:var(--rose-s)}
-    .ahero h1{font-family:var(--serif);font-size:clamp(2rem,4.5vw,3.6rem);font-weight:300;line-height:1.1;color:#fff;max-width:800px}
-    .ahero h1 em{font-style:italic;color:var(--rose-s)}
-    .ameta{display:flex;align-items:center;gap:1.5rem;margin-top:1.8rem;flex-wrap:wrap}
-    .ameta-author{display:flex;align-items:center;gap:.6rem}
-    .ameta-av{width:36px;height:36px;border-radius:50%;background:var(--rose-xs);border:2px solid var(--liner);display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--rose);font-weight:500}
-    .ameta-name{font-size:.78rem;color:rgba(255,255,255,.6)}
-    .ameta-name strong{display:block;color:rgba(255,255,255,.85);font-weight:400}
-    .ameta-sep{width:1px;height:24px;background:rgba(255,255,255,.12)}
-    .ameta-info{font-size:.75rem;color:rgba(255,255,255,.4)}
-    .acarril{display:inline-flex;align-items:center;gap:.4rem;font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;background:rgba(220,50,50,.15);color:#ff8080;padding:.3rem .8rem;border-radius:99px}
-    /* LAYOUT */
-    .art-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;padding:4rem 0 6rem;align-items:start}
-    /* BODY */
-    .art-body h2{font-family:var(--serif);font-size:1.6rem;font-weight:300;color:var(--ink);margin:3rem 0 1rem;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
-    .art-body h2 em{font-style:italic;color:var(--rose)}
-    .art-body h3{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink);margin:2rem 0 .7rem}
-    .art-body p{font-size:.92rem;color:var(--ink2);line-height:1.88;margin-bottom:1rem}
-    .art-body p strong{color:var(--ink);font-weight:500}
-    .art-body ul,.art-body ol{margin:.5rem 0 1.2rem 0;list-style:none}
-    .art-body ul li,.art-body ol li{font-size:.88rem;color:var(--ink2);line-height:1.75;padding:.4rem 0 .4rem 1.4rem;border-bottom:1px solid var(--line);position:relative}
-    .art-body ul li::before{content:'→';position:absolute;left:0;color:var(--rose);font-size:.8rem}
-    .art-body ol{counter-reset:item}
-    .art-body ol li{counter-increment:item}
-    .art-body ol li::before{content:counter(item)'.';position:absolute;left:0;color:var(--rose);font-size:.78rem;font-weight:500}
-    .art-body ul li:last-child,.art-body ol li:last-child{border-bottom:none}
-    .pull-quote{background:var(--bg2);border-left:3px solid var(--rose);border-radius:0 var(--r) var(--r) 0;padding:1.4rem 1.8rem;margin:2rem 0}
-    .pull-quote p{font-family:var(--serif);font-size:1.2rem;font-style:italic;color:var(--ink2);line-height:1.55;margin:0 0 .5rem}
-    .pull-quote cite{font-size:.75rem;color:var(--ink3);font-style:normal;letter-spacing:.05em}
-    .info-box{background:var(--rose-xs);border:1px solid var(--liner);border-radius:var(--r);padding:1.2rem 1.5rem;margin:1.5rem 0}
-    .info-box p{font-size:.84rem;color:var(--ink2);line-height:1.7;margin:0}
-    .info-box p strong{color:var(--ink)}
-    .genes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.5rem 0}
-    .gene-card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem}
-    .gene-card h4{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--rose);margin-bottom:.4rem}
-    .gene-card p{font-size:.78rem;color:var(--ink3);line-height:1.5;margin:0}
-    .toc{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem 1.5rem;margin-bottom:2rem}
-    .toc h4{font-size:.7rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-bottom:.8rem}
-    .toc ol{counter-reset:toc;list-style:none;margin:0}
-    .toc ol li{counter-increment:toc;font-size:.8rem;color:var(--ink2);padding:.3rem 0 .3rem 1.2rem;position:relative;border:none}
-    .toc ol li::before{content:counter(toc);position:absolute;left:0;color:var(--rose);font-size:.7rem;font-weight:500}
-    .toc ol li a{color:var(--ink2);transition:color .2s}
-    .toc ol li a:hover{color:var(--rose)}
-    .ref-note{font-size:.75rem;color:var(--ink3);background:var(--bg2);border-radius:var(--r);padding:.8rem 1rem;margin-top:.5rem;line-height:1.6}
-    /* FAQ */
-    .faq{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
-    .faq-item{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
-    .faq-item summary{font-size:.88rem;font-weight:500;color:var(--ink);padding:1rem 1.2rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
-    .faq-item summary::after{content:'+';color:var(--rose);font-size:1.1rem}
-    .faq-item[open] summary::after{content:'−'}
-    .faq-item p{font-size:.84rem;color:var(--ink2);line-height:1.75;padding:.75rem 1.2rem 1rem;border-top:1px solid var(--line);margin:0}
-    /* SIDEBAR */
-    .sidebar{position:sticky;top:6rem;display:flex;flex-direction:column;gap:1.2rem}
-    .scard{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:1.8rem 1.6rem}
-    .scard h3{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink);margin-bottom:.6rem}
-    .scard h3 em{font-style:italic;color:var(--rose)}
-    .scard p{font-size:.82rem;color:var(--ink2);line-height:1.7;margin-bottom:1.1rem}
-    .btn-p{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:500;padding:.82rem 1.7rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);box-shadow:0 4px 16px var(--rose-gl)}
-    .btn-p:hover{background:#c82c5c;transform:translateY(-1px)}
-    .btn-g{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:var(--ink2);border:1.5px solid var(--line);transition:all .25s var(--ease)}
-    .btn-g:hover{border-color:var(--rose);color:var(--rose)}
-    .art-link{display:flex;gap:.8rem;padding:.9rem 0;border-bottom:1px solid var(--line);transition:all .2s}
-    .art-link:last-child{border-bottom:none}
-    .art-link:hover{padding-left:.3rem}
-    .art-link-ico{font-size:1.2rem;flex-shrink:0}
-    .art-link-txt h5{font-family:var(--serif);font-size:.88rem;font-weight:400;color:var(--ink);line-height:1.3;margin-bottom:.2rem}
-    .art-link-txt span{font-size:.7rem;color:var(--ink3)}
-    /* CTA */
-    .page-cta{background:var(--ink);padding:5rem 0;text-align:center;position:relative;overflow:hidden}
-    .page-cta::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(232,53,109,.12) 0%,transparent 70%);pointer-events:none}
-    .page-cta h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:#fff;margin-bottom:1rem;position:relative;z-index:1}
-    .page-cta h2 em{font-style:italic;color:var(--rose-s)}
-    .page-cta p{font-size:.88rem;color:rgba(255,255,255,.5);max-width:440px;margin:0 auto 2rem;line-height:1.78;position:relative;z-index:1}
-    .cta-row{display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;position:relative;z-index:1}
-    .btn-p-lg{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.9rem;font-weight:500;padding:.95rem 2rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease)}
-    .btn-p-lg:hover{background:#c82c5c;transform:translateY(-2px)}
-    .btn-g-inv{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:rgba(255,255,255,.6);border:1.5px solid rgba(255,255,255,.15);transition:all .25s var(--ease)}
-    .btn-g-inv:hover{border-color:var(--rose-s);color:var(--rose-s)}
-    /* FOOTER */
-    footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
-    .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
-    .flogo{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:#fff;margin-bottom:.6rem}
-    .flogo em{font-style:italic;color:var(--rose-s)}
-    .fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.4rem 0 1.2rem}
-    .fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
-    .fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
-    .fc ul{list-style:none}
-    .fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem}
-    .fc li a{color:rgba(255,255,255,.45)}
-    .fc li a:hover{color:var(--rose-s)}
-    .fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
-    .fbtm em{color:var(--rose-s);font-style:normal}
-    .revision-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.68rem;color:var(--ink3);background:var(--bg2);border:1px solid var(--line);border-radius:99px;padding:.25rem .75rem;margin-top:1.5rem}
-    .reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
-    .reveal.in{opacity:1;transform:translateY(0)}
-    @media(max-width:1024px){.art-layout{grid-template-columns:1fr}.sidebar{position:static}.genes-grid{grid-template-columns:1fr}}
-    @media(max-width:768px){.nl{display:none}.fg{grid-template-columns:1fr 1fr}}
-  </style>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Por qué el mismo antidepresivo funciona para unos y genera reacciones adversas en otros · UNIMED</title>
+<meta name="description" content="La farmacogenómica explica por qué los antidepresivos no funcionan igual en todos. Tu genoma determina cómo metabolizas los fármacos. Samuel Carmona Aguirre, MSc · UNIMED Consulting."/>
+<meta name="keywords" content="farmacogenómica antidepresivos, por qué antidepresivos no funcionan, genes metabolismo fármacos, CYP2D6 CYP2C19, farmacogenómica psiquiatría España, medicina personalizada precisión"/>
+<link rel="canonical" href="https://www.unimed-consulting.es/blog/farmacogenomica-antidepresivos.html"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Por qué el mismo antidepresivo funciona para unos y genera reacciones adversas en otros: la farmacogenómica que tu psiquiatra debería conocer","author":{"@type":"Person","name":"Samuel Carmona Aguirre","jobTitle":"Científico Biomédico Clínico","url":"https://www.unimed-consulting.es/quienes-somos.html"},"publisher":{"@type":"Organization","name":"UNIMED Consulting","url":"https://www.unimed-consulting.es"},"datePublished":"2026-03-23","medicalAudience":{"@type":"MedicalAudience","audienceType":"Patient"},"about":[{"@type":"MedicalCondition","name":"Farmacogenómica"},{"@type":"Drug","name":"Antidepresivos"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es la farmacogenómica?","acceptedAnswer":{"@type":"Answer","text":"La farmacogenómica es la ciencia que estudia cómo los genes de cada persona afectan a la forma en que su cuerpo metaboliza, responde y tolera los medicamentos. Permite personalizar tratamientos farmacológicos en función del perfil genético individual."}},{"@type":"Question","name":"¿Por qué los antidepresivos no funcionan igual en todos?","acceptedAnswer":{"@type":"Answer","text":"Los antidepresivos se metabolizan principalmente a través de enzimas hepáticas codificadas por genes como CYP2D6 y CYP2C19. Variantes genéticas en estos genes determinan si una persona es metabolizadora lenta, normal, rápida o ultrarrápida, lo que cambia radicalmente los niveles del fármaco en sangre y por tanto su eficacia y toxicidad."}},{"@type":"Question","name":"¿Se puede hacer un test genético para saber qué antidepresivo me va mejor?","acceptedAnswer":{"@type":"Answer","text":"Sí. Los tests de farmacogenómica (PGx) analizan variantes en genes clave como CYP2D6, CYP2C19, CYP2C9 y SLC6A4, entre otros, para orientar a la persona y a su equipo médico en la revisión de la selección y dosificación de fármacos psiquiátricos. UNIMED Consulting ofrece asesoramiento genético con interpretación clínica integrativa de estos resultados."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--rose:#e8356d;--rose-s:#f07098;--rose-xs:rgba(232,53,109,.07);--rose-gl:rgba(232,53,109,.14);--bg:#ffffff;--bg2:#f8f7f9;--bg3:#f2eff5;--ink:#1a0f24;--ink2:#3a2d48;--ink3:#7a6880;--line:rgba(0,0,0,.08);--liner:rgba(232,53,109,.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--max:1140px;--r:8px;--rxl:24px;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--max);margin:0 auto;padding:0 2rem}
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+.breadcrumb{background:var(--bg2);padding:.75rem 0;border-bottom:1px solid var(--line)}
+.breadcrumb p{font-size:.75rem;color:var(--ink3)}
+.breadcrumb a{color:var(--rose)}
+.breadcrumb span{margin:0 .4rem}
+.ahero{background:var(--ink);padding:5rem 0 4rem;position:relative;overflow:hidden}
+.ahero::before{content:'';position:absolute;right:-80px;top:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,53,109,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
+.ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:.9rem}
+.ey::before{content:'';width:16px;height:1.5px;background:var(--rose-s)}
+.ahero h1{font-family:var(--serif);font-size:clamp(2rem,4.5vw,3.6rem);font-weight:300;line-height:1.1;color:#fff;max-width:800px}
+.ahero h1 em{font-style:italic;color:var(--rose-s)}
+.ameta{display:flex;align-items:center;gap:1.5rem;margin-top:1.8rem;flex-wrap:wrap}
+.ameta-author{display:flex;align-items:center;gap:.6rem}
+.ameta-av{width:36px;height:36px;border-radius:50%;background:var(--rose-xs);border:2px solid var(--liner);display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--rose);font-weight:500}
+.ameta-name{font-size:.78rem;color:rgba(255,255,255,.6)}
+.ameta-name strong{display:block;color:rgba(255,255,255,.85);font-weight:400}
+.ameta-sep{width:1px;height:24px;background:rgba(255,255,255,.12)}
+.ameta-info{font-size:.75rem;color:rgba(255,255,255,.4)}
+.acarril{display:inline-flex;align-items:center;gap:.4rem;font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;background:rgba(220,50,50,.15);color:#ff8080;padding:.3rem .8rem;border-radius:99px}
+.art-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;padding:4rem 0 6rem;align-items:start}
+.art-body h2{font-family:var(--serif);font-size:1.6rem;font-weight:300;color:var(--ink);margin:3rem 0 1rem;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
+.art-body h2 em{font-style:italic;color:var(--rose)}
+.art-body h3{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink);margin:2rem 0 .7rem}
+.art-body p{font-size:.92rem;color:var(--ink2);line-height:1.88;margin-bottom:1rem}
+.art-body p strong{color:var(--ink);font-weight:500}
+.art-body ul,.art-body ol{margin:.5rem 0 1.2rem 0;list-style:none}
+.art-body ul li,.art-body ol li{font-size:.88rem;color:var(--ink2);line-height:1.75;padding:.4rem 0 .4rem 1.4rem;border-bottom:1px solid var(--line);position:relative}
+.art-body ul li::before{content:'→';position:absolute;left:0;color:var(--rose);font-size:.8rem}
+.art-body ol{counter-reset:item}
+.art-body ol li{counter-increment:item}
+.art-body ol li::before{content:counter(item)'.';position:absolute;left:0;color:var(--rose);font-size:.78rem;font-weight:500}
+.art-body ul li:last-child,.art-body ol li:last-child{border-bottom:none}
+.pull-quote{background:var(--bg2);border-left:3px solid var(--rose);border-radius:0 var(--r) var(--r) 0;padding:1.4rem 1.8rem;margin:2rem 0}
+.pull-quote p{font-family:var(--serif);font-size:1.2rem;font-style:italic;color:var(--ink2);line-height:1.55;margin:0 0 .5rem}
+.pull-quote cite{font-size:.75rem;color:var(--ink3);font-style:normal;letter-spacing:.05em}
+.info-box{background:var(--rose-xs);border:1px solid var(--liner);border-radius:var(--r);padding:1.2rem 1.5rem;margin:1.5rem 0}
+.info-box p{font-size:.84rem;color:var(--ink2);line-height:1.7;margin:0}
+.info-box p strong{color:var(--ink)}
+.genes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.5rem 0}
+.gene-card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem}
+.gene-card h4{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--rose);margin-bottom:.4rem}
+.gene-card p{font-size:.78rem;color:var(--ink3);line-height:1.5;margin:0}
+.toc{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem 1.5rem;margin-bottom:2rem}
+.toc h4{font-size:.7rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-bottom:.8rem}
+.toc ol{counter-reset:toc;list-style:none;margin:0}
+.toc ol li{counter-increment:toc;font-size:.8rem;color:var(--ink2);padding:.3rem 0 .3rem 1.2rem;position:relative;border:none}
+.toc ol li::before{content:counter(toc);position:absolute;left:0;color:var(--rose);font-size:.7rem;font-weight:500}
+.toc ol li a{color:var(--ink2);transition:color .2s}
+.toc ol li a:hover{color:var(--rose)}
+.ref-note{font-size:.75rem;color:var(--ink3);background:var(--bg2);border-radius:var(--r);padding:.8rem 1rem;margin-top:.5rem;line-height:1.6}
+.faq{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
+.faq-item{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.faq-item summary{font-size:.88rem;font-weight:500;color:var(--ink);padding:1rem 1.2rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq-item summary::after{content:'+';color:var(--rose);font-size:1.1rem}
+.faq-item[open] summary::after{content:'−'}
+.faq-item p{font-size:.84rem;color:var(--ink2);line-height:1.75;padding:.75rem 1.2rem 1rem;border-top:1px solid var(--line);margin:0}
+.sidebar{position:sticky;top:6rem;display:flex;flex-direction:column;gap:1.2rem}
+.scard{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:1.8rem 1.6rem}
+.scard h3{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink);margin-bottom:.6rem}
+.scard h3 em{font-style:italic;color:var(--rose)}
+.scard p{font-size:.82rem;color:var(--ink2);line-height:1.7;margin-bottom:1.1rem}
+.btn-p{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:500;padding:.82rem 1.7rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);box-shadow:0 4px 16px var(--rose-gl)}
+.btn-p:hover{background:#c82c5c;transform:translateY(-1px)}
+.btn-g{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:var(--ink2);border:1.5px solid var(--line);transition:all .25s var(--ease)}
+.btn-g:hover{border-color:var(--rose);color:var(--rose)}
+.art-link{display:flex;gap:.8rem;padding:.9rem 0;border-bottom:1px solid var(--line);transition:all .2s}
+.art-link:last-child{border-bottom:none}
+.art-link:hover{padding-left:.3rem}
+.art-link-ico{font-size:1.2rem;flex-shrink:0}
+.art-link-txt h5{font-family:var(--serif);font-size:.88rem;font-weight:400;color:var(--ink);line-height:1.3;margin-bottom:.2rem}
+.art-link-txt span{font-size:.7rem;color:var(--ink3)}
+.page-cta{background:var(--ink);padding:5rem 0;text-align:center;position:relative;overflow:hidden}
+.page-cta::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(232,53,109,.12) 0%,transparent 70%);pointer-events:none}
+.page-cta h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:#fff;margin-bottom:1rem;position:relative;z-index:1}
+.page-cta h2 em{font-style:italic;color:var(--rose-s)}
+.page-cta p{font-size:.88rem;color:rgba(255,255,255,.5);max-width:440px;margin:0 auto 2rem;line-height:1.78;position:relative;z-index:1}
+.cta-row{display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;position:relative;z-index:1}
+.btn-p-lg{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.9rem;font-weight:500;padding:.95rem 2rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease)}
+.btn-p-lg:hover{background:#c82c5c;transform:translateY(-2px)}
+.btn-g-inv{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:rgba(255,255,255,.6);border:1.5px solid rgba(255,255,255,.15);transition:all .25s var(--ease)}
+.btn-g-inv:hover{border-color:var(--rose-s);color:var(--rose-s)}
+footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:#fff;margin-bottom:.6rem}
+.flogo em{font-style:italic;color:var(--rose-s)}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.4rem 0 1.2rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem}
+.fc li a{color:rgba(255,255,255,.45)}
+.fc li a:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+.revision-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.68rem;color:var(--ink3);background:var(--bg2);border:1px solid var(--line);border-radius:99px;padding:.25rem .75rem;margin-top:1.5rem}
+.reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.in{opacity:1;transform:translateY(0)}
+@media(max-width:1024px){.art-layout{grid-template-columns:1fr}.sidebar{position:static}.genes-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.nl{display:none}.fg{grid-template-columns:1fr 1fr}}
+</style>
 </head>
 <body>
 
 <nav><div class="w navi">
-  <a href="../index.html" style="font-family:\'Cormorant Garamond\',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
-  <ul class="nl">
-    <li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
-    <li><a href="../index.html#servicios">Servicios</a></li>
-    <li><a href="../index.html#pro">Profesionales</a></li>
-    <li><a href="../index.html#recursos">Recursos</a></li>
-    <li><a href="index.html" style="color:var(--rose)">Blog</a></li>
-    <li><a href="../contacto.html">Contacto</a></li>
-    <a href="../contacto.html" class="nbtn">Pide Cita</a>
-  </ul>
+<a href="../index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="../index.html#servicios">Servicios</a></li>
+<li><a href="../index.html#pro">Profesionales</a></li>
+<li><a href="../recursos.html">Recursos</a></li>
+<li><a href="index.html" style="color:var(--rose)">Blog</a></li>
+<li><a href="../contacto.html">Contacto</a></li>
+<a href="../contacto.html" class="nbtn">Pide Cita</a>
+</ul>
 </div></nav>
 
 <div class="breadcrumb"><div class="w">
-  <p><a href="../index.html">Inicio</a><span>/</span><a href="index.html">Blog</a><span>/</span>Farmacogenómica y antidepresivos</p>
+<p><a href="../index.html">Inicio</a><span>/</span><a href="index.html">Blog</a><span>/</span>Farmacogenómica y antidepresivos</p>
 </div></div>
 
-<!-- HERO -->
 <div class="ahero">
-  <div class="w">
-    <span class="acarril">🔴 Carril A · Despertador de dolor · Clúster Farmacogenómica</span>
-    <div style="height:1rem"></div>
-    <div class="ey">Farmacogenómica · PGx · Psiquiatría de Precisión</div>
-    <h1>Por qué el mismo antidepresivo <em>cura a unos y destruye a otros.</em></h1>
-    <div class="ameta">
-      <div class="ameta-author">
-        <div class="ameta-av">SC</div>
-        <div class="ameta-name"><strong>Samuel Carmona Aguirre, MSc</strong>Científico Biomédico Clínico · UNIMED Consulting</div>
-      </div>
-      <div class="ameta-sep"></div>
-      <span class="ameta-info">📅 23 marzo 2026 · ⏱️ 7 min lectura</span>
-    </div>
-  </div>
+<div class="w">
+<span class="acarril">🔴 Carril A · Despertador de dolor · Clúster Farmacogenómica</span>
+<div style="height:1rem"></div>
+<div class="ey">Farmacogenómica · PGx · Psiquiatría de Precisión</div>
+<h1>Por qué el mismo antidepresivo <em>genera respuestas tan distintas en cada persona.</em></h1>
+<div class="ameta">
+<div class="ameta-author">
+<div class="ameta-av">SC</div>
+<div class="ameta-name"><strong>Samuel Carmona Aguirre, MSc</strong>Científico Biomédico Clínico · UNIMED Consulting</div>
+</div>
+<div class="ameta-sep"></div>
+<span class="ameta-info">📅 23 marzo 2026 · ⏱️ 7 min lectura</span>
+</div>
+</div>
 </div>
 
-<!-- CONTENIDO -->
 <div class="w"><div class="art-layout">
 
-  <article class="art-body reveal">
+<article class="art-body reveal">
 
-    <!-- TABLA DE CONTENIDOS -->
-    <div class="toc">
-      <h4>En este artículo</h4>
-      <ol>
-        <li><a href="#problema">El problema que nadie nombra en consulta</a></li>
-        <li><a href="#pgx">Qué es la farmacogenómica</a></li>
-        <li><a href="#genes">Los genes que deciden si un fármaco te ayuda o te daña</a></li>
-        <li><a href="#tipos">Los 4 tipos de metabolizador</a></li>
-        <li><a href="#unimed">La perspectiva UNIMED</a></li>
-        <li><a href="#implicaciones">Qué puedes hacer con esta información</a></li>
-        <li><a href="#faq">Preguntas frecuentes</a></li>
-      </ol>
-    </div>
+<div class="toc">
+<h4>En este artículo</h4>
+<ol>
+<li><a href="#problema">El problema que nadie nombra en consulta</a></li>
+<li><a href="#pgx">Qué es la farmacogenómica</a></li>
+<li><a href="#genes">Los genes que deciden si un fármaco te ayuda o te daña</a></li>
+<li><a href="#tipos">Los 4 tipos de metabolizador</a></li>
+<li><a href="#unimed">La perspectiva UNIMED</a></li>
+<li><a href="#implicaciones">Qué puedes hacer con esta información</a></li>
+<li><a href="#faq">Preguntas frecuentes</a></li>
+</ol>
+</div>
 
-    <!-- INTRO -->
-    <p>Te recetan un antidepresivo. Lo tomas durante semanas. No pasa nada. O pasa demasiado: efectos secundarios insoportables, sedación, ansiedad aumentada, sensación de que el fármaco te funciona al revés. Tu psiquiatra prueba con otro. Y otro. El proceso se llama «ensayo y error» y puede durar años.</p>
-    <p>Lo que nadie te explica en consulta — no por negligencia, sino porque el sistema no da tiempo — es que <strong>una parte importante de esa variabilidad tiene una explicación genética</strong>. Y esa explicación lleva décadas en la literatura científica.</p>
-    <p>Esto es farmacogenómica. Y puede que cambie tu relación con los psicofármacos para siempre.</p>
+<p>Te recetan un antidepresivo. Lo tomas durante semanas. No pasa nada. O pasa demasiado: efectos secundarios insoportables, sedación, ansiedad aumentada, sensación de que el fármaco te funciona al revés. Tu psiquiatra prueba con otro. Y otro. El proceso se llama «ensayo y error» y puede durar años.</p>
+<p>Lo que nadie te explica en consulta — no por negligencia, sino porque el sistema no da tiempo — es que <strong>una parte importante de esa variabilidad tiene una explicación genética</strong>. Y esa explicación lleva décadas en la literatura científica.</p>
+<p>Esto es farmacogenómica. Y puede que cambie tu relación con los psicofármacos para siempre.</p>
 
-    <div class="pull-quote">
-      <p>«El ensayo y error en psiquiatría no es un fracaso del médico ni del paciente. Es el fracaso de un sistema que no incorpora la información que ya existe para evitarlo.»</p>
-      <cite>— Samuel Carmona Aguirre, MSc · Científico Biomédico Clínico · UNIMED Consulting</cite>
-    </div>
+<div class="pull-quote">
+<p>«El ensayo y error en psiquiatría no es un fracaso del médico ni del paciente. Es el fracaso de un sistema que no incorpora la información que ya existe para evitarlo.»</p>
+<cite>— Samuel Carmona Aguirre, MSc · Científico Biomédico Clínico · UNIMED Consulting</cite>
+</div>
 
-    <!-- SECCIÓN 1 -->
-    <h2 id="problema">El problema que nadie <em>nombra en consulta</em></h2>
-    <p>La depresión y los trastornos de ansiedad afectan a una de cada cinco personas en algún momento de su vida. Los antidepresivos son el tratamiento farmacológico más prescrito en muchos países. Y sin embargo, los estudios más ampliamente citados indican que aproximadamente el <strong>50% de los pacientes no responde adecuadamente al primer antidepresivo prescrito</strong>.</p>
-    <p>¿Por qué? Hay múltiples factores: el diagnóstico puede no ser preciso, el subtipo de depresión importa, la dosis puede estar mal ajustada, el contexto psicosocial influye. Todo eso es real. Pero hay otro factor que raramente se mide antes de prescribir: <strong>cómo procesa ese fármaco específico el organismo de esa persona específica.</strong></p>
-    <p>Y eso, en gran medida, lo determinan los genes.</p>
+<h2 id="problema">El problema que nadie <em>nombra en consulta</em></h2>
+<p>La depresión y los trastornos de ansiedad afectan a una de cada cinco personas en algún momento de su vida. Los antidepresivos son el tratamiento farmacológico más prescrito en muchos países. Y sin embargo, los estudios más ampliamente citados indican que aproximadamente el <strong>50% de los pacientes no responde adecuadamente al primer antidepresivo prescrito</strong>.</p>
+<p>¿Por qué? Hay múltiples factores: el diagnóstico puede no ser preciso, el subtipo de depresión importa, la dosis puede estar mal ajustada, el contexto psicosocial influye. Todo eso es real. Pero hay otro factor que raramente se mide antes de prescribir: <strong>cómo procesa ese fármaco específico el organismo de esa persona específica.</strong></p>
+<p>Y eso, en gran medida, lo determinan los genes.</p>
 
-    <!-- SECCIÓN 2 -->
-    <h2 id="pgx">Qué es <em>la farmacogenómica</em></h2>
-    <p>La farmacogenómica (abreviada como PGx, de pharmacogenomics) es la ciencia que estudia cómo las variantes genéticas de cada persona afectan a la forma en que su cuerpo metaboliza, responde y tolera los medicamentos.</p>
-    <p>Dicho de otra forma: tu genoma contiene instrucciones para fabricar enzimas hepáticas que procesan los fármacos. Si esas instrucciones son ligeramente diferentes a las de otra persona — lo que se llama un polimorfismo — la enzima resultante funciona de forma diferente. Puede funcionar demasiado lento, demasiado rápido, o directamente no funcionar.</p>
-    <p>El resultado: <strong>el mismo fármaco a la misma dosis produce niveles plasmáticos completamente distintos en dos personas diferentes.</strong> Para una, esa concentración es terapéutica. Para otra, es insuficiente. Para una tercera, es tóxica.</p>
+<h2 id="pgx">Qué es <em>la farmacogenómica</em></h2>
+<p>La farmacogenómica (abreviada como PGx, de pharmacogenomics) es la ciencia que estudia cómo las variantes genéticas de cada persona afectan a la forma en que su cuerpo metaboliza, responde y tolera los medicamentos.</p>
+<p>Dicho de otra forma: tu genoma contiene instrucciones para fabricar enzimas hepáticas que procesan los fármacos. Si esas instrucciones son ligeramente diferentes a las de otra persona — lo que se llama un polimorfismo — la enzima resultante funciona de forma diferente. Puede funcionar demasiado lento, demasiado rápido, o directamente no funcionar.</p>
+<p>El resultado: <strong>el mismo fármaco a la misma dosis produce niveles plasmáticos completamente distintos en dos personas diferentes.</strong> Para una, esa concentración es terapéutica. Para otra, es insuficiente. Para una tercera, es tóxica.</p>
 
-    <div class="info-box">
-      <p><strong>Definición canónica:</strong> La farmacogenómica es la ciencia que estudia la relación entre el genoma de un individuo y su respuesta a los medicamentos, con el objetivo de personalizar tratamientos farmacológicos para maximizar la eficacia y minimizar los efectos adversos. Forma parte del paradigma más amplio de la medicina personalizada de precisión.</p>
-    </div>
+<div class="info-box">
+<p><strong>Definición canónica:</strong> La farmacogenómica es la ciencia que estudia la relación entre el genoma de un individuo y su respuesta a los medicamentos, con el objetivo de personalizar tratamientos farmacológicos para maximizar la eficacia y minimizar los efectos adversos. Forma parte del paradigma más amplio de la medicina personalizada de precisión.</p>
+</div>
 
-    <!-- SECCIÓN 3 -->
-    <h2 id="genes">Los genes que deciden si un fármaco <em>te ayuda o te daña</em></h2>
-    <p>No todos los genes son igual de relevantes para todos los fármacos. En psiquiatría, hay un pequeño conjunto de genes que son decisivos para la mayoría de los antidepresivos, ansiolíticos y antipsicóticos que se prescriben hoy:</p>
+<h2 id="genes">Los genes que deciden si un fármaco <em>te ayuda o te daña</em></h2>
+<p>No todos los genes son igual de relevantes para todos los fármacos. En psiquiatría, hay un pequeño conjunto de genes que son decisivos para la mayoría de los antidepresivos, ansiolíticos y antipsicóticos que se prescriben hoy:</p>
 
-    <div class="genes-grid">
-      <div class="gene-card">
-        <h4>CYP2D6</h4>
-        <p>Metaboliza más del 25% de los fármacos psiquiátricos de uso común, incluyendo antidepresivos como fluoxetina, paroxetina, amitriptilina, nortriptilina y antipsicóticos como haloperidol y risperidona. Es uno de los genes más polimórficos del genoma humano.</p>
-      </div>
-      <div class="gene-card">
-        <h4>CYP2C19</h4>
-        <p>Clave para el metabolismo de escitalopram, citalopram, sertralina y diazepam, entre otros. Las variantes en este gen son especialmente prevalentes en poblaciones asiáticas y tienen un impacto directo sobre los niveles plasmáticos de estos fármacos.</p>
-      </div>
-      <div class="gene-card">
-        <h4>SLC6A4</h4>
-        <p>Codifica el transportador de serotonina, que es precisamente el objetivo de los antidepresivos ISRS. Variantes como el polimorfismo 5-HTTLPR influyen sobre la respuesta a estos fármacos y sobre la vulnerabilidad al estrés y a la depresión.</p>
-      </div>
-      <div class="gene-card">
-        <h4>COMT · MTHFR</h4>
-        <p>Afectan al metabolismo de neurotransmisores (dopamina, norepinefrina) y al ciclo del folato respectivamente. Relevantes para la respuesta a antidepresivos y para la evaluación de la carga inflamatoria sistémica asociada a la depresión resistente.</p>
-      </div>
-    </div>
+<div class="genes-grid">
+<div class="gene-card">
+<h4>CYP2D6</h4>
+<p>Metaboliza más del 25% de los fármacos psiquiátricos de uso común, incluyendo antidepresivos como fluoxetina, paroxetina, amitriptilina, nortriptilina y antipsicóticos como haloperidol y risperidona. Es uno de los genes más polimórficos del genoma humano.</p>
+</div>
+<div class="gene-card">
+<h4>CYP2C19</h4>
+<p>Clave para el metabolismo de escitalopram, citalopram, sertralina y diazepam, entre otros. Las variantes en este gen son especialmente prevalentes en poblaciones asiáticas y tienen un impacto directo sobre los niveles plasmáticos de estos fármacos.</p>
+</div>
+<div class="gene-card">
+<h4>SLC6A4</h4>
+<p>Codifica el transportador de serotonina, que es precisamente el objetivo de los antidepresivos ISRS. Variantes como el polimorfismo 5-HTTLPR influyen sobre la respuesta a estos fármacos y sobre la vulnerabilidad al estrés y a la depresión.</p>
+</div>
+<div class="gene-card">
+<h4>COMT · MTHFR</h4>
+<p>Afectan al metabolismo de neurotransmisores (dopamina, norepinefrina) y al ciclo del folato respectivamente. Relevantes para la respuesta a antidepresivos y para la evaluación de la carga inflamatoria sistémica asociada a la depresión resistente.</p>
+</div>
+</div>
 
-    <!-- SECCIÓN 4 -->
-    <h2 id="tipos">Los 4 tipos de <em>metabolizador</em></h2>
-    <p>Según el perfil genético en genes como CYP2D6 y CYP2C19, una persona puede clasificarse en cuatro categorías de metabolización:</p>
-    <ul>
-      <li><strong>Metabolizador lento (Poor Metabolizer):</strong> La enzima funciona muy poco o no funciona. El fármaco se acumula en sangre. La persona experimenta efectos secundarios intensos con dosis estándar o incluso bajas.</li>
-      <li><strong>Metabolizador intermedio:</strong> La enzima funciona por debajo de lo normal. Puede haber acumulación parcial o respuesta reducida según el fármaco.</li>
-      <li><strong>Metabolizador normal (Extensive Metabolizer):</strong> La enzima funciona dentro del rango esperado para el que se diseñaron las dosis estándar. Es el perfil asumido por defecto en la prescripción convencional.</li>
-      <li><strong>Metabolizador ultrarrápido (Ultrarapid Metabolizer):</strong> La enzima funciona en exceso. El fármaco se elimina tan rápido que nunca alcanza niveles terapéuticos. La persona puede parecer «resistente» al tratamiento.</li>
-    </ul>
+<h2 id="tipos">Los 4 tipos de <em>metabolizador</em></h2>
+<p>Según el perfil genético en genes como CYP2D6 y CYP2C19, una persona puede clasificarse en cuatro categorías de metabolización:</p>
+<ul>
+<li><strong>Metabolizador lento (Poor Metabolizer):</strong> La enzima funciona muy poco o no funciona. El fármaco se acumula en sangre. La persona experimenta efectos secundarios intensos con dosis estándar o incluso bajas.</li>
+<li><strong>Metabolizador intermedio:</strong> La enzima funciona por debajo de lo normal. Puede haber acumulación parcial o respuesta reducida según el fármaco.</li>
+<li><strong>Metabolizador normal (Extensive Metabolizer):</strong> La enzima funciona dentro del rango esperado para el que se diseñaron las dosis estándar. Es el perfil asumido por defecto en la prescripción convencional.</li>
+<li><strong>Metabolizador ultrarrápido (Ultrarapid Metabolizer):</strong> La enzima funciona en exceso. El fármaco se elimina tan rápido que nunca alcanza niveles terapéuticos. La persona puede parecer «resistente» al tratamiento.</li>
+</ul>
 
-    <div class="info-box">
-      <p><strong>Dato importante:</strong> Se estima que entre el 20 y el 30% de la población europea porta variantes genéticas que afectan significativamente al metabolismo de algún psicofármaco de uso habitual. No es una rareza genética — es parte de la variabilidad normal del genoma humano.</p>
-    </div>
+<div class="info-box">
+<p><strong>Dato importante:</strong> Se estima que entre el 20 y el 30% de la población europea porta variantes genéticas que afectan significativamente al metabolismo de algún psicofármaco de uso habitual. No es una rareza genética — es parte de la variabilidad normal del genoma humano.</p>
+</div>
 
-    <!-- SECCIÓN 5 -->
-    <h2 id="unimed">La perspectiva <em>UNIMED</em></h2>
-    <p>La farmacogenómica es una pieza poderosa. Pero en UNIMED no la usamos de forma aislada.</p>
-    <p>Un perfil PGx te dice cómo metabolizas un fármaco. No te dice por qué estás deprimido, qué papel juega el eje intestino-cerebro en tu cuadro, cómo está tu carga inflamatoria sistémica, qué significa tu historia transgeneracional en este momento de tu vida, ni qué interacciones existen entre todos tus tratamientos actuales.</p>
-    <p>El marco <strong>HoloMed 8D</strong> — las ocho dimensiones del sistema-persona — permite integrar la información farmacogenómica dentro de un análisis completo. No para añadir complejidad innecesaria, sino porque <strong>la depresión resistente raramente tiene una sola causa</strong>, y el fármaco incorrecto raramente es la única variable.</p>
-    <p>Lo que la farmacogenómica ofrece es precisión en una de las dimensiones más concretas y modificables del sistema: la bioquímica del metabolismo farmacológico.</p>
+<h2 id="unimed">La perspectiva <em>UNIMED</em></h2>
+<p>La farmacogenómica es una pieza poderosa. Pero en UNIMED no la usamos de forma aislada.</p>
+<p>Un perfil PGx te dice cómo metabolizas un fármaco. No te dice por qué estás deprimido, qué papel juega el eje intestino-cerebro en tu cuadro, cómo está tu carga inflamatoria sistémica, qué significa tu historia transgeneracional en este momento de tu vida, ni qué interacciones existen entre todos tus tratamientos actuales.</p>
+<p>El marco <strong>HoloMed 8D</strong> — las ocho dimensiones del sistema-persona — permite integrar la información farmacogenómica dentro de un análisis completo. No para añadir complejidad innecesaria, sino porque <strong>la depresión resistente raramente tiene una sola causa</strong>, y el fármaco incorrecto raramente es la única variable.</p>
+<p>Lo que la farmacogenómica ofrece es precisión en una de las dimensiones más concretas y modificables del sistema: la bioquímica del metabolismo farmacológico.</p>
 
-    <!-- SECCIÓN 6 -->
-    <h2 id="implicaciones">Qué puedes hacer <em>con esta información</em></h2>
-    <ol>
-      <li><strong>Solicitar un test PGx a tu psiquiatra o médico:</strong> En España hay laboratorios que ofrecen paneles farmacogenómicos. No todos los médicos están familiarizados con su interpretación, pero la demanda existe y va en aumento.</li>
-      <li><strong>Llevar los resultados a consulta con contexto:</strong> Un resultado PGx sin interpretación clínica integrativa puede ser malentendido o infrautilizado. El valor está en cómo se lee dentro del cuadro completo de la persona.</li>
-      <li><strong>Explorar si tu «resistencia» al tratamiento tiene base genética:</strong> Si llevas tiempo sin respuesta adecuada a fármacos psiquiátricos, la farmacogenómica puede ser la pieza que falta.</li>
-      <li><strong>Buscar asesoramiento especializado:</strong> UNIMED ofrece asesoramiento genético con interpretación clínica integrativa de resultados PGx, dentro del marco HoloMed 8D.</li>
-    </ol>
+<h2 id="implicaciones">Qué puedes hacer <em>con esta información</em></h2>
+<ol>
+<li><strong>Solicitar un test PGx a tu psiquiatra o médico:</strong> En España hay laboratorios que ofrecen paneles farmacogenómicos. No todos los médicos están familiarizados con su interpretación, pero la demanda existe y va en aumento.</li>
+<li><strong>Llevar los resultados a consulta con contexto:</strong> Un resultado PGx sin interpretación clínica integrativa puede ser malentendido o infrautilizado. El valor está en cómo se lee dentro del cuadro completo de la persona.</li>
+<li><strong>Explorar si tu «resistencia» al tratamiento tiene base genética:</strong> Si llevas tiempo sin respuesta adecuada a fármacos psiquiátricos, la farmacogenómica puede ser la pieza que falta.</li>
+<li><strong>Buscar asesoramiento especializado:</strong> UNIMED ofrece asesoramiento genético con interpretación clínica integrativa de resultados PGx, dentro del marco HoloMed 8D.</li>
+</ol>
 
-    <div class="revision-badge">🔬 Revisado bajo el paradigma HoloMedicina · UNIMED Consulting · 2026</div>
+<div class="revision-badge">🔬 Revisado bajo el paradigma HoloMedicina · UNIMED Consulting · 2026</div>
 
-    <!-- FAQ -->
-    <h2 id="faq">Preguntas <em>frecuentes</em></h2>
-    <div class="faq">
-      <details class="faq-item"><summary>¿Qué es la farmacogenómica?</summary><p>La farmacogenómica es la ciencia que estudia cómo los genes de cada persona afectan a la forma en que su cuerpo metaboliza, responde y tolera los medicamentos. Permite personalizar tratamientos farmacológicos en función del perfil genético individual.</p></details>
-      <details class="faq-item"><summary>¿Por qué los antidepresivos no funcionan igual en todos?</summary><p>Los antidepresivos se metabolizan principalmente a través de enzimas hepáticas codificadas por genes como CYP2D6 y CYP2C19. Variantes en estos genes determinan si una persona es metabolizadora lenta, normal, rápida o ultrarrápida, lo que cambia radicalmente los niveles del fármaco en sangre y por tanto su eficacia y toxicidad.</p></details>
-      <details class="faq-item"><summary>¿Se puede hacer un test genético para saber qué antidepresivo me va mejor?</summary><p>Sí. Los tests de farmacogenómica (PGx) analizan variantes en genes clave como CYP2D6, CYP2C19, CYP2C9 y SLC6A4, entre otros, para orientar la selección y dosificación de fármacos psiquiátricos. UNIMED Consulting ofrece asesoramiento genético con interpretación clínica integrativa de estos resultados.</p></details>
-      <details class="faq-item"><summary>¿La farmacogenómica reemplaza al psiquiatra?</summary><p>En absoluto. La farmacogenómica es una herramienta de precisión que complementa la evaluación clínica. El psiquiatra sigue siendo imprescindible para el diagnóstico, el seguimiento y las decisiones terapéuticas. La PGx simplemente añade una capa de información que reduce el componente de azar en la prescripción.</p></details>
-      <details class="faq-item"><summary>¿Está disponible la farmacogenómica en España?</summary><p>Sí, aunque su acceso a través del sistema público es todavía limitado. Existen laboratorios privados que ofrecen paneles PGx. La interpretación clínica de los resultados — que es donde reside el valor real — requiere profesionales especializados en medicina de precisión.</p></details>
-    </div>
+<h2 id="faq">Preguntas <em>frecuentes</em></h2>
+<div class="faq">
+<details class="faq-item"><summary>¿Qué es la farmacogenómica?</summary><p>La farmacogenómica es la ciencia que estudia cómo los genes de cada persona afectan a la forma en que su cuerpo metaboliza, responde y tolera los medicamentos. Permite personalizar tratamientos farmacológicos en función del perfil genético individual.</p></details>
+<details class="faq-item"><summary>¿Por qué los antidepresivos no funcionan igual en todos?</summary><p>Los antidepresivos se metabolizan principalmente a través de enzimas hepáticas codificadas por genes como CYP2D6 y CYP2C19. Variantes en estos genes determinan si una persona es metabolizadora lenta, normal, rápida o ultrarrápida, lo que cambia radicalmente los niveles del fármaco en sangre y por tanto su eficacia y toxicidad.</p></details>
+<details class="faq-item"><summary>¿Se puede hacer un test genético para saber qué antidepresivo me va mejor?</summary><p>Sí. Los tests de farmacogenómica (PGx) analizan variantes en genes clave como CYP2D6, CYP2C19, CYP2C9 y SLC6A4, entre otros, para orientar a la persona y a su equipo médico en la revisión de la selección y dosificación de fármacos psiquiátricos. UNIMED Consulting ofrece asesoramiento genético con interpretación clínica integrativa de estos resultados.</p></details>
+<details class="faq-item"><summary>¿La farmacogenómica reemplaza al psiquiatra?</summary><p>En absoluto. La farmacogenómica es una herramienta de precisión que complementa la evaluación clínica. El psiquiatra sigue siendo imprescindible para el diagnóstico, el seguimiento y las decisiones terapéuticas. La PGx simplemente añade una capa de información que reduce el componente de azar en la prescripción.</p></details>
+<details class="faq-item"><summary>¿Está disponible la farmacogenómica en España?</summary><p>Sí, aunque su acceso a través del sistema público es todavía limitado. Existen laboratorios privados que ofrecen paneles PGx. La interpretación clínica de los resultados — que es donde reside el valor real — requiere profesionales especializados en medicina de precisión.</p></details>
+</div>
 
-    <!-- REFERENCIAS -->
-    <h2>Referencias <em>científicas</em></h2>
-    <div class="ref-note">Este artículo está fundamentado en literatura científica revisada por pares. Entre las fuentes principales: Relling MV &amp; Evans WE (2015). Pharmacogenomics in the clinic. <em>Nature</em>, 526, 343–350. · Hicks JK et al. (2015). Clinical Pharmacogenomics Implementation Consortium guideline for CYP2D6 and CYP2C19 genotypes and dosing of tricyclic antidepressants. <em>Clinical Pharmacology &amp; Therapeutics</em>, 98(2). · CPIC Guidelines: cpicpgx.org · PharmGKB: pharmgkb.org</div>
+<h2>Referencias <em>científicas</em></h2>
+<div class="ref-note">Este artículo está fundamentado en literatura científica revisada por pares. Entre las fuentes principales: Relling MV &amp; Evans WE (2015). Pharmacogenomics in the clinic. <em>Nature</em>, 526, 343–350. · Hicks JK et al. (2015). Clinical Pharmacogenomics Implementation Consortium guideline for CYP2D6 and CYP2C19 genotypes and dosing of tricyclic antidepressants. <em>Clinical Pharmacology &amp; Therapeutics</em>, 98(2). · CPIC Guidelines: cpicpgx.org · PharmGKB: pharmgkb.org</div>
 
-  </article>
+</article>
 
-  <!-- SIDEBAR -->
-  <div class="sidebar reveal" data-d="1">
-    <div class="scard" style="background:var(--ink);border-color:rgba(255,255,255,.08)">
-      <h3 style="color:#fff">¿Tu tratamiento actual <em>no termina de funcionar?</em></h3>
-      <p style="color:rgba(255,255,255,.5)">Podemos analizar tu caso desde el marco HoloMed 8D, incluyendo tu perfil farmacogenómico.</p>
-      <a href="../servicios/asesoramiento-genetico.html" class="btn-p" style="width:100%;justify-content:center;box-sizing:border-box">Ver Asesoramiento Genético <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      <a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-g-inv" style="width:100%;justify-content:center;box-sizing:border-box;margin-top:.6rem">Cuéntanos tu caso</a>
-    </div>
-    <div class="scard">
-      <h3>Artículos <em>relacionados</em></h3>
-      <div>
-        <a href="que-es-la-holomedicina.html" class="art-link">
-          <div class="art-link-ico">🧬</div>
-          <div class="art-link-txt"><h5>¿Qué es la HoloMedicina?</h5><span>HoloMedicina · 8 min</span></div>
-        </a>
-      </div>
-    </div>
-    <div class="scard">
-      <h3>Servicio <em>relacionado</em></h3>
-      <p>El Asesoramiento Genético de UNIMED incluye interpretación clínica integrativa de tu perfil PGx dentro del marco HoloMed 8D.</p>
-      <a href="../servicios/asesoramiento-genetico.html" class="btn-g" style="width:100%;justify-content:center;box-sizing:border-box">Ver servicio →</a>
-    </div>
-    <div class="scard">
-      <h3>Tu asesor de salud <em>digital</em></h3>
-      <p>CAPS Digital disponible ahora, sin registro y sin coste.</p>
-      <a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-p" style="width:100%;justify-content:center;box-sizing:border-box;font-size:.78rem">Iniciar — gratis</a>
-    </div>
-  </div>
+<div class="sidebar reveal" data-d="1">
+<div class="scard" style="background:var(--ink);border-color:rgba(255,255,255,.08)">
+<h3 style="color:#fff">¿Tu tratamiento actual <em>no termina de funcionar?</em></h3>
+<p style="color:rgba(255,255,255,.5)">Podemos analizar tu caso desde el marco HoloMed 8D, incluyendo tu perfil farmacogenómico.</p>
+<a href="../servicios/asesoramiento-genetico.html" class="btn-p" style="width:100%;justify-content:center;box-sizing:border-box">Ver Asesoramiento Genético <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-g-inv" style="width:100%;justify-content:center;box-sizing:border-box;margin-top:.6rem">Cuéntanos tu caso</a>
+</div>
+<div class="scard">
+<h3>Artículos <em>relacionados</em></h3>
+<div>
+<a href="que-es-la-holomedicina.html" class="art-link">
+<div class="art-link-ico">🧬</div>
+<div class="art-link-txt"><h5>¿Qué es la HoloMedicina?</h5><span>HoloMedicina · 8 min</span></div>
+</a>
+</div>
+</div>
+<div class="scard">
+<h3>Servicio <em>relacionado</em></h3>
+<p>El Asesoramiento Genético de UNIMED incluye interpretación clínica integrativa de tu perfil PGx dentro del marco HoloMed 8D.</p>
+<a href="../servicios/asesoramiento-genetico.html" class="btn-g" style="width:100%;justify-content:center;box-sizing:border-box">Ver servicio →</a>
+</div>
+<div class="scard">
+<h3>Tu asesor de salud <em>digital</em></h3>
+<p>CAPS Digital disponible ahora, sin registro y sin coste.</p>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-p" style="width:100%;justify-content:center;box-sizing:border-box;font-size:.78rem">Iniciar — gratis</a>
+</div>
+</div>
 
 </div></div>
 
-<!-- CTA FINAL -->
 <div class="page-cta">
-  <h2>¿Tu perfil farmacogenómico<br/><em>podría cambiar tu tratamiento?</em></h2>
-  <p>Hablamos. Un análisis integrativo de tu situación, incluyendo tu perfil genético.</p>
-  <div class="cta-row">
-    <a href="../servicios/asesoramiento-genetico.html" class="btn-p-lg">Ver Asesoramiento Genético <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    <a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-g-inv">Cuéntanos tu caso primero</a>
-  </div>
+<h2>¿Tu perfil farmacogenómico<br/><em>podría orientar mejor tu tratamiento?</em></h2>
+<p>Hablamos. Un análisis integrativo de tu situación, incluyendo tu perfil genético.</p>
+<div class="cta-row">
+<a href="../servicios/asesoramiento-genetico.html" class="btn-p-lg">Ver Asesoramiento Genético <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-g-inv">Cuéntanos tu caso primero</a>
+</div>
 </div>
 
 <footer><div class="w">
-  <div class="fg">
-    <div>
-      <div class="flogo">UNI<em>MED</em> Consulting</div>
-      <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
-      <div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c8a1a6aea788bda6a1a5adace5aba7a6bbbda4bca1a6afe6adbb">[email&#160;protected]</a></span></div>
-    </div>
-    <div class="fc"><h5>Servicios</h5><ul>
-      <li><a href="../servicios/atencion-consultiva.html">Atención Consultiva</a></li>
-      <li><a href="../servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
-      <li><a href="../servicios/nutrigenomica.html">Nutrigenómica</a></li>
-      <li><a href="../servicios/neurocognitivo.html">Neurocognitivo</a></li>
-      <li><a href="../servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
-    </ul></div>
-    <div class="fc"><h5>Blog</h5><ul>
-      <li><a href="que-es-la-holomedicina.html">¿Qué es la HoloMedicina?</a></li>
-      <li><a href="farmacogenomica-antidepresivos.html">Farmacogenómica y antidepresivos</a></li>
-    </ul></div>
-    <div class="fc"><h5>Legal</h5><ul>
-      <li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
-      <li><a href="../aviso-legal.html">Aviso Legal</a></li>
-      <li>Política de Cookies</li>
-      <li><a href="../contacto.html">Contacto</a></li>
-    </ul></div>
-  </div>
-  <div class="fbtm">
-    <p>© 2025 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
-    <p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
-  </div>
+<div class="fg">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
+<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ hola@unimed-consulting.es</span></div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul>
+<li><a href="../servicios/atencion-consultiva.html">Atención Consultiva</a></li>
+<li><a href="../servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+<li><a href="../servicios/nutrigenomica.html">Nutrigenómica</a></li>
+<li><a href="../servicios/neurocognitivo.html">Neurocognitivo</a></li>
+<li><a href="../servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+</ul></div>
+<div class="fc"><h5>Blog</h5><ul>
+<li><a href="que-es-la-holomedicina.html">¿Qué es la HoloMedicina?</a></li>
+<li><a href="farmacogenomica-antidepresivos.html">Farmacogenómica y antidepresivos</a></li>
+</ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="../aviso-legal.html">Aviso Legal</a></li>
+<li>Política de Cookies</li>
+<li><a href="../contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+</div>
 </div></footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-co
+</body>
+</html>
