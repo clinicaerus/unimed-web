@@ -1,323 +1,299 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog · HoloMedicina · Medicina de Precisión · UNIMED Consulting</title>
-  <meta name="description" content="Artículos sobre medicina personalizada de precisión, HoloMedicina, farmacogenómica y salud desde el paradigma de la complejidad. Samuel Carmona Aguirre, MSc · UNIMED Consulting Barcelona."/>
-  <link rel="canonical" href="https://www.unimed-consulting.es/blog/"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"Blog UNIMED · HoloMedicina","url":"https://www.unimed-consulting.es/blog/","publisher":{"@type":"Organization","name":"UNIMED Consulting","url":"https://www.unimed-consulting.es"},"author":{"@type":"Person","name":"Samuel Carmona Aguirre","jobTitle":"Científico Biomédico Clínico"}}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <style>
-    :root{--rose:#e8356d;--rose-s:#f07098;--rose-xs:rgba(232,53,109,.07);--rose-gl:rgba(232,53,109,.14);--bg:#ffffff;--bg2:#f8f7f9;--bg3:#f2eff5;--ink:#1a0f24;--ink2:#3a2d48;--ink3:#7a6880;--line:rgba(0,0,0,.08);--liner:rgba(232,53,109,.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--max:1140px;--r:8px;--rxl:24px;--ease:cubic-bezier(.22,1,.36,1)}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
-    a{color:inherit;text-decoration:none}
-    .w{max-width:var(--max);margin:0 auto;padding:0 2rem}
-    nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .navi{display:flex;align-items:center;justify-content:space-between;height:70px}
-    .logo{font-family:var(--serif);font-size:1.5rem;font-weight:500;color:var(--ink)}
-    .logo em{font-style:italic;color:var(--rose)}
-    .nl{display:flex;align-items:center;gap:2rem;list-style:none}
-    .nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
-    .nl a:hover{color:var(--ink)}
-    .nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
-    .nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
-    /* HERO */
-    .bhero{background:var(--ink);padding:5rem 0 4rem;position:relative;overflow:hidden}
-    .bhero::before{content:'';position:absolute;right:-80px;top:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,53,109,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
-    .ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:.9rem}
-    .ey::before{content:'';width:16px;height:1.5px;background:var(--rose-s)}
-    .bhero h1{font-family:var(--serif);font-size:clamp(2.2rem,5vw,4rem);font-weight:300;line-height:1.1;color:#fff;max-width:700px}
-    .bhero h1 em{font-style:italic;color:var(--rose-s)}
-    .bhero p{font-size:.9rem;color:rgba(255,255,255,.45);margin-top:1.2rem;max-width:560px;line-height:1.75}
-    /* FILTROS */
-    .filtros{background:var(--bg2);border-bottom:1px solid var(--line);padding:1.2rem 0}
-    .ftags{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
-    .ftag{font-size:.72rem;font-weight:500;letter-spacing:.08em;padding:.35rem .9rem;border-radius:99px;border:1.5px solid var(--line);color:var(--ink3);cursor:pointer;transition:all .2s}
-    .ftag:hover,.ftag.active{border-color:var(--rose);color:var(--rose);background:var(--rose-xs)}
-    /* GRID */
-    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding:4rem 0 6rem}
-    .bcard{background:var(--bg);border:1px solid var(--line);border-radius:var(--rxl);overflow:hidden;transition:all .3s var(--ease);display:flex;flex-direction:column}
-    .bcard:hover{border-color:var(--liner);box-shadow:0 8px 32px rgba(232,53,109,.08);transform:translateY(-3px)}
-    .bcard-img{background:var(--ink);height:180px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
-    .bcard-img .bcard-ico{font-size:3rem;opacity:.3}
-    .bcard-img .bcard-carril{position:absolute;top:.8rem;left:.8rem;font-size:.6rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;padding:.25rem .65rem;border-radius:99px}
-    .carril-a{background:rgba(220,50,50,.15);color:#ff8080}
-    .carril-b{background:rgba(200,150,50,.15);color:#ffc060}
-    .carril-c{background:rgba(50,180,100,.15);color:#60d090}
-    .bcard-body{padding:1.6rem;flex:1;display:flex;flex-direction:column}
-    .bcard-meta{display:flex;align-items:center;gap:.6rem;font-size:.7rem;color:var(--ink3);margin-bottom:.8rem}
-    .bcard-cluster{font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:var(--rose-xs);color:var(--rose);padding:.2rem .6rem;border-radius:99px}
-    .bcard h2{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink);line-height:1.35;margin-bottom:.7rem}
-    .bcard h2 em{font-style:italic;color:var(--rose)}
-    .bcard p{font-size:.82rem;color:var(--ink3);line-height:1.65;flex:1;margin-bottom:1.2rem}
-    .bcard-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
-    .bcard-author{display:flex;align-items:center;gap:.5rem;font-size:.72rem;color:var(--ink3)}
-    .bcard-author span{width:24px;height:24px;border-radius:50%;background:var(--rose-xs);border:1.5px solid var(--liner);display:flex;align-items:center;justify-content:center;font-size:.6rem;color:var(--rose)}
-    .bcard-read{font-size:.72rem;color:var(--rose);font-weight:500;display:flex;align-items:center;gap:.3rem}
-    /* DESTACADO (primer artículo) */
-    .bcard.featured{grid-column:1/-1;flex-direction:row}
-    .bcard.featured .bcard-img{height:auto;min-height:260px;width:420px;flex-shrink:0}
-    .bcard.featured .bcard-body{padding:2.2rem 2.4rem}
-    .bcard.featured h2{font-size:1.7rem;margin-bottom:1rem}
-    .bcard.featured p{font-size:.88rem;margin-bottom:1.5rem}
-    /* PRÓXIMAMENTE */
-    .proxima{border-style:dashed;opacity:.6}
-    .proxima:hover{transform:none;box-shadow:none}
-    .proxima .bcard-img{background:var(--bg3)}
-    /* SIDEBAR NEWSLETTER */
-    .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;padding:4rem 0 6rem;align-items:start}
-    .newsletter-box{position:sticky;top:6rem;background:var(--ink);border-radius:var(--rxl);padding:2rem;}
-    .newsletter-box h3{font-family:var(--serif);font-size:1.3rem;font-weight:300;color:#fff;margin-bottom:.6rem;line-height:1.3}
-    .newsletter-box h3 em{font-style:italic;color:var(--rose-s)}
-    .newsletter-box p{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.7;margin-bottom:1.4rem}
-    .nl-input{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:.75rem 1rem;font-size:.82rem;color:#fff;font-family:var(--sans);margin-bottom:.7rem;outline:none}
-    .nl-input::placeholder{color:rgba(255,255,255,.3)}
-    .nl-btn{width:100%;background:var(--rose);color:#fff;border:none;border-radius:var(--r);padding:.82rem;font-size:.82rem;font-weight:500;cursor:pointer;font-family:var(--sans);transition:background .2s}
-    .nl-btn:hover{background:#c82c5c}
-    .nl-note{font-size:.67rem;color:rgba(255,255,255,.25);margin-top:.6rem;text-align:center}
-    .caps-box{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:1.6rem;margin-top:1.2rem}
-    .caps-box h4{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink);margin-bottom:.4rem}
-    .caps-box h4 em{font-style:italic;color:var(--rose)}
-    .caps-box p{font-size:.78rem;color:var(--ink3);line-height:1.6;margin-bottom:1rem}
-    .caps-btn{display:block;text-align:center;background:var(--rose);color:#fff;border-radius:var(--r);padding:.72rem;font-size:.78rem;font-weight:500;transition:background .2s}
-    .caps-btn:hover{background:#c82c5c}
-    /* CTA FINAL */
-    .blog-cta{background:var(--bg2);border-top:1px solid var(--line);padding:4rem 0;text-align:center}
-    .blog-cta h2{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:300;color:var(--ink);margin-bottom:.8rem}
-    .blog-cta h2 em{font-style:italic;color:var(--rose)}
-    .blog-cta p{font-size:.88rem;color:var(--ink3);max-width:420px;margin:0 auto 1.8rem;line-height:1.75}
-    .btn-p-lg{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.9rem;font-weight:500;padding:.95rem 2rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease)}
-    .btn-p-lg:hover{background:#c82c5c;transform:translateY(-2px)}
-    /* FOOTER */
-    footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
-    .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
-    .flogo{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:#fff;margin-bottom:.6rem}
-    .flogo em{font-style:italic;color:var(--rose-s)}
-    .fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.4rem 0 1.2rem}
-    .fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
-    .fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
-    .fc ul{list-style:none}
-    .fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem}
-    .fc li a{color:rgba(255,255,255,.45)}
-    .fc li a:hover{color:var(--rose-s)}
-    .fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
-    .fbtm em{color:var(--rose-s);font-style:normal}
-    .reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
-    .reveal.in{opacity:1;transform:translateY(0)}
-    .reveal[data-d="1"]{transition-delay:.08s}
-    .reveal[data-d="2"]{transition-delay:.16s}
-    @media(max-width:1024px){.blog-grid{grid-template-columns:1fr 1fr}.bcard.featured{flex-direction:column}.bcard.featured .bcard-img{width:100%;min-height:200px}.blog-layout{grid-template-columns:1fr}}
-    @media(max-width:768px){.nl{display:none}.blog-grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
-  </style>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blog · HoloMedicina · Medicina de Precisión · UNIMED Consulting</title>
+<meta name="description" content="Artículos sobre medicina personalizada de precisión, HoloMedicina, farmacogenómica y salud desde el paradigma de la complejidad. Samuel Carmona Aguirre, MSc · UNIMED Consulting Barcelona."/>
+<link rel="canonical" href="https://www.unimed-consulting.es/blog/"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"Blog UNIMED · HoloMedicina","url":"https://www.unimed-consulting.es/blog/","publisher":{"@type":"Organization","name":"UNIMED Consulting","url":"https://www.unimed-consulting.es"},"author":{"@type":"Person","name":"Samuel Carmona Aguirre","jobTitle":"Científico Biomédico Clínico"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--rose:#e8356d;--rose-s:#f07098;--rose-xs:rgba(232,53,109,.07);--rose-gl:rgba(232,53,109,.14);--bg:#ffffff;--bg2:#f8f7f9;--bg3:#f2eff5;--ink:#1a0f24;--ink2:#3a2d48;--ink3:#7a6880;--line:rgba(0,0,0,.08);--liner:rgba(232,53,109,.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--max:1140px;--r:8px;--rxl:24px;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--max);margin:0 auto;padding:0 2rem}
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:var(--serif);font-size:1.5rem;font-weight:500;color:var(--ink)}
+.logo em{font-style:italic;color:var(--rose)}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+.bhero{background:var(--ink);padding:5rem 0 4rem;position:relative;overflow:hidden}
+.bhero::before{content:'';position:absolute;right:-80px;top:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,53,109,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
+.ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:.9rem}
+.ey::before{content:'';width:16px;height:1.5px;background:var(--rose-s)}
+.bhero h1{font-family:var(--serif);font-size:clamp(2.2rem,5vw,4rem);font-weight:300;line-height:1.1;color:#fff;max-width:700px}
+.bhero h1 em{font-style:italic;color:var(--rose-s)}
+.bhero p{font-size:.9rem;color:rgba(255,255,255,.45);margin-top:1.2rem;max-width:560px;line-height:1.75}
+.filtros{background:var(--bg2);border-bottom:1px solid var(--line);padding:1.2rem 0}
+.ftags{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.ftag{font-size:.72rem;font-weight:500;letter-spacing:.08em;padding:.35rem .9rem;border-radius:99px;border:1.5px solid var(--line);color:var(--ink3);cursor:pointer;transition:all .2s}
+.ftag:hover,.ftag.active{border-color:var(--rose);color:var(--rose);background:var(--rose-xs)}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding:4rem 0 6rem}
+.bcard{background:var(--bg);border:1px solid var(--line);border-radius:var(--rxl);overflow:hidden;transition:all .3s var(--ease);display:flex;flex-direction:column}
+.bcard:hover{border-color:var(--liner);box-shadow:0 8px 32px rgba(232,53,109,.08);transform:translateY(-3px)}
+.bcard-img{background:var(--ink);height:180px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.bcard-img .bcard-ico{font-size:3rem;opacity:.3}
+.bcard-img .bcard-carril{position:absolute;top:.8rem;left:.8rem;font-size:.6rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;padding:.25rem .65rem;border-radius:99px}
+.carril-a{background:rgba(220,50,50,.15);color:#ff8080}
+.carril-b{background:rgba(200,150,50,.15);color:#ffc060}
+.carril-c{background:rgba(50,180,100,.15);color:#60d090}
+.bcard-body{padding:1.6rem;flex:1;display:flex;flex-direction:column}
+.bcard-meta{display:flex;align-items:center;gap:.6rem;font-size:.7rem;color:var(--ink3);margin-bottom:.8rem}
+.bcard-cluster{font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:var(--rose-xs);color:var(--rose);padding:.2rem .6rem;border-radius:99px}
+.bcard h2{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink);line-height:1.35;margin-bottom:.7rem}
+.bcard h2 em{font-style:italic;color:var(--rose)}
+.bcard p{font-size:.82rem;color:var(--ink3);line-height:1.65;flex:1;margin-bottom:1.2rem}
+.bcard-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
+.bcard-author{display:flex;align-items:center;gap:.5rem;font-size:.72rem;color:var(--ink3)}
+.bcard-author span{width:24px;height:24px;border-radius:50%;background:var(--rose-xs);border:1.5px solid var(--liner);display:flex;align-items:center;justify-content:center;font-size:.6rem;color:var(--rose)}
+.bcard-read{font-size:.72rem;color:var(--rose);font-weight:500;display:flex;align-items:center;gap:.3rem}
+.bcard.featured{grid-column:1/-1;flex-direction:row}
+.bcard.featured .bcard-img{height:auto;min-height:260px;width:420px;flex-shrink:0}
+.bcard.featured .bcard-body{padding:2.2rem 2.4rem}
+.bcard.featured h2{font-size:1.7rem;margin-bottom:1rem}
+.bcard.featured p{font-size:.88rem;margin-bottom:1.5rem}
+.proxima{border-style:dashed;opacity:.6}
+.proxima:hover{transform:none;box-shadow:none}
+.proxima .bcard-img{background:var(--bg3)}
+.blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;padding:4rem 0 6rem;align-items:start}
+.newsletter-box{position:sticky;top:6rem;background:var(--ink);border-radius:var(--rxl);padding:2rem}
+.newsletter-box h3{font-family:var(--serif);font-size:1.3rem;font-weight:300;color:#fff;margin-bottom:.6rem;line-height:1.3}
+.newsletter-box h3 em{font-style:italic;color:var(--rose-s)}
+.newsletter-box p{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.7;margin-bottom:1.4rem}
+.nl-input{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:.75rem 1rem;font-size:.82rem;color:#fff;font-family:var(--sans);margin-bottom:.7rem;outline:none}
+.nl-input::placeholder{color:rgba(255,255,255,.3)}
+.nl-btn{width:100%;background:var(--rose);color:#fff;border:none;border-radius:var(--r);padding:.82rem;font-size:.82rem;font-weight:500;cursor:pointer;font-family:var(--sans);transition:background .2s}
+.nl-btn:hover{background:#c82c5c}
+.nl-note{font-size:.67rem;color:rgba(255,255,255,.25);margin-top:.6rem;text-align:center}
+.caps-box{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:1.6rem;margin-top:1.2rem}
+.caps-box h4{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink);margin-bottom:.4rem}
+.caps-box h4 em{font-style:italic;color:var(--rose)}
+.caps-box p{font-size:.78rem;color:var(--ink3);line-height:1.6;margin-bottom:1rem}
+.caps-btn{display:block;text-align:center;background:var(--rose);color:#fff;border-radius:var(--r);padding:.72rem;font-size:.78rem;font-weight:500;transition:background .2s}
+.caps-btn:hover{background:#c82c5c}
+.blog-cta{background:var(--bg2);border-top:1px solid var(--line);padding:4rem 0;text-align:center}
+.blog-cta h2{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:300;color:var(--ink);margin-bottom:.8rem}
+.blog-cta h2 em{font-style:italic;color:var(--rose)}
+.blog-cta p{font-size:.88rem;color:var(--ink3);max-width:420px;margin:0 auto 1.8rem;line-height:1.75}
+.btn-p-lg{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.9rem;font-weight:500;padding:.95rem 2rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease)}
+.btn-p-lg:hover{background:#c82c5c;transform:translateY(-2px)}
+footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:#fff;margin-bottom:.6rem}
+.flogo em{font-style:italic;color:var(--rose-s)}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.4rem 0 1.2rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem}
+.fc li a{color:rgba(255,255,255,.45)}
+.fc li a:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+.reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal[data-d="1"]{transition-delay:.08s}
+.reveal[data-d="2"]{transition-delay:.16s}
+@media(max-width:1024px){.blog-grid{grid-template-columns:1fr 1fr}.bcard.featured{flex-direction:column}.bcard.featured .bcard-img{width:100%;min-height:200px}.blog-layout{grid-template-columns:1fr}}
+@media(max-width:768px){.nl{display:none}.blog-grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
+</style>
 </head>
 <body>
 
 <nav><div class="w navi">
-  <a href="../index.html" style="font-family:\'Cormorant Garamond\',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
-  <ul class="nl">
-    <li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
-    <li><a href="../index.html#servicios">Servicios</a></li>
-    <li><a href="../index.html#pro">Profesionales</a></li>
-    <li><a href="../index.html#recursos">Recursos</a></li>
-    <li><a href="index.html" style="color:var(--rose)">Blog</a></li>
-    <li><a href="../contacto.html">Contacto</a></li>
-    <a href="../contacto.html" class="nbtn">Pide Cita</a>
-  </ul>
+<a href="../index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="../index.html#servicios">Servicios</a></li>
+<li><a href="../index.html#pro">Profesionales</a></li>
+<li><a href="../recursos.html">Recursos</a></li>
+<li><a href="index.html" style="color:var(--rose)">Blog</a></li>
+<li><a href="../contacto.html">Contacto</a></li>
+<a href="../contacto.html" class="nbtn">Pide Cita</a>
+</ul>
 </div></nav>
 
-<!-- HERO -->
 <div class="bhero">
-  <div class="w">
-    <div class="ey">Blog · HoloMedicina · Medicina de Precisión</div>
-    <h1>Conocimiento que el sistema<br/>sanitario no tiene <em>tiempo de darte.</em></h1>
-    <p>Artículos sobre medicina personalizada, farmacogenómica, nutrigenómica y salud desde el paradigma de la complejidad. Por Samuel Carmona Aguirre, MSc · Científico Biomédico Clínico.</p>
-  </div>
+<div class="w">
+<div class="ey">Blog · HoloMedicina · Medicina de Precisión</div>
+<h1>Conocimiento que el sistema<br/>sanitario no tiene <em>tiempo de darte.</em></h1>
+<p>Artículos sobre medicina personalizada, farmacogenómica, nutrigenómica y salud desde el paradigma de la complejidad. Por Samuel Carmona Aguirre, MSc · Científico Biomédico Clínico.</p>
+</div>
 </div>
 
-<!-- FILTROS -->
 <div class="filtros">
-  <div class="w">
-    <div class="ftags">
-      <span class="ftag active">Todos</span>
-      <span class="ftag">HoloMedicina</span>
-      <span class="ftag">Farmacogenómica</span>
-      <span class="ftag">Nutrigenómica</span>
-      <span class="ftag">Neurocognitivo</span>
-      <span class="ftag">Enfermedades Crónicas</span>
-      <span class="ftag">Medicina de Precisión</span>
-    </div>
-  </div>
+<div class="w">
+<div class="ftags">
+<span class="ftag active">Todos</span>
+<span class="ftag">HoloMedicina</span>
+<span class="ftag">Farmacogenómica</span>
+<span class="ftag">Nutrigenómica</span>
+<span class="ftag">Neurocognitivo</span>
+<span class="ftag">Enfermedades Crónicas</span>
+<span class="ftag">Medicina de Precisión</span>
+</div>
+</div>
 </div>
 
-<!-- GRID + SIDEBAR -->
 <div class="w"><div class="blog-layout">
+<div>
+<div class="blog-grid">
 
-  <!-- ARTÍCULOS -->
-  <div>
-    <div class="blog-grid">
+<a href="que-es-la-holomedicina.html" class="bcard featured reveal">
+<div class="bcard-img">
+<div class="bcard-ico">🧬</div>
+<span class="bcard-carril carril-b">Carril B · Constructor de visión</span>
+</div>
+<div class="bcard-body">
+<div class="bcard-meta">
+<span class="bcard-cluster">HoloMedicina</span>
+<span>· 8 min lectura</span>
+<span>· Publicado</span>
+</div>
+<h2>¿Qué es la HoloMedicina?<br/><em>El paradigma que trata a la persona, no al diagnóstico.</em></h2>
+<p>La medicina convencional divide al ser humano en especialidades. HoloMedicina lo contempla como sistema complejo vivo — biológico, cognitivo, emocional, social y transgeneracional. Este artículo explica por qué esa diferencia lo cambia todo.</p>
+<div class="bcard-foot">
+<div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
+<span class="bcard-read">Leer artículo →</span>
+</div>
+</div>
+</a>
 
-      <!-- ARTÍCULO 1 — DESTACADO (publicado) -->
-      <a href="que-es-la-holomedicina.html" class="bcard featured reveal">
-        <div class="bcard-img">
-          <div class="bcard-ico">🧬</div>
-          <span class="bcard-carril carril-b">Carril B · Constructor de visión</span>
-        </div>
-        <div class="bcard-body">
-          <div class="bcard-meta">
-            <span class="bcard-cluster">HoloMedicina</span>
-            <span>· 8 min lectura</span>
-            <span>· Publicado</span>
-          </div>
-          <h2>¿Qué es la HoloMedicina?<br/><em>El paradigma que trata a la persona, no al diagnóstico.</em></h2>
-          <p>La medicina convencional divide al ser humano en especialidades. HoloMedicina lo contempla como sistema complejo vivo — biológico, cognitivo, emocional, social y transgeneracional. Este artículo explica por qué esa diferencia lo cambia todo.</p>
-          <div class="bcard-foot">
-            <div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
-            <span class="bcard-read">Leer artículo →</span>
-          </div>
-        </div>
-      </a>
+<a href="farmacogenomica-antidepresivos.html" class="bcard reveal" data-d="1">
+<div class="bcard-img">
+<div class="bcard-ico">💊</div>
+<span class="bcard-carril carril-a">Carril A · Despertador de dolor</span>
+</div>
+<div class="bcard-body">
+<div class="bcard-meta">
+<span class="bcard-cluster">Farmacogenómica</span>
+<span>· 7 min lectura</span>
+<span>· Publicado</span>
+</div>
+<h2>Por qué el mismo antidepresivo <em>funciona para unos y genera reacciones adversas en otros.</em></h2>
+<p>La farmacogenómica explica algo que tu psiquiatra sabe pero el sistema no le da tiempo de aplicar: tu genoma determina cómo metabolizas los fármacos. Lo que para uno es la dosis estándar, para ti puede ser insuficiente o potencialmente tóxica.</p>
+<div class="bcard-foot">
+<div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
+<span class="bcard-read">Leer artículo →</span>
+</div>
+</div>
+</a>
 
-      <!-- ARTÍCULO 2 -->
-      <a href="farmacogenomica-antidepresivos.html" class="bcard reveal" data-d="1">
-        <div class="bcard-img">
-          <div class="bcard-ico">💊</div>
-          <span class="bcard-carril carril-a">Carril A · Despertador de dolor</span>
-        </div>
-        <div class="bcard-body">
-          <div class="bcard-meta">
-            <span class="bcard-cluster">Farmacogenómica</span>
-            <span>· 7 min lectura</span>
-            <span>· Publicado</span>
-          </div>
-          <h2>Por qué el mismo antidepresivo <em>cura a unos y destruye a otros.</em></h2>
-          <p>La farmacogenómica explica algo que tu psiquiatra sabe pero el sistema no le da tiempo de aplicar: tu genoma determina cómo metabolizas los fármacos. Lo que para uno es la dosis correcta, para ti puede ser demasiado o nada.</p>
-          <div class="bcard-foot">
-            <div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
-            <span class="bcard-read">Leer artículo →</span>
-          </div>
-        </div>
-      </a>
+<div class="bcard proxima reveal" data-d="2">
+<div class="bcard-img">
+<div class="bcard-ico">🥗</div>
+<span class="bcard-carril carril-a">Próximamente</span>
+</div>
+<div class="bcard-body">
+<div class="bcard-meta"><span class="bcard-cluster">Nutrigenómica</span></div>
+<h2>Llevas años con la dieta perfecta y no funciona. <em>Puede que tu genoma sepa por qué.</em></h2>
+<p>Lo que comes importa. Pero cómo tus genes procesan lo que comes importa igual o más. La nutrigenómica personaliza la nutrición al nivel del ADN.</p>
+<div class="bcard-foot">
+<div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
+<span class="bcard-read" style="color:var(--ink3)">Próximamente</span>
+</div>
+</div>
+</div>
 
-      <!-- PRÓXIMOS (placeholders) -->
-      <div class="bcard proxima reveal" data-d="2">
-        <div class="bcard-img">
-          <div class="bcard-ico">🥗</div>
-          <span class="bcard-carril carril-a">Próximamente</span>
-        </div>
-        <div class="bcard-body">
-          <div class="bcard-meta">
-            <span class="bcard-cluster">Nutrigenómica</span>
-          </div>
-          <h2>Llevas años con la dieta perfecta y no funciona. <em>Puede que tu genoma sepa por qué.</em></h2>
-          <p>Lo que comes importa. Pero cómo tus genes procesan lo que comes importa igual o más. La nutrigenómica personaliza la nutrición al nivel del ADN.</p>
-          <div class="bcard-foot">
-            <div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
-            <span class="bcard-read" style="color:var(--ink3)">Próximamente</span>
-          </div>
-        </div>
-      </div>
+<div class="bcard proxima reveal">
+<div class="bcard-img">
+<div class="bcard-ico">🧠</div>
+<span class="bcard-carril carril-a">Próximamente</span>
+</div>
+<div class="bcard-body">
+<div class="bcard-meta"><span class="bcard-cluster">Neurocognitivo</span></div>
+<h2>TDAH en adultos: lo que la neurología detecta y <em>lo que la medicina de precisión puede añadir.</em></h2>
+<p>El diagnóstico de TDAH en adultos es solo el inicio. La farmacogenómica, la nutrigenómica y el análisis del eje intestino-cerebro amplían el mapa.</p>
+<div class="bcard-foot">
+<div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
+<span class="bcard-read" style="color:var(--ink3)">Próximamente</span>
+</div>
+</div>
+</div>
 
-      <div class="bcard proxima reveal">
-        <div class="bcard-img">
-          <div class="bcard-ico">🧠</div>
-          <span class="bcard-carril carril-a">Próximamente</span>
-        </div>
-        <div class="bcard-body">
-          <div class="bcard-meta">
-            <span class="bcard-cluster">Neurocognitivo</span>
-          </div>
-          <h2>TDAH en adultos: lo que la neurología detecta y <em>lo que la medicina de precisión puede añadir.</em></h2>
-          <p>El diagnóstico de TDAH en adultos es solo el inicio. La farmacogenómica, la nutrigenómica y el análisis del eje intestino-cerebro amplían el mapa.</p>
-          <div class="bcard-foot">
-            <div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
-            <span class="bcard-read" style="color:var(--ink3)">Próximamente</span>
-          </div>
-        </div>
-      </div>
+<div class="bcard proxima reveal" data-d="1">
+<div class="bcard-img">
+<div class="bcard-ico">🛡️</div>
+<span class="bcard-carril carril-c">Próximamente</span>
+</div>
+<div class="bcard-body">
+<div class="bcard-meta"><span class="bcard-cluster">Enfermedades Crónicas</span></div>
+<h2>Fibromialgia: por qué no es «psicológica» y <em>qué dice la ciencia real sobre su substrato biológico.</em></h2>
+<p>La fibromialgia tiene mecanismos biológicos documentados. La sensibilización central, la neuroinflamación y el microbioma son parte de la historia que el sistema no termina de leer.</p>
+<div class="bcard-foot">
+<div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
+<span class="bcard-read" style="color:var(--ink3)">Próximamente</span>
+</div>
+</div>
+</div>
 
-      <div class="bcard proxima reveal" data-d="1">
-        <div class="bcard-img">
-          <div class="bcard-ico">🛡️</div>
-          <span class="bcard-carril carril-c">Próximamente</span>
-        </div>
-        <div class="bcard-body">
-          <div class="bcard-meta">
-            <span class="bcard-cluster">Enfermedades Crónicas</span>
-          </div>
-          <h2>Fibromialgia: por qué no es «psicológica» y <em>qué dice la ciencia real sobre su substrato biológico.</em></h2>
-          <p>La fibromialgia tiene mecanismos biológicos documentados. La sensibilización central, la neuroinflamación y el microbioma son parte de la historia que el sistema no termina de leer.</p>
-          <div class="bcard-foot">
-            <div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
-            <span class="bcard-read" style="color:var(--ink3)">Próximamente</span>
-          </div>
-        </div>
-      </div>
+</div>
+</div>
 
-    </div>
-  </div>
-
-  <!-- SIDEBAR -->
-  <div>
-    <div class="newsletter-box">
-      <h3>Conocimiento que <em>el sistema no te da.</em></h3>
-      <p>Una vez a la semana. Un concepto de medicina de precisión. Una perspectiva holónica. Sin spam.</p>
-      <input type="email" class="nl-input" placeholder="tu@email.com"/>
-      <button class="nl-btn">Suscribirme — es gratis</button>
-      <p class="nl-note">Sin spam · Baja cuando quieras · RGPD</p>
-    </div>
-    <div class="caps-box">
-      <h4>¿Tienes una duda ahora?<br/><em>CAPS Digital</em> te responde.</h4>
-      <p>Tu asesor de salud digital disponible 24/7. Sin registro y sin coste.</p>
-      <a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="caps-btn">Iniciar — gratis →</a>
-    </div>
-  </div>
+<div>
+<div class="newsletter-box">
+<h3>Conocimiento que <em>el sistema no te da.</em></h3>
+<p>Una vez a la semana. Un concepto de medicina de precisión. Una perspectiva holónica. Sin spam.</p>
+<input type="email" class="nl-input" placeholder="tu@email.com"/>
+<button class="nl-btn">Suscribirme — es gratis</button>
+<p class="nl-note">Sin spam · Baja cuando quieras · RGPD</p>
+</div>
+<div class="caps-box">
+<h4>¿Tienes una duda ahora?<br/><em>CAPS Digital</em> te responde.</h4>
+<p>Tu asesor de salud digital disponible 24/7. Sin registro y sin coste.</p>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="caps-btn">Iniciar — gratis →</a>
+</div>
+</div>
 
 </div></div>
 
-<!-- CTA -->
 <div class="blog-cta">
-  <div class="w">
-    <h2>¿Lo que lees aquí resuena<br/>con <em>lo que vives?</em></h2>
-    <p>Hablamos. Sin compromiso. Una primera conversación para ver si UNIMED puede ayudarte.</p>
-    <a href="../contacto.html" class="btn-p-lg">Pide tu cita <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-  </div>
+<div class="w">
+<h2>¿Lo que lees aquí resuena<br/>con <em>lo que vives?</em></h2>
+<p>Hablamos. Sin compromiso. Una primera conversación para ver si UNIMED puede ayudarte.</p>
+<a href="../contacto.html" class="btn-p-lg">Pide tu cita <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
 </div>
 
 <footer><div class="w">
-  <div class="fg">
-    <div>
-      <div class="flogo">UNI<em>MED</em> Consulting</div>
-      <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
-      <div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c05020a032c190205010908410f03021f19001805020b42091f">[email&#160;protected]</a></span></div>
-    </div>
-    <div class="fc"><h5>Servicios</h5><ul>
-      <li><a href="../servicios/atencion-consultiva.html">Atención Consultiva</a></li>
-      <li><a href="../servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
-      <li><a href="../servicios/nutrigenomica.html">Nutrigenómica</a></li>
-      <li><a href="../servicios/neurocognitivo.html">Neurocognitivo</a></li>
-      <li><a href="../servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
-    </ul></div>
-    <div class="fc"><h5>Blog</h5><ul>
-      <li><a href="que-es-la-holomedicina.html">¿Qué es la HoloMedicina?</a></li>
-      <li><a href="farmacogenomica-antidepresivos.html">Farmacogenómica y antidepresivos</a></li>
-    </ul></div>
-    <div class="fc"><h5>Legal</h5><ul>
-      <li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
-      <li><a href="../aviso-legal.html">Aviso Legal</a></li>
-      <li>Política de Cookies</li>
-      <li><a href="../contacto.html">Contacto</a></li>
-    </ul></div>
-  </div>
-  <div class="fbtm">
-    <p>© 2025 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
-    <p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
-  </div>
+<div class="fg">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
+<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ hola@unimed-consulting.es</span></div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul>
+<li><a href="../servicios/atencion-consultiva.html">Atención Consultiva</a></li>
+<li><a href="../servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+<li><a href="../servicios/nutrigenomica.html">Nutrigenómica</a></li>
+<li><a href="../servicios/neurocognitivo.html">Neurocognitivo</a></li>
+<li><a href="../servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+</ul></div>
+<div class="fc"><h5>Blog</h5><ul>
+<li><a href="que-es-la-holomedicina.html">¿Qué es la HoloMedicina?</a></li>
+<li><a href="farmacogenomica-antidepresivos.html">Farmacogenómica y antidepresivos</a></li>
+</ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="../aviso-legal.html">Aviso Legal</a></li>
+<li>Política de Cookies</li>
+<li><a href="../contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+</div>
 </div></footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-co
+</body>
+</html>
