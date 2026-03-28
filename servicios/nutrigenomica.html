@@ -1,391 +1,310 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nutrigenómica y Nutrición Personalizada · UNIMED Consulting Barcelona</title>
-  <meta name="description" content="Nutrición personalizada basada en tu genoma. Nutrigenómica clínica, metabolismo individual y plan alimentario de precisión. UNIMED Consulting · Barcelona y videollamada."/>
-  <meta name="keywords" content="nutrigenómica Barcelona, nutrición personalizada genómica, MTHFR nutrición, metabolismo individual, dieta de precisión España, HoloMedicina, HoloMed 8D, UNIMED Consulting, Samuel Carmona Aguirre, medicina personalizada de precisión"/>
-  <link rel="canonical" href="https://www.unimed-consulting.es/servicios/nutrigenomica.html"/>
-  <script type="application/ld+json">{
-    "@context":"https://schema.org",
-    "@type":"MedicalBusiness",
-    "name":"UNIMED Consulting",
-    "medicalSpecialty":["Nutrition","PrecisionMedicine"],
-    "availableService":{
-      "@type":"MedicalTherapy",
-      "name":"Nutrigenómica y Nutrición Personalizada",
-      "description":"Plan nutricional de precisión basado en perfil genómico, metabolismo individual y contexto clínico. Paradigma HoloMed 8D.",
-      "provider":{
-        "@type":"Person",
-        "name":"Samuel Carmona Aguirre",
-        "jobTitle":"Científico Biomédico Clínico"
-      }
-    }
-  }</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <style>
-    :root{--rose:#e8356d;--rose-s:#f07098;--rose-xs:rgba(232,53,109,.07);--rose-gl:rgba(232,53,109,.14);--bg:#ffffff;--bg2:#f8f7f9;--bg3:#f2eff5;--ink:#1a0f24;--ink2:#3a2d48;--ink3:#7a6880;--line:rgba(0,0,0,.08);--liner:rgba(232,53,109,.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--max:1140px;--r:8px;--rxl:24px;--ease:cubic-bezier(.22,1,.36,1)}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
-    a{color:inherit;text-decoration:none}
-    .w{max-width:var(--max);margin:0 auto;padding:0 2rem}
-    nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .navi{display:flex;align-items:center;justify-content:space-between;height:70px}
-    .nl{display:flex;align-items:center;gap:2rem;list-style:none}
-    .nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
-    .nl a:hover{color:var(--ink)}
-    .nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
-    .nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
-    .breadcrumb{background:var(--bg2);padding:.75rem 0;border-bottom:1px solid var(--line)}
-    .breadcrumb p{font-size:.75rem;color:var(--ink3)}
-    .breadcrumb a{color:var(--rose)}
-    .breadcrumb span{margin:0 .4rem}
-    .phero{background:var(--ink);padding:5rem 0 4rem;position:relative;overflow:hidden}
-    .phero::before{content:'';position:absolute;right:-100px;top:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,53,109,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
-    .ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:.9rem}
-    .ey::before{content:'';width:16px;height:1.5px;background:var(--rose-s)}
-    .phero h1{font-family:var(--serif);font-size:clamp(2rem,4.5vw,3.8rem);font-weight:300;line-height:1.1;color:#fff;max-width:780px}
-    .phero h1 em{font-style:italic;color:var(--rose-s)}
-    .phero .sub{font-size:.88rem;color:rgba(255,255,255,.45);margin-top:1rem;letter-spacing:.04em}
-    .page-layout{display:grid;grid-template-columns:1fr 340px;gap:4rem;align-items:start;padding:5rem 0 7rem}
-    .cc h2{font-family:var(--serif);font-size:1.7rem;font-weight:300;color:var(--ink);margin:3rem 0 1rem;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
-    .cc h2 em{font-style:italic;color:var(--rose)}
-    .cc h2:first-of-type{margin-top:0}
-    .cc p{font-size:.9rem;color:var(--ink2);line-height:1.82;margin-bottom:.9rem}
-    .cc p strong{color:var(--ink);font-weight:500}
-    .cc ul{margin:.5rem 0 1rem 0;list-style:none}
-    .cc ul li{font-size:.88rem;color:var(--ink2);line-height:1.75;padding:.4rem 0 .4rem 1.4rem;border-bottom:1px solid var(--line);position:relative}
-    .cc ul li::before{content:'→';position:absolute;left:0;color:var(--rose);font-size:.8rem}
-    .cc ul li:last-child{border-bottom:none}
-    .pull-quote{background:var(--bg2);border-left:3px solid var(--rose);border-radius:0 var(--r) var(--r) 0;padding:1.4rem 1.8rem;margin:2rem 0}
-    .pull-quote p{font-family:var(--serif);font-size:1.15rem;font-style:italic;color:var(--ink2);line-height:1.55;margin:0 0 .5rem}
-    .pull-quote cite{font-size:.75rem;color:var(--ink3);font-style:normal;letter-spacing:.05em}
-    .steps{display:flex;flex-direction:column;gap:1.2rem;margin:1.5rem 0}
-    .step{display:flex;gap:1.2rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--rxl);padding:1.5rem;transition:all .25s var(--ease)}
-    .step:hover{border-color:var(--liner);box-shadow:0 4px 20px rgba(232,53,109,.07);transform:translateX(4px)}
-    .step-num{font-family:var(--serif);font-size:1.4rem;color:var(--rose);min-width:28px;padding-top:.1rem;line-height:1}
-    .step-body h4{font-family:var(--serif);font-size:1.05rem;font-weight:400;color:var(--ink);margin-bottom:.35rem}
-    .step-body p{font-size:.84rem;color:var(--ink2);line-height:1.7;margin:0}
-    /* DIFERENCIAL */
-    .diferencial{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
-    .dif-col{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:1.8rem 1.6rem}
-    .dif-col.highlight{background:var(--rose-xs);border-color:var(--liner)}
-    .dif-col h4{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--ink3);margin-bottom:.9rem}
-    .dif-col.highlight h4{color:var(--rose)}
-    .dif-col ul{list-style:none;margin:0}
-    .dif-col ul li{font-size:.82rem;color:var(--ink2);line-height:1.7;padding:.3rem 0 .3rem 1.2rem;position:relative}
-    .dif-col ul li::before{content:'·';position:absolute;left:0;color:var(--ink3)}
-    .dif-col.highlight ul li::before{color:var(--rose)}
-    .formato-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
-    .fcard{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:1.3rem 1.2rem;text-align:center}
-    .fcard .ficon{font-size:1.4rem;margin-bottom:.5rem}
-    .fcard h4{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink);margin-bottom:.3rem}
-    .fcard p{font-size:.75rem;color:var(--ink3);line-height:1.4;margin:0}
-    .precio-box{background:var(--rose-xs);border:1px solid var(--liner);border-radius:var(--rxl);padding:1.5rem 1.8rem;margin:1.5rem 0;display:flex;align-items:center;gap:1.5rem}
-    .precio-num{font-family:var(--serif);font-size:2.2rem;color:var(--rose);line-height:1;white-space:nowrap}
-    .precio-desc{font-size:.83rem;color:var(--ink2);line-height:1.6}
-    .disclaimer{background:var(--bg2);border-radius:var(--r);padding:1rem 1.2rem;margin-top:1rem}
-    .disclaimer p{font-size:.75rem;color:var(--ink3);line-height:1.55;margin:0}
-    .faq{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
-    .faq-item{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
-    .faq-item summary{font-size:.88rem;font-weight:500;color:var(--ink);padding:1rem 1.2rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
-    .faq-item summary::after{content:'+';color:var(--rose);font-size:1.1rem}
-    .faq-item[open] summary::after{content:'−'}
-    .faq-item p{font-size:.84rem;color:var(--ink2);line-height:1.75;padding:.75rem 1.2rem 1rem;border-top:1px solid var(--line);margin:0}
-    .sidebar{position:sticky;top:6rem;display:flex;flex-direction:column;gap:1.2rem}
-    .scard{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:1.8rem 1.6rem}
-    .scard h3{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--ink);margin-bottom:.6rem}
-    .scard h3 em{font-style:italic;color:var(--rose)}
-    .scard p{font-size:.82rem;color:var(--ink2);line-height:1.7;margin-bottom:1.1rem}
-    .btn-p{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:500;padding:.82rem 1.7rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);border:none;cursor:pointer;box-shadow:0 4px 16px var(--rose-gl)}
-    .btn-p:hover{background:#c82c5c;transform:translateY(-1px)}
-    .btn-g-inv{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:rgba(255,255,255,.6);border:1.5px solid rgba(255,255,255,.15);transition:all .25s var(--ease);cursor:pointer}
-    .btn-g-inv:hover{border-color:var(--rose-s);color:var(--rose-s)}
-    .srv-link{display:flex;align-items:center;justify-content:space-between;padding:.7rem 0;border-bottom:1px solid var(--line);font-size:.82rem;color:var(--ink2);transition:all .2s;cursor:pointer}
-    .srv-link:first-child{border-top:1px solid var(--line)}
-    .srv-link:hover{color:var(--rose);padding-left:.4rem}
-    .srv-link.active{color:var(--rose);font-weight:500}
-    #porque{background:var(--bg2);padding:5rem 0}
-    .porque-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:2.5rem}
-    .porque-txt p{font-size:.88rem;color:var(--ink2);line-height:1.82;margin-bottom:.9rem}
-    .porque-txt p strong{color:var(--ink);font-weight:500}
-    .credenciales{display:flex;flex-direction:column;gap:.75rem}
-    .cred{display:flex;align-items:flex-start;gap:.8rem;padding:1rem 1.2rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);transition:all .25s var(--ease)}
-    .cred:hover{border-color:var(--liner);box-shadow:0 4px 16px rgba(232,53,109,.07)}
-    .cred-ico{font-size:1.1rem;flex-shrink:0;margin-top:.1rem}
-    .cred-txt h4{font-size:.82rem;font-weight:500;color:var(--ink);margin-bottom:.2rem}
-    .cred-txt p{font-size:.75rem;color:var(--ink3);line-height:1.4;margin:0}
-    .page-cta{background:var(--ink);padding:5rem 0;text-align:center;position:relative;overflow:hidden}
-    .page-cta::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(232,53,109,.12) 0%,transparent 70%);pointer-events:none}
-    .page-cta h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:#fff;margin-bottom:1rem;position:relative;z-index:1}
-    .page-cta h2 em{font-style:italic;color:var(--rose-s)}
-    .page-cta p{font-size:.88rem;color:rgba(255,255,255,.5);max-width:420px;margin:0 auto 2rem;line-height:1.78;position:relative;z-index:1}
-    .cta-row{display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;position:relative;z-index:1}
-    .btn-p-lg{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.9rem;font-weight:500;padding:.95rem 2rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);border:none;cursor:pointer}
-    .btn-p-lg:hover{background:#c82c5c;transform:translateY(-2px)}
-    footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
-    .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
-    .fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
-    .fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
-    .fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
-    .fc ul{list-style:none}
-    .fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem;cursor:pointer;transition:color .2s}
-    .fc li a{color:rgba(255,255,255,.45)}
-    .fc li a:hover,.fc li:hover{color:var(--rose-s)}
-    .fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
-    .fbtm em{color:var(--rose-s);font-style:normal}
-    .reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
-    .reveal.in{opacity:1;transform:translateY(0)}
-    .reveal[data-d="1"]{transition-delay:.08s}
-    .reveal[data-d="2"]{transition-delay:.16s}
-    @media(max-width:1024px){.page-layout{grid-template-columns:1fr;gap:3rem}.sidebar{position:static}.porque-grid{grid-template-columns:1fr;gap:3rem}.diferencial{grid-template-columns:1fr}}
-    @media(max-width:768px){.nl{display:none}.formato-grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
-  </style>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Nutrigenómica y Nutrición Personalizada · UNIMED Consulting Barcelona</title>
+<meta name="description" content="Nutrición personalizada basada en tu genoma. Nutrigenómica clínica, metabolismo individual y plan alimentario de precisión. UNIMED Consulting · Barcelona y videollamada."/>
+<meta name="keywords" content="nutrigenómica Barcelona, nutrición personalizada genómica, MTHFR nutrición, metabolismo individual, dieta de precisión España, HoloMedicina, HoloMed 8D, UNIMED Consulting, Samuel Carmona Aguirre, medicina personalizada de precisión"/>
+<link rel="canonical" href="https://www.unimed-consulting.es/servicios/nutrigenomica.html"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalBusiness","name":"UNIMED Consulting","medicalSpecialty":"DietNutrition","availableService":{"@type":"Service","name":"Nutrigenómica y Nutrición Personalizada","description":"Plan nutricional de precisión basado en perfil genómico, metabolismo individual y contexto clínico. Paradigma HoloMed 8D.","provider":{"@type":"Person","name":"Samuel Carmona Aguirre","jobTitle":"Científico Biomédico Clínico"}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{--rose:#e8356d;--rose-s:#f07098;--rose-xs:rgba(232,53,109,.07);--rose-gl:rgba(232,53,109,.14);--bg:#ffffff;--bg2:#f8f7f9;--bg3:#f2eff5;--ink:#1a0f24;--ink2:#3a2d48;--ink3:#7a6880;--line:rgba(0,0,0,.08);--liner:rgba(232,53,109,.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--max:1140px;--r:8px;--rxl:24px;--ease:cubic-bezier(.22,1,.36,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--max);margin:0 auto;padding:0 2rem}
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+.breadcrumb{background:var(--bg2);padding:.75rem 0;border-bottom:1px solid var(--line)}
+.breadcrumb p{font-size:.75rem;color:var(--ink3)}
+.breadcrumb a{color:var(--rose)}
+.breadcrumb span{margin:0 .4rem}
+.phero{background:var(--ink);padding:5rem 0 4rem;position:relative;overflow:hidden}
+.phero::before{content:'';position:absolute;right:-100px;top:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,53,109,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
+.ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:.9rem}
+.ey::before{content:'';width:16px;height:1.5px;background:var(--rose-s)}
+.phero h1{font-family:var(--serif);font-size:clamp(2rem,4.5vw,3.8rem);font-weight:300;line-height:1.1;color:#fff;max-width:780px}
+.phero h1 em{font-style:italic;color:var(--rose-s)}
+.phero .sub{font-size:.88rem;color:rgba(255,255,255,.45);margin-top:1rem;letter-spacing:.04em}
+.page-layout{display:grid;grid-template-columns:1fr 340px;gap:4rem;align-items:start;padding:5rem 0 7rem}
+.cc h2{font-family:var(--serif);font-size:1.7rem;font-weight:300;color:var(--ink);margin:3rem 0 1rem;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
+.cc h2 em{font-style:italic;color:var(--rose)}
+.cc h2:first-of-type{margin-top:0}
+.cc p{font-size:.9rem;color:var(--ink2);line-height:1.82;margin-bottom:.9rem}
+.cc p strong{color:var(--ink);font-weight:500}
+.cc ul{margin:.5rem 0 1rem 0;list-style:none}
+.cc ul li{font-size:.88rem;color:var(--ink2);line-height:1.75;padding:.4rem 0 .4rem 1.4rem;border-bottom:1px solid var(--line);position:relative}
+.cc ul li::before{content:'→';position:absolute;left:0;color:var(--rose);font-size:.8rem}
+.cc ul li:last-child{border-bottom:none}
+.pull-quote{background:var(--bg2);border-left:3px solid var(--rose);border-radius:0 var(--r) var(--r) 0;padding:1.4rem 1.8rem;margin:2rem 0}
+.pull-quote p{font-family:var(--serif);font-size:1.15rem;font-style:italic;color:var(--ink2);line-height:1.55;margin:0 0 .5rem}
+.pull-quote cite{font-size:.75rem;color:var(--ink3);font-style:normal;letter-spacing:.05em}
+.steps{display:flex;flex-direction:column;gap:1.2rem;margin:1.5rem 0}
+.step{display:flex;gap:1.2rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--rxl);padding:1.5rem;transition:all .25s var(--ease)}
+.step:hover{border-color:var(--liner);box-shadow:0 4px 20px rgba(232,53,109,.07);transform:translateX(4px)}
+.step-num{font-family:var(--serif);font-size:1.4rem;color:var(--rose);min-width:28px;padding-top:.1rem;line-height:1}
+.step-body h4{font-family:var(--serif);font-size:1.05rem;font-weight:400;color:var(--ink);margin-bottom:.35rem}
+.step-body p{font-size:.84rem;color:var(--ink2);line-height:1.7;margin:0}
+.diferencial{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
+.dif-col{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:1.8rem 1.6rem}
+.dif-col.highlight{background:var(--rose-xs);border-color:var(--liner)}
+.dif-col h4{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--ink3);margin-bottom:.9rem}
+.dif-col.highlight h4{color:var(--rose)}
+.dif-col ul{list-style:none;margin:0}
+.dif-col ul li{font-size:.82rem;color:var(--ink2);line-height:1.7;padding:.3rem 0 .3rem 1.2rem;position:relative}
+.dif-col ul li::before{content:'·';position:absolute;left:0;color:var(--ink3)}
+.dif-col.highlight ul li::before{color:var(--rose)}
+.formato-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
+.fcard{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:1.3rem 1.2rem;text-align:center}
+.fcard .ficon{font-size:1.4rem;margin-bottom:.5rem}
+.fcard h4{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink);margin-bottom:.3rem}
+.fcard p{font-size:.75rem;color:var(--ink3);line-height:1.4;margin:0}
+.precio-box{background:var(--rose-xs);border:1px solid var(--liner);border-radius:var(--rxl);padding:1.5rem 1.8rem;margin:1.5rem 0;display:flex;align-items:center;gap:1.5rem}
+.precio-num{font-family:var(--serif);font-size:2.2rem;color:var(--rose);line-height:1;white-space:nowrap}
+.precio-desc{font-size:.83rem;color:var(--ink2);line-height:1.6}
+.disclaimer{background:var(--bg2);border-radius:var(--r);padding:1rem 1.2rem;margin-top:1rem}
+.disclaimer p{font-size:.75rem;color:var(--ink3);line-height:1.55;margin:0}
+.faq{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
+.faq-item{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.faq-item summary{font-size:.88rem;font-weight:500;color:var(--ink);padding:1rem 1.2rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq-item summary::after{content:'+';color:var(--rose);font-size:1.1rem}
+.faq-item[open] summary::after{content:'−'}
+.faq-item p{font-size:.84rem;color:var(--ink2);line-height:1.75;padding:.75rem 1.2rem 1rem;border-top:1px solid var(--line);margin:0}
+.sidebar{position:sticky;top:6rem;display:flex;flex-direction:column;gap:1.2rem}
+.scard{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:1.8rem 1.6rem}
+.scard h3{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--ink);margin-bottom:.6rem}
+.scard h3 em{font-style:italic;color:var(--rose)}
+.scard p{font-size:.82rem;color:var(--ink2);line-height:1.7;margin-bottom:1.1rem}
+.btn-p{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:500;padding:.82rem 1.7rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);border:none;cursor:pointer;box-shadow:0 4px 16px var(--rose-gl)}
+.btn-p:hover{background:#c82c5c;transform:translateY(-1px)}
+.btn-g-inv{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:rgba(255,255,255,.6);border:1.5px solid rgba(255,255,255,.15);transition:all .25s var(--ease);cursor:pointer}
+.btn-g-inv:hover{border-color:var(--rose-s);color:var(--rose-s)}
+.srv-link{display:flex;align-items:center;justify-content:space-between;padding:.7rem 0;border-bottom:1px solid var(--line);font-size:.82rem;color:var(--ink2);transition:all .2s;cursor:pointer}
+.srv-link:first-child{border-top:1px solid var(--line)}
+.srv-link:hover{color:var(--rose);padding-left:.4rem}
+.srv-link.active{color:var(--rose);font-weight:500}
+#porque{background:var(--bg2);padding:5rem 0}
+.porque-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:2.5rem}
+.porque-txt p{font-size:.88rem;color:var(--ink2);line-height:1.82;margin-bottom:.9rem}
+.porque-txt p strong{color:var(--ink);font-weight:500}
+.credenciales{display:flex;flex-direction:column;gap:.75rem}
+.cred{display:flex;align-items:flex-start;gap:.8rem;padding:1rem 1.2rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);transition:all .25s var(--ease)}
+.cred:hover{border-color:var(--liner);box-shadow:0 4px 16px rgba(232,53,109,.07)}
+.cred-ico{font-size:1.1rem;flex-shrink:0;margin-top:.1rem}
+.cred-txt h4{font-size:.82rem;font-weight:500;color:var(--ink);margin-bottom:.2rem}
+.cred-txt p{font-size:.75rem;color:var(--ink3);line-height:1.4;margin:0}
+.page-cta{background:var(--ink);padding:5rem 0;text-align:center;position:relative;overflow:hidden}
+.page-cta::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(232,53,109,.12) 0%,transparent 70%);pointer-events:none}
+.page-cta h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:#fff;margin-bottom:1rem;position:relative;z-index:1}
+.page-cta h2 em{font-style:italic;color:var(--rose-s)}
+.page-cta p{font-size:.88rem;color:rgba(255,255,255,.5);max-width:420px;margin:0 auto 2rem;line-height:1.78;position:relative;z-index:1}
+.cta-row{display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;position:relative;z-index:1}
+.btn-p-lg{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.9rem;font-weight:500;padding:.95rem 2rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);border:none;cursor:pointer}
+.btn-p-lg:hover{background:#c82c5c;transform:translateY(-2px)}
+footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fff;margin-bottom:.6rem}
+.flogo em{font-style:italic;color:var(--rose-s)}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem;cursor:pointer;transition:color .2s}
+.fc li a{color:rgba(255,255,255,.45)}
+.fc li a:hover,.fc li:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+.reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal[data-d="1"]{transition-delay:.08s}
+.reveal[data-d="2"]{transition-delay:.16s}
+@media(max-width:1024px){.page-layout{grid-template-columns:1fr;gap:3rem}.sidebar{position:static}.porque-grid{grid-template-columns:1fr;gap:3rem}.diferencial{grid-template-columns:1fr}}
+@media(max-width:768px){.nl{display:none}.formato-grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
+</style>
 </head>
 <body>
 
 <nav><div class="w navi">
-  <a href="../index.html" style="font-family:\'Cormorant Garamond\',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
-  <ul class="nl">
-    <li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
-    <li><a href="../index.html#servicios" style="color:var(--rose)">Servicios</a></li>
-    <li><a href="../index.html#pro">Profesionales</a></li>
-    <li><a href="../recursos.html">Recursos</a></li>
-    <li><a href="../blog/index.html">Blog</a></li>
-    <li><a href="../contacto.html">Contacto</a></li>
-    <a href="../contacto.html" class="nbtn">Pide Cita</a>
-  </ul>
+<a href="../index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="../index.html#servicios" style="color:var(--rose)">Servicios</a></li>
+<li><a href="../index.html#pro">Profesionales</a></li>
+<li><a href="../recursos.html">Recursos</a></li>
+<li><a href="../blog/index.html">Blog</a></li>
+<li><a href="../contacto.html">Contacto</a></li>
+<a href="../contacto.html" class="nbtn">Pide Cita</a>
+</ul>
 </div></nav>
 
 <div class="breadcrumb"><div class="w">
-  <p><a href="../index.html">Inicio</a><span>/</span><a href="../index.html#servicios">Servicios</a><span>/</span>Nutrigenómica y Nutrición Personalizada</p>
+<p><a href="../index.html">Inicio</a><span>/</span><a href="../index.html#servicios">Servicios</a><span>/</span>Nutrigenómica y Nutrición Personalizada</p>
 </div></div>
 
 <div class="phero"><div class="w">
-  <div class="ey">Servicio 03 · Nutrigenómica</div>
-  <h1>La dieta perfecta no existe.<br/><em>La tuya, sí.</em></h1>
-  <p class="sub">Nutrigenómica y Nutrición Personalizada · Tu genoma, tu metabolismo, tu plan · Paradigma HoloMedicina</p>
+<div class="ey">Servicio 03 · Nutrigenómica</div>
+<h1>La dieta perfecta no existe.<br/><em>La tuya, sí.</em></h1>
+<p class="sub">Nutrigenómica y Nutrición Personalizada · Tu genoma, tu metabolismo, tu plan · Paradigma HoloMedicina</p>
 </div></div>
 
 <div class="w"><div class="page-layout">
-  <div class="cc reveal">
+<div class="cc reveal">
 
-    <p>Has probado dietas. Has seguido protocolos. Has comido «bien» durante meses sin resultados, o con resultados que desaparecen en cuanto los dejas. Ves cómo otras personas responden a los mismos alimentos de forma completamente distinta a la tuya.</p>
-    <p>No es falta de disciplina. Es que las guías nutricionales están diseñadas para el ser humano promedio — y <strong>tú no eres el promedio de nadie.</strong></p>
-    <p>Tu manera de metabolizar los hidratos, las grasas, la cafeína, la vitamina D o el gluten está parcialmente escrita en tu genoma. La Nutrigenómica lee ese código. La Nutrición Personalizada de UNIMED lo convierte en un plan que funciona para ti.</p>
+<p>Has probado dietas. Has seguido protocolos. Has comido «bien» durante meses sin resultados, o con resultados que desaparecen en cuanto los dejas. Ves cómo otras personas responden a los mismos alimentos de forma completamente distinta a la tuya.</p>
+<p>No es falta de disciplina. Es que las guías nutricionales están diseñadas para el ser humano promedio — y <strong>tú no eres el promedio de nadie.</strong></p>
+<p>Tu manera de metabolizar los hidratos, las grasas, la cafeína, la vitamina D o el gluten está parcialmente escrita en tu genoma. La Nutrigenómica lee ese código. La Nutrición Personalizada de UNIMED lo convierte en un plan que funciona para ti.</p>
 
-    <h2>Este servicio es para ti <em>si...</em></h2>
-    <ul>
-      <li>Sientes que ninguna dieta te ha funcionado de forma sostenida y quieres entender por qué</li>
-      <li>Tienes problemas digestivos, inflamación crónica, fatiga persistente o fluctuaciones de peso sin explicación clara</li>
-      <li>Buscas optimizar tu rendimiento cognitivo, físico o energético desde la alimentación</li>
-      <li>Tienes condiciones metabólicas (resistencia a la insulina, dislipemia, hipotiroidismo, síndrome metabólico) y quieres un enfoque preciso</li>
-      <li>Estás embarazada, en lactancia o en planificación familiar y quieres ajustar tu nutrición a tu biología real</li>
-      <li>Sigues una dieta especial (vegana, cetogénica, sin gluten) y quieres saber si encaja con tu perfil genómico</li>
-    </ul>
+<h2>Este servicio es para ti <em>si...</em></h2>
+<ul>
+<li>Sientes que ninguna dieta te ha funcionado de forma sostenida y quieres entender por qué</li>
+<li>Tienes problemas digestivos, inflamación crónica, fatiga persistente o fluctuaciones de peso sin explicación clara</li>
+<li>Buscas optimizar tu rendimiento cognitivo, físico o energético desde la alimentación</li>
+<li>Tienes condiciones metabólicas (resistencia a la insulina, dislipemia, hipotiroidismo, síndrome metabólico) y quieres un enfoque preciso</li>
+<li>Estás embarazada, en lactancia o en planificación familiar y quieres ajustar tu nutrición a tu biología real</li>
+<li>Sigues una dieta especial (vegana, cetogénica, sin gluten) y quieres saber si encaja con tu perfil genómico</li>
+</ul>
 
-    <div class="pull-quote">
-      <p>«Comer bien no es comer lo mismo que todos. Es comer lo que tu sistema específico puede procesar, absorber y aprovechar.»</p>
-      <cite>— Samuel Carmona Aguirre, MSc · Científico Biomédico Clínico</cite>
-    </div>
+<div class="pull-quote">
+<p>«Comer bien no es comer lo mismo que todos. Es comer lo que tu sistema específico puede procesar, absorber y aprovechar.»</p>
+<cite>— Samuel Carmona Aguirre, MSc · Científico Biomédico Clínico</cite>
+</div>
 
-    <h2>No te damos una dieta. <em>Te damos el mapa metabólico</em> que permite diseñarla.</h2>
-    <p>Trabajamos en dos capas simultáneas: tu perfil genómico nutricional y tu contexto clínico real — porque los genes son el punto de partida, no el único factor.</p>
+<h2>No te damos una dieta. <em>Te damos el mapa metabólico</em> que permite diseñarla.</h2>
+<p>Trabajamos en dos capas simultáneas: tu perfil genómico nutricional y tu contexto clínico real — porque los genes son el punto de partida, no el único factor.</p>
 
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">①</div>
-        <div class="step-body">
-          <h4>Análisis del perfil nutrigenómico</h4>
-          <p>Evaluamos las variantes genéticas con mayor impacto en tu metabolismo: carbohidratos y grasas, sensibilidades alimentarias (lactosa, gluten, histamina, cafeína), absorción de micronutrientes (hierro, folato, vitamina B12, D, omega-3), ritmo circadiano metabólico y respuesta inflamatoria a la dieta.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">②</div>
-        <div class="step-body">
-          <h4>Evaluación metabólica integrativa</h4>
-          <p>Cruzamos tu perfil genómico con tus analíticas disponibles, síntomas, historial digestivo y estilo de vida. Un gen sin contexto clínico es solo datos. Con contexto, es información accionable.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">③</div>
-        <div class="step-body">
-          <h4>Identificación de déficits y riesgos específicos</h4>
-          <p>Detectamos patrones de riesgo nutricional que en análisis convencionales aparecen como «dentro del rango normal» pero que en tu caso específico merecen atención: polimorfismos <strong>MTHFR</strong>, metabolismo del colesterol, detoxificación hepática, salud mitocondrial.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">④</div>
-        <div class="step-body">
-          <h4>Plan nutricional personalizado de precisión</h4>
-          <p>No una lista de alimentos prohibidos. Un mapa de decisiones: qué priorizar, qué modular, qué evitar y por qué, en lenguaje comprensible y aplicable a tu vida real.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">⑤</div>
-        <div class="step-body">
-          <h4>Suplementación basada en evidencia genómica</h4>
-          <p>Qué suplementos tienen sentido para tu perfil, en qué forma y dosis. Sin protocolo genérico. Sin marketing de suplementos. Solo lo que tu biología específica puede aprovechar.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">⑥</div>
-        <div class="step-body">
-          <h4>Seguimiento y ajuste <span style="font-size:.8rem;color:var(--ink3)">(formato ampliado)</span></h4>
-          <p>La nutrición de precisión es un proceso, no una prescripción única. En el formato ampliado incluimos revisión a 30 y 60 días para ajustar el plan según tu respuesta real.</p>
-        </div>
-      </div>
-    </div>
+<div class="steps">
+<div class="step"><div class="step-num">①</div><div class="step-body"><h4>Análisis del perfil nutrigenómico</h4><p>Evaluamos las variantes genéticas con mayor impacto en tu metabolismo: carbohidratos y grasas, sensibilidades alimentarias (lactosa, gluten, histamina, cafeína), absorción de micronutrientes (hierro, folato, vitamina B12, D, omega-3), ritmo circadiano metabólico y respuesta inflamatoria a la dieta.</p></div></div>
+<div class="step"><div class="step-num">②</div><div class="step-body"><h4>Evaluación metabólica integrativa</h4><p>Cruzamos tu perfil genómico con tus analíticas disponibles, síntomas, historial digestivo y estilo de vida. Un gen sin contexto clínico es solo datos. Con contexto, es información accionable.</p></div></div>
+<div class="step"><div class="step-num">③</div><div class="step-body"><h4>Identificación de déficits y riesgos específicos</h4><p>Detectamos patrones de riesgo nutricional que en análisis convencionales aparecen como «dentro del rango normal» pero que en tu caso específico merecen atención: polimorfismos <strong>MTHFR</strong>, metabolismo del colesterol, detoxificación hepática, salud mitocondrial.</p></div></div>
+<div class="step"><div class="step-num">④</div><div class="step-body"><h4>Plan nutricional personalizado de precisión</h4><p>No una lista de alimentos prohibidos. Un mapa de decisiones: qué priorizar, qué modular, qué evitar y por qué, en lenguaje comprensible y aplicable a tu vida real.</p></div></div>
+<div class="step"><div class="step-num">⑤</div><div class="step-body"><h4>Suplementación basada en evidencia genómica</h4><p>Qué suplementos tienen sentido para tu perfil, en qué forma y dosis. Sin protocolo genérico. Sin marketing de suplementos. Solo lo que tu biología específica puede aprovechar.</p></div></div>
+<div class="step"><div class="step-num">⑥</div><div class="step-body"><h4>Seguimiento y ajuste <span style="font-size:.8rem;color:var(--ink3)">(formato ampliado)</span></h4><p>La nutrición de precisión es un proceso, no una prescripción única. En el formato ampliado incluimos revisión a 30 y 60 días para ajustar el plan según tu respuesta real.</p></div></div>
+</div>
 
-    <h2>Nutrición convencional <em>vs.</em> UNIMED</h2>
-    <div class="diferencial">
-      <div class="dif-col">
-        <h4>Nutrición convencional</h4>
-        <ul>
-          <li>Calorías · macros · pirámide alimentaria</li>
-          <li>Diseñada para «el paciente medio»</li>
-          <li>Mismas guías para todos</li>
-          <li>No integra genómica</li>
-          <li>Resultados que no se sostienen</li>
-        </ul>
-      </div>
-      <div class="dif-col highlight">
-        <h4>UNIMED · Nutrigenómica</h4>
-        <ul>
-          <li>Variantes genéticas + contexto metabólico</li>
-          <li>Historia clínica + estilo de vida real</li>
-          <li>Plan que responde a tu sistema</li>
-          <li>HoloMed 8D — la persona completa</li>
-          <li>Estrategia que no lucha contra tu biología</li>
-        </ul>
-      </div>
-    </div>
+<h2>Nutrición convencional <em>vs.</em> UNIMED</h2>
+<div class="diferencial">
+<div class="dif-col"><h4>Nutrición convencional</h4><ul><li>Calorías · macros · pirámide alimentaria</li><li>Diseñada para «el paciente medio»</li><li>Mismas guías para todos</li><li>No integra genómica</li><li>Resultados que no se sostienen</li></ul></div>
+<div class="dif-col highlight"><h4>UNIMED · Nutrigenómica</h4><ul><li>Variantes genéticas + contexto metabólico</li><li>Historia clínica + estilo de vida real</li><li>Plan que responde a tu sistema</li><li>HoloMed 8D — la persona completa</li><li>Estrategia que no lucha contra tu biología</li></ul></div>
+</div>
 
-    <h2>Formato y <em>precio</em></h2>
-    <div class="formato-grid">
-      <div class="fcard"><div class="ficon">💻</div><h4>Videollamada</h4><p>Whereby · Zoom · desde cualquier lugar</p></div>
-      <div class="fcard"><div class="ficon">🏥</div><h4>Presencial</h4><p>Medical Center Tuset 34 · Barcelona</p></div>
-      <div class="fcard"><div class="ficon">⏱️</div><h4>60 minutos</h4><p>Sesión de interpretación y plan personalizado</p></div>
-    </div>
-    <div class="precio-box">
-      <div class="precio-num">Desde 120€</div>
-      <div class="precio-desc">Sesión única con informe · Formato ampliado: sesión + informe + seguimiento 60 días — consultar precio.</div>
-    </div>
-    <div class="disclaimer">
-      <p>⚠️ El asesoramiento nutrigenómico UNIMED es un servicio de interpretación y apoyo a la decisión. No sustituye al nutricionista clínico en contextos de patología activa, donde coordinamos con tu médico de referencia.</p>
-    </div>
+<h2>Formato y <em>precio</em></h2>
+<div class="formato-grid">
+<div class="fcard"><div class="ficon">💻</div><h4>Videollamada</h4><p>Whereby · Zoom · desde cualquier lugar</p></div>
+<div class="fcard"><div class="ficon">🏥</div><h4>Presencial</h4><p>Medical Center Tuset 34 · Barcelona</p></div>
+<div class="fcard"><div class="ficon">⏱️</div><h4>60 minutos</h4><p>Sesión de interpretación y plan personalizado</p></div>
+</div>
+<div class="precio-box">
+<div class="precio-num">Desde 120€</div>
+<div class="precio-desc">Sesión única con informe · Formato ampliado: sesión + informe + seguimiento 60 días — consultar precio.</div>
+</div>
+<div class="disclaimer">
+<p>⚠️ El asesoramiento nutrigenómico UNIMED es un servicio de interpretación y apoyo a la decisión. No sustituye al nutricionista clínico en contextos de patología activa, donde coordinamos con tu médico de referencia.</p>
+</div>
 
-    <h2>Preguntas <em>frecuentes</em></h2>
-    <div class="faq">
-      <details class="faq-item">
-        <summary>¿Necesito tener un test genético previo?</summary>
-        <p>No es imprescindible, pero maximiza los resultados. Si no tienes ninguno, te orientamos sobre qué panel nutrigenómico tiene sentido para tu caso y cómo obtenerlo antes de la sesión.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Qué diferencia hay entre un nutricionista y el asesoramiento nutrigenómico de UNIMED?</summary>
-        <p>El nutricionista trabaja con tus hábitos, analíticas y objetivos. Nosotros añadimos la capa genómica: por qué tu cuerpo responde como responde, qué variantes están condicionando tu metabolismo y cómo diseñar una estrategia que no luche contra tu biología sino que la aproveche.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿La nutrigenómica tiene evidencia científica sólida?</summary>
-        <p>La base científica de la nutrigenómica es sólida en determinadas variantes y nutrientes. Trabajamos únicamente con asociaciones con evidencia replicada — y somos transparentes sobre qué es consenso establecido y qué está en investigación activa.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Este servicio puede ayudarme si tengo una patología metabólica diagnosticada?</summary>
-        <p>Sí, como complemento al seguimiento médico especializado. Nunca como sustituto. En casos de patología activa, coordinamos con tu médico de referencia.</p>
-      </details>
-    </div>
+<h2>Preguntas <em>frecuentes</em></h2>
+<div class="faq">
+<details class="faq-item"><summary>¿Necesito tener un test genético previo?</summary><p>No es imprescindible, pero maximiza los resultados. Si no tienes ninguno, te orientamos sobre qué panel nutrigenómico tiene sentido para tu caso y cómo obtenerlo antes de la sesión.</p></details>
+<details class="faq-item"><summary>¿Qué diferencia hay entre un nutricionista y el asesoramiento nutrigenómico de UNIMED?</summary><p>El nutricionista trabaja con tus hábitos, analíticas y objetivos. Nosotros añadimos la capa genómica: por qué tu cuerpo responde como responde, qué variantes están condicionando tu metabolismo y cómo diseñar una estrategia que no luche contra tu biología sino que la aproveche.</p></details>
+<details class="faq-item"><summary>¿La nutrigenómica tiene evidencia científica sólida?</summary><p>La base científica de la nutrigenómica es sólida en determinadas variantes y nutrientes. Trabajamos únicamente con asociaciones con evidencia replicada — y somos transparentes sobre qué es consenso establecido y qué está en investigación activa.</p></details>
+<details class="faq-item"><summary>¿Este servicio puede ayudarme si tengo una patología metabólica diagnosticada?</summary><p>Sí, como complemento al seguimiento médico especializado. Nunca como sustituto. En casos de patología activa, coordinamos con tu médico de referencia.</p></details>
+</div>
 
-  </div>
+</div>
 
-  <!-- SIDEBAR -->
-  <div class="sidebar reveal" data-d="1">
-    <div class="scard" style="background:var(--ink);border-color:rgba(255,255,255,.08)">
-      <h3 style="color:#fff">¿Listo para comer según <em>tu biología?</em></h3>
-      <p style="color:rgba(255,255,255,.5)">Reserva tu sesión o envíanos tu test genético para una valoración previa.</p>
-      <a href="../contacto.html" class="btn-p" style="width:100%;justify-content:center;box-sizing:border-box">
-        Reservar sesión <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-g-inv" style="width:100%;justify-content:center;box-sizing:border-box;margin-top:.6rem">
-        ¿Tienes ya un test genético?
-      </a>
-    </div>
-    <div class="scard">
-      <h3>Otros <em>servicios</em></h3>
-      <div>
-        <a href="atencion-consultiva.html" class="srv-link"><span>Atención Consultiva Biomédica</span><span style="color:var(--ink3);font-size:.75rem">→</span></a>
-        <a href="asesoramiento-genetico.html" class="srv-link"><span>Asesoramiento Genético</span><span style="color:var(--ink3);font-size:.75rem">→</span></a>
-        <div class="srv-link active"><span>Nutrigenómica</span><span style="color:var(--rose);font-size:.75rem">←</span></div>
-        <a href="neurocognitivo.html" class="srv-link"><span>Asesoramiento Neurocognitivo</span><span style="color:var(--ink3);font-size:.75rem">→</span></a>
-        <a href="enfermedades-cronicas.html" class="srv-link"><span>Enfermedades Crónicas</span><span style="color:var(--ink3);font-size:.75rem">→</span></a>
-      </div>
-    </div>
-    <div class="scard">
-      <h3>Tu asesor de salud <em>digital</em></h3>
-      <p>CAPS Digital disponible ahora, sin registro y sin coste.</p>
-      <a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-p" style="width:100%;justify-content:center;box-sizing:border-box;font-size:.78rem">Iniciar — gratis</a>
-    </div>
-  </div>
+<!-- SIDEBAR -->
+<div class="sidebar reveal" data-d="1">
+<div class="scard" style="background:var(--ink);border-color:rgba(255,255,255,.08)">
+<h3 style="color:#fff">¿Listo para comer según <em>tu biología?</em></h3>
+<p style="color:rgba(255,255,255,.5)">Reserva tu sesión o envíanos tu test genético para una valoración previa.</p>
+<a href="../contacto.html" class="btn-p" style="width:100%;justify-content:center;box-sizing:border-box">Reservar sesión <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-g-inv" style="width:100%;justify-content:center;box-sizing:border-box;margin-top:.6rem">¿Tienes ya un test genético?</a>
+</div>
+<div class="scard">
+<h3>Otros <em>servicios</em></h3>
+<div>
+<a href="atencion-consultiva.html" class="srv-link"><span>Atención Consultiva Biomédica</span><span style="color:var(--ink3);font-size:.75rem">→</span></a>
+<a href="asesoramiento-genetico.html" class="srv-link"><span>Asesoramiento Genético</span><span style="color:var(--ink3);font-size:.75rem">→</span></a>
+<div class="srv-link active"><span>Nutrigenómica</span><span style="color:var(--rose);font-size:.75rem">←</span></div>
+<a href="neurocognitivo.html" class="srv-link"><span>Asesoramiento Neurocognitivo</span><span style="color:var(--ink3);font-size:.75rem">→</span></a>
+<a href="enfermedades-cronicas.html" class="srv-link"><span>Enfermedades Crónicas</span><span style="color:var(--ink3);font-size:.75rem">→</span></a>
+</div>
+</div>
+<div class="scard">
+<h3>Tu asesor de salud <em>digital</em></h3>
+<p>CAPS Digital disponible ahora, sin registro y sin coste.</p>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-p" style="width:100%;justify-content:center;box-sizing:border-box;font-size:.78rem">Iniciar — gratis</a>
+</div>
+</div>
 
 </div></div>
 
-<!-- POR QUÉ UNIMED -->
 <section id="porque"><div class="w">
-  <div class="reveal"><div class="ey">¿Por qué UNIMED?</div>
-  <h2 style="font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,2.9rem);font-weight:300;color:var(--ink)">La diferencia entre <em>datos y conocimiento.</em><br/>UNIMED vende conocimiento.</h2></div>
-  <div class="porque-grid">
-    <div class="reveal">
-      <p>La nutrigenómica de consumo masivo te da datos. Los informes genéticos estándar te dan un PDF con semáforos de colores. <strong>Ninguno de los dos te dice qué hacer con tu vida real, tu historial clínico y tu contexto específico.</strong></p>
-      <p>Samuel Carmona Aguirre integra la información genómica nutricional dentro del marco <strong>HoloMed 8D</strong> — porque tu metabolismo no existe aislado de tu sistema nervioso, tu microbioma, tu gestión del estrés o tu carga transgeneracional. Todo es el mismo sistema.</p>
-    </div>
-    <div class="credenciales reveal" data-d="1">
-      <div class="cred"><div class="cred-ico">🧬</div><div class="cred-txt"><h4>HoloMed 8D — Metabolismo como sistema</h4><p>Nutrición integrada con neurociencias, microbioma, carga transgeneracional y contexto vital</p></div></div>
-      <div class="cred"><div class="cred-ico">🏛️</div><div class="cred-txt"><h4>UNESCO · Congreso Mundial Pensée Complexe</h4><p>Certificado Edgar Morin · CNRS · 2016</p></div></div>
-      <div class="cred"><div class="cred-ico">🎓</div><div class="cred-txt"><h4>MSc Ciencias Cognitivas · 9/10 · U. Málaga</h4><p>HoloMedicina y Método Holónico explícitos · 2017</p></div></div>
-      <div class="cred"><div class="cred-ico">🌍</div><div class="cred-txt"><h4>UNAM · Diplomado Ciencia Médica y Complejidad</h4><p>PERSONÓMICA®ONLINE · Web Semántica + IA + HoloMedicina · 2021</p></div></div>
-    </div>
-  </div>
+<div class="reveal"><div class="ey">¿Por qué UNIMED?</div>
+<h2 style="font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,2.9rem);font-weight:300;color:var(--ink)">La diferencia entre <em>datos y conocimiento.</em><br/>UNIMED vende conocimiento.</h2></div>
+<div class="porque-grid">
+<div class="reveal">
+<p>La nutrigenómica de consumo masivo te da datos. Los informes genéticos estándar te dan un PDF con semáforos de colores. <strong>Ninguno de los dos te dice qué hacer con tu vida real, tu historial clínico y tu contexto específico.</strong></p>
+<p>Samuel Carmona Aguirre integra la información genómica nutricional dentro del marco <strong>HoloMed 8D</strong> — porque tu metabolismo no existe aislado de tu sistema nervioso, tu microbioma, tu gestión del estrés o tu carga transgeneracional. Todo es el mismo sistema.</p>
+</div>
+<div class="credenciales reveal" data-d="1">
+<div class="cred"><div class="cred-ico">🧬</div><div class="cred-txt"><h4>HoloMed 8D — Metabolismo como sistema</h4><p>Nutrición integrada con neurociencias, microbioma, carga transgeneracional y contexto vital</p></div></div>
+<div class="cred"><div class="cred-ico">🏛️</div><div class="cred-txt"><h4>UNESCO · Congreso Mundial Pensée Complexe</h4><p>Certificado Edgar Morin · CNRS · 2016</p></div></div>
+<div class="cred"><div class="cred-ico">🎓</div><div class="cred-txt"><h4>MSc Ciencias Cognitivas · 9/10 · U. Málaga</h4><p>HoloMedicina y Método Holónico explícitos · 2017</p></div></div>
+<div class="cred"><div class="cred-ico">🌍</div><div class="cred-txt"><h4>UNAM · Diplomado Ciencia Médica y Complejidad</h4><p>PERSONÓMICA®ONLINE · Web Semántica + IA + HoloMedicina · 2021</p></div></div>
+</div>
+</div>
 </div></section>
 
 <div class="page-cta">
-  <h2>¿Listo para comer según<br/><em>tu biología, no según la media?</em></h2>
-  <p>Reserva tu sesión de nutrigenómica o empieza con CAPS Digital.</p>
-  <div class="cta-row">
-    <a href="../contacto.html" class="btn-p-lg">Reservar sesión <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    <a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-g-inv">¿Tienes ya un test genético?</a>
-  </div>
+<h2>¿Listo para comer según<br/><em>tu biología, no según la media?</em></h2>
+<p>Reserva tu sesión de nutrigenómica o empieza con CAPS Digital.</p>
+<div class="cta-row">
+<a href="../contacto.html" class="btn-p-lg">Reservar sesión <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-g-inv">¿Tienes ya un test genético?</a>
+</div>
 </div>
 
 <footer><div class="w">
-  <div class="fg">
-    <div>
-      <div class="flogo">UNI<em>MED</em> Consulting</div>
-      <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
-      <div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3e575058517e4b5057535b5a135d51504d4b524a575059105b4d">[email&#160;protected]</a></span></div>
-    </div>
-    <div class="fc"><h5>Servicios</h5><ul>
-      <li><a href="atencion-consultiva.html">Atención Consultiva</a></li>
-      <li><a href="asesoramiento-genetico.html">Asesoramiento Genético</a></li>
-      <li><a href="nutrigenomica.html">Nutrigenómica</a></li>
-      <li><a href="neurocognitivo.html">Neurocognitivo</a></li>
-      <li><a href="enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
-    </ul></div>
-    <div class="fc"><h5>Recursos</h5><ul><li>Sanalogía</li><li>Guías Personas-Pacientes</li><li>CAPS Digital</li><li>Blog</li></ul></div>
-    <div class="fc"><h5>Legal</h5><ul>
-      <li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
-      <li><a href="../aviso-legal.html">Aviso Legal</a></li>
-      <li>Política de Cookies</li>
-      <li><a href="../contacto.html">Contacto</a></li>
-    </ul></div>
-  </div>
-  <div class="fbtm">
-    <p>© 2025 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
-    <p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
-  </div>
+<div class="fg">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
+<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ <a href="mailto:samuel@unimed-consulting.es">samuel@unimed-consulting.es</a></span></div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul>
+<li><a href="atencion-consultiva.html">Atención Consultiva</a></li>
+<li><a href="asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+<li><a href="nutrigenomica.html">Nutrigenómica</a></li>
+<li><a href="neurocognitivo.html">Neurocognitivo</a></li>
+<li><a href="enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+</ul></div>
+<div class="fc"><h5>Recursos</h5><ul><li>Sanalogía</li><li>Guías Personas-Pacientes</li><li>CAPS Digital</li><li>Blog</li></ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="../aviso-legal.html">Aviso Legal</a></li>
+<li>Política de Cookies</li>
+<li><a href="../contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+</div>
 </div></footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshol
+<script>
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
