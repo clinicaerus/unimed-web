@@ -1,213 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Política de Privacidad — UNIMED Consulting</title>
-  <meta name="description" content="Política de privacidad de UNIMED Consulting — Centro de Desarrollo e Innovación Médica. Información sobre el tratamiento de datos personales conforme al RGPD."/>
-  <link rel="canonical" href="https://www.unimed-consulting.es/politica-de-privacidad.html"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <style>
-    :root {
-      --rose:   #e8356d;
-      --rose-s: #f07098;
-      --rose-xs:rgba(232,53,109,.07);
-      --bg:     #ffffff;
-      --bg2:    #f8f7f9;
-      --ink:    #1a0f24;
-      --ink2:   #3a2d48;
-      --ink3:   #7a6880;
-      --line:   rgba(0,0,0,.08);
-      --serif:  'Cormorant Garamond',Georgia,serif;
-      --sans:   'Inter',system-ui,sans-serif;
-      --max:    800px;
-      --r:      8px;
-      --ease:   cubic-bezier(.22,1,.36,1);
-    }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
-    a{color:var(--rose);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .w{max-width:var(--max);margin:0 auto;padding:0 2rem}
-    .wfull{max-width:1140px;margin:0 auto;padding:0 2rem}
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Política de Privacidad — UNIMED Consulting</title>
+<meta name="description" content="Política de privacidad de UNIMED Consulting — Centro de Desarrollo e Innovación Médica. Información sobre el tratamiento de datos personales conforme al RGPD."/>
+<link rel="canonical" href="https://www.unimed-consulting.es/politica-de-privacidad.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+--rose:   #e8356d;
+--rose-s: #f07098;
+--rose-xs:rgba(232,53,109,.07);
+--bg:     #ffffff;
+--bg2:    #f8f7f9;
+--ink:    #1a0f24;
+--ink2:   #3a2d48;
+--ink3:   #7a6880;
+--line:   rgba(0,0,0,.08);
+--serif:  'Cormorant Garamond',Georgia,serif;
+--sans:   'Inter',system-ui,sans-serif;
+--max:    800px;
+--r:      8px;
+--ease:   cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--rose);text-decoration:none}
+a:hover{text-decoration:underline}
+.w{max-width:var(--max);margin:0 auto;padding:0 2rem}
+.wfull{max-width:1140px;margin:0 auto;padding:0 2rem}
 
-    /* NAV */
-    nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .navi{display:flex;align-items:center;justify-content:space-between;height:70px}
-    .nl{display:flex;align-items:center;gap:2rem;list-style:none}
-    .nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
-    .nl a:hover{color:var(--ink);text-decoration:none}
-    .nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
-    .nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important;text-decoration:none!important}
+/* NAV */
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
+.nl a:hover{color:var(--ink);text-decoration:none}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important;text-decoration:none!important}
 
-    /* PAGE HERO */
-    .page-hero{background:var(--bg2);padding:4rem 0 3rem;border-bottom:1px solid var(--line)}
-    .page-hero .eyebrow{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.9rem}
-    .page-hero .eyebrow::before{content:'';width:16px;height:1.5px;background:var(--rose)}
-    .page-hero h1{font-family:var(--serif);font-size:clamp(1.8rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink)}
-    .page-hero h1 em{font-style:italic;color:var(--rose)}
-    .page-hero .meta{font-size:.8rem;color:var(--ink3);margin-top:.9rem}
+/* FLOGO — FIX */
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fff}
+.flogo em{font-style:italic;color:var(--rose-s)}
 
-    /* CONTENT */
-    .content{padding:4rem 0 6rem}
-    .content h2{font-family:var(--serif);font-size:1.5rem;font-weight:400;color:var(--ink);margin:2.5rem 0 .9rem;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
-    .content h2 .num{font-family:var(--sans);font-size:.75rem;font-weight:500;color:var(--rose);letter-spacing:.1em;display:block;margin-bottom:.3rem;text-transform:uppercase}
-    .content h3{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink2);margin:1.8rem 0 .7rem}
-    .content p{font-size:.9rem;color:var(--ink2);line-height:1.8;margin-bottom:1rem}
-    .content p strong{color:var(--ink);font-weight:500}
-    .content ul{margin:.5rem 0 1rem 1.5rem}
-    .content ul li{font-size:.9rem;color:var(--ink2);line-height:1.8;margin-bottom:.4rem}
-    .content .highlight{background:var(--rose-xs);border-left:3px solid var(--rose);border-radius:0 var(--r) var(--r) 0;padding:1.2rem 1.5rem;margin:1.5rem 0}
-    .content .highlight p{margin:0;font-size:.87rem}
-    .content .highlight strong{color:var(--rose)}
-    .content .contact-box{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:2rem;margin:2rem 0}
-    .content .contact-box p{margin:0;font-size:.87rem}
-    .content a{color:var(--rose)}
+/* PAGE HERO */
+.page-hero{background:var(--bg2);padding:4rem 0 3rem;border-bottom:1px solid var(--line)}
+.page-hero .eyebrow{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.9rem}
+.page-hero .eyebrow::before{content:'';width:16px;height:1.5px;background:var(--rose)}
+.page-hero h1{font-family:var(--serif);font-size:clamp(1.8rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink)}
+.page-hero h1 em{font-style:italic;color:var(--rose)}
+.page-hero .meta{font-size:.8rem;color:var(--ink3);margin-top:.9rem}
 
-    /* FOOTER */
-    footer{background:var(--ink);padding:3rem 0 2rem}
-    .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
-    .fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
-    .fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
-    .fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
-    .fc ul{list-style:none}
-    .fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem;cursor:pointer}
-    .fc li:hover{color:var(--rose-s)}
-    .fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
-    .fbtm em{color:var(--rose-s);font-style:normal}
+/* CONTENT */
+.content{padding:4rem 0 6rem}
+.content h2{font-family:var(--serif);font-size:1.5rem;font-weight:400;color:var(--ink);margin:2.5rem 0 .9rem;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
+.content h2 .num{font-family:var(--sans);font-size:.75rem;font-weight:500;color:var(--rose);letter-spacing:.1em;display:block;margin-bottom:.3rem;text-transform:uppercase}
+.content h3{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink2);margin:1.8rem 0 .7rem}
+.content p{font-size:.9rem;color:var(--ink2);line-height:1.8;margin-bottom:1rem}
+.content p strong{color:var(--ink);font-weight:500}
+.content ul{margin:.5rem 0 1rem 1.5rem}
+.content ul li{font-size:.9rem;color:var(--ink2);line-height:1.8;margin-bottom:.4rem}
+.content .highlight{background:var(--rose-xs);border-left:3px solid var(--rose);border-radius:0 var(--r) var(--r) 0;padding:1.2rem 1.5rem;margin:1.5rem 0}
+.content .highlight p{margin:0;font-size:.87rem}
+.content .highlight strong{color:var(--rose)}
+.content .contact-box{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:2rem;margin:2rem 0}
+.content .contact-box p{margin:0;font-size:.87rem}
+.content a{color:var(--rose)}
 
-    @media(max-width:768px){.nl{display:none}.fg{grid-template-columns:1fr 1fr}}
-  </style>
+/* FOOTER */
+footer{background:var(--ink);padding:3rem 0 2rem}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem;cursor:pointer}
+.fc li a{color:rgba(255,255,255,.45)}
+.fc li:hover,.fc li a:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+
+@media(max-width:768px){.nl{display:none}.fg{grid-template-columns:1fr 1fr}}
+</style>
 </head>
 <body>
 
 <nav><div class="wfull navi">
-  <a href="index.html" style="font-family:\'Cormorant Garamond\',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
-  <ul class="nl">
-    <li><a href="index.html#nosotros">¿Quiénes Somos?</a></li>
-    <li><a href="index.html#servicios">Servicios</a></li>
-    <li><a href="index.html#recursos">Recursos</a></li>
-    <li><a href="index.html#blog">Blog</a></li>
-    <li><a href="index.html#cta">Contacto</a></li>
-    <a href="index.html#caps" class="nbtn">Pide Cita</a>
-  </ul>
+<a href="index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="index.html#servicios">Servicios</a></li>
+<li><a href="recursos.html">Recursos</a></li>
+<li><a href="blog/index.html">Blog</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+<a href="contacto.html" class="nbtn">Pide Cita</a>
+</ul>
 </div></nav>
 
 <div class="page-hero">
-  <div class="w">
-    <div class="eyebrow">Legal</div>
-    <h1>Política de <em>Privacidad</em></h1>
-    <p class="meta">UNIMED Consulting · Centro de Desarrollo e Innovación Médica · Barcelona</p>
-  </div>
+<div class="w">
+<div class="eyebrow">Legal</div>
+<h1>Política de <em>Privacidad</em></h1>
+<p class="meta">UNIMED Consulting · Centro de Desarrollo e Innovación Médica · Barcelona</p>
+</div>
 </div>
 
 <div class="content">
-  <div class="w">
+<div class="w">
 
-    <!-- 1 -->
-    <h2><span class="num">Artículo 1</span>Información sobre el responsable del tratamiento</h2>
-    <p>La responsable del tratamiento de los datos personales es <strong>UNIMED — Centro de Desarrollo e Innovación Médica</strong>, con C.I.F.: G16769846, y con domicilio en Parc Científic de Barcelona, C/Baldiri Reixac, 4-8, Barcelona. Actuando como representante legal su presidente: <strong>Samuel Carmona Aguirre</strong>, así como legítima titular del Sitio Web y de todos los subdominios y directorios incluidos en el mismo.</p>
-    <p>Todos los textos y diagramas (a excepción de algunos de los documentos indicados en la sección de Ciencia Informada) son autoría de Samuel Carmona Aguirre, Científico Biomédico. Para asegurar la correcta utilización de la información indicada queda prohibido su uso salvo autorización expresa y por escrito de Samuel Carmona Aguirre.</p>
-    <div class="contact-box">
-      <p>Puedes ponerte en contacto con UNIMED, para cualquier aspecto relacionado con esta política de privacidad, en la dirección de correo electrónico: <a href="/cdn-cgi/l/email-protection#3b52555d547b4e5552565e5f16585455484e574f52555c155e48"><strong><span class="__cf_email__" data-cfemail="6801060e07281d0601050d0c450b07061b1d041c01060f460d1b">[email&#160;protected]</span></strong></a></p>
-    </div>
+<!-- 1 -->
+<h2><span class="num">Artículo 1</span>Información sobre el responsable del tratamiento</h2>
+<p>La responsable del tratamiento de los datos personales es <strong>UNIMED — Centro de Desarrollo e Innovación Médica</strong>, con C.I.F.: G16769846, y con domicilio en Parc Científic de Barcelona, C/Baldiri Reixac, 4-8, Barcelona. Actuando como representante legal su presidente: <strong>Samuel Carmona Aguirre</strong>, así como legítima titular del Sitio Web y de todos los subdominios y directorios incluidos en el mismo.</p>
+<p>Todos los textos y diagramas (a excepción de algunos de los documentos indicados en la sección de Ciencia Informada) son autoría de Samuel Carmona Aguirre, Científico Biomédico. Para asegurar la correcta utilización de la información indicada queda prohibido su uso salvo autorización expresa y por escrito de Samuel Carmona Aguirre.</p>
+<div class="contact-box">
+<p>Puedes ponerte en contacto con UNIMED, para cualquier aspecto relacionado con esta política de privacidad, en la dirección de correo electrónico: <a href="mailto:samuel@unimed-consulting.es"><strong>samuel@unimed-consulting.es</strong></a></p>
+</div>
 
-    <!-- 2 -->
-    <h2><span class="num">Artículo 2</span>Finalidad del tratamiento de los datos personales</h2>
+<!-- 2 -->
+<h2><span class="num">Artículo 2</span>Finalidad del tratamiento de los datos personales</h2>
 
-    <h3>2.1. Categoría de los datos recabados</h3>
-    <p>Con carácter general, los datos personales recabados a través del Sitio Web son <strong>datos identificativos</strong>. En el caso específico del Test <em>«Huella de Salud Familiar UNIMED»</em>, los datos recabados incluyen antecedentes de salud familiar, que tienen la consideración de <strong>datos de categoría especial</strong> conforme al Art. 9 RGPD. El tratamiento de estos datos se realiza exclusivamente con el consentimiento explícito del interesado, conforme a lo previsto en el Apartado 9 de esta Política de Privacidad.</p>
+<h3>2.1. Categoría de los datos recabados</h3>
+<p>Con carácter general, los datos personales recabados a través del Sitio Web son <strong>datos identificativos</strong>. En el caso específico del Test <em>«Huella de Salud Familiar UNIMED»</em>, los datos recabados incluyen antecedentes de salud familiar, que tienen la consideración de <strong>datos de categoría especial</strong> conforme al Art. 9 RGPD. El tratamiento de estos datos se realiza exclusivamente con el consentimiento explícito del interesado, conforme a lo previsto en el Apartado 9 de esta Política de Privacidad.</p>
 
-    <h3>2.2. ¿Con qué finalidad trataremos tus datos personales?</h3>
-    <p>En UNIMED trataremos los datos personales recabados con las siguientes finalidades:</p>
-    <ul>
-      <li><strong>a)</strong> En caso de contratación de los servicios de UNIMED, para mantener la relación contractual, así como la gestión, administración, información, prestación y mejora del servicio.</li>
-      <li><strong>b)</strong> Envío de información solicitada por el interesado.</li>
-      <li><strong>c)</strong> Publicar los comentarios que realices en el blog de UNIMED e interactuar con las funcionalidades del Sitio Web.</li>
-      <li><strong>d)</strong> Gestionar la inscripción en eventos organizados por UNIMED.</li>
-      <li><strong>e)</strong> Remitir boletines (newsletters), así como comunicaciones comerciales de promociones y/o publicidad de los servicios y eventos de UNIMED a través de diferentes medios.</li>
-      <li><strong>f)</strong> Remitir comunicaciones comerciales de productos y/o servicios de los patrocinadores de los eventos organizados por UNIMED.</li>
-      <li><strong>g)</strong> Con el fin de poder ofrecerte productos y/o servicios de acuerdo con tus intereses, elaboraremos un "perfil comercial" con base en la información que nos has facilitado, sin que en ningún caso se vayan a tomar decisiones automatizadas con base en dicho perfil que tengan efectos jurídicos o de carácter equivalente.</li>
-      <li><strong>h)</strong> En el caso de que nos facilites tu currículum vitae, trataremos tus datos para que puedas participar en los procesos de selección.</li>
-      <li><strong>i)</strong> En el caso de que nos facilites tus datos para solicitar formar parte de nuestro programa de Partners, trataremos tus datos con la finalidad de gestionar tu condición de PARTNER de UNIMED.</li>
-    </ul>
+<h3>2.2. ¿Con qué finalidad trataremos tus datos personales?</h3>
+<p>En UNIMED trataremos los datos personales recabados con las siguientes finalidades:</p>
+<ul>
+<li><strong>a)</strong> En caso de contratación de los servicios de UNIMED, para mantener la relación contractual, así como la gestión, administración, información, prestación y mejora del servicio.</li>
+<li><strong>b)</strong> Envío de información solicitada por el interesado.</li>
+<li><strong>c)</strong> Publicar los comentarios que realices en el blog de UNIMED e interactuar con las funcionalidades del Sitio Web.</li>
+<li><strong>d)</strong> Gestionar la inscripción en eventos organizados por UNIMED.</li>
+<li><strong>e)</strong> Remitir boletines (newsletters), así como comunicaciones comerciales de promociones y/o publicidad de los servicios y eventos de UNIMED a través de diferentes medios.</li>
+<li><strong>f)</strong> Remitir comunicaciones comerciales de productos y/o servicios de los patrocinadores de los eventos organizados por UNIMED.</li>
+<li><strong>g)</strong> Con el fin de poder ofrecerte productos y/o servicios de acuerdo con tus intereses, elaboraremos un "perfil comercial" con base en la información que nos has facilitado, sin que en ningún caso se vayan a tomar decisiones automatizadas con base en dicho perfil que tengan efectos jurídicos o de carácter equivalente.</li>
+<li><strong>h)</strong> En el caso de que nos facilites tu currículum vitae, trataremos tus datos para que puedas participar en los procesos de selección.</li>
+<li><strong>i)</strong> En el caso de que nos facilites tus datos para solicitar formar parte de nuestro programa de Partners, trataremos tus datos con la finalidad de gestionar tu condición de PARTNER de UNIMED.</li>
+</ul>
 
-    <h3>2.3. ¿Por cuánto tiempo se conservan los datos personales recabados?</h3>
-    <p>Los datos personales proporcionados se conservarán mientras exista un interés mutuo para mantener el fin del tratamiento y durante el plazo por el cuál pudieran derivarse responsabilidades:</p>
-    <ul>
-      <li><strong>6 años</strong> en cuanto a libros de contabilidad, facturas, etc., según el Art. 30 del Código de Comercio.</li>
-      <li><strong>5 años</strong> para ejercitar acciones personales sin plazo especial (art. 1.964 Código Civil).</li>
-      <li><strong>4 años</strong> según el Art. 66 y ss. de la Ley General Tributaria.</li>
-      <li><strong>1 año</strong> como máximo tras la finalización del proceso de selección, para candidatos a ofertas de trabajo.</li>
-    </ul>
-    <p>Cuando ya no sea necesario para tales fines, se suprimirán con medidas de seguridad adecuadas para garantizar la seudonimización de los datos o la destrucción total de los mismos.</p>
+<h3>2.3. ¿Por cuánto tiempo se conservan los datos personales recabados?</h3>
+<p>Los datos personales proporcionados se conservarán mientras exista un interés mutuo para mantener el fin del tratamiento y durante el plazo por el cuál pudieran derivarse responsabilidades:</p>
+<ul>
+<li><strong>6 años</strong> en cuanto a libros de contabilidad, facturas, etc., según el Art. 30 del Código de Comercio.</li>
+<li><strong>5 años</strong> para ejercitar acciones personales sin plazo especial (art. 1.964 Código Civil).</li>
+<li><strong>4 años</strong> según el Art. 66 y ss. de la Ley General Tributaria.</li>
+<li><strong>1 año</strong> como máximo tras la finalización del proceso de selección, para candidatos a ofertas de trabajo.</li>
+</ul>
+<p>Cuando ya no sea necesario para tales fines, se suprimirán con medidas de seguridad adecuadas para garantizar la seudonimización de los datos o la destrucción total de los mismos.</p>
 
-    <!-- 3 -->
-    <h2><span class="num">Artículo 3</span>Legitimación</h2>
-    <p>El tratamiento de tus datos se realiza con la base jurídica consistente en la legitimación que otorga tu solicitud de información y/o la contratación de los productos y/o servicios de UNIMED.</p>
-    <p>También se legitimará el tratamiento mediante la base jurídica del <strong>consentimiento libre, específico, inequívoco e informado</strong>, articulando mecanismos para que de forma previa al acceso a tus datos, puedas acceder a esa información y, en caso de estar conforme, proceder a su aceptación mediante una clara acción afirmativa.</p>
-    <p>Te recordamos que puedes <strong>retirar en cualquier momento el consentimiento</strong> que hayas prestado para cualquier finalidad específica, sin que ello afecte a la licitud del tratamiento basado en el consentimiento previo a su revocación.</p>
+<!-- 3 -->
+<h2><span class="num">Artículo 3</span>Legitimación</h2>
+<p>El tratamiento de tus datos se realiza con la base jurídica consistente en la legitimación que otorga tu solicitud de información y/o la contratación de los productos y/o servicios de UNIMED.</p>
+<p>También se legitimará el tratamiento mediante la base jurídica del <strong>consentimiento libre, específico, inequívoco e informado</strong>, articulando mecanismos para que de forma previa al acceso a tus datos, puedas acceder a esa información y, en caso de estar conforme, proceder a su aceptación mediante una clara acción afirmativa.</p>
+<p>Te recordamos que puedes <strong>retirar en cualquier momento el consentimiento</strong> que hayas prestado para cualquier finalidad específica, sin que ello afecte a la licitud del tratamiento basado en el consentimiento previo a su revocación.</p>
 
-    <!-- 4 -->
-    <h2><span class="num">Artículo 4</span>Destinatarios</h2>
-    <p>Los datos <strong>no se comunicarán a ningún tercero ajeno a UNIMED</strong>, salvo obligación legal o se te informe de ello de forma expresa.</p>
-    <p>Como encargados de tratamiento que pueden tener acceso a los datos personales, el Responsable tiene contratados los servicios de proveedores con los que tiene suscrito un contrato de encargado de tratamiento conforme a la normativa aplicable en materia de protección de datos.</p>
-    <p>Dichos proveedores se encuentran ubicados en territorio de la Unión Europea o en territorio norteamericano, encontrándose adheridos al <strong>Data Privacy Framework UE-EE.UU.</strong> (Decisión de adecuación de la Comisión Europea, julio 2023) o disponiendo de cláusulas contractuales tipo conforme al Art. 46.2.c RGPD.</p>
+<!-- 4 -->
+<h2><span class="num">Artículo 4</span>Destinatarios</h2>
+<p>Los datos <strong>no se comunicarán a ningún tercero ajeno a UNIMED</strong>, salvo obligación legal o se te informe de ello de forma expresa.</p>
+<p>Como encargados de tratamiento que pueden tener acceso a los datos personales, el Responsable tiene contratados los servicios de proveedores con los que tiene suscrito un contrato de encargado de tratamiento conforme a la normativa aplicable en materia de protección de datos.</p>
+<p>Dichos proveedores se encuentran ubicados en territorio de la Unión Europea o en territorio norteamericano, encontrándose adheridos al <strong>Data Privacy Framework UE-EE.UU.</strong> (Decisión de adecuación de la Comisión Europea, julio 2023) o disponiendo de cláusulas contractuales tipo conforme al Art. 46.2.c RGPD.</p>
 
-    <!-- 5 -->
-    <h2><span class="num">Artículo 5</span>Derechos</h2>
-    <p>Puedes ejercer los siguientes derechos respecto a tus datos personales:</p>
-    <ul>
-      <li><strong>Acceso:</strong> conocer qué datos personales tratamos sobre ti.</li>
-      <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos.</li>
-      <li><strong>Supresión:</strong> solicitar la eliminación de tus datos cuando, entre otros motivos, ya no sean necesarios para los fines que fueron recogidos.</li>
-      <li><strong>Oposición:</strong> oponerte al tratamiento de tus datos en determinadas circunstancias.</li>
-      <li><strong>Limitación del tratamiento:</strong> solicitar la suspensión del tratamiento de tus datos en determinados supuestos.</li>
-      <li><strong>Portabilidad:</strong> recibir tus datos en un formato estructurado de uso común y lectura mecánica.</li>
-    </ul>
-    <p>Puedes ejercer tus derechos escribiendo a <a href="/cdn-cgi/l/email-protection#422b2c242d02372c2b2f27266f212d2c31372e362b2c256c2731"><span class="__cf_email__" data-cfemail="b2dbdcd4ddf2c7dcdbdfd7d69fd1dddcc1c7dec6dbdcd59cd7c1">[email&#160;protected]</span></a>. Tienes derecho a presentar reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> en <a href="https://www.aepd.es" target="_blank">www.aepd.es</a>.</p>
+<!-- 5 -->
+<h2><span class="num">Artículo 5</span>Derechos</h2>
+<p>Puedes ejercer los siguientes derechos respecto a tus datos personales:</p>
+<ul>
+<li><strong>Acceso:</strong> conocer qué datos personales tratamos sobre ti.</li>
+<li><strong>Rectificación:</strong> corregir datos inexactos o incompletos.</li>
+<li><strong>Supresión:</strong> solicitar la eliminación de tus datos cuando, entre otros motivos, ya no sean necesarios para los fines que fueron recogidos.</li>
+<li><strong>Oposición:</strong> oponerte al tratamiento de tus datos en determinadas circunstancias.</li>
+<li><strong>Limitación del tratamiento:</strong> solicitar la suspensión del tratamiento de tus datos en determinados supuestos.</li>
+<li><strong>Portabilidad:</strong> recibir tus datos en un formato estructurado de uso común y lectura mecánica.</li>
+</ul>
+<p>Puedes ejercer tus derechos escribiendo a <a href="mailto:samuel@unimed-consulting.es">samuel@unimed-consulting.es</a>. Tienes derecho a presentar reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> en <a href="https://www.aepd.es" target="_blank">www.aepd.es</a>.</p>
 
-    <!-- 6 -->
-    <h2><span class="num">Artículo 6</span>Consecuencias de no proporcionar los datos solicitados</h2>
-    <p>Con carácter general, el suministro de datos personales requiere una edad mínima de 14 años o, en su caso, disponer de capacidad jurídica suficiente para contratar. Los datos personales solicitados son necesarios para gestionar tus solicitudes y/o prestarte los servicios que puedas contratar, por lo que si no nos los facilitas, no podremos atenderte correctamente ni prestarte el servicio que has solicitado.</p>
+<!-- 6 -->
+<h2><span class="num">Artículo 6</span>Consecuencias de no proporcionar los datos solicitados</h2>
+<p>Con carácter general, el suministro de datos personales requiere una edad mínima de 14 años o, en su caso, disponer de capacidad jurídica suficiente para contratar. Los datos personales solicitados son necesarios para gestionar tus solicitudes y/o prestarte los servicios que puedas contratar, por lo que si no nos los facilitas, no podremos atenderte correctamente ni prestarte el servicio que has solicitado.</p>
 
-    <!-- 7 -->
-    <h2><span class="num">Artículo 7</span>Seguridad y actualización de tus datos personales</h2>
-    <p>Con el fin de salvaguardar la seguridad de tus datos personales, te informamos que UNIMED ha adoptado todas las medidas de índole técnica y organizativa necesarias para garantizar la seguridad de los datos personales suministrados. Todo ello para evitar su alteración, pérdida, y/o tratamientos o accesos no autorizados, tal como exige la normativa vigente.</p>
-    <p>Es importante que, para que podamos mantener los datos personales actualizados, nos informes siempre que se haya producido alguna modificación en los mismos, escribiendo a <a href="/cdn-cgi/l/email-protection#a7cec9c1c8e7d2c9cecac2c38ac4c8c9d4d2cbd3cec9c089c2d4"><span class="__cf_email__" data-cfemail="4c25222a230c392225212928612f23223f39203825222b62293f">[email&#160;protected]</span></a>.</p>
+<!-- 7 -->
+<h2><span class="num">Artículo 7</span>Seguridad y actualización de tus datos personales</h2>
+<p>Con el fin de salvaguardar la seguridad de tus datos personales, te informamos que UNIMED ha adoptado todas las medidas de índole técnica y organizativa necesarias para garantizar la seguridad de los datos personales suministrados. Todo ello para evitar su alteración, pérdida, y/o tratamientos o accesos no autorizados, tal como exige la normativa vigente.</p>
+<p>Es importante que, para que podamos mantener los datos personales actualizados, nos informes siempre que se haya producido alguna modificación en los mismos, escribiendo a <a href="mailto:samuel@unimed-consulting.es">samuel@unimed-consulting.es</a>.</p>
 
-    <!-- 8 -->
-    <h2><span class="num">Artículo 8</span>Confidencialidad</h2>
-    <p>UNIMED te informa que tus datos serán tratados con el máximo celo y confidencialidad por todo el personal que intervenga en cualquiera de las fases del tratamiento. No cederemos ni comunicaremos a ningún tercero tus datos, excepto en los casos legalmente previstos, o salvo que el interesado nos hubiera autorizado expresamente.</p>
+<!-- 8 -->
+<h2><span class="num">Artículo 8</span>Confidencialidad</h2>
+<p>UNIMED te informa que tus datos serán tratados con el máximo celo y confidencialidad por todo el personal que intervenga en cualquiera de las fases del tratamiento. No cederemos ni comunicaremos a ningún tercero tus datos, excepto en los casos legalmente previstos, o salvo que el interesado nos hubiera autorizado expresamente.</p>
 
-    <!-- 9 -->
-    <h2><span class="num">Artículo 9</span>Tratamiento específico: Test «Huella de Salud Familiar UNIMED»</h2>
-    <div class="highlight">
-      <p>El Test <strong>«Huella de Salud Familiar UNIMED»</strong> implica el tratamiento de datos de salud de categoría especial conforme al <strong>Art. 9 RGPD</strong>. A continuación se detalla la información específica de este tratamiento conforme al Art. 13 RGPD.</p>
-    </div>
-    <ul>
-      <li><strong>Responsable del tratamiento:</strong> Samuel Carmona Aguirre — UNIMED Consulting · CIF: G16769846 · <a href="/cdn-cgi/l/email-protection#295a48445c4c45695c4740444c4d044a46475a5c455d40474e074c5a"><span class="__cf_email__" data-cfemail="1764767a62727b5762797e7a72733a74787964627b637e7970397264">[email&#160;protected]</span></a></li>
-      <li><strong>Datos recogidos:</strong> Nombre, correo electrónico y respuestas al formulario de antecedentes de salud familiar en formato anónimo (sin identificación de familiares concretos).</li>
-      <li><strong>Finalidad:</strong> Elaborar el perfil preliminar de Huella de Salud Familiar del usuario y enviarle el informe orientativo de autoconocimiento holónico en formato PDF.</li>
-      <li><strong>Base jurídica — Datos identificativos:</strong> Art. 6.1.a RGPD — consentimiento del interesado.</li>
-      <li><strong>Base jurídica — Datos de salud:</strong> Art. 9.2.a RGPD — consentimiento explícito, otorgado mediante el checkbox obligatorio del formulario. Puedes retirar este consentimiento en cualquier momento escribiendo a <a href="/cdn-cgi/l/email-protection#a7d4c6cad2c2cbe7d2c9cecac2c38ac4c8c9d4d2cbd3cec9c089c2d4"><span class="__cf_email__" data-cfemail="d8abb9b5adbdb498adb6b1b5bdbcf5bbb7b6abadb4acb1b6bff6bdab">[email&#160;protected]</span></a>, sin que ello afecte a la licitud del tratamiento anterior a su retirada.</li>
-      <li><strong>Plazo de conservación:</strong> 3 años desde la recogida del consentimiento, salvo ejercicio del derecho de supresión antes de ese plazo.</li>
-      <li><strong>Encargado del tratamiento:</strong> Tally.so actúa como encargado del tratamiento (plataforma de formularios) bajo contrato conforme al Art. 28 RGPD y con las garantías adecuadas del Art. 46 RGPD para transferencias internacionales.</li>
-    </ul>
-    <div class="highlight">
-      <p><strong>Naturaleza del informe:</strong> El informe «Huella de Salud Familiar UNIMED» es una herramienta orientativa de autoconocimiento holónico. No constituye diagnóstico médico, evaluación clínica ni recomendación terapéutica en el sentido de la Ley 44/2003 de Ordenación de las Profesiones Sanitarias. Para cualquier decisión relativa a tu salud, consulta siempre a tu médico u otro profesional sanitario de referencia.</p>
-    </div>
-    <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición escribiendo a <a href="/cdn-cgi/l/email-protection#e695878b93838aa693888f8b8382cb85898895938a928f8881c88395"><span class="__cf_email__" data-cfemail="ddaebcb0a8b8b19da8b3b4b0b8b9f0beb2b3aea8b1a9b4b3baf3b8ae">[email&#160;protected]</span></a>. Tienes derecho a presentar reclamación ante la AEPD en <a href="https://www.aepd.es" target="_blank">www.aepd.es</a>.</p>
+<!-- 9 -->
+<h2><span class="num">Artículo 9</span>Tratamiento específico: Test «Huella de Salud Familiar UNIMED»</h2>
+<div class="highlight">
+<p>El Test <strong>«Huella de Salud Familiar UNIMED»</strong> implica el tratamiento de datos de salud de categoría especial conforme al <strong>Art. 9 RGPD</strong>. A continuación se detalla la información específica de este tratamiento conforme al Art. 13 RGPD.</p>
+</div>
+<ul>
+<li><strong>Responsable del tratamiento:</strong> Samuel Carmona Aguirre — UNIMED Consulting · CIF: G16769846 · <a href="mailto:samuel@unimed-consulting.es">samuel@unimed-consulting.es</a></li>
+<li><strong>Datos recogidos:</strong> Nombre, correo electrónico y respuestas al formulario de antecedentes de salud familiar en formato anónimo (sin identificación de familiares concretos).</li>
+<li><strong>Finalidad:</strong> Elaborar el perfil preliminar de Huella de Salud Familiar del usuario y enviarle el informe orientativo de autoconocimiento holónico en formato PDF.</li>
+<li><strong>Base jurídica — Datos identificativos:</strong> Art. 6.1.a RGPD — consentimiento del interesado.</li>
+<li><strong>Base jurídica — Datos de salud:</strong> Art. 9.2.a RGPD — consentimiento explícito, otorgado mediante el checkbox obligatorio del formulario. Puedes retirar este consentimiento en cualquier momento escribiendo a <a href="mailto:samuel@unimed-consulting.es">samuel@unimed-consulting.es</a>, sin que ello afecte a la licitud del tratamiento anterior a su retirada.</li>
+<li><strong>Plazo de conservación:</strong> 3 años desde la recogida del consentimiento, salvo ejercicio del derecho de supresión antes de ese plazo.</li>
+<li><strong>Encargado del tratamiento:</strong> Tally.so actúa como encargado del tratamiento (plataforma de formularios) bajo contrato conforme al Art. 28 RGPD y con las garantías adecuadas del Art. 46 RGPD para transferencias internacionales.</li>
+</ul>
+<div class="highlight">
+<p><strong>Naturaleza del informe:</strong> El informe «Huella de Salud Familiar UNIMED» es una herramienta orientativa de autoconocimiento holónico. No constituye diagnóstico médico, evaluación clínica ni recomendación terapéutica en el sentido de la Ley 44/2003 de Ordenación de las Profesiones Sanitarias. Para cualquier decisión relativa a tu salud, consulta siempre a tu médico u otro profesional sanitario de referencia.</p>
+</div>
+<p>Puedes ejercer tus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición escribiendo a <a href="mailto:samuel@unimed-consulting.es">samuel@unimed-consulting.es</a>. Tienes derecho a presentar reclamación ante la AEPD en <a href="https://www.aepd.es" target="_blank">www.aepd.es</a>.</p>
 
-  </div>
+</div>
 </div>
 
 <footer><div class="wfull">
-  <div class="fg">
-    <div>
-      <div class="flogo">UNI<em>MED</em> Consulting</div>
-      <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona.</p>
-      <div class="fcon"><span>📍 Barcelona, España</span><span>📞 +34 673 815 148</span><span>✉️ <a
+<div class="fg">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona.</p>
+<div class="fcon">
+<span>📍 Barcelona, España</span>
+<span>📞 +34 673 815 148</span>
+<span>✉️ samuel@unimed-consulting.es</span>
+</div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul>
+<li><a href="servicios/atencion-consultiva.html">Atención Consultiva</a></li>
+<li><a href="servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+<li><a href="servicios/nutrigenomica.html">Nutrigenómica</a></li>
+<li><a href="servicios/neurocognitivo.html">Neurocognitivo</a></li>
+<li><a href="servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+</ul></div>
+<div class="fc"><h5>Recursos</h5><ul>
+<li>Sanalogía</li>
+<li>Guías Personas-Pacientes</li>
+<li>CAPS Digital</li>
+<li><a href="blog/index.html">Blog</a></li>
+</ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="aviso-legal.html">Aviso Legal</a></li>
+<li>Política de Cookies</li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona</em></p>
+</div>
+</div></footer>
+
+</body>
+</html>
