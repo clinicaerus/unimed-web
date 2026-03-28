@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mensaje recibido — UNIMED Consulting</title>
+<meta name="robots" content="noindex, nofollow"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+--rose:   #e8356d;
+--rose-s: #f07098;
+--rose-xs:rgba(232,53,109,.07);
+--rose-gl:rgba(232,53,109,.14);
+--bg:     #ffffff;
+--bg2:    #f8f7f9;
+--ink:    #1a0f24;
+--ink2:   #3a2d48;
+--ink3:   #7a6880;
+--line:   rgba(0,0,0,.08);
+--liner:  rgba(232,53,109,.18);
+--serif:  'Cormorant Garamond',Georgia,serif;
+--sans:   'Inter',system-ui,sans-serif;
+--max:    1140px;
+--r:      8px;
+--rxl:    24px;
+--ease:   cubic-bezier(.22,1,.36,1);
+}
+*,::before,::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--max);margin:0 auto;padding:0 2rem}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:var(--ink)}
+.flogo em{font-style:italic;color:var(--rose)}
+
+/* HERO GRACIAS */
+.gracias-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:5rem 2rem}
+.gracias-box{max-width:560px;text-align:center}
+.check-circle{width:72px;height:72px;background:var(--rose-xs);border:2px solid var(--liner);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;font-size:2rem}
+.gracias-box h1{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--ink);line-height:1.15;margin-bottom:1rem}
+.gracias-box h1 em{font-style:italic;color:var(--rose)}
+.gracias-box p{font-size:.9rem;color:var(--ink2);line-height:1.82;margin-bottom:.8rem}
+.gracias-box p strong{color:var(--ink);font-weight:500}
+.divider{width:48px;height:2px;background:var(--rose);margin:2rem auto}
+.btn-volver{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.85rem;font-weight:500;padding:.85rem 2rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);box-shadow:0 4px 16px var(--rose-gl);margin-top:1rem}
+.btn-volver:hover{background:#c82c5c;transform:translateY(-2px)}
+.btn-secundario{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:var(--ink2);border:1.5px solid var(--line);transition:all .25s var(--ease);margin-top:1rem;margin-left:.8rem}
+.btn-secundario:hover{border-color:var(--rose);color:var(--rose)}
+.nota{font-size:.75rem;color:var(--ink3);margin-top:2rem;line-height:1.6}
+
+/* FOOTER */
+footer{background:var(--ink);padding:2rem 0;border-top:1px solid rgba(255,255,255,.05)}
+.fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+.flogo-footer{font-family:var(--serif);font-size:1.1rem;font-weight:500;color:#fff}
+.flogo-footer em{font-style:italic;color:var(--rose-s)}
+
+@media(max-width:768px){.nl{display:none}.btn-secundario{margin-left:0;margin-top:.6rem}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav><div class="w navi">
+<a href="index.html" class="flogo">UNI<em>MED</em></a>
+<ul class="nl">
+<li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="index.html#servicios">Servicios</a></li>
+<li><a href="recursos.html">Recursos</a></li>
+<li><a href="blog/index.html">Blog</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+<a href="contacto.html" class="nbtn">Pide Cita</a>
+</ul>
+</div></nav>
+
+<!-- CONTENIDO -->
+<div class="gracias-wrap">
+<div class="gracias-box">
+
+<div class="check-circle">✓</div>
+
+<h1>Mensaje recibido.<br/><em>Gracias por escribirnos.</em></h1>
+
+<div class="divider"></div>
+
+<p>Hemos recibido tu consulta correctamente. <strong>Te responderemos en menos de 24 horas</strong> en días laborables.</p>
+<p>Si tu situación es urgente o prefieres una respuesta más rápida, puedes escribirnos directamente a <strong>salud@unimed-consulting.es</strong>.</p>
+
+<p class="nota">También puedes empezar ahora mismo con CAPS Digital — nuestro asesor de salud digital, disponible 24h sin registro y sin coste.</p>
+
+<div>
+<a href="index.html" class="btn-volver">
+Volver al inicio
+<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btn-secundario">
+Iniciar CAPS Digital
+</a>
+</div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer><div class="w">
+<div class="fbtm">
+<span class="flogo-footer">UNI<em>MED</em> Consulting</span>
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p><a href="politica-de-privacidad.html" style="color:rgba(255,255,255,.25)">Política de privacidad</a> · <a href="aviso-legal.html" style="color:rgba(255,255,255,.25)">Aviso legal</a></p>
+</div>
+</div></footer>
+
+</body>
+</html>
