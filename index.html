@@ -455,3 +455,10 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersectin
+
+<script>
+var S=document.querySelectorAll('.hslide'),D=document.querySelectorAll('.hdot'),C=0;
+function goSlide(n){S[C].classList.remove('active');D[C].classList.remove('active');C=n;S[C].classList.add('active');D[C].classList.add('active');}
+setInterval(function(){goSlide((C+1)%S.length);},5000);
+</script>
+</body></html>
