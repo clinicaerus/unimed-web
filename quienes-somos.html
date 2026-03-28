@@ -1,401 +1,553 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>¿Quiénes Somos? — UNIMED Consulting</title>
-  <meta name="description" content="UNIMED Consulting — Más de 20 años de investigación científica original en HoloMedicina, Medicina Personalizada de Precisión y Ciencias de la Complejidad. Samuel Carmona Aguirre, fundador."/>
-  <link rel="canonical" href="https://www.unimed-consulting.es/quienes-somos.html"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <style>
-    :root {
-      --rose:   #e8356d;
-      --rose-s: #f07098;
-      --rose-xs:rgba(232,53,109,.07);
-      --rose-gl:rgba(232,53,109,.14);
-      --bg:     #ffffff;
-      --bg2:    #f8f7f9;
-      --bg3:    #f2eff5;
-      --card:   #ffffff;
-      --ink:    #1a0f24;
-      --ink2:   #3a2d48;
-      --ink3:   #7a6880;
-      --line:   rgba(0,0,0,.08);
-      --liner:  rgba(232,53,109,.18);
-      --serif:  'Cormorant Garamond',Georgia,serif;
-      --sans:   'Inter',system-ui,sans-serif;
-      --max:    1140px;
-      --r:      8px;
-      --rxl:    24px;
-      --ease:   cubic-bezier(.22,1,.36,1);
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>¿Quiénes Somos? — UNIMED Consulting</title>
+<meta name="description" content="¿Tu médico trata tu diagnóstico pero no te ve a ti? UNIMED existe para devolverte el protagonismo en tu propia salud. Medicina personalizada de precisión · HoloMedicina · Barcelona."/>
+<link rel="canonical" href="https://www.unimed-consulting.es/quienes-somos.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<!-- Schema.org JSON-LD — Posicionamiento semántico Knowledge Graph -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.unimed-consulting.es/#organization",
+      "name": "UNIMED Consulting",
+      "alternateName": ["UNIMED", "ASOC UNIMED"],
+      "url": "https://www.unimed-consulting.es",
+      "logo": "https://www.unimed-consulting.es/assets/logo.png",
+      "description": "Organización holónica post-humanista especializada en HoloMedicina, medicina personalizada de precisión, informómica y salud transgeneracional. Primera aplicación del paradigma de la complejidad a la salud humana personalizada en España y Europa.",
+      "founder": {"@id": "https://www.unimed-consulting.es/#samuel"},
+      "address": [
+        {"@type": "PostalAddress", "addressLocality": "Barcelona", "addressCountry": "ES"},
+        {"@type": "PostalAddress", "addressLocality": "Västerås", "addressCountry": "SE"}
+      ],
+      "contactPoint": {"@type": "ContactPoint", "telephone": "+34673815148", "email": "info@unimed-consulting.es", "contactType": "customer service"},
+      "sameAs": ["https://www.linkedin.com/company/unimed-consulting"],
+      "knowsAbout": [
+        "HoloMedicina",
+        "medicina personalizada de precisión",
+        "informómica",
+        "salud transgeneracional",
+        "paradigma holónico en salud",
+        "ciencias de la complejidad aplicadas a la salud",
+        "CAPS Digital",
+        "holoarquía de agentes IA en medicina",
+        "nutrigenómica",
+        "genética clínica"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.unimed-consulting.es/#samuel",
+      "name": "Samuel Carmona Aguirre",
+      "jobTitle": "Fundador y CEO · Científico Biomédico Clínico",
+      "worksFor": {"@id": "https://www.unimed-consulting.es/#organization"},
+      "alumniOf": [
+        {"@type": "EducationalOrganization", "name": "Universidad de Málaga"},
+        {"@type": "EducationalOrganization", "name": "UNAM · Facultad de Medicina"}
+      ],
+      "knowsAbout": [
+        "HoloMedicina",
+        "medicina personalizada de precisión",
+        "ciencias cognitivas",
+        "complejidad en salud",
+        "nutrigenómica",
+        "genética clínica",
+        "neurociencias",
+        "informómica",
+        "transdisciplinariedad en salud"
+      ],
+      "award": "Congreso Mundial Pensée Complexe · UNESCO · Edgar Morin · 2016",
+      "description": "Creador del paradigma HoloMedicina, del marco HoloMed 8D y del concepto del Sujeto Holónico Unitivo Multidimensional. Más de 20 años de investigación científica original en la intersección entre biomedicina, neurociencias cognitivas, ciencias de la complejidad e inteligencia artificial."
+    },
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://www.unimed-consulting.es/#medicalBusiness",
+      "name": "UNIMED Consulting",
+      "url": "https://www.unimed-consulting.es",
+      "medicalSpecialty": [
+        "Precision Medicine",
+        "Genomics",
+        "Neurology",
+        "Nutrition"
+      ],
+      "availableService": [
+        {"@type": "MedicalTherapy", "name": "Atención Consultiva Holónica"},
+        {"@type": "MedicalTherapy", "name": "Asesoramiento Genético Clínico"},
+        {"@type": "MedicalTherapy", "name": "Nutrigenómica Personalizada"},
+        {"@type": "MedicalTherapy", "name": "Evaluación Neurocognitiva"},
+        {"@type": "MedicalTherapy", "name": "CAPS Digital — Agente epistémico de salud"}
+      ]
     }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
-    a{color:inherit;text-decoration:none}
-    .w{max-width:var(--max);margin:0 auto;padding:0 2rem}
+  ]
+}
+</script>
 
-    /* NAV */
-    nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .navi{display:flex;align-items:center;justify-content:space-between;height:70px}
-    .nl{display:flex;align-items:center;gap:2rem;list-style:none}
-    .nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
-    .nl a:hover{color:var(--ink)}
-    .nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
-    .nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+<style>
+:root {
+--rose:   #e8356d;
+--rose-s: #f07098;
+--rose-xs:rgba(232,53,109,.07);
+--rose-gl:rgba(232,53,109,.14);
+--bg:     #ffffff;
+--bg2:    #f8f7f9;
+--bg3:    #f2eff5;
+--card:   #ffffff;
+--ink:    #1a0f24;
+--ink2:   #3a2d48;
+--ink3:   #7a6880;
+--line:   rgba(0,0,0,.08);
+--liner:  rgba(232,53,109,.18);
+--serif:  'Cormorant Garamond',Georgia,serif;
+--sans:   'Inter',system-ui,sans-serif;
+--max:    1140px;
+--r:      8px;
+--rxl:    24px;
+--ease:   cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:var(--max);margin:0 auto;padding:0 2rem}
 
-    /* PAGE HERO */
-    .phero{background:var(--ink);padding:5rem 0 4rem;position:relative;overflow:hidden}
-    .phero::before{content:'';position:absolute;right:-100px;top:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,53,109,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
-    .ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:.9rem}
-    .ey::before{content:'';width:16px;height:1.5px;background:var(--rose-s)}
-    .phero h1{font-family:var(--serif);font-size:clamp(2.2rem,5vw,4.2rem);font-weight:300;line-height:1.1;color:#fff}
-    .phero h1 em{font-style:italic;color:var(--rose-s)}
-    .phero p{font-size:1rem;color:rgba(255,255,255,.55);margin-top:1rem;max-width:580px;line-height:1.78}
+/* NAV */
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
 
-    /* SECTIONS */
-    section{padding:5.5rem 0}
-    .eyebrow{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.9rem}
-    .eyebrow::before{content:'';width:16px;height:1.5px;background:var(--rose)}
-    h2{font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,2.9rem);font-weight:300;line-height:1.15;letter-spacing:-.01em;color:var(--ink)}
-    h2 em{font-style:italic;color:var(--rose)}
-    .sdesc{font-size:.9rem;color:var(--ink2);max-width:580px;line-height:1.8;margin-top:.8rem}
+/* PAGE HERO */
+.phero{background:var(--ink);padding:5rem 0 4rem;position:relative;overflow:hidden}
+.phero::before{content:'';position:absolute;right:-100px;top:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,53,109,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
+.ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:.9rem}
+.ey::before{content:'';width:16px;height:1.5px;background:var(--rose-s)}
+.phero h1{font-family:var(--serif);font-size:clamp(2.2rem,5vw,4.2rem);font-weight:300;line-height:1.1;color:#fff}
+.phero h1 em{font-style:italic;color:var(--rose-s)}
+.phero p{font-size:1rem;color:rgba(255,255,255,.65);margin-top:1rem;max-width:620px;line-height:1.78}
+.phero .hero-sub{font-size:.85rem;color:rgba(255,255,255,.4);margin-top:.6rem;max-width:580px;line-height:1.78}
 
-    /* QUOTE BAND */
-    .quote-band{background:var(--ink);padding:4.5rem 0;text-align:center;position:relative;overflow:hidden}
-    .quote-band::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:700px;height:300px;background:radial-gradient(ellipse,rgba(232,53,109,.12) 0%,transparent 70%);pointer-events:none}
-    .quote-band blockquote{font-family:var(--serif);font-size:clamp(1.3rem,2.8vw,2rem);font-weight:300;font-style:italic;color:#f0eaf4;line-height:1.45;max-width:800px;margin:0 auto 1.3rem;position:relative;z-index:1}
-    .quote-band cite{font-family:var(--sans);font-size:.78rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--rose-s);position:relative;z-index:1}
+/* SECTIONS */
+section{padding:5.5rem 0}
+.eyebrow{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.9rem}
+.eyebrow::before{content:'';width:16px;height:1.5px;background:var(--rose)}
+h2{font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,2.9rem);font-weight:300;line-height:1.15;letter-spacing:-.01em;color:var(--ink)}
+h2 em{font-style:italic;color:var(--rose)}
+.sdesc{font-size:.9rem;color:var(--ink2);max-width:580px;line-height:1.8;margin-top:.8rem}
 
-    /* MISION */
-    #mision{background:var(--bg2)}
-    .mision-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-    .mcard{background:var(--card);border:1px solid var(--line);border-radius:var(--rxl);padding:2.2rem 2rem;position:relative;overflow:hidden;transition:all .3s var(--ease)}
-    .mcard::after{content:'';position:absolute;bottom:0;left:0;width:0;height:3px;background:linear-gradient(90deg,var(--rose),var(--rose-s));transition:width .4s var(--ease)}
-    .mcard:hover{box-shadow:0 8px 32px rgba(232,53,109,.08);transform:translateY(-3px)}
-    .mcard:hover::after{width:100%}
-    .mcard-ico{font-size:1.6rem;margin-bottom:1rem}
-    .mcard h3{font-family:var(--serif);font-size:1.35rem;font-weight:400;color:var(--ink);margin-bottom:.7rem}
-    .mcard h3 em{font-style:italic;color:var(--rose)}
-    .mcard p{font-size:.85rem;color:var(--ink2);line-height:1.78}
+/* QUOTE BAND */
+.quote-band{background:var(--ink);padding:4.5rem 0;text-align:center;position:relative;overflow:hidden}
+.quote-band::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:700px;height:300px;background:radial-gradient(ellipse,rgba(232,53,109,.12) 0%,transparent 70%);pointer-events:none}
+.quote-band blockquote{font-family:var(--serif);font-size:clamp(1.3rem,2.8vw,2rem);font-weight:300;font-style:italic;color:#f0eaf4;line-height:1.45;max-width:800px;margin:0 auto 1.3rem;position:relative;z-index:1}
+.quote-band cite{font-family:var(--sans);font-size:.78rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--rose-s);position:relative;z-index:1}
 
-    /* SAMUEL */
-    #samuel{background:var(--bg)}
-    .samuel-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;align-items:start}
-    .samuel-aside{position:sticky;top:5rem}
-    .samuel-portrait{aspect-ratio:4/5;background:linear-gradient(160deg,var(--bg3) 0%,var(--rose-xs) 100%);border-radius:var(--rxl);border:1px solid var(--liner);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;position:relative;overflow:hidden}
-    .portrait-inner{text-align:center}
-    .portrait-initials{font-family:var(--serif);font-size:5rem;font-weight:300;color:var(--rose);opacity:.25;line-height:1}
-    .portrait-label{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-top:.5rem}
-    .portrait-ph{font-size:.72rem;color:var(--ink3);margin-top:.3rem;font-style:italic}
-    .samuel-stat{display:flex;justify-content:space-between;align-items:center;padding:.85rem 0;border-bottom:1px solid var(--line)}
-    .samuel-stat:first-of-type{border-top:1px solid var(--line)}
-    .sval{font-family:var(--serif);font-size:1.4rem;color:var(--rose)}
-    .slbl{font-size:.73rem;color:var(--ink3);text-align:right;max-width:160px;line-height:1.4}
-    .samuel-body h2{margin-bottom:1.4rem}
-    .samuel-body p{font-size:.88rem;color:var(--ink2);line-height:1.85;margin-bottom:.9rem}
-    .samuel-body p strong{color:var(--ink);font-weight:500}
+/* MISION */
+#mision{background:var(--bg2)}
+.mision-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.mcard{background:var(--card);border:1px solid var(--line);border-radius:var(--rxl);padding:2.2rem 2rem;position:relative;overflow:hidden;transition:all .3s var(--ease)}
+.mcard::after{content:'';position:absolute;bottom:0;left:0;width:0;height:3px;background:linear-gradient(90deg,var(--rose),var(--rose-s));transition:width .4s var(--ease)}
+.mcard:hover{box-shadow:0 8px 32px rgba(232,53,109,.08);transform:translateY(-3px)}
+.mcard:hover::after{width:100%}
+.mcard-ico{font-size:1.6rem;margin-bottom:1rem}
+.mcard h3{font-family:var(--serif);font-size:1.35rem;font-weight:400;color:var(--ink);margin-bottom:.7rem}
+.mcard h3 em{font-style:italic;color:var(--rose)}
+.mcard p{font-size:.85rem;color:var(--ink2);line-height:1.78}
 
-    /* HITOS TIMELINE */
-    .timeline{margin-top:2.5rem}
-    .hito{display:flex;gap:1.5rem;padding:1.3rem 0;border-bottom:1px solid var(--line);align-items:flex-start}
-    .hito:first-child{border-top:1px solid var(--line)}
-    .hito-year{font-family:var(--serif);font-size:.95rem;font-weight:500;color:var(--rose);min-width:56px;padding-top:.1rem}
-    .hito-content h4{font-family:var(--serif);font-size:1.05rem;font-weight:400;color:var(--ink);margin-bottom:.3rem}
-    .hito-content p{font-size:.82rem;color:var(--ink2);line-height:1.6}
-    .hito-badge{display:inline-block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--rose);background:var(--rose-xs);padding:.18rem .5rem;border-radius:100px;margin-bottom:.3rem}
+/* GENERACIONES */
+#generaciones{background:var(--bg)}
+.gen-intro{font-size:.92rem;color:var(--ink2);max-width:680px;line-height:1.85;margin-top:.9rem;margin-bottom:3rem}
+.gen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.gcard{border:1px solid var(--line);border-radius:var(--rxl);padding:2rem 1.6rem;position:relative;overflow:hidden;transition:all .3s var(--ease);background:var(--card)}
+.gcard::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px}
+.gcard.bb::before{background:linear-gradient(90deg,#6c5ce7,#a29bfe)}
+.gcard.x::before{background:linear-gradient(90deg,#0984e3,#74b9ff)}
+.gcard.y::before{background:linear-gradient(90deg,var(--rose),var(--rose-s))}
+.gcard.z::before{background:linear-gradient(90deg,#00b894,#55efc4)}
+.gcard:hover{box-shadow:0 8px 24px rgba(0,0,0,.06);transform:translateY(-3px)}
+.gen-label{font-size:.62rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);margin-bottom:.4rem}
+.gcard h3{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--ink);margin-bottom:.6rem}
+.gen-dolor{font-size:.8rem;color:var(--rose);font-style:italic;margin-bottom:.7rem;line-height:1.4}
+.gcard p{font-size:.78rem;color:var(--ink3);line-height:1.6}
 
-    /* POST-HUMANISTA */
-    #posthumanista{background:var(--bg2)}
-    .ph-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
-    .ph-txt p{font-size:.88rem;color:var(--ink2);line-height:1.85;margin-bottom:.9rem}
-    .ph-txt p strong{color:var(--ink);font-weight:500}
-    .ph-holones{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-    .holon{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.4rem 1.2rem;transition:all .25s var(--ease)}
-    .holon:hover{border-color:var(--liner);box-shadow:0 4px 16px rgba(232,53,109,.07);transform:translateY(-2px)}
-    .holon-ico{font-size:1.2rem;margin-bottom:.6rem}
-    .holon h4{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink);margin-bottom:.3rem}
-    .holon p{font-size:.75rem;color:var(--ink3);line-height:1.5}
+/* SAMUEL */
+#samuel{background:var(--bg2)}
+.samuel-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:5rem;align-items:start}
+.samuel-aside{position:sticky;top:5rem}
+.samuel-portrait{aspect-ratio:4/5;background:linear-gradient(160deg,var(--bg3) 0%,var(--rose-xs) 100%);border-radius:var(--rxl);border:1px solid var(--liner);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;position:relative;overflow:hidden}
+.portrait-inner{text-align:center}
+.portrait-initials{font-family:var(--serif);font-size:5rem;font-weight:300;color:var(--rose);opacity:.25;line-height:1}
+.portrait-label{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-top:.5rem}
+.portrait-ph{font-size:.72rem;color:var(--ink3);margin-top:.3rem;font-style:italic}
+.samuel-stat{display:flex;justify-content:space-between;align-items:center;padding:.85rem 0;border-bottom:1px solid var(--line)}
+.samuel-stat:first-of-type{border-top:1px solid var(--line)}
+.sval{font-family:var(--serif);font-size:1.4rem;color:var(--rose)}
+.slbl{font-size:.73rem;color:var(--ink3);text-align:right;max-width:160px;line-height:1.4}
+.samuel-body h2{margin-bottom:1.4rem}
+.samuel-body p{font-size:.88rem;color:var(--ink2);line-height:1.85;margin-bottom:.9rem}
+.samuel-body p strong{color:var(--ink);font-weight:500}
+.samuel-origen{background:var(--rose-xs);border-left:3px solid var(--rose);border-radius:0 var(--r) var(--r) 0;padding:1.2rem 1.4rem;margin:1.5rem 0 1rem;font-size:.86rem;color:var(--ink2);line-height:1.78;font-style:italic}
 
-    /* EQUIPO */
-    #equipo{background:var(--bg)}
-    .equipo-note{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:2.5rem;margin-top:3rem;text-align:center}
-    .equipo-note p{font-size:.9rem;color:var(--ink2);line-height:1.8;max-width:540px;margin:0 auto}
-    .equipo-note a{color:var(--rose)}
+/* HITOS TIMELINE */
+.timeline{margin-top:2.5rem}
+.hito{display:flex;gap:1.5rem;padding:1.3rem 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.hito:first-child{border-top:1px solid var(--line)}
+.hito-year{font-family:var(--serif);font-size:.95rem;font-weight:500;color:var(--rose);min-width:56px;padding-top:.1rem}
+.hito-content h4{font-family:var(--serif);font-size:1.05rem;font-weight:400;color:var(--ink);margin-bottom:.3rem}
+.hito-content p{font-size:.82rem;color:var(--ink2);line-height:1.6}
+.hito-badge{display:inline-block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--rose);background:var(--rose-xs);padding:.18rem .5rem;border-radius:100px;margin-bottom:.3rem}
 
-    /* CTA */
-    .page-cta{background:var(--ink);padding:5rem 0;text-align:center;position:relative;overflow:hidden}
-    .page-cta::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(232,53,109,.12) 0%,transparent 70%);pointer-events:none}
-    .page-cta h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:#fff;margin-bottom:1rem;position:relative;z-index:1}
-    .page-cta h2 em{font-style:italic;color:var(--rose-s)}
-    .page-cta p{font-size:.9rem;color:rgba(255,255,255,.5);max-width:420px;margin:0 auto 2rem;line-height:1.78;position:relative;z-index:1}
-    .cta-row{display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;position:relative;z-index:1}
-    .btnp{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:500;padding:.82rem 1.7rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);border:none;cursor:pointer;box-shadow:0 4px 16px var(--rose-gl)}
-    .btnp:hover{background:#c82c5c;transform:translateY(-1px)}
-    .btng{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:rgba(255,255,255,.6);border:1.5px solid rgba(255,255,255,.15);transition:all .25s var(--ease);cursor:pointer}
-    .btng:hover{border-color:var(--rose-s);color:var(--rose-s)}
+/* POST-HUMANISTA */
+#posthumanista{background:var(--ink)}
+#posthumanista .eyebrow{color:var(--rose-s)}
+#posthumanista .eyebrow::before{background:var(--rose-s)}
+#posthumanista h2{color:#fff}
+#posthumanista h2 em{color:var(--rose-s)}
+.ph-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.ph-txt p{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.85;margin-bottom:.9rem}
+.ph-txt p strong{color:#fff;font-weight:500}
+.ph-holones{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.holon{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:var(--r);padding:1.4rem 1.2rem;transition:all .25s var(--ease)}
+.holon:hover{border-color:var(--liner);box-shadow:0 4px 16px rgba(232,53,109,.12);transform:translateY(-2px)}
+.holon-ico{font-size:1.2rem;margin-bottom:.6rem}
+.holon h4{font-family:var(--serif);font-size:1rem;font-weight:400;color:#fff;margin-bottom:.3rem}
+.holon p{font-size:.75rem;color:rgba(255,255,255,.4);line-height:1.5}
 
-    /* FOOTER */
-    footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
-    .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
-    .fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
-    .fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
-    .fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
-    .fc ul{list-style:none}
-    .fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem;cursor:pointer;transition:color .2s}
-    .fc li:hover{color:var(--rose-s)}
-    .fc li a{color:rgba(255,255,255,.45)}
-    .fc li a:hover{color:var(--rose-s)}
-    .fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
-    .fbtm em{color:var(--rose-s);font-style:normal}
+/* EQUIPO */
+#equipo{background:var(--bg2)}
+.equipo-note{background:var(--card);border:1px solid var(--line);border-radius:var(--rxl);padding:2.5rem;margin-top:3rem;text-align:center}
+.equipo-note p{font-size:.9rem;color:var(--ink2);line-height:1.8;max-width:540px;margin:0 auto}
+.equipo-note a{color:var(--rose)}
 
-    .reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
-    .reveal.in{opacity:1;transform:translateY(0)}
-    .reveal[data-d="1"]{transition-delay:.08s}
-    .reveal[data-d="2"]{transition-delay:.16s}
-    .reveal[data-d="3"]{transition-delay:.24s}
+/* CTA */
+.page-cta{background:var(--ink);padding:5.5rem 0;text-align:center;position:relative;overflow:hidden}
+.page-cta::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:700px;height:450px;background:radial-gradient(ellipse,rgba(232,53,109,.14) 0%,transparent 70%);pointer-events:none}
+.cta-eyebrow{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:1rem;position:relative;z-index:1}
+.cta-eyebrow::before{content:'';width:16px;height:1.5px;background:var(--rose-s)}
+.page-cta h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:#fff;margin-bottom:.8rem;position:relative;z-index:1}
+.page-cta h2 em{font-style:italic;color:var(--rose-s)}
+.page-cta p{font-size:.9rem;color:rgba(255,255,255,.5);max-width:460px;margin:0 auto 2rem;line-height:1.78;position:relative;z-index:1}
+.cta-row{display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;position:relative;z-index:1}
+.btnp{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:500;padding:.82rem 1.7rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);border:none;cursor:pointer;box-shadow:0 4px 16px var(--rose-gl)}
+.btnp:hover{background:#c82c5c;transform:translateY(-1px)}
+.btng{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:rgba(255,255,255,.6);border:1.5px solid rgba(255,255,255,.15);transition:all .25s var(--ease);cursor:pointer}
+.btng:hover{border-color:var(--rose-s);color:var(--rose-s)}
+.cta-note{font-size:.72rem;color:rgba(255,255,255,.25);margin-top:1.2rem;position:relative;z-index:1}
 
-    @media(max-width:1024px){.samuel-grid{grid-template-columns:1fr;gap:3rem}.samuel-aside{position:static}.ph-grid{grid-template-columns:1fr;gap:3rem}}
-    @media(max-width:768px){.nl{display:none}.mision-grid{grid-template-columns:1fr}.ph-holones{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}}
-  </style>
+/* FOOTER */
+footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem;cursor:pointer;transition:color .2s}
+.fc li:hover{color:var(--rose-s)}
+.fc li a{color:rgba(255,255,255,.45)}
+.fc li a:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+
+.reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal[data-d="1"]{transition-delay:.08s}
+.reveal[data-d="2"]{transition-delay:.16s}
+.reveal[data-d="3"]{transition-delay:.24s}
+
+@media(max-width:1024px){.samuel-grid{grid-template-columns:1fr;gap:3rem}.samuel-aside{position:static}.ph-grid{grid-template-columns:1fr;gap:3rem}.gen-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.nl{display:none}.mision-grid{grid-template-columns:1fr}.ph-holones{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}.gen-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 
 <nav><div class="w navi">
-  <a href="index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
-  <ul class="nl">
-    <li><a href="quienes-somos.html" style="color:var(--rose)">¿Quiénes Somos?</a></li>
-    <li><a href="index.html#servicios">Servicios</a></li>
-    <li><a href="index.html#pro">Profesionales</a></li>
-    <li><a href="recursos.html">Recursos</a></li>
-    <li><a href="blog/index.html">Blog</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-    <a href="contacto.html" class="nbtn">Pide Cita</a>
-  </ul>
+<a href="index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="quienes-somos.html" style="color:var(--rose)">¿Quiénes Somos?</a></li>
+<li><a href="index.html#servicios">Servicios</a></li>
+<li><a href="index.html#pro">Profesionales</a></li>
+<li><a href="recursos.html">Recursos</a></li>
+<li><a href="blog/index.html">Blog</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+<a href="contacto.html" class="nbtn">Pide Cita</a>
+</ul>
 </div></nav>
 
 <!-- HERO -->
 <div class="phero"><div class="w">
-  <div class="ey">¿Quiénes Somos?</div>
-  <h1>Somos lo <em>que falta.</em></h1>
-  <p>UNIMED no es una clínica. No es una consultora. Es la formalización de más de veinte años de investigación científica original al servicio de la salud de la persona como sistema complejo.</p>
+<div class="ey">¿Quiénes Somos?</div>
+<h1>Somos lo <em>que falta.</em></h1>
+<p>El sistema sanitario trata diagnósticos. UNIMED trata personas. Somos la respuesta a todo lo que el sistema no tiene tiempo, herramientas ni paradigma para darte.</p>
+<p class="hero-sub">La formalización de más de veinte años de investigación científica original al servicio de la salud de la persona como sistema complejo.</p>
 </div></div>
 
 <!-- QUOTE -->
 <div class="quote-band">
-  <blockquote>UNIMED no vende medicina. Vende el único proceso consultivo y colaborativo basado en la persona como sistema complejo, en un sistema sanitario que la trata como diagnóstico.</blockquote>
-  <cite>«Somos lo que falta.» — Samuel Carmona Aguirre</cite>
+<blockquote>UNIMED no vende medicina. Vende el único proceso consultivo y colaborativo basado en la persona como sistema complejo, en un sistema sanitario que la trata como diagnóstico.</blockquote>
+<cite>«Somos lo que falta.» — Samuel Carmona Aguirre</cite>
 </div>
 
 <!-- MISIÓN Y VALORES -->
 <section id="mision"><div class="w">
-  <div class="reveal"><div class="eyebrow">Misión y Valores</div><h2>Por qué <em>existimos</em></h2></div>
-  <div class="mision-grid">
-    <div class="mcard reveal" data-d="1">
-      <div class="mcard-ico">🎯</div>
-      <h3>Nuestra <em>misión</em></h3>
-      <p>Que cada persona, independientemente de su generación, diagnóstico o posición en el sistema sanitario, tenga acceso al conocimiento que necesita para tomar decisiones soberanas e informadas sobre su propia salud.</p>
-    </div>
-    <div class="mcard reveal" data-d="2">
-      <div class="mcard-ico">🔭</div>
-      <h3>Nuestra <em>visión</em></h3>
-      <p>Demostrar que el paradigma de la complejidad aplicado a la salud no es una alternativa marginal — es la evolución necesaria de una medicina que ha agotado su modelo mecanicista. El mismo salto que BiosGroup demostró en empresas, UNIMED lo demuestra en salud humana.</p>
-    </div>
-    <div class="mcard reveal" data-d="3">
-      <div class="mcard-ico">🧭</div>
-      <h3>Nuestra <em>brújula</em></h3>
-      <p>Ante cualquier decisión, la pregunta no es ¿genera ventas? sino ¿acerca a más personas al conocimiento que necesitan para ser soberanas en su salud? Si la respuesta es sí, la venta es consecuencia natural.</p>
-    </div>
-  </div>
+<div class="reveal"><div class="eyebrow">Misión y Valores</div><h2>Por qué <em>existimos</em></h2></div>
+<div class="mision-grid">
+<div class="mcard reveal" data-d="1">
+<div class="mcard-ico">🎯</div>
+<h3>Nuestra <em>misión</em></h3>
+<p>Que cada persona, independientemente de su generación, diagnóstico o posición en el sistema sanitario, tenga acceso al conocimiento que necesita para tomar decisiones soberanas e informadas sobre su propia salud.</p>
+</div>
+<div class="mcard reveal" data-d="2">
+<div class="mcard-ico">🔭</div>
+<h3>Nuestra <em>visión</em></h3>
+<p>Demostrar que el paradigma de la complejidad aplicado a la salud no es una alternativa marginal — es la evolución necesaria de una medicina que ha agotado su modelo mecanicista. El mismo salto que BiosGroup demostró en empresas, UNIMED lo demuestra en salud humana.</p>
+</div>
+<div class="mcard reveal" data-d="3">
+<div class="mcard-ico">🧭</div>
+<h3>Nuestra <em>brújula</em></h3>
+<p>Ante cualquier decisión, la pregunta no es ¿genera ventas? sino ¿acerca a más personas al conocimiento que necesitan para ser soberanas en su salud? Si la respuesta es sí, la venta es consecuencia natural.</p>
+</div>
+</div>
+</div></section>
+
+<!-- SEGMENTACIÓN TRANSGENERACIONAL -->
+<section id="generaciones"><div class="w">
+<div class="reveal"><div class="eyebrow">Medicina para cada generación</div><h2>Cada generación tiene un <em>dolor distinto</em></h2></div>
+<p class="gen-intro">No existe un único tipo de persona que necesite UNIMED. Existe una persona en cada generación que lleva años sintiéndose perdida en un sistema que la trata como diagnóstico. Trabajamos con todas ellas — porque cada una tiene su propio lenguaje, su propio dolor y su propio canal.</p>
+<div class="gen-grid">
+<div class="gcard bb reveal" data-d="1">
+<div class="gen-label">Baby Boomers · 1946–1964</div>
+<h3>Envejecimiento activo</h3>
+<p class="gen-dolor">«¿Sabes realmente qué medicamentos está tolerando bien tu organismo?»</p>
+<p>Polifarmacia, deterioro cognitivo y envejecimiento activo desde un paradigma que va más allá del síntoma.</p>
+</div>
+<div class="gcard x reveal" data-d="2">
+<div class="gen-label">Generación X · 1965–1980</div>
+<h3>Rendimiento y desgaste oculto</h3>
+<p class="gen-dolor">«¿Tu bajo rendimiento cognitivo tiene una causa genética que nadie ha investigado?»</p>
+<p>Burnout, riesgo cardiovascular silencioso y el desgaste de equilibrar una vida de alta exigencia sin mapa genómico.</p>
+</div>
+<div class="gcard y reveal" data-d="3">
+<div class="gen-label">Millennials · 1981–1995</div>
+<h3>Optimización del sistema</h3>
+<p class="gen-dolor">«¿Tu cuerpo está optimizado para el rendimiento que le estás exigiendo?»</p>
+<p>Salud reproductiva, biohacking y genómica nutricional para quienes ya saben que la medicina convencional no es suficiente.</p>
+</div>
+<div class="gcard z reveal" data-d="4">
+<div class="gen-label">Generación Z · 1996+</div>
+<h3>Información sin filtro</h3>
+<p class="gen-dolor">«Tienes acceso a información infinita sobre tu salud. ¿Sabes cuál es fiable?»</p>
+<p>Salud mental, identidad y la capacidad de navegar un ecosistema de información masiva con criterio científico real.</p>
+</div>
+</div>
 </div></section>
 
 <!-- HISTORIA DE UNIMED -->
-<section id="samuel" style="background:var(--bg)"><div class="w">
-  <div class="samuel-grid">
-    <div class="samuel-aside reveal">
-      <div class="samuel-portrait">
-        <div class="portrait-inner">
-          <div class="portrait-initials">SC</div>
-          <div class="portrait-label">Samuel Carmona Aguirre</div>
-          <div class="portrait-ph">Foto próximamente</div>
-        </div>
-      </div>
-      <div class="samuel-stat"><div class="sval">+20</div><div class="slbl">Años de investigación científica</div></div>
-      <div class="samuel-stat"><div class="sval">2014</div><div class="slbl">Primera PI registrada — HoloMedicina</div></div>
-      <div class="samuel-stat"><div class="sval">MSc</div><div class="slbl">Ciencias Cognitivas · U. Málaga</div></div>
-      <div class="samuel-stat"><div class="sval">UNESCO</div><div class="slbl">Congreso Mundial Pensée Complexe — Edgar Morin</div></div>
-    </div>
-    <div class="samuel-body reveal" data-d="2">
-      <div class="eyebrow">Fundador y CEO</div>
-      <h2>Samuel Carmona <em>Aguirre</em></h2>
-      <p><strong>Científico Biomédico Clínico</strong>, especializado en Ciencias Cognitivas, Complejidad y Medicina de Precisión. Fundador de UNIMED — Centro de Desarrollo e Innovación Médica — y creador del paradigma <strong>HoloMedicina</strong>, del marco <strong>HoloMed</strong> y del concepto del <strong>Sujeto Holónico Unitivo Multidimensional</strong>.</p>
-      <p>Su trabajo integra más de veinte años de investigación original en las fronteras entre la biomedicina, las neurociencias cognitivas, la nutrigenómica, las ciencias de la complejidad y la inteligencia artificial. No es una startup sin historia: es la formalización tecnológica de una trayectoria documentada e irrefutable.</p>
-      <p>Experto en <strong>genética clínica</strong>, microbiota, neurocognición y nutrigenómica. Su principio: diagnosticar antes de prescribir, y tratar a la persona como sistema vivo — nunca como diagnóstico.</p>
+<section id="samuel"><div class="w">
+<div class="samuel-grid">
+<div class="samuel-aside reveal">
+<div class="samuel-portrait">
+<div class="portrait-inner">
+<div class="portrait-initials">SC</div>
+<div class="portrait-label">Samuel Carmona Aguirre</div>
+<div class="portrait-ph">Foto próximamente</div>
+</div>
+</div>
+<div class="samuel-stat"><div class="sval">+20</div><div class="slbl">Años de investigación científica original</div></div>
+<div class="samuel-stat"><div class="sval">2014</div><div class="slbl">Primera PI registrada — HoloMedicina</div></div>
+<div class="samuel-stat"><div class="sval">MSc</div><div class="slbl">Ciencias Cognitivas · U. Málaga</div></div>
+<div class="samuel-stat"><div class="sval">UNESCO</div><div class="slbl">Congreso Mundial Pensée Complexe — Edgar Morin</div></div>
+</div>
+<div class="samuel-body reveal" data-d="2">
+<div class="eyebrow">Fundador y CEO</div>
+<h2>Samuel Carmona <em>Aguirre</em></h2>
+<p><strong>Científico Biomédico Clínico</strong>, especializado en Ciencias Cognitivas, Complejidad y Medicina de Precisión. Fundador de UNIMED — Centro de Desarrollo e Innovación Médica — y creador del paradigma <strong>HoloMedicina</strong>, del marco <strong>HoloMed 8D</strong> y del concepto del <strong>Sujeto Holónico Unitivo Multidimensional</strong>.</p>
 
-      <div class="timeline">
-        <div class="hito">
-          <div class="hito-year">2014</div>
-          <div class="hito-content">
-            <span class="hito-badge">Propiedad Intelectual</span>
-            <h4>Registro de HoloMedicina, Medicina Unificada y Sujeto Social Educativo</h4>
-            <p>Generalitat de Catalunya · Registro General de la Propiedad Intelectual · Asientos 02/2014/2384, 2385 y 2386.</p>
-          </div>
-        </div>
-        <div class="hito">
-          <div class="hito-year">2016</div>
-          <div class="hito-content">
-            <span class="hito-badge">Publicación</span>
-            <h4>Libro — «Medicina y Salud basada en la Complejidad»</h4>
-            <p>Presentado en el VII Congreso Iberoamericano de Investigación Cualitativa en Salud · Universitat de Barcelona y Universitat Autònoma de Barcelona.</p>
-          </div>
-        </div>
-        <div class="hito">
-          <div class="hito-year">2016</div>
-          <div class="hito-content">
-            <span class="hito-badge">UNESCO · Edgar Morin</span>
-            <h4>Congreso Mundial de la Pensée Complexe</h4>
-            <p>Contribución aceptada y publicada por el Consejo Científico · Association pour la Pensée Complexe · UNESCO · CNRS · Certificado firmado por Edgar Morin y Daniel Janicot.</p>
-          </div>
-        </div>
-        <div class="hito">
-          <div class="hito-year">2017</div>
-          <div class="hito-content">
-            <span class="hito-badge">Máster · 9/10</span>
-            <h4>MSc en Ciencias Cognitivas — Universidad de Málaga</h4>
-            <p>Tesis: «Ciencias cognitivas, complejidad y bioética. Epistemología y Metodología transdisciplinaria» · HoloMedicina y Método Holónico MH-AIAP explícitos.</p>
-          </div>
-        </div>
-        <div class="hito">
-          <div class="hito-year">2021</div>
-          <div class="hito-content">
-            <span class="hito-badge">UNAM · México</span>
-            <h4>Diplomado en Ciencia Médica y Ciencia de la Complejidad</h4>
-            <p>Facultad de Medicina · UNAM · División de Estudios de Posgrado · Anteproyecto PERSONÓMICA®ONLINE — arquitectura completa de Web Semántica + IA + HoloMedicina.</p>
-          </div>
-        </div>
-        <div class="hito">
-          <div class="hito-year">2024</div>
-          <div class="hito-content">
-            <span class="hito-badge">Lanzamiento</span>
-            <h4>CAPS Digital — Agente epistémico de salud</h4>
-            <p>Primera implementación pública del paradigma HoloMed en formato de agente de IA conectado a ontologías clínicas reales (LOINC, SNOMED CT, WHO IRIS).</p>
-          </div>
-        </div>
-        <div class="hito">
-          <div class="hito-year">2026</div>
-          <div class="hito-content">
-            <span class="hito-badge">Hoy</span>
-            <h4>UNIMED Consulting — Web operativa · Barcelona · Västerås</h4>
-            <p>Ecosistema holónico completo: Samuel + equipo humano + agentes IA (13MIL, A1-A6) co-evolucionando como sistema adaptativo complejo al servicio de la salud.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="samuel-origen">
+«Samuel no llegó a este paradigma desde la teoría — llegó porque vio, caso tras caso, cómo personas con diagnósticos correctos seguían sin encontrar respuesta. El problema no estaba en los diagnósticos: estaba en que la medicina convencional no está diseñada para ver a la persona completa. HoloMedicina nació para cerrar esa brecha.»
+</div>
+
+<p>Su trabajo integra más de veinte años de investigación original en las fronteras entre la biomedicina, las neurociencias cognitivas, la nutrigenómica, las ciencias de la complejidad y la inteligencia artificial. No es una startup sin historia: es la formalización tecnológica de una trayectoria documentada e irrefutable.</p>
+<p>Experto en <strong>genética clínica</strong>, microbiota, neurocognición y nutrigenómica. Su principio: diagnosticar antes de prescribir, y tratar a la persona como sistema vivo — nunca como diagnóstico.</p>
+
+<div class="timeline">
+<div class="hito">
+<div class="hito-year">2014</div>
+<div class="hito-content">
+<span class="hito-badge">Propiedad Intelectual</span>
+<h4>Registro de HoloMedicina, Medicina Unificada y Sujeto Social Educativo</h4>
+<p>Generalitat de Catalunya · Registro General de la Propiedad Intelectual · Asientos 02/2014/2384, 2385 y 2386.</p>
+</div>
+</div>
+<div class="hito">
+<div class="hito-year">2016</div>
+<div class="hito-content">
+<span class="hito-badge">Publicación</span>
+<h4>Libro — «Medicina y Salud basada en la Complejidad»</h4>
+<p>Presentado en el VII Congreso Iberoamericano de Investigación Cualitativa en Salud · Universitat de Barcelona y Universitat Autònoma de Barcelona.</p>
+</div>
+</div>
+<div class="hito">
+<div class="hito-year">2016</div>
+<div class="hito-content">
+<span class="hito-badge">UNESCO · Edgar Morin</span>
+<h4>Congreso Mundial de la Pensée Complexe</h4>
+<p>Contribución aceptada y publicada por el Consejo Científico · Association pour la Pensée Complexe · UNESCO · CNRS · Certificado firmado por Edgar Morin y Daniel Janicot.</p>
+</div>
+</div>
+<div class="hito">
+<div class="hito-year">2017</div>
+<div class="hito-content">
+<span class="hito-badge">Máster · 9/10</span>
+<h4>MSc en Ciencias Cognitivas — Universidad de Málaga</h4>
+<p>Tesis: «Ciencias cognitivas, complejidad y bioética. Epistemología y Metodología transdisciplinaria» · HoloMedicina y Método Holónico MH-AIAP explícitos.</p>
+</div>
+</div>
+<div class="hito">
+<div class="hito-year">2021</div>
+<div class="hito-content">
+<span class="hito-badge">UNAM · México</span>
+<h4>Diplomado en Ciencia Médica y Ciencia de la Complejidad</h4>
+<p>Facultad de Medicina · UNAM · División de Estudios de Posgrado · Anteproyecto PERSONÓMICA®ONLINE — arquitectura completa de Web Semántica + IA + HoloMedicina.</p>
+</div>
+</div>
+<div class="hito">
+<div class="hito-year">2024</div>
+<div class="hito-content">
+<span class="hito-badge">Lanzamiento</span>
+<h4>CAPS Digital — Agente epistémico de salud</h4>
+<p>Primera implementación pública del paradigma HoloMed en formato de agente de IA conectado a ontologías clínicas reales (LOINC, SNOMED CT, WHO IRIS).</p>
+</div>
+</div>
+<div class="hito">
+<div class="hito-year">2026</div>
+<div class="hito-content">
+<span class="hito-badge">Hoy</span>
+<h4>UNIMED Consulting — Web operativa · Barcelona · Västerås</h4>
+<p>Ecosistema holónico completo: Samuel + equipo humano + agentes IA (13MIL, A1-A6) co-evolucionando como sistema adaptativo complejo al servicio de la salud.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div></section>
 
 <!-- EMPRESA POST-HUMANISTA -->
 <section id="posthumanista"><div class="w">
-  <div class="ph-grid">
-    <div class="reveal">
-      <div class="eyebrow">Paradigma</div>
-      <h2>UNIMED como <em>Empresa Post-Humanista</em></h2>
-      <div class="ph-txt" style="margin-top:1.5rem">
-        <p>UNIMED no es una clínica. No es una consultora convencional. Es una <strong>organización holónica post-humanista</strong> donde la inteligencia artificial y la inteligencia humana co-evolucionan como sistema adaptativo complejo al servicio de la salud de la persona.</p>
-        <p>La inteligencia artificial no originó los conceptos de UNIMED: los conceptos de Samuel <strong>determinaron cómo debía construirse la inteligencia artificial.</strong></p>
-        <p>El ecosistema 13MIL — con sus agentes especializados A1 a A6 — no sustituye al equipo humano. Lo amplifica, lo libera de la burocracia y le permite operar a la velocidad y precisión que la complejidad de la salud exige.</p>
-        <p>Esta narrativa es el diferenciador más potente de UNIMED — y también el más honesto. <strong>Somos lo que falta.</strong></p>
-      </div>
-    </div>
-    <div class="reveal" data-d="2">
-      <div class="ph-holones">
-        <div class="holon">
-          <div class="holon-ico">🧠</div>
-          <h4>Samuel Carmona A.</h4>
-          <p>Fundador · Científico Biomédico · Inteligencia humana central</p>
-        </div>
-        <div class="holon">
-          <div class="holon-ico">🤝</div>
-          <h4>Equipo UNIMED</h4>
-          <p>Profesionales de salud · Colaboradores · Red de derivación</p>
-        </div>
-        <div class="holon">
-          <div class="holon-ico">🔮</div>
-          <h4>13MIL · Orquestador</h4>
-          <p>Coordinador del ecosistema holónico de agentes IA</p>
-        </div>
-        <div class="holon">
-          <div class="holon-ico">💬</div>
-          <h4>CAPS Digital</h4>
-          <p>Agente de salud · Puerta de entrada 24/7 · HoloMed 8D</p>
-        </div>
-        <div class="holon">
-          <div class="holon-ico">📊</div>
-          <h4>A1 — Financiero</h4>
-          <p>Gestión económica y sostenibilidad del ecosistema</p>
-        </div>
-        <div class="holon">
-          <div class="holon-ico">📣</div>
-          <h4>A2 — Holomarketing</h4>
-          <p>Posicionamiento semántico · SEO · Contenidos</p>
-        </div>
-        <div class="holon">
-          <div class="holon-ico">🎯</div>
-          <h4>A3 — Ventas</h4>
-          <p>Conversión · Pipeline · Relación con clientes</p>
-        </div>
-        <div class="holon">
-          <div class="holon-ico">⚖️</div>
-          <h4>A5 — Jurídico</h4>
-          <p>Compliance · RGPD · AI Act · Propiedad intelectual</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="ph-grid">
+<div class="reveal">
+<div class="eyebrow">Paradigma</div>
+<h2>UNIMED como <em>Empresa Post-Humanista</em></h2>
+<div class="ph-txt" style="margin-top:1.5rem">
+<p>UNIMED no es una clínica. No es una consultora convencional. Es una <strong>organización holónica post-humanista</strong> donde la inteligencia artificial y la inteligencia humana co-evolucionan como sistema adaptativo complejo al servicio de la salud de la persona.</p>
+<p>La inteligencia artificial no originó los conceptos de UNIMED: los conceptos de Samuel <strong>determinaron cómo debía construirse la inteligencia artificial.</strong></p>
+<p>El ecosistema 13MIL — con sus agentes especializados A1 a A6 — no sustituye al equipo humano. Lo amplifica, lo libera de la burocracia y le permite operar a la velocidad y precisión que la complejidad de la salud exige.</p>
+<p>Ford, Boeing y P&G pagaron millones por consultoría basada en complejidad hace 25 años. UNIMED es el primer actor en aplicar ese mismo paradigma a la <strong>salud personalizada de la persona en España y Europa.</strong></p>
+<p>Esta narrativa es el diferenciador más potente de UNIMED — y también el más honesto. <strong>Somos lo que falta.</strong></p>
+</div>
+</div>
+<div class="reveal" data-d="2">
+<div class="ph-holones">
+<div class="holon">
+<div class="holon-ico">🧠</div>
+<h4>Samuel Carmona A.</h4>
+<p>Fundador · Científico Biomédico · Inteligencia humana central</p>
+</div>
+<div class="holon">
+<div class="holon-ico">🤝</div>
+<h4>Equipo UNIMED</h4>
+<p>Profesionales de salud · Colaboradores · Red de derivación</p>
+</div>
+<div class="holon">
+<div class="holon-ico">🔮</div>
+<h4>13MIL · Orquestador</h4>
+<p>Coordinador del ecosistema holónico de agentes IA</p>
+</div>
+<div class="holon">
+<div class="holon-ico">💬</div>
+<h4>CAPS Digital</h4>
+<p>Agente de salud · Puerta de entrada 24/7 · HoloMed 8D</p>
+</div>
+<div class="holon">
+<div class="holon-ico">📊</div>
+<h4>A1 — Financiero</h4>
+<p>Gestión económica y sostenibilidad del ecosistema</p>
+</div>
+<div class="holon">
+<div class="holon-ico">📣</div>
+<h4>A2 — Holomarketing</h4>
+<p>Posicionamiento semántico · SEO · Contenidos</p>
+</div>
+<div class="holon">
+<div class="holon-ico">🎯</div>
+<h4>A3 — Ventas</h4>
+<p>Conversión · Pipeline · Relación con clientes</p>
+</div>
+<div class="holon">
+<div class="holon-ico">⚖️</div>
+<h4>A5 — Jurídico</h4>
+<p>Compliance · RGPD · AI Act · Propiedad intelectual</p>
+</div>
+</div>
+</div>
+</div>
 </div></section>
 
 <!-- EQUIPO -->
 <section id="equipo"><div class="w">
-  <div class="reveal"><div class="eyebrow">Nuestro Equipo</div><h2>Las personas <em>detrás de UNIMED</em></h2></div>
-  <div class="equipo-note reveal" data-d="1">
-    <p>UNIMED es Samuel Carmona Aguirre y un equipo en crecimiento de profesionales de la salud, la ciencia y la tecnología comprometidos con el paradigma holónico.<br/><br/>Las presentaciones detalladas del equipo estarán disponibles próximamente. Si formas parte del ámbito de la salud o la innovación y quieres saber más sobre cómo colaborar con UNIMED, <a href="contacto.html">escríbenos</a>.</p>
-  </div>
+<div class="reveal"><div class="eyebrow">Nuestro Equipo</div><h2>Las personas <em>detrás de UNIMED</em></h2></div>
+<div class="equipo-note reveal" data-d="1">
+<p>UNIMED es Samuel Carmona Aguirre y un equipo en crecimiento de profesionales de la salud, la ciencia y la tecnología comprometidos con el paradigma holónico.<br/><br/>Las presentaciones detalladas del equipo estarán disponibles próximamente. Si formas parte del ámbito de la salud o la innovación y quieres saber más sobre cómo colaborar con UNIMED, <a href="contacto.html">escríbenos</a>.</p>
+</div>
 </div></section>
 
 <!-- CTA -->
 <div class="page-cta">
-  <h2>¿Quieres conocer<br/><em>nuestra metodología?</em></h2>
-  <p>Habla con CAPS Digital o pide cita directamente con Samuel.</p>
-  <div class="cta-row">
-    <a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btnp">Hablar con CAPS Digital <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    <a href="contacto.html" class="btng">Pide Cita</a>
-  </div>
+<div class="cta-eyebrow">Primera consulta</div>
+<h2>¿Quieres saber si UNIMED<br/><em>puede ayudarte?</em></h2>
+<p>Antes de prescribir, diagnosticamos. Cuéntanos tu situación en una videollamada de 20 minutos — sin compromiso, sin protocolos genéricos.</p>
+<div class="cta-row">
+<a href="contacto.html" class="btnp">Pide tu primera consulta <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" class="btng">Hablar con CAPS Digital</a>
+</div>
+<p class="cta-note">Diagnóstica antes de prescribir — nunca al revés.</p>
 </div>
 
 <!-- FOOTER -->
 <footer><div class="w">
-  <div class="fg">
-    <div>
-      <div class="flogo">UNI<em>MED</em> Consulting</div>
-      <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
-      <div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ info@unimed-consulting.es</span></div>
-    </div>
-    <div class="fc"><h5>Servicios</h5><ul><li>Atención Consultiva</li><li>Asesoramiento Genético</li><li>Nutrigenómica</li><li>Neurocognitivo</li><li>Enfermedades Crónicas</li></ul></div>
-    <div class="fc"><h5>Recursos</h5><ul><li>Sanalogía</li><li>Guías Personas-Pacientes</li><li>CAPS Digital</li><li>Blog</li></ul></div>
-    <div class="fc"><h5>Legal</h5><ul>
-      <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
-      <li><a href="aviso-legal.html">Aviso Legal</a></li>
-      <li>Política de Cookies</li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul></div>
-  </div>
-  <div class="fbtm">
-    <p>© 2025 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
-    <p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
-  </div>
+<div class="fg">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
+<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ info@unimed-consulting.es</span></div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul><li>Atención Consultiva</li><li>Asesoramiento Genético</li><li>Nutrigenómica</li><li>Neurocognitivo</li><li>Enfermedades Crónicas</li></ul></div>
+<div class="fc"><h5>Recursos</h5><ul><li>Sanalogía</li><li>Guías Personas-Pacientes</li><li>CAPS Digital</li><li>Blog</li></ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="aviso-legal.html">Aviso Legal</a></li>
+<li>Política de Cookies</li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+</div>
 </div></footer>
 
 <script>
-const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshol
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
