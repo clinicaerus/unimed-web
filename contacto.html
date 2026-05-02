@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8"/>
@@ -81,9 +81,9 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .cdata span{font-size:1rem;flex-shrink:0;width:20px;text-align:center}
 .cdata a{color:var(--rose);font-weight:500}
 .cdata a:hover{text-decoration:underline}
-.calendly-ph{background:var(--bg3);border:1.5px dashed var(--liner);border-radius:var(--r);padding:1.5rem;text-align:center}
-.calendly-ph p{font-size:.8rem;color:var(--ink3);line-height:1.6}
-.calendly-ph strong{color:var(--rose);font-weight:500}
+
+/* Calendly embed wrapper */
+.calendly-wrap{border-radius:var(--r);overflow:hidden;margin-top:.5rem}
 
 /* RIGHT — FORMULARIO */
 .form-wrap{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:2.8rem 2.5rem;position:sticky;top:6rem}
@@ -143,7 +143,7 @@ footer{background:var(--ink);padding:3.5rem 0 2rem}
 <div class="w">
 <div class="ey">Contacto</div>
 <h1>Estamos aquí<br/><em>para acompañarte.</em></h1>
-<p>Elige la forma que más te convenga. Puedes empezar ahora mismo con CAPS Digital — gratis y sin registro — o escribirnos directamente.</p>
+<p>Elige la forma que más te convenga. Puedes empezar ahora mismo con CAPS Digital — gratis y sin registro — o reservar cita directamente con Samuel.</p>
 </div>
 </div>
 
@@ -168,9 +168,15 @@ Iniciar conversación — gratis
 <div class="cway-icon">📅</div>
 <h3>Pide <em>Cita</em></h3>
 <p>Reserva una consulta directamente con Samuel Carmona Aguirre. Sesiones de 45-60 minutos. Consulta presencial o videollamada.</p>
-<div class="calendly-ph">
-<p>🔜 <strong>Sistema de citas en configuración.</strong><br/>Mientras tanto, escríbenos a <a href="mailto:salud@unimed-consulting.es" style="color:var(--rose)">salud@unimed-consulting.es</a> o llámanos al <a href="tel:+34673815148" style="color:var(--rose)">+34 673 815 148</a> y te agendamos.</p>
+<!-- Calendly inline widget begin -->
+<div class="calendly-wrap">
+  <div class="calendly-inline-widget"
+       data-url="https://calendly.com/samuel-unimed-consulting"
+       style="min-width:280px;height:660px;">
+  </div>
 </div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
 </div>
 
 <div class="cway">
@@ -189,10 +195,6 @@ Iniciar conversación — gratis
   <div class="cdata">
     <span>✉️</span>
     <div><a href="mailto:salud@unimed-consulting.es">salud@unimed-consulting.es</a></div>
-  </div>
-  <div class="cdata">
-    <span>✉️</span>
-    <div><a href="mailto:info@unimed-consulting.es">info@unimed-consulting.es</a></div>
   </div>
   <div class="cdata">
     <span>🏛️</span>
@@ -313,4 +315,4 @@ form.addEventListener('submit', async function(e) {
 });
 </script>
 </body>
-</html> 
+</html>
