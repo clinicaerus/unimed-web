@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Formulario de Historicidad y Holografía — UNIMED Consulting</title>
+<meta name="description" content="El FHH es el instrumento de evaluación inicial de UNIMED. Un mapa semántico de ti como sujeto holónico unitivo en 8 dimensiones. Barcelona."/>
+<link rel="canonical" href="https://www.unimed-consulting.es/recursos/formulario-fhh.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+--rose:   #e8356d;
+--rose-s: #f07098;
+--rose-xs:rgba(232,53,109,.07);
+--rose-gl:rgba(232,53,109,.14);
+--bg:     #ffffff;
+--bg2:    #f8f7f9;
+--bg3:    #f2eff5;
+--card:   #ffffff;
+--ink:    #1a0f24;
+--ink2:   #3a2d48;
+--ink3:   #7a6880;
+--line:   rgba(0,0,0,.08);
+--liner:  rgba(232,53,109,.18);
+--serif:  'Cormorant Garamond',Georgia,serif;
+--sans:   'Inter',system-ui,sans-serif;
+--max:    820px;
+--r:      8px;
+--rxl:    24px;
+--ease:   cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:1140px;margin:0 auto;padding:0 2rem}
+.wf{max-width:var(--max);margin:0 auto;padding:0 2rem}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+
+/* HERO */
+.phero{background:var(--bg2);padding:4rem 0 3rem;border-bottom:1px solid var(--line)}
+.ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.9rem}
+.ey::before{content:'';width:16px;height:1.5px;background:var(--rose)}
+.phero h1{font-family:var(--serif);font-size:clamp(1.8rem,4vw,3rem);font-weight:300;line-height:1.15;color:var(--ink)}
+.phero h1 em{font-style:italic;color:var(--rose)}
+.phero p{font-size:.95rem;color:var(--ink3);margin-top:.8rem;max-width:580px;line-height:1.78}
+
+/* INTRO BOX */
+.intro-box{background:var(--rose-xs);border:1.5px solid var(--liner);border-radius:var(--rxl);padding:2rem 2.5rem;margin:3rem auto;max-width:var(--max)}
+.intro-box h3{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:var(--ink);margin-bottom:.75rem}
+.intro-box p{font-size:.88rem;color:var(--ink2);line-height:1.8}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+.step{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem;text-align:center}
+.step-n{font-family:var(--serif);font-size:2rem;font-weight:300;color:var(--rose);line-height:1}
+.step-t{font-size:.78rem;font-weight:500;color:var(--ink2);margin-top:.3rem}
+.step-d{font-size:.72rem;color:var(--ink3);margin-top:.3rem;line-height:1.5}
+
+/* FORM */
+.form-main{padding:3rem 0 6rem}
+form{max-width:var(--max);margin:0 auto}
+
+/* SECTION HEADERS */
+.fsec{margin-bottom:2.5rem;margin-top:3.5rem}
+.fsec-label{display:inline-flex;align-items:center;gap:.5rem;font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.5rem}
+.fsec-label::before{content:'';width:16px;height:1.5px;background:var(--rose)}
+.fsec h2{font-family:var(--serif);font-size:1.6rem;font-weight:300;color:var(--ink);line-height:1.2}
+.fsec h2 em{font-style:italic;color:var(--rose)}
+.fsec p{font-size:.85rem;color:var(--ink3);margin-top:.5rem;line-height:1.75;max-width:560px}
+
+/* FORM ELEMENTS */
+.fg{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.4rem}
+.fg label{font-size:.72rem;font-weight:500;color:var(--ink2);letter-spacing:.06em;text-transform:uppercase}
+.fg input,.fg textarea,.fg select{font-family:var(--sans);font-size:.88rem;font-weight:300;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:var(--r);padding:.75rem 1rem;transition:border-color .2s;outline:none;width:100%}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--rose)}
+.fg textarea{resize:vertical;min-height:100px;line-height:1.65}
+.fg .hint{font-size:.72rem;color:var(--ink3);margin-top:.3rem;line-height:1.5;font-style:italic}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.2rem}
+
+/* DIMENSION GRID */
+.dim-grid{display:flex;flex-direction:column;gap:1rem;margin-top:1rem}
+.dim-row{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.dim-header{display:flex;align-items:center;gap:.75rem;padding:.9rem 1.2rem;background:var(--bg3);border-bottom:1px solid var(--line)}
+.dim-icon{font-size:1.1rem}
+.dim-title{font-size:.78rem;font-weight:500;color:var(--ink2);letter-spacing:.05em;text-transform:uppercase}
+.dim-body{padding:.75rem 1.2rem}
+.dim-body textarea{min-height:80px;border:1px solid var(--line);border-radius:6px;padding:.65rem .9rem;width:100%;font-family:var(--sans);font-size:.85rem;font-weight:300;color:var(--ink);background:var(--bg);resize:vertical;outline:none;transition:border-color .2s;line-height:1.6}
+.dim-body textarea:focus{border-color:var(--rose)}
+
+/* TIMELINE GRID */
+.time-grid{display:flex;flex-direction:column;gap:.9rem;margin-top:1rem}
+.time-row{display:grid;grid-template-columns:140px 1fr;gap:1rem;align-items:start}
+.time-label{font-size:.75rem;font-weight:500;color:var(--rose);padding-top:.75rem;letter-spacing:.03em}
+.time-row textarea{min-height:70px;border:1.5px solid var(--line);border-radius:var(--r);padding:.65rem .9rem;width:100%;font-family:var(--sans);font-size:.85rem;font-weight:300;color:var(--ink);background:var(--bg);resize:vertical;outline:none;transition:border-color .2s;line-height:1.6}
+.time-row textarea:focus{border-color:var(--rose)}
+
+/* EMOTIONAL GRID */
+.emo-grid{display:flex;flex-direction:column;gap:1.2rem;margin-top:1rem}
+.emo-item{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.emo-header{padding:.8rem 1.2rem;background:var(--bg3);border-bottom:1px solid var(--line);display:flex;align-items:flex-start;gap:.5rem}
+.emo-name{font-size:.75rem;font-weight:500;color:var(--ink);text-transform:uppercase;letter-spacing:.08em;flex-shrink:0;min-width:100px}
+.emo-q{font-size:.75rem;color:var(--ink3);line-height:1.55}
+.emo-body{padding:.75rem 1.2rem}
+.emo-scale{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.emo-scale label{display:flex;align-items:center;gap:.3rem;font-size:.75rem;color:var(--ink2);cursor:pointer}
+.emo-scale input[type=radio]{accent-color:var(--rose);width:13px;height:13px}
+.emo-body textarea{min-height:60px;border:1.5px solid var(--line);border-radius:6px;padding:.55rem .8rem;width:100%;font-family:var(--sans);font-size:.83rem;font-weight:300;color:var(--ink);background:var(--bg);resize:vertical;outline:none;transition:border-color .2s;line-height:1.6;margin-top:.6rem}
+.emo-body textarea:focus{border-color:var(--rose)}
+
+/* MEDICAL GRID */
+.med-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1rem}
+.med-box{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem}
+.med-box h4{font-size:.7rem;font-weight:500;color:var(--ink2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.7rem}
+.med-box textarea{min-height:90px;border:1.5px solid var(--line);border-radius:6px;padding:.65rem .9rem;width:100%;font-family:var(--sans);font-size:.83rem;font-weight:300;color:var(--ink);background:var(--bg);resize:vertical;outline:none;transition:border-color .2s;line-height:1.6}
+.med-box textarea:focus{border-color:var(--rose)}
+
+/* ALERT BOX */
+.alert{background:var(--rose-xs);border:1px solid var(--liner);border-radius:var(--r);padding:1rem 1.2rem;font-size:.83rem;color:var(--ink2);line-height:1.65;margin-top:1rem}
+.alert strong{color:var(--rose)}
+
+/* SUBMIT */
+.submit-area{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line)}
+.form-check{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:1.5rem}
+.form-check input[type=checkbox]{margin-top:.2rem;accent-color:var(--rose);width:15px;height:15px;flex-shrink:0;cursor:pointer}
+.form-check label{font-size:.78rem;color:var(--ink3);line-height:1.55}
+.form-check label a{color:var(--rose)}
+.btn-p{display:inline-flex;align-items:center;gap:.45rem;font-size:.88rem;font-weight:500;padding:.9rem 2.2rem;border-radius:var(--r);background:var(--rose);color:#fff;border:none;cursor:pointer;box-shadow:0 4px 16px var(--rose-gl);transition:all .25s var(--ease)}
+.btn-p:hover{background:#c82c5c;transform:translateY(-1px);box-shadow:0 8px 24px var(--rose-gl)}
+.btn-full{width:100%;justify-content:center}
+.form-note{font-size:.72rem;color:var(--ink3);text-align:center;margin-top:1rem;line-height:1.5}
+
+/* PROGRESS */
+.progress-bar{position:fixed;top:70px;left:0;right:0;z-index:200;height:3px;background:var(--line)}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--rose),var(--rose-s));width:0%;transition:width .3s var(--ease)}
+
+/* DIVIDER */
+.divider{height:1px;background:var(--line);margin:1rem 0}
+
+/* FOOTER */
+footer{background:var(--ink);padding:3.5rem 0 2rem}
+.fg-f{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fff}
+.flogo em{font-style:italic;color:var(--rose-s)}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem}
+.fc li a{color:rgba(255,255,255,.45)}
+.fc li a:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+
+@media(max-width:768px){
+  .nl{display:none}
+  .row2,.row3{grid-template-columns:1fr}
+  .med-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .time-row{grid-template-columns:1fr}
+  .time-label{padding-top:0}
+  .fg-f{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+<nav><div class="w navi">
+<a href="../index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink)">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="../index.html#servicios">Servicios</a></li>
+<li><a href="../index.html#pro">Profesionales</a></li>
+<li><a href="../recursos.html">Recursos</a></li>
+<li><a href="../blog/index.html">Blog</a></li>
+<a href="../contacto.html" class="nbtn">Pide Cita</a>
+</ul>
+</div></nav>
+
+<!-- HERO -->
+<div class="phero">
+<div class="w">
+<div class="ey">Recursos · Formulario</div>
+<h1>Formulario de Historicidad<br/>y <em>Holografía</em></h1>
+<p>Este no es un cuestionario médico estándar. Es un mapa semántico de ti como sujeto holónico unitivo — el instrumento más valioso de tu entrada en UNIMED.</p>
+</div>
+</div>
+
+<!-- INTRO -->
+<div class="wf">
+<div class="intro-box">
+<h3>Antes de comenzar</h3>
+<p>El FHH captura quién eres a través de las 8 dimensiones del Sujeto Holónico. Reúne tu historia clínica familiar (al menos padres y abuelos), tus analíticas más recientes y cualquier diagnóstico previo. Cuanto más completo esté, mayor valor tiene.</p>
+<div class="steps">
+  <div class="step">
+    <div class="step-n">01</div>
+    <div class="step-t">Explórate</div>
+    <div class="step-d">Tiempo estimado: 20–40 min</div>
+  </div>
+  <div class="step">
+    <div class="step-n">02</div>
+    <div class="step-t">Completa tu perfil</div>
+    <div class="step-d">Tiempo estimado: 30–45 min</div>
+  </div>
+  <div class="step">
+    <div class="step-n">03</div>
+    <div class="step-t">Primera consulta</div>
+    <div class="step-d">Online o presencial · Barcelona</div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- FORM -->
+<div class="form-main">
+<div class="wf">
+<form id="fhhForm" action="https://formspree.io/f/xbdpdpjp" method="POST">
+<input type="hidden" name="_subject" value="FHH — Formulario de Historicidad y Holografía · UNIMED"/>
+
+<!-- SECCIÓN 0: IDENTIFICACIÓN -->
+<div class="fsec">
+<div class="fsec-label">Identificación</div>
+<h2>Información <em>personal</em></h2>
+<p>Datos básicos para que el equipo UNIMED pueda contactarte y vincular tu perfil holónico.</p>
+</div>
+
+<div class="row2">
+<div class="fg"><label>Apellidos *</label><input type="text" name="apellidos" required placeholder="Tus apellidos"/></div>
+<div class="fg"><label>Nombre *</label><input type="text" name="nombre" required placeholder="Tu nombre"/></div>
+</div>
+<div class="row3">
+<div class="fg"><label>Fecha de nacimiento *</label><input type="date" name="fecha_nacimiento" required/></div>
+<div class="fg"><label>Sexo biológico</label>
+<select name="sexo">
+<option value="">— Selecciona —</option>
+<option>Femenino</option>
+<option>Masculino</option>
+<option>Otro / Prefiero no indicar</option>
+</select>
+</div>
+<div class="fg"><label>Nacionalidad</label><input type="text" name="nacionalidad" placeholder="Española"/></div>
+</div>
+<div class="row2">
+<div class="fg"><label>Teléfono *</label><input type="tel" name="telefono" required placeholder="+34 600 000 000"/></div>
+<div class="fg"><label>Correo electrónico *</label><input type="email" name="email" required placeholder="tu@email.com"/></div>
+</div>
+<div class="fg"><label>Dirección postal</label><input type="text" name="direccion" placeholder="Calle, número, piso"/></div>
+<div class="row3">
+<div class="fg"><label>Código postal</label><input type="text" name="cp" placeholder="08001"/></div>
+<div class="fg"><label>Localidad</label><input type="text" name="localidad" placeholder="Barcelona"/></div>
+<div class="fg"><label>Provincia</label><input type="text" name="provincia" placeholder="Barcelona"/></div>
+</div>
+
+<!-- RESUMEN HISTORIA MÉDICA -->
+<div class="fsec">
+<div class="fsec-label">Historia médica</div>
+<h2>Resumen de tu <em>historial clínico</em></h2>
+<p>No es necesario que sea exhaustivo — escribe lo que consideras más relevante en cada apartado.</p>
+</div>
+
+<div class="med-grid">
+<div class="med-box">
+<h4>Diagnósticos médicos</h4>
+<textarea name="diagnosticos" placeholder="Diagnósticos actuales o anteriores..."></textarea>
+</div>
+<div class="med-box">
+<h4>Tratamientos actuales</h4>
+<textarea name="tratamientos" placeholder="Medicamentos, terapias, suplementos..."></textarea>
+</div>
+<div class="med-box">
+<h4>Antecedentes quirúrgicos</h4>
+<textarea name="cirugias" placeholder="Operaciones, intervenciones..."></textarea>
+</div>
+<div class="med-box">
+<h4>Pruebas de laboratorio recientes</h4>
+<textarea name="laboratorio" placeholder="Analíticas, valores destacables..."></textarea>
+</div>
+<div class="med-box">
+<h4>Pruebas de imaginología</h4>
+<textarea name="imaginologia" placeholder="Radiografías, resonancias, ecografías..."></textarea>
+</div>
+<div class="med-box">
+<h4>Otros antecedentes relevantes</h4>
+<textarea name="otros_medicos" placeholder="Alergias, intolerancias, vacunas..."></textarea>
+</div>
+</div>
+
+<!-- SECCIÓN 1: 8 DIMENSIONES -->
+<div class="fsec">
+<div class="fsec-label">Sección 1</div>
+<h2>Estudio multidimensional de <em>contexto y situación de vida</em></h2>
+<p>Escribe libremente sobre tu vida en cada dimensión. No hay respuestas correctas o incorrectas — lo que importa es tu narrativa natural.</p>
+</div>
+
+<div class="dim-grid">
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">🧬</span><span class="dim-title">Biológica — ¿Qué pasa en tu cuerpo?</span></div>
+<div class="dim-body"><textarea name="dim_biologica" placeholder="Tu salud física, síntomas, energía, sueño, alimentación, medicación..."></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">🧠</span><span class="dim-title">Psicológica — ¿Cómo estás emocionalmente?</span></div>
+<div class="dim-body"><textarea name="dim_psicologica" placeholder="Tu estado emocional, pensamientos recurrentes, relación contigo mismo/a..."></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">👥</span><span class="dim-title">Social — ¿Cómo es tu entorno?</span></div>
+<div class="dim-body"><textarea name="dim_social" placeholder="Relaciones familiares, amistades, vida social, red de apoyo..."></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">🌍</span><span class="dim-title">Cultural — ¿Qué influencias culturales hay?</span></div>
+<div class="dim-body"><textarea name="dim_cultural" placeholder="Origen, tradiciones, creencias culturales, idioma, identidad..."></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">💶</span><span class="dim-title">Económica — ¿Tienes acceso a recursos?</span></div>
+<div class="dim-body"><textarea name="dim_economica" placeholder="Situación laboral, nivel de vida, acceso a recursos, preocupaciones económicas..."></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">⚖️</span><span class="dim-title">Política — ¿Qué barreras sistémicas existen?</span></div>
+<div class="dim-body"><textarea name="dim_politica" placeholder="Acceso al sistema sanitario, barreras institucionales, situación legal o administrativa..."></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">🤝</span><span class="dim-title">Ética — ¿Cuáles son tus valores?</span></div>
+<div class="dim-body"><textarea name="dim_etica" placeholder="Lo que es importante para ti, tus principios, conflictos éticos que vives..."></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">✨</span><span class="dim-title">Espiritual — ¿Qué sentido das a tu situación?</span></div>
+<div class="dim-body"><textarea name="dim_espiritual" placeholder="Tu espiritualidad, propósito de vida, qué te sostiene en momentos difíciles..."></textarea></div>
+</div>
+</div>
+
+<!-- SECCIÓN 2: AUTOPERCEPCIÓN SALUD -->
+<div class="fsec">
+<div class="fsec-label">Sección 2</div>
+<h2>Autopercepción de <em>tu salud</em></h2>
+<p>Describe, con tus propias palabras, cómo describirías tu salud en cada momento. No hay respuesta técnica correcta — lo que importa es tu percepción.</p>
+</div>
+
+<div class="time-grid">
+<div class="time-row"><span class="time-label">Hace 1 año</span><textarea name="salud_1anio" placeholder="¿Cómo era tu salud hace un año?"></textarea></div>
+<div class="time-row"><span class="time-label">Hace 6 meses</span><textarea name="salud_6meses" placeholder="¿Cómo era tu salud hace 6 meses?"></textarea></div>
+<div class="time-row"><span class="time-label">Hace 3 meses</span><textarea name="salud_3meses" placeholder="¿Cómo era tu salud hace 3 meses?"></textarea></div>
+<div class="time-row"><span class="time-label">Hace 1 mes</span><textarea name="salud_1mes" placeholder="¿Cómo era tu salud hace 1 mes?"></textarea></div>
+<div class="time-row"><span class="time-label">Última semana</span><textarea name="salud_semana" placeholder="¿Cómo ha sido esta última semana?"></textarea></div>
+<div class="time-row"><span class="time-label">Hoy</span><textarea name="salud_hoy" placeholder="¿Cómo es tu salud hoy?"></textarea></div>
+</div>
+
+<!-- SECCIÓN 3: AUTO-OPINIÓN -->
+<div class="fsec">
+<div class="fsec-label">Sección 3</div>
+<h2>Auto-opinión sobre <em>tu existencia</em></h2>
+<p>Escribe libremente sobre cómo percibes tu propia vida. Estas preguntas no tienen respuestas correctas — tienen las tuyas.</p>
+</div>
+
+<div class="dim-grid">
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">🌱</span><span class="dim-title">¿Cómo VIVO?</span></div>
+<div class="dim-body"><textarea name="como_vivo" placeholder="Describe cómo es tu día a día, tu ritmo de vida..."></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">💫</span><span class="dim-title">¿Cómo EXISTO?</span></div>
+<div class="dim-body"><textarea name="como_existo" placeholder="¿Qué lugar ocupas en el mundo, en tu familia, en tu comunidad?"></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">🌊</span><span class="dim-title">¿Cómo ESTOY?</span></div>
+<div class="dim-body"><textarea name="como_estoy" placeholder="¿En qué estado te encuentras en este momento de tu vida?"></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">🎯</span><span class="dim-title">¿Para qué vivo? — Significación de tu vida</span></div>
+<div class="dim-body"><textarea name="para_que_vivo" placeholder="¿Qué le da sentido a tu vida? ¿Qué te hace levantarte cada día?"></textarea></div>
+</div>
+<div class="dim-row">
+<div class="dim-header"><span class="dim-icon">🔍</span><span class="dim-title">¿Por qué vivo?</span></div>
+<div class="dim-body"><textarea name="por_que_vivo" placeholder="¿Qué razones fundamentales sostienen tu existencia?"></textarea></div>
+</div>
+</div>
+
+<!-- SECCIÓN 4: AUTOEVALUACIÓN EMOCIONAL -->
+<div class="fsec">
+<div class="fsec-label">Sección 4</div>
+<h2>Autoevaluación de tu <em>situación emocional</em></h2>
+<p>Para cada estado emocional, indica primero cómo te identificas (del 1 al 5) y luego añade tu reflexión personal si lo deseas.</p>
+</div>
+
+<div class="emo-grid">
+
+<div class="emo-item">
+<div class="emo-header">
+<span class="emo-name">😊 Alegría</span>
+<span class="emo-q">¿Cómo te consideras? ¿La mayor parte del día te sientes contento/a? ¿Sueles reírte de ti mismo/a?</span>
+</div>
+<div class="emo-body">
+<div class="emo-scale">
+<span style="font-size:.72rem;color:var(--ink3);margin-right:.3rem">Muy poco</span>
+<label><input type="radio" name="emo_alegria" value="1"/> 1</label>
+<label><input type="radio" name="emo_alegria" value="2"/> 2</label>
+<label><input type="radio" name="emo_alegria" value="3"/> 3</label>
+<label><input type="radio" name="emo_alegria" value="4"/> 4</label>
+<label><input type="radio" name="emo_alegria" value="5"/> 5</label>
+<span style="font-size:.72rem;color:var(--ink3);margin-left:.3rem">Mucho</span>
+</div>
+<textarea name="emo_alegria_texto" placeholder="Añade tu reflexión (opcional)..."></textarea>
+</div>
+</div>
+
+<div class="emo-item">
+<div class="emo-header">
+<span class="emo-name">😔 Tristeza</span>
+<span class="emo-q">¿Cómo te sientes la mayor parte del día? ¿Te sientes desanimado/a respecto a tu futuro? ¿Sientes que los demás son mejores que tú en casi todo?</span>
+</div>
+<div class="emo-body">
+<div class="emo-scale">
+<span style="font-size:.72rem;color:var(--ink3);margin-right:.3rem">Muy poco</span>
+<label><input type="radio" name="emo_tristeza" value="1"/> 1</label>
+<label><input type="radio" name="emo_tristeza" value="2"/> 2</label>
+<label><input type="radio" name="emo_tristeza" value="3"/> 3</label>
+<label><input type="radio" name="emo_tristeza" value="4"/> 4</label>
+<label><input type="radio" name="emo_tristeza" value="5"/> 5</label>
+<span style="font-size:.72rem;color:var(--ink3);margin-left:.3rem">Mucho</span>
+</div>
+<textarea name="emo_tristeza_texto" placeholder="Añade tu reflexión (opcional)..."></textarea>
+</div>
+</div>
+
+<div class="emo-item">
+<div class="emo-header">
+<span class="emo-name">😤 Ira</span>
+<span class="emo-q">¿A menudo discutes con los demás? ¿Tienes dificultades para controlar tu genio? ¿A veces te pones muy furioso/a sin saber por qué?</span>
+</div>
+<div class="emo-body">
+<div class="emo-scale">
+<span style="font-size:.72rem;color:var(--ink3);margin-right:.3rem">Muy poco</span>
+<label><input type="radio" name="emo_ira" value="1"/> 1</label>
+<label><input type="radio" name="emo_ira" value="2"/> 2</label>
+<label><input type="radio" name="emo_ira" value="3"/> 3</label>
+<label><input type="radio" name="emo_ira" value="4"/> 4</label>
+<label><input type="radio" name="emo_ira" value="5"/> 5</label>
+<span style="font-size:.72rem;color:var(--ink3);margin-left:.3rem">Mucho</span>
+</div>
+<textarea name="emo_ira_texto" placeholder="Añade tu reflexión (opcional)..."></textarea>
+</div>
+</div>
+
+<div class="emo-item">
+<div class="emo-header">
+<span class="emo-name">🌟 Satisfacción de vida</span>
+<span class="emo-q">¿En general te sientes satisfecho/a con tu vida? ¿Si volvieras a nacer te gustaría volver a tener la vida que tienes?</span>
+</div>
+<div class="emo-body">
+<div class="emo-scale">
+<span style="font-size:.72rem;color:var(--ink3);margin-right:.3rem">Muy poco</span>
+<label><input type="radio" name="emo_satisfaccion" value="1"/> 1</label>
+<label><input type="radio" name="emo_satisfaccion" value="2"/> 2</label>
+<label><input type="radio" name="emo_satisfaccion" value="3"/> 3</label>
+<label><input type="radio" name="emo_satisfaccion" value="4"/> 4</label>
+<label><input type="radio" name="emo_satisfaccion" value="5"/> 5</label>
+<span style="font-size:.72rem;color:var(--ink3);margin-left:.3rem">Mucho</span>
+</div>
+<textarea name="emo_satisfaccion_texto" placeholder="Añade tu reflexión (opcional)..."></textarea>
+</div>
+</div>
+
+<div class="emo-item">
+<div class="emo-header">
+<span class="emo-name">☀️ Optimismo</span>
+<span class="emo-q">¿Sabes que las cosas saldrán mejor? ¿Normalmente tienes buenas perspectivas aunque sea un mal momento? ¿Siempre se puede sacar algo positivo de los malos momentos?</span>
+</div>
+<div class="emo-body">
+<div class="emo-scale">
+<span style="font-size:.72rem;color:var(--ink3);margin-right:.3rem">Muy poco</span>
+<label><input type="radio" name="emo_optimismo" value="1"/> 1</label>
+<label><input type="radio" name="emo_optimismo" value="2"/> 2</label>
+<label><input type="radio" name="emo_optimismo" value="3"/> 3</label>
+<label><input type="radio" name="emo_optimismo" value="4"/> 4</label>
+<label><input type="radio" name="emo_optimismo" value="5"/> 5</label>
+<span style="font-size:.72rem;color:var(--ink3);margin-left:.3rem">Mucho</span>
+</div>
+<textarea name="emo_optimismo_texto" placeholder="Añade tu reflexión (opcional)..."></textarea>
+</div>
+</div>
+
+<div class="emo-item">
+<div class="emo-header">
+<span class="emo-name">🙏 Gratitud</span>
+<span class="emo-q">¿Das gracias todos los días por lo que tienes? ¿Te gusta pararte y dar gracias por lo que has conseguido? ¿Disfrutas devolviendo favores?</span>
+</div>
+<div class="emo-body">
+<div class="emo-scale">
+<span style="font-size:.72rem;color:var(--ink3);margin-right:.3rem">Muy poco</span>
+<label><input type="radio" name="emo_gratitud" value="1"/> 1</label>
+<label><input type="radio" name="emo_gratitud" value="2"/> 2</label>
+<label><input type="radio" name="emo_gratitud" value="3"/> 3</label>
+<label><input type="radio" name="emo_gratitud" value="4"/> 4</label>
+<label><input type="radio" name="emo_gratitud" value="5"/> 5</label>
+<span style="font-size:.72rem;color:var(--ink3);margin-left:.3rem">Mucho</span>
+</div>
+<textarea name="emo_gratitud_texto" placeholder="Añade tu reflexión (opcional)..."></textarea>
+</div>
+</div>
+
+<div class="emo-item">
+<div class="emo-header">
+<span class="emo-name">🔥 Interés / Entusiasmo</span>
+<span class="emo-q">¿Te interesas por hacer muchas cosas? ¿Te gusta aprender cosas nuevas? ¿Sientes curiosidad por lo nuevo?</span>
+</div>
+<div class="emo-body">
+<div class="emo-scale">
+<span style="font-size:.72rem;color:var(--ink3);margin-right:.3rem">Muy poco</span>
+<label><input type="radio" name="emo_interes" value="1"/> 1</label>
+<label><input type="radio" name="emo_interes" value="2"/> 2</label>
+<label><input type="radio" name="emo_interes" value="3"/> 3</label>
+<label><input type="radio" name="emo_interes" value="4"/> 4</label>
+<label><input type="radio" name="emo_interes" value="5"/> 5</label>
+<span style="font-size:.72rem;color:var(--ink3);margin-left:.3rem">Mucho</span>
+</div>
+<textarea name="emo_interes_texto" placeholder="Añade tu reflexión (opcional)..."></textarea>
+</div>
+</div>
+
+<div class="emo-item">
+<div class="emo-header">
+<span class="emo-name">😰 Ansiedad</span>
+<span class="emo-q">¿Te preocupas demasiado por los acontecimientos cotidianos? ¿Encuentras dificultad para relajarte? ¿Te despiertas por las noches a menudo?</span>
+</div>
+<div class="emo-body">
+<div class="emo-scale">
+<span style="font-size:.72rem;color:var(--ink3);margin-right:.3rem">Muy poco</span>
+<label><input type="radio" name="emo_ansiedad" value="1"/> 1</label>
+<label><input type="radio" name="emo_ansiedad" value="2"/> 2</label>
+<label><input type="radio" name="emo_ansiedad" value="3"/> 3</label>
+<label><input type="radio" name="emo_ansiedad" value="4"/> 4</label>
+<label><input type="radio" name="emo_ansiedad" value="5"/> 5</label>
+<span style="font-size:.72rem;color:var(--ink3);margin-left:.3rem">Mucho</span>
+</div>
+<textarea name="emo_ansiedad_texto" placeholder="Añade tu reflexión (opcional)..."></textarea>
+</div>
+</div>
+
+<div class="emo-item">
+<div class="emo-header">
+<span class="emo-name">🕊️ Tranquilidad</span>
+<span class="emo-q">¿Te consideras una persona tranquila? ¿La gente dice que transmites tranquilidad? ¿Ante un problema usas la calma para pensar con claridad?</span>
+</div>
+<div class="emo-body">
+<div class="emo-scale">
+<span style="font-size:.72rem;color:var(--ink3);margin-right:.3rem">Muy poco</span>
+<label><input type="radio" name="emo_tranquilidad" value="1"/> 1</label>
+<label><input type="radio" name="emo_tranquilidad" value="2"/> 2</label>
+<label><input type="radio" name="emo_tranquilidad" value="3"/> 3</label>
+<label><input type="radio" name="emo_tranquilidad" value="4"/> 4</label>
+<label><input type="radio" name="emo_tranquilidad" value="5"/> 5</label>
+<span style="font-size:.72rem;color:var(--ink3);margin-left:.3rem">Mucho</span>
+</div>
+<textarea name="emo_tranquilidad_texto" placeholder="Añade tu reflexión (opcional)..."></textarea>
+</div>
+</div>
+
+</div><!-- end emo-grid -->
+
+<!-- SECCIÓN 5: GENEALOGÍA -->
+<div class="fsec">
+<div class="fsec-label">Sección 5</div>
+<h2>Información <em>genealógica</em></h2>
+<p>Tu historia familiar es parte de tu biología. Cuanta más información puedas aportar sobre tu árbol genealógico, mejor podremos comprender tu perfil de riesgo y tus patrones de salud.</p>
+</div>
+
+<div class="alert">
+<strong>Antes de rellenar esta sección:</strong> Reúne la información de tu familia — al menos padres y abuelos. Incluye nombres, enfermedades importantes, causas de fallecimiento si las conoces, y cualquier dato relevante sobre su salud.
+</div>
+
+<div class="fg" style="margin-top:1.5rem">
+<label>Padre — nombre y datos de salud relevantes</label>
+<textarea name="gen_padre" placeholder="Nombre, enfermedades, medicación, causa de fallecimiento (si aplica)..."></textarea>
+</div>
+<div class="fg">
+<label>Madre — nombre y datos de salud relevantes</label>
+<textarea name="gen_madre" placeholder="Nombre, enfermedades, medicación, causa de fallecimiento (si aplica)..."></textarea>
+</div>
+<div class="row2">
+<div class="fg"><label>Abuelo paterno</label><textarea name="gen_abuelo_p" placeholder="Datos de salud relevantes..."></textarea></div>
+<div class="fg"><label>Abuela paterna</label><textarea name="gen_abuela_p" placeholder="Datos de salud relevantes..."></textarea></div>
+</div>
+<div class="row2">
+<div class="fg"><label>Abuelo materno</label><textarea name="gen_abuelo_m" placeholder="Datos de salud relevantes..."></textarea></div>
+<div class="fg"><label>Abuela materna</label><textarea name="gen_abuela_m" placeholder="Datos de salud relevantes..."></textarea></div>
+</div>
+<div class="fg">
+<label>Hermanos/as — datos de salud relevantes</label>
+<textarea name="gen_hermanos" placeholder="Nombres y datos de salud relevantes de cada hermano/a..."></textarea>
+</div>
+<div class="fg">
+<label>Hijos/as — datos de salud relevantes (si aplica)</label>
+<textarea name="gen_hijos" placeholder="Nombres y datos de salud relevantes..."></textarea>
+</div>
+<div class="fg">
+<label>Patrones o enfermedades recurrentes en la familia</label>
+<textarea name="gen_patrones" placeholder="Enfermedades cardiovasculares, cáncer, diabetes, trastornos mentales, enfermedades autoinmunes... ¿hay algo que se repita en tu familia?"></textarea>
+</div>
+
+<!-- SUBMIT -->
+<div class="submit-area">
+<div class="form-check">
+<input type="checkbox" id="privacidad" name="privacidad" required/>
+<label for="privacidad">He leído y acepto la <a href="../politica-de-privacidad.html">Política de Privacidad</a> de UNIMED Consulting. Consiento el tratamiento de mis datos de salud para la elaboración de mi perfil holónico y la prestación del servicio de consultoría.</label>
+</div>
+<div class="form-check">
+<input type="checkbox" id="rgpd" name="rgpd" required/>
+<label for="rgpd">Entiendo que mis datos están protegidos bajo el RGPD y la Ley Orgánica 3/2018, y que no serán cedidos a terceros sin mi consentimiento explícito.</label>
+</div>
+<button type="submit" class="btn-p btn-full">
+Enviar mi Formulario FHH
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<p class="form-note">Tus datos de salud son tratados con máxima confidencialidad conforme al RGPD. Recibirás una confirmación en tu correo electrónico en menos de 24 horas.</p>
+</div>
+
+</form>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer><div class="w">
+<div class="fg-f">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona.</p>
+<div class="fcon">
+<span>📍 Barcelona, España · Västerås, Suecia</span>
+<span>📞 +34 673 815 148</span>
+<span>✉️ salud@unimed-consulting.es</span>
+</div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul>
+<li><a href="../servicios/atencion-consultiva.html">Atención Consultiva</a></li>
+<li><a href="../servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+<li><a href="../servicios/nutrigenomica.html">Nutrigenómica</a></li>
+<li><a href="../servicios/neurocognitivo.html">Neurocognitivo</a></li>
+<li><a href="../servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+</ul></div>
+<div class="fc"><h5>Recursos</h5><ul>
+<li><a href="tu-consulta-comienza-aqui.html">Tu consulta comienza aquí</a></li>
+<li><a href="formulario-fhh.html">Formulario FHH</a></li>
+<li><a href="../recursos.html">Todos los recursos</a></li>
+<li><a href="../blog/index.html">Blog</a></li>
+</ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="../aviso-legal.html">Aviso Legal</a></li>
+<li><a href="../contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+</div>
+</div></footer>
+
+<script>
+// Progress bar
+window.addEventListener('scroll', () => {
+  const doc = document.documentElement;
+  const scrollTop = window.scrollY;
+  const scrollHeight = doc.scrollHeight - doc.clientHeight;
+  const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+  document.getElementById('progressFill').style.width = progress + '%';
+});
+
+// Form submit
+const form = document.getElementById('fhhForm');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = form.querySelector('button[type=submit]');
+  btn.textContent = 'Enviando...';
+  btn.disabled = true;
+  const data = new FormData(form);
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      window.location.href = '../gracias.html';
+    } else {
+      alert('Hubo un problema al enviar. Por favor escríbenos directamente a salud@unimed-consulting.es');
+      btn.textContent = 'Enviar mi Formulario FHH';
+      btn.disabled = false;
+    }
+  } catch(err) {
+    alert('Error de conexión. Por favor inténtalo de nuevo.');
+    btn.textContent = 'Enviar mi Formulario FHH';
+    btn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>
