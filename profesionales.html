@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8"/>
@@ -27,8 +27,6 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .breadcrumb p{font-size:.75rem;color:var(--ink3)}
 .breadcrumb a{color:var(--rose)}
 .breadcrumb span{margin:0 .4rem}
-
-/* HERO */
 .phero{background:var(--ink);padding:5rem 0 4rem;position:relative;overflow:hidden}
 .phero::before{content:'';position:absolute;right:-80px;top:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,53,109,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
 .ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:.9rem}
@@ -38,21 +36,15 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .phero p{font-size:.9rem;color:rgba(255,255,255,.5);margin-top:1rem;max-width:560px;line-height:1.78}
 .hero-badges{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}
 .badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;color:rgba(255,255,255,.7);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:.4rem .9rem;border-radius:20px}
-
-/* SECCIONES */
 section{padding:5rem 0}
 .sec-ey{font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.6rem}
 .sec-h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:var(--ink);margin-bottom:.8rem}
 .sec-h2 em{font-style:italic;color:var(--rose)}
 .sec-lead{font-size:.9rem;color:var(--ink3);line-height:1.82;max-width:680px;margin-bottom:3rem}
-
-/* PERFILES */
 #perfiles{background:var(--bg2)}
 .perfiles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:2rem}
 .perfil-tag{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:.75rem 1rem;font-size:.82rem;color:var(--ink2);display:flex;align-items:center;gap:.5rem;transition:all .2s}
 .perfil-tag:hover{border-color:var(--liner);color:var(--ink)}
-
-/* SERVICIOS */
 #servicios-pro{background:var(--bg)}
 .srv-cards{display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem}
 .srv-card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:2rem;transition:all .25s var(--ease);position:relative;overflow:hidden}
@@ -70,15 +62,11 @@ section{padding:5rem 0}
 .srv-card ul li{font-size:.83rem;color:var(--ink2);padding:.3rem 0 .3rem 1.2rem;position:relative;border-bottom:1px solid var(--line)}
 .srv-card ul li::before{content:'·';position:absolute;left:0;color:var(--rose);font-size:1.2rem;line-height:1}
 .srv-card ul li:last-child{border-bottom:none}
-
-/* MIR BOX */
 .mir-box{background:var(--ink);border-radius:var(--rxl);padding:2rem;margin-top:2rem;display:flex;gap:1.5rem;align-items:flex-start}
 .mir-icon{font-size:2rem;flex-shrink:0}
 .mir-txt h4{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:#fff;margin-bottom:.5rem}
 .mir-txt h4 em{font-style:italic;color:var(--rose-s)}
 .mir-txt p{font-size:.83rem;color:rgba(255,255,255,.6);line-height:1.7;margin:0}
-
-/* COLABORACIÓN CARD */
 #formacion{background:var(--bg2)}
 .colab-card{background:var(--bg);border:2px solid var(--liner);border-radius:var(--rxl);padding:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:2rem}
 .colab-card.star{background:var(--rose-xs);border-color:var(--rose)}
@@ -98,15 +86,11 @@ section{padding:5rem 0}
 .colab-img .inst-logo em{font-style:italic;color:var(--rose-s)}
 .colab-img .inst-sub{font-size:.72rem;color:rgba(255,255,255,.4);letter-spacing:.1em;margin-top:.5rem}
 .colab-img .inst-icon{font-size:3rem;margin-bottom:1rem}
-
-/* DETALLES DIPLOMADO */
 .dip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0}
 .dip-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem;text-align:center}
 .dip-card .dico{font-size:1.5rem;margin-bottom:.5rem}
 .dip-card h4{font-family:var(--serif);font-size:.95rem;font-weight:400;color:var(--ink);margin-bottom:.3rem}
 .dip-card p{font-size:.75rem;color:var(--ink3);line-height:1.4;margin:0}
-
-/* RECURSOS */
 #recursos-pro{background:var(--bg)}
 .recursos-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
 .recurso-card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--rxl);padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;transition:all .25s var(--ease)}
@@ -115,8 +99,6 @@ section{padding:5rem 0}
 .recurso-txt h4{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink);margin-bottom:.3rem}
 .recurso-txt p{font-size:.78rem;color:var(--ink3);line-height:1.5;margin:0}
 .recurso-badge{display:inline-block;font-size:.65rem;font-weight:500;color:var(--rose);background:var(--rose-xs);border:1px solid var(--liner);padding:.2rem .6rem;border-radius:10px;margin-top:.5rem;letter-spacing:.05em;text-transform:uppercase}
-
-/* RED PROFESIONAL */
 #red{background:var(--bg2)}
 .red-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
 .red-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--rxl);padding:1.8rem;transition:all .3s var(--ease)}
@@ -125,8 +107,6 @@ section{padding:5rem 0}
 .red-card h3{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink);margin-bottom:.5rem}
 .red-card h3 em{font-style:italic;color:var(--rose)}
 .red-card p{font-size:.82rem;color:var(--ink3);line-height:1.65}
-
-/* CTA */
 .page-cta{background:var(--ink);padding:5rem 0;text-align:center;position:relative;overflow:hidden}
 .page-cta::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(232,53,109,.12) 0%,transparent 70%);pointer-events:none}
 .page-cta h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:#fff;margin-bottom:1rem;position:relative;z-index:1}
@@ -137,8 +117,6 @@ section{padding:5rem 0}
 .btn-p-lg:hover{background:#c82c5c;transform:translateY(-2px)}
 .btn-g-inv{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--sans);font-size:.83rem;font-weight:400;padding:.82rem 1.7rem;border-radius:var(--r);background:transparent;color:rgba(255,255,255,.6);border:1.5px solid rgba(255,255,255,.15);transition:all .25s var(--ease)}
 .btn-g-inv:hover{border-color:var(--rose-s);color:var(--rose-s)}
-
-/* FOOTER */
 footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255,255,255,.05)}
 .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
 .flogo{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:#fff;margin-bottom:.6rem}
@@ -152,13 +130,11 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 .fc li a:hover{color:var(--rose-s)}
 .fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
 .fbtm em{color:var(--rose-s);font-style:normal}
-
 @media(max-width:1024px){.colab-card{grid-template-columns:1fr}.dip-grid{grid-template-columns:repeat(2,1fr)}.red-grid{grid-template-columns:1fr 1fr}.perfiles-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){.nl{display:none}.dip-grid{grid-template-columns:1fr 1fr}.red-grid{grid-template-columns:1fr}.recursos-grid{grid-template-columns:1fr}.perfiles-grid{grid-template-columns:1fr 1fr}.fg{grid-template-columns:1fr 1fr}.mir-box{flex-direction:column}}
 </style>
 </head>
 <body>
-
 <nav><div class="w navi">
 <a href="index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
 <ul class="nl">
@@ -171,12 +147,9 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <li><a href="contacto.html" class="nbtn">Pide Cita</a></li>
 </ul>
 </div></nav>
-
 <div class="breadcrumb"><div class="w">
 <p><a href="index.html">Inicio</a><span>/</span>Para Profesionales</p>
 </div></div>
-
-<!-- HERO -->
 <div class="phero"><div class="w">
 <div class="ey">Para Profesionales · Colaboraciones · Formación</div>
 <h1>UNIMED en la frontera<br/>entre la ciencia y <em>la práctica clínica.</em></h1>
@@ -192,10 +165,7 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <span class="badge">🎓 Estudiantes MIR y sanitarios</span>
 </div>
 </div></div>
-
-<!-- PERFILES -->
-<section id="perfiles">
-<div class="w">
+<section id="perfiles"><div class="w">
 <div class="sec-ey">¿A quién va dirigido?</div>
 <h2 class="sec-h2">Profesionales de <em>la salud y la ciencia</em></h2>
 <p class="sec-lead">UNIMED trabaja con profesionales que sienten que el paradigma convencional no responde a la complejidad real de sus pacientes. Si eres de cualquiera de estos perfiles, aquí tienes tu espacio.</p>
@@ -211,26 +181,14 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <div class="perfil-tag"><span>🎓</span> Estudiantes MIR y grados sanitarios</div>
 <div class="perfil-tag"><span>🏢</span> Instituciones y clínicas</div>
 </div>
-</div>
-</section>
-
-<!-- SERVICIOS Y TARIFAS -->
-<section id="servicios-pro">
-<div class="w">
+</div></section>
+<section id="servicios-pro"><div class="w">
 <div class="sec-ey">Servicios B2B · Tarifas profesionales</div>
 <h2 class="sec-h2">¿Qué ofrece <em>UNIMED</em> a profesionales?</h2>
 <p class="sec-lead">Capacitación, formación, mentoría, asesoramiento y consultoría especializada en medicina de precisión y HoloMedicina.</p>
-
 <div class="srv-cards">
-
 <div class="srv-card">
-<div class="srv-card-header">
-<div>
-<div class="srv-card-icon">🔍</div>
-<h3>Consultoría en <em>caso clínico</em></h3>
-</div>
-<div><div class="srv-price">350€<small>por caso</small></div></div>
-</div>
+<div class="srv-card-header"><div><div class="srv-card-icon">🔍</div><h3>Consultoría en <em>caso clínico</em></h3></div><div><div class="srv-price">350€<small>por caso</small></div></div></div>
 <p>Análisis exhaustivo de un caso de persona-paciente desde el paradigma HoloMed 8D y medicina de precisión. Para cuando el caso no encaja en los protocolos estándar o necesitas una segunda perspectiva fundamentada.</p>
 <ul>
 <li>Revisión completa del historial clínico aportado</li>
@@ -239,15 +197,8 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <li>Sesión de 60 min para resolver dudas con el profesional solicitante</li>
 </ul>
 </div>
-
 <div class="srv-card">
-<div class="srv-card-header">
-<div>
-<div class="srv-card-icon">🎯</div>
-<h3>Mentoría <em>profesional</em></h3>
-</div>
-<div><div class="srv-price">240€<small>/ mes</small></div></div>
-</div>
+<div class="srv-card-header"><div><div class="srv-card-icon">🎯</div><h3>Mentoría <em>profesional</em></h3></div><div><div class="srv-price">240€<small>/ mes</small></div></div></div>
 <p>Acompañamiento continuo para profesionales que quieren incorporar la medicina de precisión y el enfoque holónico a su práctica. Formato flexible adaptado a tu agenda.</p>
 <ul>
 <li>2 sesiones mensuales de 60 min (online o presencial)</li>
@@ -256,15 +207,8 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <li>Orientación en desarrollo profesional y especialización</li>
 </ul>
 </div>
-
 <div class="srv-card">
-<div class="srv-card-header">
-<div>
-<div class="srv-card-icon">📚</div>
-<h3>Formación y <em>capacitación</em></h3>
-</div>
-<div><div class="srv-price">70€<small>/ hora</small></div></div>
-</div>
+<div class="srv-card-header"><div><div class="srv-card-icon">📚</div><h3>Formación y <em>capacitación</em></h3></div><div><div class="srv-price">70€<small>/ hora</small></div></div></div>
 <p>Formación individualizada o en grupo en medicina de precisión, farmacogenómica, nutrigenómica, neurociencias aplicadas y paradigma HoloMed 8D. Adaptada a tu nivel y especialidad.</p>
 <ul>
 <li>Sesiones individuales o grupales (presencial u online)</li>
@@ -273,9 +217,7 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <li>Certificado de asistencia disponible</li>
 </ul>
 </div>
-
 </div>
-
 <div class="mir-box">
 <div class="mir-icon">🎓</div>
 <div class="mir-txt">
@@ -283,16 +225,11 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <p>Samuel Carmona Aguirre cuenta con acreditación oficial como Tutor MIR. Si eres residente o estudiante en formación sanitaria y buscas orientación en medicina de precisión, neurociencias o HoloMedicina como complemento a tu formación reglada, podemos trabajar juntos.</p>
 </div>
 </div>
-
-</div>
-</section>
-
-<!-- COLABORACIÓN UNAM -->
+</div></section>
 <section id="formacion"><div class="w">
 <div class="sec-ey">Colaboración Institucional Destacada</div>
 <h2 class="sec-h2">Ciencias Médicas y <em>Ciencias de la Complejidad</em></h2>
 <p class="sec-lead">UNIMED Consulting es colaborador del Diplomado en Ciencia Médica y Ciencia de la Complejidad, impartido por la Facultad de Medicina de la Universidad Nacional Autónoma de México — una de las instituciones académicas más prestigiosas del mundo hispanohablante.</p>
-
 <div class="colab-card star">
 <div>
 <div class="colab-badge">✦ Colaboración Institucional</div>
@@ -322,6 +259,39 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </div>
 </div>
 
+<!-- AIDIA CARD -->
+<div class="colab-card" style="margin-top:1.5rem">
+<div>
+<div class="colab-badge" style="background:#1a0f24">🌐 Ecosistema de Conocimiento UNIMED</div>
+<h3>Multiversidad <em>AIDIA</em></h3>
+<p>AIDIA es el Sistema de Producción de Conocimiento Holónico (SPCH) de UNIMED. Un ecosistema vivo donde las ciencias médicas conversan con las ciencias de la complejidad — sin fronteras disciplinares, sin jerarquías artificiales.</p>
+<p>Cinco dimensiones inseparables del saber y el hacer: <strong>Aprendizaje · Investigación · Desarrollo · Innovación · Abierta.</strong> Aquí el conocimiento es un bien común.</p>
+<div class="colab-meta">
+<span>🏛️ <strong>Tipo:</strong> Asociación sin ánimo de lucro · Cataluña · 2019</span>
+<span>📍 <strong>Base:</strong> Barcelona · Sverige</span>
+<span>🔬 <strong>Áreas:</strong> Ciencias médicas · Ciencias de la complejidad · IA clínica · HoloMed</span>
+<span>🎓 <strong>Formato:</strong> Cursos, diplomados, investigación abierta e innovación</span>
+</div>
+<div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem">
+<a href="https://aidia.unimed-consulting.es/" target="_blank" class="btn-p">Explorar AIDIA <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a href="contacto.html" class="btn-g">Contactar con UNIMED</a>
+</div>
+</div>
+<div class="colab-img" style="background:linear-gradient(135deg,#1a0f24 0%,#2d1650 100%)">
+<div class="inst-icon">🌐</div>
+<div class="inst-logo">Multiversidad <em>AIDIA</em></div>
+<div class="inst-sub" style="margin-top:.5rem">Sistema de Producción de Conocimiento Holónico</div>
+<div style="width:100%;height:1px;background:rgba(255,255,255,.1);margin:1.2rem 0"></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;text-align:center">
+<div style="background:rgba(255,255,255,.05);border-radius:6px;padding:.6rem"><div style="font-family:var(--serif);font-size:1.3rem;color:var(--rose-s)">A</div><div style="font-size:.6rem;color:rgba(255,255,255,.4);margin-top:.2rem">Aprendizaje</div></div>
+<div style="background:rgba(255,255,255,.05);border-radius:6px;padding:.6rem"><div style="font-family:var(--serif);font-size:1.3rem;color:var(--rose-s)">I</div><div style="font-size:.6rem;color:rgba(255,255,255,.4);margin-top:.2rem">Investigación</div></div>
+<div style="background:rgba(255,255,255,.05);border-radius:6px;padding:.6rem"><div style="font-family:var(--serif);font-size:1.3rem;color:var(--rose-s)">D</div><div style="font-size:.6rem;color:rgba(255,255,255,.4);margin-top:.2rem">Desarrollo</div></div>
+<div style="background:rgba(255,255,255,.05);border-radius:6px;padding:.6rem"><div style="font-family:var(--serif);font-size:1.3rem;color:var(--rose-s)">I</div><div style="font-size:.6rem;color:rgba(255,255,255,.4);margin-top:.2rem">Innovación</div></div>
+</div>
+<div style="background:rgba(232,53,109,.15);border-radius:6px;padding:.6rem;margin-top:.5rem"><div style="font-family:var(--serif);font-size:1.1rem;color:var(--rose-s)">A · Abierta</div><div style="font-size:.6rem;color:rgba(255,255,255,.4);margin-top:.1rem">El conocimiento es bien común</div></div>
+</div>
+</div>
+
 <div class="dip-grid">
 <div class="dip-card"><div class="dico">📚</div><h4>120 horas</h4><p>Programa completo de formación avanzada</p></div>
 <div class="dip-card"><div class="dico">💻</div><h4>Online</h4><p>Zoom Meeting · acceso desde cualquier país</p></div>
@@ -329,35 +299,36 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <div class="dip-card"><div class="dico">🌍</div><h4>Internacional</h4><p>UNAM · institución de referencia mundial</p></div>
 </div>
 </div></section>
-
-<!-- RECURSOS PARA PROFESIONALES -->
-<section id="recursos-pro">
-<div class="w">
+<section id="recursos-pro"><div class="w">
 <div class="sec-ey">Recursos para profesionales</div>
 <h2 class="sec-h2">Contenidos especializados en <em>medicina de precisión</em></h2>
 <p class="sec-lead">Accede a contenidos orientados a profesionales en activo y estudiantes de ciencias de la salud. Todos los recursos se irán publicando de forma progresiva.</p>
 <div class="recursos-grid">
+<a href="https://aidia.unimed-consulting.es/" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="recurso-card" style="border-color:var(--liner)">
+<div class="recurso-icon">🎓</div>
+<div class="recurso-txt">
+<h4>Formación · Multiversidad AIDIA</h4>
+<p>Cursos, diplomados y formación continua en ciencias médicas y ciencias de la complejidad.</p>
+<span class="recurso-badge" style="background:var(--rose);color:#fff;border-color:var(--rose)">Disponible</span>
+</div>
+</div>
+</a>
+<a href="https://medicinaycomplejidad.online/index.html" target="_blank" style="text-decoration:none;color:inherit;display:block">
+<div class="recurso-card" style="border-color:var(--liner)">
+<div class="recurso-icon">🔬</div>
+<div class="recurso-txt">
+<h4>Ciencias Médicas y de la Complejidad</h4>
+<p>Diplomado UNAM · Ciencia Médica y Ciencia de la Complejidad. Colaboración institucional UNIMED.</p>
+<span class="recurso-badge" style="background:var(--rose);color:#fff;border-color:var(--rose)">Disponible</span>
+</div>
+</div>
+</a>
 <div class="recurso-card">
 <div class="recurso-icon">🎬</div>
 <div class="recurso-txt">
 <h4>Centro de Vídeos</h4>
 <p>Conferencias, ponencias y contenidos audiovisuales sobre HoloMedicina y medicina de precisión.</p>
-<span class="recurso-badge">Próximamente</span>
-</div>
-</div>
-<div class="recurso-card">
-<div class="recurso-icon">📖</div>
-<div class="recurso-txt">
-<h4>Revistas y Publicaciones</h4>
-<p>Selección de publicaciones científicas y artículos de referencia en medicina de precisión y complejidad.</p>
-<span class="recurso-badge">Próximamente</span>
-</div>
-</div>
-<div class="recurso-card">
-<div class="recurso-icon">🏥</div>
-<div class="recurso-txt">
-<h4>Educación Biomédica Continuada</h4>
-<p>Materiales para la formación clínica continuada en medicina personalizada y neurociencias.</p>
 <span class="recurso-badge">Próximamente</span>
 </div>
 </div>
@@ -370,44 +341,25 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </div>
 </div>
 </div>
-</div>
-</section>
-
-<!-- RED PROFESIONAL -->
+</div></section>
 <section id="red"><div class="w">
 <div class="sec-ey">Red Profesional UNIMED</div>
 <h2 class="sec-h2">Para profesionales de <em>la salud y la ciencia</em></h2>
 <p class="sec-lead">UNIMED trabaja con y para profesionales que sienten que el paradigma convencional no responde a la complejidad real de sus pacientes. Si eres médico, investigador, psicólogo, nutricionista o profesional afín, aquí tienes tu espacio.</p>
 <div class="red-grid">
-<div class="red-card">
-<div class="rico">🔬</div>
-<h3>Segunda opinión <em>integrativa</em></h3>
-<p>Derivación de casos complejos que superan los límites de una especialidad. UNIMED aporta la perspectiva holónica de sistema completo donde el modelo lineal no llega.</p>
-</div>
-<div class="red-card">
-<div class="rico">🤝</div>
-<h3>Colaboración <em>institucional</em></h3>
-<p>Alianzas con centros de investigación, universidades y organismos de salud interesados en integrar el paradigma de la complejidad y la medicina personalizada de precisión.</p>
-</div>
-<div class="red-card">
-<div class="rico">📖</div>
-<h3>Formación y <em>divulgación</em></h3>
-<p>Charlas, seminarios y colaboraciones editoriales sobre HoloMedicina, farmacogenómica, nutrigenómica y ciencias de la complejidad aplicadas a la salud.</p>
-</div>
+<div class="red-card"><div class="rico">🔬</div><h3>Segunda opinión <em>integrativa</em></h3><p>Derivación de casos complejos que superan los límites de una especialidad. UNIMED aporta la perspectiva holónica de sistema completo donde el modelo lineal no llega.</p></div>
+<div class="red-card"><div class="rico">🤝</div><h3>Colaboración <em>institucional</em></h3><p>Alianzas con centros de investigación, universidades y organismos de salud interesados en integrar el paradigma de la complejidad y la medicina personalizada de precisión.</p></div>
+<div class="red-card"><div class="rico">📖</div><h3>Formación y <em>divulgación</em></h3><p>Charlas, seminarios y colaboraciones editoriales sobre HoloMedicina, farmacogenómica, nutrigenómica y ciencias de la complejidad aplicadas a la salud.</p></div>
 </div>
 </div></section>
-
-<!-- CTA -->
 <div class="page-cta">
 <h2>¿Eres profesional de la salud<br/>y quieres <em>saber más?</em></h2>
 <p>Escríbenos. Exploramos juntos cómo colaborar desde el paradigma de la complejidad.</p>
 <div class="cta-row">
 <a href="contacto.html" class="btn-p-lg">Contactar con UNIMED <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a href="https://medicinaycomplejidad.online/requisitos.html" target="_blank" class="btn-g-inv">Ver Diplomado UNAM</a>
+<a href="https://aidia.unimed-consulting.es/" target="_blank" class="btn-g-inv">Explorar Multiversidad AIDIA</a>
 </div>
 </div>
-
-<!-- FOOTER -->
 <footer><div class="w">
 <div class="fg">
 <div>
@@ -428,8 +380,8 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </ul></div>
 <div class="fc"><h5>Profesionales</h5><ul>
 <li><a href="profesionales.html#servicios-pro">Servicios B2B</a></li>
-<li><a href="profesionales.html#formacion">Diplomado UNAM · Complejidad</a></li>
-<li><a href="profesionales.html#recursos-pro">Recursos</a></li>
+<li><a href="https://aidia.unimed-consulting.es/" target="_blank">Multiversidad AIDIA</a></li>
+<li><a href="https://medicinaycomplejidad.online/index.html" target="_blank">Diplomado UNAM · Complejidad</a></li>
 <li><a href="profesionales.html#red">Red Profesional</a></li>
 <li><a href="contacto.html">Colaborar con UNIMED</a></li>
 </ul></div>
@@ -444,6 +396,5 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
 </div>
 </div></footer>
-
 </body>
 </html>
