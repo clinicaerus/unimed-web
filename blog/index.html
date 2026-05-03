@@ -61,9 +61,6 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .bcard.featured .bcard-body{padding:2.2rem 2.4rem}
 .bcard.featured h2{font-size:1.7rem;margin-bottom:1rem}
 .bcard.featured p{font-size:.88rem;margin-bottom:1.5rem}
-.proxima{border-style:dashed;opacity:.6}
-.proxima:hover{transform:none;box-shadow:none}
-.proxima .bcard-img{background:var(--bg3)}
 .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;padding:4rem 0 6rem;align-items:start}
 .newsletter-box{position:sticky;top:6rem;background:var(--ink);border-radius:var(--rxl);padding:2rem}
 .newsletter-box h3{font-family:var(--serif);font-size:1.3rem;font-weight:300;color:#fff;margin-bottom:.6rem;line-height:1.3}
@@ -108,7 +105,6 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </style>
 </head>
 <body>
-
 <nav><div class="w navi">
 <a href="../index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
 <ul class="nl">
@@ -121,18 +117,12 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <a href="../contacto.html" class="nbtn">Pide Cita</a>
 </ul>
 </div></nav>
-
-<div class="bhero">
-<div class="w">
+<div class="bhero"><div class="w">
 <div class="ey">Blog · HoloMedicina · Medicina de Precisión</div>
 <h1>Conocimiento que el sistema<br/>sanitario no tiene <em>tiempo de darte.</em></h1>
 <p>Artículos sobre medicina personalizada, farmacogenómica, nutrigenómica y salud desde el paradigma de la complejidad. Por Samuel Carmona Aguirre, MSc · Científico Biomédico Clínico.</p>
-</div>
-</div>
-
-<div class="filtros">
-<div class="w">
-<div class="ftags">
+</div></div>
+<div class="filtros"><div class="w"><div class="ftags">
 <span class="ftag active">Todos</span>
 <span class="ftag">HoloMedicina</span>
 <span class="ftag">Farmacogenómica</span>
@@ -140,14 +130,12 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <span class="ftag">Neurocognitivo</span>
 <span class="ftag">Enfermedades Crónicas</span>
 <span class="ftag">Medicina de Precisión</span>
-</div>
-</div>
-</div>
-
+</div></div></div>
 <div class="w"><div class="blog-layout">
 <div>
 <div class="blog-grid">
 
+<!-- ARTÍCULO 1 — DESTACADO -->
 <a href="que-es-la-holomedicina.html" class="bcard featured reveal">
 <div class="bcard-img">
 <div class="bcard-ico">🧬</div>
@@ -168,7 +156,29 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </div>
 </a>
 
-<a href="farmacogenomica-antidepresivos.html" class="bcard reveal" data-d="1">
+<!-- ARTÍCULO 2 -->
+<a href="metodo-holonico-aiap.html" class="bcard reveal" data-d="1">
+<div class="bcard-img">
+<div class="bcard-ico">🔬</div>
+<span class="bcard-carril carril-b">Carril B · Constructor de visión</span>
+</div>
+<div class="bcard-body">
+<div class="bcard-meta">
+<span class="bcard-cluster">HoloMedicina · Epistemología</span>
+<span>· 10 min lectura</span>
+<span>· Publicado</span>
+</div>
+<h2>El Método Holónico <em>MH-AIAP</em><br/>Una revolución epistemológica</h2>
+<p>El fundamento científico de la HoloMedicina. Un cambio epistémico reconocido por la UNESCO en el Congreso Mundial del Pensamiento Complejo, París 2016.</p>
+<div class="bcard-foot">
+<div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
+<span class="bcard-read">Leer artículo →</span>
+</div>
+</div>
+</a>
+
+<!-- ARTÍCULO 3 -->
+<a href="farmacogenomica-antidepresivos.html" class="bcard reveal" data-d="2">
 <div class="bcard-img">
 <div class="bcard-ico">💊</div>
 <span class="bcard-carril carril-a">Carril A · Despertador de dolor</span>
@@ -180,7 +190,7 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <span>· Publicado</span>
 </div>
 <h2>Por qué el mismo antidepresivo <em>funciona para unos y genera reacciones adversas en otros.</em></h2>
-<p>La farmacogenómica explica algo que tu psiquiatra sabe pero el sistema no le da tiempo de aplicar: tu genoma determina cómo metabolizas los fármacos. Lo que para uno es la dosis estándar, para ti puede ser insuficiente o potencialmente tóxica.</p>
+<p>La farmacogenómica explica algo que tu psiquiatra sabe pero el sistema no le da tiempo de aplicar: tu genoma determina cómo metabolizas los fármacos.</p>
 <div class="bcard-foot">
 <div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
 <span class="bcard-read">Leer artículo →</span>
@@ -188,57 +198,10 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </div>
 </a>
 
-<div class="bcard proxima reveal" data-d="2">
-<div class="bcard-img">
-<div class="bcard-ico">🥗</div>
-<span class="bcard-carril carril-a">Próximamente</span>
-</div>
-<div class="bcard-body">
-<div class="bcard-meta"><span class="bcard-cluster">Nutrigenómica</span></div>
-<h2>Llevas años con la dieta perfecta y no funciona. <em>Puede que tu genoma sepa por qué.</em></h2>
-<p>Lo que comes importa. Pero cómo tus genes procesan lo que comes importa igual o más. La nutrigenómica personaliza la nutrición al nivel del ADN.</p>
-<div class="bcard-foot">
-<div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
-<span class="bcard-read" style="color:var(--ink3)">Próximamente</span>
-</div>
 </div>
 </div>
 
-<div class="bcard proxima reveal">
-<div class="bcard-img">
-<div class="bcard-ico">🧠</div>
-<span class="bcard-carril carril-a">Próximamente</span>
-</div>
-<div class="bcard-body">
-<div class="bcard-meta"><span class="bcard-cluster">Neurocognitivo</span></div>
-<h2>TDAH en adultos: lo que la neurología detecta y <em>lo que la medicina de precisión puede añadir.</em></h2>
-<p>El diagnóstico de TDAH en adultos es solo el inicio. La farmacogenómica, la nutrigenómica y el análisis del eje intestino-cerebro amplían el mapa.</p>
-<div class="bcard-foot">
-<div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
-<span class="bcard-read" style="color:var(--ink3)">Próximamente</span>
-</div>
-</div>
-</div>
-
-<div class="bcard proxima reveal" data-d="1">
-<div class="bcard-img">
-<div class="bcard-ico">🛡️</div>
-<span class="bcard-carril carril-c">Próximamente</span>
-</div>
-<div class="bcard-body">
-<div class="bcard-meta"><span class="bcard-cluster">Enfermedades Crónicas</span></div>
-<h2>Fibromialgia: por qué no es «psicológica» y <em>qué dice la ciencia real sobre su substrato biológico.</em></h2>
-<p>La fibromialgia tiene mecanismos biológicos documentados. La sensibilización central, la neuroinflamación y el microbioma son parte de la historia que el sistema no termina de leer.</p>
-<div class="bcard-foot">
-<div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
-<span class="bcard-read" style="color:var(--ink3)">Próximamente</span>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
+<!-- SIDEBAR -->
 <div>
 <div class="newsletter-box">
 <h3>Conocimiento que <em>el sistema no te da.</em></h3>
@@ -256,20 +219,18 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 
 </div></div>
 
-<div class="blog-cta">
-<div class="w">
+<div class="blog-cta"><div class="w">
 <h2>¿Lo que lees aquí resuena<br/>con <em>lo que vives?</em></h2>
 <p>Hablamos. Sin compromiso. Una primera conversación para ver si UNIMED puede ayudarte.</p>
 <a href="../contacto.html" class="btn-p-lg">Pide tu cita <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-</div>
-</div>
+</div></div>
 
 <footer><div class="w">
 <div class="fg">
 <div>
 <div class="flogo">UNI<em>MED</em> Consulting</div>
 <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
-<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ hola@unimed-consulting.es</span></div>
+<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ salud@unimed-consulting.es</span></div>
 </div>
 <div class="fc"><h5>Servicios</h5><ul>
 <li><a href="../servicios/atencion-consultiva.html">Atención Consultiva</a></li>
@@ -280,12 +241,14 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </ul></div>
 <div class="fc"><h5>Blog</h5><ul>
 <li><a href="que-es-la-holomedicina.html">¿Qué es la HoloMedicina?</a></li>
+<li><a href="metodo-holonico-aiap.html">El Método Holónico MH-AIAP</a></li>
+<li><a href="metodo-holonico-aiap.html">El Método Holónico MH-AIAP</a></li>
 <li><a href="farmacogenomica-antidepresivos.html">Farmacogenómica y antidepresivos</a></li>
 </ul></div>
 <div class="fc"><h5>Legal</h5><ul>
 <li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="../politica-de-cookies.html">Política de Cookies</a></li>
 <li><a href="../aviso-legal.html">Aviso Legal</a></li>
-<li>Política de Cookies</li>
 <li><a href="../contacto.html">Contacto</a></li>
 </ul></div>
 </div>
@@ -295,5 +258,6 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </div>
 </div></footer>
 
+<script src="/cookie-banner.js"></script>
 </body>
 </html>
