@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>¿Qué es la HoloMedicina? — Un nuevo paradigma científico | Blog UNIMED</title>
+<meta name="description" content="La HoloMedicina es un paradigma científico original que define al ser humano como sistema complejo adaptativo multidimensional. Por Samuel Carmona Aguirre, UNIMED Consulting Barcelona."/>
+<link rel="canonical" href="https://www.unimed-consulting.es/blog/que-es-la-holomedicina.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+--rose:#e8356d;--rose-s:#f07098;--rose-xs:rgba(232,53,109,.07);--rose-gl:rgba(232,53,109,.14);
+--bg:#ffffff;--bg2:#f8f7f9;--bg3:#f2eff5;--ink:#1a0f24;--ink2:#3a2d48;--ink3:#7a6880;
+--line:rgba(0,0,0,.08);--liner:rgba(232,53,109,.18);
+--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;
+--max:740px;--r:8px;--rxl:24px;--ease:cubic-bezier(.22,1,.36,1)
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--rose);text-decoration:none}
+a:hover{text-decoration:underline}
+.w{max-width:1140px;margin:0 auto;padding:0 2rem}
+.wc{max-width:var(--max);margin:0 auto;padding:0 2rem}
+
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);text-decoration:none;transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important;text-decoration:none}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+
+.bc{background:var(--bg2);padding:.65rem 0;border-bottom:1px solid var(--line);font-size:.73rem;color:var(--ink3)}
+.bc a{color:var(--ink3);text-decoration:none}
+.bc a:hover{color:var(--rose)}
+.bc span{margin:0 .4rem}
+
+.art-hero{padding:4rem 0 3rem;border-bottom:1px solid var(--line)}
+.art-cat{display:inline-flex;align-items:center;gap:.5rem;font-size:.65rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:1rem}
+.art-cat::before{content:'';width:16px;height:1.5px;background:var(--rose)}
+.art-hero h1{font-family:var(--serif);font-size:clamp(2rem,4.5vw,3.2rem);font-weight:300;line-height:1.12;color:var(--ink);max-width:680px}
+.art-hero h1 em{font-style:italic;color:var(--rose)}
+.art-hero .sub{font-size:1.05rem;color:var(--ink3);margin-top:.9rem;line-height:1.7;max-width:580px;font-weight:300}
+.art-meta{display:flex;align-items:center;gap:1.5rem;margin-top:1.8rem;flex-wrap:wrap}
+.art-author{display:flex;align-items:center;gap:.7rem}
+.author-av{width:38px;height:38px;border-radius:50%;background:var(--rose-xs);border:2px solid var(--liner);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1rem;color:var(--rose);font-weight:400}
+.author-info .name{font-size:.82rem;font-weight:500;color:var(--ink)}
+.author-info .role{font-size:.73rem;color:var(--ink3)}
+.art-date{font-size:.73rem;color:var(--ink3)}
+.art-tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem}
+.tag{display:inline-block;font-size:.62rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;background:var(--rose-xs);color:var(--rose);border:1px solid var(--liner);padding:.22rem .65rem;border-radius:99px}
+
+.art-body{padding:3.5rem 0 5rem}
+.art-body h2{font-family:var(--serif);font-size:1.65rem;font-weight:300;color:var(--ink);margin:3rem 0 1rem;line-height:1.2}
+.art-body h2 em{font-style:italic;color:var(--rose)}
+.art-body h3{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--ink);margin:2rem 0 .7rem}
+.art-body p{font-size:.93rem;color:var(--ink2);line-height:1.85;margin-bottom:1.1rem}
+.art-body p strong{color:var(--ink);font-weight:500}
+.art-body ul{margin:.5rem 0 1.1rem 1.2rem}
+.art-body ul li{font-size:.91rem;color:var(--ink2);line-height:1.75;margin-bottom:.4rem}
+.art-body ul li strong{color:var(--ink);font-weight:500}
+
+.pull-quote{border-left:3px solid var(--rose);padding:1.2rem 1.6rem;background:var(--bg2);border-radius:0 var(--r) var(--r) 0;margin:2rem 0}
+.pull-quote p{font-family:var(--serif);font-size:1.15rem;font-style:italic;color:var(--ink);line-height:1.6;margin:0}
+.pull-quote .attr{font-family:var(--sans);font-size:.75rem;color:var(--ink3);font-style:normal;margin-top:.6rem;display:block}
+
+.info-box{background:var(--rose-xs);border:1px solid var(--liner);border-radius:var(--r);padding:1.3rem 1.5rem;margin:2rem 0}
+.info-box h4{font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--rose);margin-bottom:.6rem}
+.info-box p,.info-box li{font-size:.85rem;color:var(--ink2);line-height:1.7}
+.info-box ul{margin:.3rem 0 0 1rem}
+
+.compare-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.85rem}
+.compare-table th{background:var(--ink);color:#fff;font-weight:500;text-align:left;padding:.7rem 1rem;font-size:.78rem;letter-spacing:.05em}
+.compare-table th:first-child{border-radius:var(--r) 0 0 0}
+.compare-table th:last-child{border-radius:0 var(--r) 0 0;background:var(--rose)}
+.compare-table td{padding:.65rem 1rem;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top;line-height:1.55}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table tr:hover td{background:var(--bg2)}
+
+.holones-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem;margin:1.5rem 0}
+.holon{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:.9rem .7rem;text-align:center;transition:all .2s}
+.holon:hover{border-color:var(--liner);background:var(--rose-xs)}
+.h-code{font-family:var(--serif);font-size:1.2rem;color:var(--rose);font-weight:300;line-height:1}
+.h-name{font-size:.68rem;font-weight:500;color:var(--ink2);margin:.3rem 0 .2rem;text-transform:uppercase;letter-spacing:.05em}
+.h-desc{font-size:.62rem;color:var(--ink3);line-height:1.4}
+
+.ip-badge{background:var(--bg3);border:1px solid var(--line);border-radius:var(--r);padding:1rem 1.2rem;margin:2rem 0;display:flex;align-items:flex-start;gap:.8rem}
+.ip-icon{font-size:1.2rem;flex-shrink:0;margin-top:.1rem}
+.ip-text{font-size:.78rem;color:var(--ink3);line-height:1.6}
+.ip-text strong{color:var(--ink2)}
+
+.art-cta{background:var(--ink);border-radius:var(--rxl);padding:2.5rem;margin:3rem 0;text-align:center}
+.art-cta h3{font-family:var(--serif);font-size:1.5rem;font-weight:300;color:#fff;margin-bottom:.6rem}
+.art-cta h3 em{font-style:italic;color:var(--rose-s)}
+.art-cta p{font-size:.85rem;color:rgba(255,255,255,.55);line-height:1.7;margin-bottom:1.5rem}
+.btn-rose{display:inline-flex;align-items:center;gap:.45rem;font-size:.85rem;font-weight:500;padding:.82rem 1.8rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);box-shadow:0 4px 16px var(--rose-gl);text-decoration:none}
+.btn-rose:hover{background:#c82c5c;transform:translateY(-1px);text-decoration:none}
+
+.divider{height:1px;background:var(--line);margin:3rem 0}
+
+footer{background:var(--ink);padding:3rem 0 2rem}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fff}
+.flogo em{font-style:italic;color:var(--rose-s)}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.5rem 0 1rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.8rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.4rem}
+.fc li a{color:rgba(255,255,255,.45);text-decoration:none}
+.fc li a:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+
+@media(max-width:768px){
+  .nl{display:none}
+  .holones-grid{grid-template-columns:repeat(3,1fr)}
+  .fg{grid-template-columns:1fr 1fr}
+  .compare-table{font-size:.78rem}
+  .compare-table th,.compare-table td{padding:.5rem .7rem}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="w navi">
+<a href="../index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="../index.html#servicios">Servicios</a></li>
+<li><a href="../index.html#pro">Profesionales</a></li>
+<li><a href="../recursos.html">Recursos</a></li>
+<li><a href="index.html">Blog</a></li>
+<a href="../contacto.html" class="nbtn">Pide Cita</a>
+</ul>
+</div></nav>
+
+<div class="bc"><div class="w">
+<a href="../index.html">Inicio</a><span>›</span><a href="index.html">Blog</a><span>›</span>¿Qué es la HoloMedicina?
+</div></div>
+
+<div class="art-hero"><div class="wc">
+<div class="art-cat">Holomedicina · Paradigma</div>
+<h1>¿Qué es la <em>HoloMedicina?</em><br/>Un nuevo paradigma científico</h1>
+<p class="sub">La HoloMedicina no es medicina alternativa ni complementaria. Es un marco teórico-clínico riguroso que redefine al ser humano como sistema complejo — y con él, toda la práctica médica.</p>
+<div class="art-meta">
+<div class="art-author">
+<div class="author-av">S</div>
+<div class="author-info">
+<div class="name">Samuel Carmona Aguirre, MSc</div>
+<div class="role">Científico Biomédico Clínico · Director UNIMED Consulting</div>
+</div>
+</div>
+<div class="art-date">Mayo 2026 · 8 min de lectura</div>
+</div>
+<div class="art-tags">
+<span class="tag">HoloMedicina</span>
+<span class="tag">Paradigma Científico</span>
+<span class="tag">Sujeto Holónico</span>
+<span class="tag">Medicina de Precisión</span>
+<span class="tag">Complejidad</span>
+</div>
+</div></div>
+
+<div class="art-body"><div class="wc">
+
+<p>Cuando hablamos de salud, ¿de qué estamos hablando realmente? ¿De la ausencia de enfermedad? ¿De un análisis de sangre correcto? ¿De un diagnóstico en un manual?</p>
+
+<p>Durante décadas, la medicina convencional ha respondido a estas preguntas descomponiendo a la persona en partes: genes, órganos, síntomas, cifras. Este enfoque ha dado frutos extraordinarios. Pero también ha dejado algo fundamental sin respuesta: <strong>la persona como un todo.</strong></p>
+
+<p>La HoloMedicina nació precisamente para abordar esa pregunta que la medicina reduccionista no puede responder.</p>
+
+<h2>¿Qué es la <em>HoloMedicina?</em></h2>
+
+<p>La HoloMedicina es un <strong>paradigma científico original</strong> que define al ser humano como un <strong>sistema complejo adaptativo multidimensional</strong>. No es una terapia alternativa, no es medicina complementaria, ni una corriente de bienestar. Es un marco teórico-clínico riguroso que integra:</p>
+
+<ul>
+<li><strong>Biomedicina</strong> — genómica, farmacogenómica, neurociencia</li>
+<li><strong>Ciencias del comportamiento</strong> — psicología, neuropsicología, cognición</li>
+<li><strong>Ciencias sociales</strong> — determinantes sociales de la salud, contexto de vida, cultura</li>
+</ul>
+
+<p>…bajo los principios de la <strong>teoría de sistemas complejos</strong> y la <strong>cibernética de segundo orden.</strong></p>
+
+<p>En HoloMedicina, la persona no es un objeto de análisis. Es un <strong>sujeto activo, co-constitutivo</strong> de su propio proceso de salud.</p>
+
+<div class="pull-quote">
+<p>«La holomedicina como ciencia de la diversidad integrativa comporta una relación en red: nodos-holones de alto valor informacional que son todo y parte a la vez.»</p>
+<span class="attr">— Samuel Carmona Aguirre, UNAM 2021</span>
+</div>
+
+<h2>El concepto clave: <em>el holón</em></h2>
+
+<p>El término <em>holo</em> proviene del griego <em>holos</em> (todo) y del concepto de <strong>holón</strong>, acuñado por el filósofo Arthur Koestler: una unidad que es a la vez parte y todo.</p>
+
+<p>Aplicado a la medicina, cada dimensión de la persona —su biología, su mente, su historia de vida, su entorno social, su genoma, su mundo simbólico— es un holón. No puede entenderse de forma aislada. Solo cobra sentido en relación con los demás.</p>
+
+<p>La HoloMedicina organiza estas dimensiones en una <strong>arquitectura de 5 holones</strong> (H-0 a H-4):</p>
+
+<div class="holones-grid">
+<div class="holon"><div class="h-code">H-0</div><div class="h-name">Ecosistémico</div><div class="h-desc">Entorno y determinantes sociales</div></div>
+<div class="holon"><div class="h-code">H-1</div><div class="h-name">Biológico-cognitivo</div><div class="h-desc">Neurología y datos biomédicos</div></div>
+<div class="holon"><div class="h-code">H-2</div><div class="h-name">Psicológico-conductual</div><div class="h-desc">Comportamiento e historia subjetiva</div></div>
+<div class="holon"><div class="h-code">H-3</div><div class="h-name">Narrativo-simbólico</div><div class="h-desc">Sentido de la experiencia de salud</div></div>
+<div class="holon"><div class="h-code">H-4</div><div class="h-name">Genómico-molecular</div><div class="h-desc">Genómica, farmacogenómica, epigenética</div></div>
+</div>
+
+<p>Cada nivel informa y transforma a los demás. <strong>La salud emerge de la coherencia entre holones.</strong> La enfermedad, de su ruptura.</p>
+
+<h2>¿Por qué es <em>necesaria?</em></h2>
+
+<p>La medicina de precisión actual es extraordinariamente potente a nivel molecular. Pero un gen no vive solo. Un fármaco no actúa en el vacío. Una persona no enferma ni sana al margen de su historia, su contexto, su identidad.</p>
+
+<p>Las enfermedades crónicas, los trastornos del neurodesarrollo, el sufrimiento psicosocial o el burnout laboral son fenómenos <strong>multidimensionales</strong>. No tienen una sola causa. No tienen una sola solución. Requieren un modelo que pueda sostener esa complejidad sin simplificarla.</p>
+
+<p>Ese es el espacio que ocupa la HoloMedicina.</p>
+
+<div class="info-box">
+<h4>¿En qué se diferencia del modelo biopsicosocial de Engel?</h4>
+<p>El modelo biopsicosocial (1977) fue un avance fundamental al integrar mente, cuerpo y contexto. La HoloMedicina va más allá: no solo <em>integra</em> dimensiones, sino que las modela como holones en holoarquías dinámicas con autonomía, cooperación y propiedades emergentes. Es el paso del paradigma integrativo al paradigma de la complejidad.</p>
+</div>
+
+<h2>HoloMedicina frente a la medicina <em>convencional</em></h2>
+
+<table class="compare-table">
+<thead>
+<tr>
+<th>Medicina convencional</th>
+<th>HoloMedicina</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>La persona como objeto de análisis</td><td>La persona como sujeto activo del sistema</td></tr>
+<tr><td>Reduccionismo por partes</td><td>Integración multidimensional compleja</td></tr>
+<tr><td>Diagnóstico como etiqueta</td><td>Diagnóstico como mapa de complejidad</td></tr>
+<tr><td>Tratamiento estandarizado</td><td>Intervención personalizada y contextualizada</td></tr>
+<tr><td>Salud = ausencia de enfermedad</td><td>Salud = coherencia holónica del sistema</td></tr>
+<tr><td>Causalidad lineal</td><td>Causalidad múltiple, recursiva y no-lineal</td></tr>
+</tbody>
+</table>
+
+<h2>HoloMedicina en la <em>práctica clínica</em></h2>
+
+<p>En UNIMED Consulting, el paradigma HoloMédico es la base de cada proceso de acompañamiento. Se expresa a través de instrumentos clínicos propios:</p>
+
+<ul>
+<li>El <strong>Formulario de Historicidad y Holografía (FHH)</strong> — mapeo genealógico-biopsicosocial de las 8 dimensiones del Sujeto Holónico</li>
+<li>El <strong>Escáner Semántico</strong> — análisis del mundo representacional de la persona</li>
+<li>El sistema <strong>CAPS Digital</strong> — agente de inteligencia artificial clínica entrenado con el corpus HoloMédico</li>
+<li>El <strong>Gemelo Digital Holónico (GDH)</strong> — modelo dinámico y personalizado de la persona a lo largo del ciclo vital</li>
+</ul>
+
+<p>El resultado es una evaluación que no pregunta solo «¿qué tiene?», sino <strong>«¿quién es, cómo vive y qué necesita?»</strong></p>
+
+<h2>Una historia de casi <em>20 años</em></h2>
+
+<p>La HoloMedicina no es un concepto reciente. Sus primeros documentos de desarrollo datan de <strong>2007</strong>. En <strong>2014</strong> fue registrada oficialmente ante el <em>Registre de la Propietat Intel·lectual de Catalunya</em> (Generalitat de Catalunya). En <strong>2016</strong> fue presentada en el Congreso Mundial de la <em>Pensée Complexe</em> (UNESCO · CNRS · Edgar Morin) y en el VII Congreso Iberoamericano de Investigación Cualitativa en Salud.</p>
+
+<p>Hoy, casi dos décadas después, la medicina personalizada de precisión y la inteligencia artificial clínica están convergiendo hacia los mismos principios que la HoloMedicina planteó en su origen: <strong>la persona como sistema, la salud como coherencia, la clínica como co-construcción.</strong></p>
+
+<div class="ip-badge">
+<div class="ip-icon">⚖️</div>
+<div class="ip-text"><strong>HoloMedicina® es un paradigma científico original de Samuel Carmona Aguirre (UNIMED Consulting)</strong>, desarrollado desde 2007 y registrado ante la Generalitat de Catalunya en 2014 (asientos PI 02/2014/2384–2386: Sujeto Social Educativo · Holomedicina — Modelo Holomédico · Medicina Unificada). Todos los derechos de autor reservados.</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="art-cta">
+<h3>¿La HoloMedicina puede <em>ayudarte?</em></h3>
+<p>En UNIMED Consulting trabajamos con personas que buscan una comprensión profunda de su salud: condiciones complejas, profesionales con desgaste, familias que quieren entender sus patrones de salud generacionales.</p>
+<a href="../recursos/formulario-fhh.html" class="btn-rose">
+Completar el Formulario FHH
+<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+</div>
+
+<div class="divider"></div>
+
+<p style="font-size:.8rem;color:var(--ink3);line-height:1.7">
+<strong>Sobre el autor:</strong> Samuel Carmona Aguirre es Científico Biomédico Clínico, MSc, Director y fundador de UNIMED Consulting. Especialista en Medicina Personalizada de Precisión, Farmacogenómica, Genética Clínica y Neurociencias Cognitivas. Creador del paradigma HoloMedicina y del método MH-AIAP. Tutor MIR acreditado y colaborador del Diplomado en Ciencia Médica y Ciencia de la Complejidad de la Facultad de Medicina de la UNAM.
+</p>
+
+</div></div>
+
+<footer><div class="w">
+<div class="fg">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona.</p>
+<div class="fcon">
+<span>📍 Barcelona, España · Västerås, Suecia</span>
+<span>📞 +34 673 815 148</span>
+<span>✉️ salud@unimed-consulting.es</span>
+</div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul>
+<li><a href="../servicios/atencion-consultiva.html">Atención Consultiva</a></li>
+<li><a href="../servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+<li><a href="../servicios/nutrigenomica.html">Nutrigenómica</a></li>
+<li><a href="../servicios/neurocognitivo.html">Neurocognitivo</a></li>
+<li><a href="../servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+</ul></div>
+<div class="fc"><h5>Blog</h5><ul>
+<li><a href="que-es-la-holomedicina.html">¿Qué es la HoloMedicina?</a></li>
+<li><a href="metodo-holonico-aiap.html">El Método Holónico MH-AIAP</a></li>
+<li><a href="farmacogenomica-antidepresivos.html">Farmacogenómica y Antidepresivos</a></li>
+<li><a href="index.html">Ver todos →</a></li>
+</ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="../politica-de-cookies.html">Política de Cookies</a></li>
+<li><a href="../aviso-legal.html">Aviso Legal</a></li>
+<li><a href="../contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+</div>
+</div></footer>
+
+<script src="/cookie-banner.js"></script>
+</body>
+</html>

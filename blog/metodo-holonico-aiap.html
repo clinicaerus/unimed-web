@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>El Método Holónico MH-AIAP — Una revolución epistemológica en medicina | Blog UNIMED</title>
+<meta name="description" content="El Método Holónico Auto-Investigación-Acción-Participativa (MH-AIAP) es el fundamento metodológico de la HoloMedicina. Presentado en UNESCO París 2016. Samuel Carmona Aguirre, UNIMED Consulting."/>
+<link rel="canonical" href="https://www.unimed-consulting.es/blog/metodo-holonico-aiap.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+--rose:#e8356d;--rose-s:#f07098;--rose-xs:rgba(232,53,109,.07);--rose-gl:rgba(232,53,109,.14);
+--bg:#ffffff;--bg2:#f8f7f9;--bg3:#f2eff5;--ink:#1a0f24;--ink2:#3a2d48;--ink3:#7a6880;
+--line:rgba(0,0,0,.08);--liner:rgba(232,53,109,.18);
+--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;
+--max:740px;--r:8px;--rxl:24px;--ease:cubic-bezier(.22,1,.36,1)
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--rose);text-decoration:none}
+a:hover{text-decoration:underline}
+.w{max-width:1140px;margin:0 auto;padding:0 2rem}
+.wc{max-width:var(--max);margin:0 auto;padding:0 2rem}
+
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);text-decoration:none;transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important;text-decoration:none}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+
+.bc{background:var(--bg2);padding:.65rem 0;border-bottom:1px solid var(--line);font-size:.73rem;color:var(--ink3)}
+.bc a{color:var(--ink3);text-decoration:none}
+.bc a:hover{color:var(--rose)}
+.bc span{margin:0 .4rem}
+
+.art-hero{padding:4rem 0 3rem;border-bottom:1px solid var(--line)}
+.art-cat{display:inline-flex;align-items:center;gap:.5rem;font-size:.65rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:1rem}
+.art-cat::before{content:'';width:16px;height:1.5px;background:var(--rose)}
+.art-hero h1{font-family:var(--serif);font-size:clamp(2rem,4.5vw,3.2rem);font-weight:300;line-height:1.12;color:var(--ink);max-width:680px}
+.art-hero h1 em{font-style:italic;color:var(--rose)}
+.art-hero .sub{font-size:1.05rem;color:var(--ink3);margin-top:.9rem;line-height:1.7;max-width:580px;font-weight:300}
+.art-meta{display:flex;align-items:center;gap:1.5rem;margin-top:1.8rem;flex-wrap:wrap}
+.art-author{display:flex;align-items:center;gap:.7rem}
+.author-av{width:38px;height:38px;border-radius:50%;background:var(--rose-xs);border:2px solid var(--liner);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1rem;color:var(--rose);font-weight:400}
+.author-info .name{font-size:.82rem;font-weight:500;color:var(--ink)}
+.author-info .role{font-size:.73rem;color:var(--ink3)}
+.art-date{font-size:.73rem;color:var(--ink3)}
+.art-tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem}
+.tag{display:inline-block;font-size:.62rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;background:var(--rose-xs);color:var(--rose);border:1px solid var(--liner);padding:.22rem .65rem;border-radius:99px}
+
+.art-body{padding:3.5rem 0 5rem}
+.art-body h2{font-family:var(--serif);font-size:1.65rem;font-weight:300;color:var(--ink);margin:3rem 0 1rem;line-height:1.2}
+.art-body h2 em{font-style:italic;color:var(--rose)}
+.art-body h3{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--ink);margin:2rem 0 .7rem}
+.art-body p{font-size:.93rem;color:var(--ink2);line-height:1.85;margin-bottom:1.1rem}
+.art-body p strong{color:var(--ink);font-weight:500}
+.art-body ul{margin:.5rem 0 1.1rem 1.2rem}
+.art-body ul li{font-size:.91rem;color:var(--ink2);line-height:1.75;margin-bottom:.5rem}
+.art-body ul li strong{color:var(--ink);font-weight:500}
+
+.pull-quote{border-left:3px solid var(--rose);padding:1.2rem 1.6rem;background:var(--bg2);border-radius:0 var(--r) var(--r) 0;margin:2rem 0}
+.pull-quote p{font-family:var(--serif);font-size:1.15rem;font-style:italic;color:var(--ink);line-height:1.6;margin:0}
+.pull-quote .attr{font-family:var(--sans);font-size:.75rem;color:var(--ink3);font-style:normal;margin-top:.6rem;display:block}
+
+.info-box{background:var(--rose-xs);border:1px solid var(--liner);border-radius:var(--r);padding:1.3rem 1.5rem;margin:2rem 0}
+.info-box h4{font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--rose);margin-bottom:.6rem}
+.info-box p{font-size:.85rem;color:var(--ink2);line-height:1.7;margin:0}
+
+.dark-box{background:var(--ink);border-radius:var(--rxl);padding:2rem;margin:2rem 0}
+.dark-box h4{font-family:var(--serif);font-size:1.1rem;font-weight:300;color:#fff;margin-bottom:.8rem}
+.dark-box h4 em{font-style:italic;color:var(--rose-s)}
+.dark-box p{font-size:.83rem;color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:.6rem}
+.dark-box p:last-child{margin-bottom:0}
+.dark-box strong{color:rgba(255,255,255,.9)}
+
+.compare-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.85rem}
+.compare-table th{background:var(--ink);color:#fff;font-weight:500;text-align:left;padding:.7rem 1rem;font-size:.78rem;letter-spacing:.05em}
+.compare-table th:first-child{border-radius:var(--r) 0 0 0}
+.compare-table th:last-child{border-radius:0 var(--r) 0 0;background:var(--rose)}
+.compare-table td{padding:.65rem 1rem;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top;line-height:1.55}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table tr:hover td{background:var(--bg2)}
+
+.aidia-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem;margin:1.5rem 0}
+.aidia-item{background:var(--ink);border-radius:var(--r);padding:1rem .7rem;text-align:center}
+.aidia-letter{font-family:var(--serif);font-size:1.8rem;color:var(--rose-s);line-height:1}
+.aidia-word{font-size:.68rem;font-weight:500;color:rgba(255,255,255,.7);margin:.3rem 0 .2rem;text-transform:uppercase;letter-spacing:.05em}
+.aidia-desc{font-size:.62rem;color:rgba(255,255,255,.4);line-height:1.4}
+
+.timeline{display:flex;flex-direction:column;gap:0;margin:1.5rem 0}
+.tl-item{display:grid;grid-template-columns:80px 1fr;gap:1.2rem;align-items:start;padding:1rem 0;border-bottom:1px solid var(--line)}
+.tl-item:last-child{border-bottom:none}
+.tl-year{font-family:var(--serif);font-size:1.1rem;color:var(--rose);font-weight:300;padding-top:.1rem}
+.tl-text{font-size:.85rem;color:var(--ink2);line-height:1.65}
+.tl-text strong{color:var(--ink)}
+
+.ip-badge{background:var(--bg3);border:1px solid var(--line);border-radius:var(--r);padding:1rem 1.2rem;margin:2rem 0;display:flex;align-items:flex-start;gap:.8rem}
+.ip-icon{font-size:1.2rem;flex-shrink:0;margin-top:.1rem}
+.ip-text{font-size:.78rem;color:var(--ink3);line-height:1.6}
+.ip-text strong{color:var(--ink2)}
+
+.art-cta{background:var(--ink);border-radius:var(--rxl);padding:2.5rem;margin:3rem 0;text-align:center}
+.art-cta h3{font-family:var(--serif);font-size:1.5rem;font-weight:300;color:#fff;margin-bottom:.6rem}
+.art-cta h3 em{font-style:italic;color:var(--rose-s)}
+.art-cta p{font-size:.85rem;color:rgba(255,255,255,.55);line-height:1.7;margin-bottom:1.5rem}
+.btn-rose{display:inline-flex;align-items:center;gap:.45rem;font-size:.85rem;font-weight:500;padding:.82rem 1.8rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);box-shadow:0 4px 16px var(--rose-gl);text-decoration:none}
+.btn-rose:hover{background:#c82c5c;transform:translateY(-1px);text-decoration:none}
+
+.divider{height:1px;background:var(--line);margin:3rem 0}
+
+.related{background:var(--bg2);border-radius:var(--rxl);padding:2rem;margin:2rem 0}
+.related h4{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink);margin-bottom:1rem}
+.related-link{display:flex;align-items:center;gap:.7rem;padding:.65rem 0;border-bottom:1px solid var(--line);text-decoration:none}
+.related-link:last-child{border-bottom:none}
+.related-link:hover .rl-title{color:var(--rose)}
+.rl-tag{font-size:.62rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--rose);background:var(--rose-xs);padding:.18rem .5rem;border-radius:99px;flex-shrink:0}
+.rl-title{font-size:.85rem;color:var(--ink2);transition:color .2s}
+
+footer{background:var(--ink);padding:3rem 0 2rem}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fff}
+.flogo em{font-style:italic;color:var(--rose-s)}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.5rem 0 1rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.8rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.4rem}
+.fc li a{color:rgba(255,255,255,.45);text-decoration:none}
+.fc li a:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+
+@media(max-width:768px){
+  .nl{display:none}
+  .aidia-grid{grid-template-columns:repeat(3,1fr)}
+  .fg{grid-template-columns:1fr 1fr}
+  .compare-table{font-size:.78rem}
+  .compare-table th,.compare-table td{padding:.5rem .7rem}
+  .tl-item{grid-template-columns:60px 1fr}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="w navi">
+<a href="../index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="../index.html#servicios">Servicios</a></li>
+<li><a href="../index.html#pro">Profesionales</a></li>
+<li><a href="../recursos.html">Recursos</a></li>
+<li><a href="index.html">Blog</a></li>
+<a href="../contacto.html" class="nbtn">Pide Cita</a>
+</ul>
+</div></nav>
+
+<div class="bc"><div class="w">
+<a href="../index.html">Inicio</a><span>›</span><a href="index.html">Blog</a><span>›</span>El Método Holónico MH-AIAP
+</div></div>
+
+<div class="art-hero"><div class="wc">
+<div class="art-cat">HoloMedicina · Epistemología</div>
+<h1>El Método Holónico <em>MH-AIAP</em><br/>Una revolución epistemológica</h1>
+<p class="sub">El Método Holónico Auto-Investigación-Acción-Participativa es el fundamento científico de la HoloMedicina. Un cambio epistémico que supera cinco siglos de pensamiento cartesiano en medicina — reconocido por la UNESCO en el Congreso Mundial del Pensamiento Complejo, París 2016.</p>
+<div class="art-meta">
+<div class="art-author">
+<div class="author-av">S</div>
+<div class="author-info">
+<div class="name">Samuel Carmona Aguirre, MSc</div>
+<div class="role">Científico Biomédico Clínico · Director UNIMED Consulting</div>
+</div>
+</div>
+<div class="art-date">Mayo 2026 · 10 min de lectura</div>
+</div>
+<div class="art-tags">
+<span class="tag">MH-AIAP</span>
+<span class="tag">Epistemología</span>
+<span class="tag">Complejidad</span>
+<span class="tag">HoloMedicina</span>
+<span class="tag">UNESCO 2016</span>
+<span class="tag">Método Científico</span>
+</div>
+</div></div>
+
+<div class="art-body"><div class="wc">
+
+<p>La medicina tiene una pregunta que nunca termina de responder: <strong>¿cómo se genera conocimiento sobre algo tan complejo como un ser humano vivo?</strong></p>
+
+<p>El método científico clásico —el cartesiano, el positivista— responde descomponiendo: aísla variables, controla condiciones, replica experimentos. Funciona extraordinariamente bien para moléculas, fármacos y mecanismos biológicos. Pero falla cuando el objeto de estudio es la persona completa: un sistema abierto, no lineal, que se co-produce a sí mismo en relación con su entorno.</p>
+
+<p>Para ese desafío, Samuel Carmona Aguirre desarrolló el <strong>Método Holónico Auto-Investigación-Acción-Participativa (MH-AIAP)</strong>: un marco epistemológico-metodológico fundado en las ciencias de la complejidad que redefine no solo cómo hacer medicina, sino <em>qué significa conocer en medicina.</em></p>
+
+<div class="pull-quote">
+<p>«La medicina unificada es solo posible desde un cambio de paradigma científico no positivista, que permita comprender la salud humana como sistema dinámico y complejo.»</p>
+<span class="attr">— Samuel Carmona Aguirre, UNIMED Consulting</span>
+</div>
+
+<h2>El problema con el método <em>cartesiano en medicina</em></h2>
+
+<p>El paradigma biomédico dominante se construye sobre cuatro pilares epistemológicos: <strong>positivismo</strong> (conocimiento objetivo y controlable), <strong>reduccionismo</strong> (explicación por niveles moleculares), <strong>medicina basada en evidencia</strong> (mejor evidencia para guiar decisiones) y <strong>universalismo</strong> (predicción y control en contextos estables).</p>
+
+<p>Estos pilares han producido avances extraordinarios. Pero tienen un límite estructural: <strong>no pueden ver al Todo.</strong> Cuando la enfermedad emerge de la interacción no lineal entre genes, historia de vida, entorno social, emociones y contexto cultural, ningún ensayo clínico aleatorizado puede capturar esa complejidad.</p>
+
+<p>El resultado es una medicina que sabe cada vez más sobre partes cada vez más pequeñas de la persona, pero que progresivamente pierde la capacidad de ver a la persona completa.</p>
+
+<h2>El fundamento del MH-AIAP: <em>no-separabilidad e interdefinibilidad</em></h2>
+
+<p>El núcleo epistemológico del Método Holónico parte de una afirmación radical: los sistemas de vida humano-biológicos y antroposociales son <strong>no-descomponibles.</strong></p>
+
+<p>Sus componentes están <em>interdefinidos</em>: no pueden estudiarse aisladamente sin pérdida irreversible de sentido. Esto no es una "interrelación" aditiva —como cuando un manual clínico lista factores biopsicosociales junto a los biomédicos— sino algo cualitativamente distinto: el reconocimiento de que el ser humano es un sistema en el que cada parte <em>define</em> y es <em>definida por</em> las demás.</p>
+
+<p>Esta idea conecta directamente con la autopoiesis de Humberto Maturana, el pensamiento complejo de Edgar Morin y la teoría de sistemas de Luhmann, pero la aplica por primera vez como método clínico operativo.</p>
+
+<div class="info-box">
+<h4>¿Qué significa AIAP?</h4>
+<p><strong>Auto-Investigación-Acción-Participativa.</strong> El sujeto (paciente, clínico, comunidad) no es objeto de estudio — es co-autor del conocimiento y de la intervención. Rompe la neutralidad del observador y reconoce la experiencia pura como base de validación pragmática y dialógica. En clínica: co-diagnóstico, co-diseño de planes, co-evaluación.</p>
+<p style="margin-top:.7rem;padding-top:.7rem;border-top:1px solid var(--liner)"><strong>La hipótesis científica del MH-AIAP:</strong> <em>«Es posible hacer ciencia y adquirir nuevos conocimientos válidos y funcionales sin pretender aislar necesariamente al observador de su observación, al sujeto del objeto, al ser de su experiencia, a la parte del todo.»</em> — Carmona Aguirre & Clusella Mor, UNESCO París 2016</p>
+</div>
+
+<h2>Los tres sujetos <em>vivientes</em></h2>
+
+<p>El MH-AIAP articula tres órdenes de sujeto viviente en interrelación eco-organizacional:</p>
+
+<ul>
+<li><strong>Sujeto de primer orden</strong> — la célula (unicelular-autopoiesis): la unidad biológica mínima que produce conocimiento pertinente sobre sí misma</li>
+<li><strong>Sujeto de segundo orden</strong> — el individuo biológico (epigenética y experiencia): integra lo molecular con lo experiencial</li>
+<li><strong>Sujeto de tercer orden</strong> — el ser social (historia, cultura, contexto): el sujeto epistémico completo que co-produce conocimiento desde su posición en el mundo</li>
+</ul>
+
+<p>La salud emerge —y la enfermedad se instala— en la interacción entre estos tres órdenes. Un análisis que ignore cualquiera de ellos produce un diagnóstico incompleto.</p>
+
+<h2>El ciclo AIDIA: <em>del conocimiento a la transformación</em></h2>
+
+<p>El MH-AIAP se plasma en un sistema de producción de conocimiento holónico (SPCH) que formaliza un flujo operacional completo. Este ciclo es la base de la Multiversidad AIDIA de UNIMED:</p>
+
+<div class="aidia-grid">
+<div class="aidia-item"><div class="aidia-letter">A</div><div class="aidia-word">Aprendizaje</div><div class="aidia-desc">Formación situada y transformadora desde la complejidad</div></div>
+<div class="aidia-item"><div class="aidia-letter">I</div><div class="aidia-word">Investigación</div><div class="aidia-desc">Producción de conocimiento abierto transdisciplinar</div></div>
+<div class="aidia-item"><div class="aidia-letter">D</div><div class="aidia-word">Desarrollo</div><div class="aidia-desc">Implementación clínica y social del conocimiento complejo</div></div>
+<div class="aidia-item"><div class="aidia-letter">I</div><div class="aidia-word">Innovación</div><div class="aidia-desc">Nuevos modelos, herramientas e IA clínica</div></div>
+<div class="aidia-item"><div class="aidia-letter">A</div><div class="aidia-word">Abierta</div><div class="aidia-desc">El conocimiento como bien común, sin fronteras disciplinares</div></div>
+</div>
+
+<h3>Los 5 contextos del proceso <em>AIDIA</em></h3>
+<p>El proceso AIDIA no es lineal — se despliega en cinco contextos interdependientes que estructuran la producción de conocimiento holónico:</p>
+<ul>
+<li><strong>Contexto situación empírica</strong> — necesidad del sujeto por saber-conocer; descripción del contexto situacional; definición del sujeto-objeto de estudio desde una revisión transdisciplinar multi-referencial</li>
+<li><strong>Contexto metodológico</strong> — diseño del MH-AIAP local; co-creación de la estrategia de integración de métodos cualitativos y cuantitativos; elaboración del procedimiento AIDIA</li>
+<li><strong>Contexto teórico-episteme</strong> — marco teórico multi-referencial; marco filosófico ontológico-emocional-cognitivo-epistemológico desde la complejidad; contextualización macro-mezo-micro</li>
+<li><strong>Contexto informático</strong> — aplicación de instrumentos; procesamiento de datos; análisis e interpretación de resultados; triangulación entre teoría, realidad y planteamiento del investigador</li>
+<li><strong>Análisis reflexivo</strong> — conclusiones y reflexiones de postulados; elaboración de recomendaciones; retroalimentación al ciclo AIDIA</li>
+</ul>
+
+<h2>Holismo vs. Holónico: <em>una distinción crucial</em></h2>
+
+<p>Una confusión frecuente equipara la HoloMedicina con la "medicina holística". Son paradigmas diferentes:</p>
+
+<table class="compare-table">
+<thead>
+<tr>
+<th>Holismo (medicina holística)</th>
+<th>Holónico (HoloMedicina)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Postula el Todo mayor que la suma de partes; principio integrador estático</td><td>Define holones en holoarquías dinámicas con autonomía, cooperación y emergencia</td></tr>
+<tr><td>Integra saberes y terapias; no modela formalidad no-lineal</td><td>Exige no-separabilidad; usa ciencia de redes, sistemas dinámicos, simulación multiagente</td></tr>
+<tr><td>Combina medicina convencional con complementaria (BPS + espiritual)</td><td>Opera sobre sistemas complejos adaptativos; prioriza co-creación diagnóstica multi-nivel</td></tr>
+<tr><td>Evidencia clínica heterogénea e integrativa</td><td>Demanda nuevas métricas: series temporales, análisis de redes, entropía, AIAP</td></tr>
+</tbody>
+</table>
+
+<p>En síntesis: el holismo es una ontología integradora; lo holónico es una <strong>ontología y una ingeniería de sistemas complejos con formalización metodológica.</strong> La HoloMedicina pasa de "sumar dimensiones" a "diseñar, gobernar y aprender" en holoarquías vivas con propiedades emergentes.</p>
+
+<h2>El MH-AIAP en la <em>práctica clínica</em></h2>
+
+<p>El Método Holónico no es solo teoría. Se operacionaliza en UNIMED a través de un protocolo consultivo estructurado con ciclos de hipótesis-acción-reflexión co-diseñados con la persona-paciente:</p>
+
+<ul>
+<li><strong>Apertura y encuadre</strong> — propósito, roles, agenda y acuerdos de confidencialidad</li>
+<li><strong>Síntesis clínica de precisión</strong> — estado actual, biomarcadores relevantes, riesgos y oportunidades</li>
+<li><strong>Co-definición de metas</strong> — metas clínicas y de vida, umbrales de acción, criterios de éxito</li>
+<li><strong>Diseño de micro-experimentos</strong> — 1-2 intervenciones priorizadas con hipótesis causales y plan de medición</li>
+<li><strong>Plan de implementación</strong> — quién hace qué, cuándo y cómo; barreras previstas y mini-soluciones</li>
+<li><strong>Verificación y consentimiento dinámico</strong> — técnica teach-back, resolución de dudas, actualización del consentimiento</li>
+</ul>
+
+<div class="dark-box">
+<h4>El <em>mapa mecanístico</em> holónico</h4>
+<p>Un instrumento central del MH-AIAP es el <strong>"mapa mecanístico"</strong>: una representación explícita de cómo partes, interacciones y procesos causales concretos producen un fenómeno clínico. No es un listado de diagnósticos o comorbilidades — es un diagrama que conecta entidades (genes, proteínas, comportamientos, contextos) mediante relaciones causales dirigidas, mostrando secuencias de reacciones, regulaciones y bucles.</p>
+<p>Este mapa permite pasar del listado de comorbilidades a módulos causales multi-escala bio-psico-sociales, <strong>identificando dianas y puntos de palanca para micro-intervenciones</strong> y evaluación iterativa del "sistema Sujeto-caso".</p>
+</div>
+
+<h2>Historia y <em>reconocimiento científico</em></h2>
+
+<div class="timeline">
+<div class="tl-item">
+<div class="tl-year">2007</div>
+<div class="tl-text"><strong>Primeros documentos</strong> del paradigma HoloMedicina y del método holónico A-IAP por Samuel Carmona Aguirre.</div>
+</div>
+<div class="tl-item">
+<div class="tl-year">2014</div>
+<div class="tl-text"><strong>Registro oficial</strong> ante el Registre de la Propietat Intel·lectual de Catalunya (Generalitat de Catalunya, asientos PI 02/2014/2384–2386).</div>
+</div>
+<div class="tl-item">
+<div class="tl-year">2016</div>
+<div class="tl-text"><strong>Presentación en el Congreso Mundial de la Pensée Complexe</strong> (UNESCO · CNRS · Edgar Morin), París. El método fue presentado junto a <strong>Santiago Clusella Mor</strong>, doctorando en Ciudadanía y Derechos Humanos (Bioética) por la Universidad de Barcelona y colaborador de UNIMED. Reconocimiento como cambio epistémico. También presentado en el VII Congreso Iberoamericano de Investigación Cualitativa en Salud.</div>
+</div>
+<div class="tl-item">
+<div class="tl-year">2016</div>
+<div class="tl-text"><strong>Publicación del libro</strong> <em>«Salud y Medicina basada en la Complejidad»</em>, Samuel Carmona Aguirre. Barcelona.</div>
+</div>
+<div class="tl-item">
+<div class="tl-year">2021</div>
+<div class="tl-text"><strong>Conferencia en la UNAM</strong> — Facultad de Medicina, México. Desarrollo del marco Holomedicina como Ciencia de la Diversidad Integrativa.</div>
+</div>
+<div class="tl-item">
+<div class="tl-year">2025</div>
+<div class="tl-text"><strong>Jornadas de Medicina y Complejidad</strong> — Diplomado UNAM. Samuel Carmona presenta "Holomedicina de Precisión: Diseño, implementación y atención consultiva del modelo holomédico".</div>
+</div>
+</div>
+
+<div class="ip-badge">
+<div class="ip-icon">⚖️</div>
+<div class="ip-text"><strong>El Método Holónico MH-AIAP y el paradigma HoloMedicina son creaciones científicas originales de Samuel Carmona Aguirre</strong>, registradas ante la Generalitat de Catalunya en 2014. El método fue reconocido como cambio epistémico en el Congreso Mundial del Pensamiento Complejo (UNESCO, París, 2016). Todos los derechos de autor reservados.</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="art-cta">
+<h3>Experimenta el paradigma <em>HoloMédico</em></h3>
+<p>El Formulario de Historicidad y Holografía es el primer instrumento del Método Holónico aplicado a ti. Un mapa semántico de quién eres como sistema vivo — la base de cualquier consulta en UNIMED.</p>
+<a href="../recursos/formulario-fhh.html" class="btn-rose">
+Completar el Formulario FHH
+<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+</div>
+
+<div class="related">
+<h4>Artículos relacionados</h4>
+<a href="que-es-la-holomedicina.html" class="related-link">
+<span class="rl-tag">HoloMedicina</span>
+<span class="rl-title">¿Qué es la HoloMedicina? Un nuevo paradigma científico</span>
+</a>
+<a href="farmacogenomica-antidepresivos.html" class="related-link">
+<span class="rl-tag">Farmacogenómica</span>
+<span class="rl-title">Farmacogenómica y Antidepresivos: ¿Por qué no todos respondemos igual?</span>
+</a>
+</div>
+
+<div class="divider"></div>
+
+<p style="font-size:.8rem;color:var(--ink3);line-height:1.7">
+<strong>Sobre el autor:</strong> Samuel Carmona Aguirre es Científico Biomédico Clínico, MSc, Director y fundador de UNIMED Consulting. Creador del paradigma HoloMedicina y del método MH-AIAP. El método fue presentado en el Congreso Mundial del Pensamiento Complejo (UNESCO, París, 2016) junto a Santiago Clusella Mor, doctorando en Ciudadanía y Derechos Humanos (Bioética) por la Universidad de Barcelona y colaborador de UNIMED. Colaborador del Diplomado en Ciencia Médica y Ciencia de la Complejidad de la Facultad de Medicina de la UNAM. Tutor MIR acreditado.
+</p>
+
+</div></div>
+
+<footer><div class="w">
+<div class="fg">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona.</p>
+<div class="fcon">
+<span>📍 Barcelona, España · Västerås, Suecia</span>
+<span>📞 +34 673 815 148</span>
+<span>✉️ salud@unimed-consulting.es</span>
+</div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul>
+<li><a href="../servicios/atencion-consultiva.html">Atención Consultiva</a></li>
+<li><a href="../servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+<li><a href="../servicios/nutrigenomica.html">Nutrigenómica</a></li>
+<li><a href="../servicios/neurocognitivo.html">Neurocognitivo</a></li>
+<li><a href="../servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+</ul></div>
+<div class="fc"><h5>Blog</h5><ul>
+<li><a href="que-es-la-holomedicina.html">¿Qué es la HoloMedicina?</a></li>
+<li><a href="metodo-holonico-aiap.html">El Método Holónico MH-AIAP</a></li>
+<li><a href="farmacogenomica-antidepresivos.html">Farmacogenómica y Antidepresivos</a></li>
+<li><a href="index.html">Ver todos →</a></li>
+</ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="../politica-de-cookies.html">Política de Cookies</a></li>
+<li><a href="../aviso-legal.html">Aviso Legal</a></li>
+<li><a href="../contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+</div>
+</div></footer>
+
+<script src="/cookie-banner.js"></script>
+</body>
+</html>
