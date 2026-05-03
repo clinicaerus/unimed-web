@@ -165,6 +165,24 @@ h2 em{font-style:italic;color:var(--rose)}
 .plan.free .pp{color:#6ee7b7}
 .cnote{font-size:.68rem;color:rgba(255,255,255,.3);line-height:1.6;margin-top:.9rem}
 
+/* TELEMEDICINA */
+#telemedicina{background:var(--bg2);padding:5.5rem 0}
+.teleg{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.tele-info{position:sticky;top:6rem}
+.tele-info h2{margin-bottom:1rem}
+.tele-info p{font-size:.88rem;color:var(--ink2);line-height:1.78;margin-bottom:1.5rem}
+.tele-features{display:flex;flex-direction:column;gap:.7rem;margin-bottom:2rem}
+.tele-feat{display:flex;align-items:center;gap:.7rem;font-size:.83rem;color:var(--ink2)}
+.tele-feat::before{content:'✓';width:20px;height:20px;border-radius:50%;background:var(--rose-xs);border:1px solid var(--liner);color:var(--rose);font-size:.65rem;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.whereby-wrap{position:relative;border-radius:var(--rxl);overflow:hidden;border:1px solid var(--liner);box-shadow:0 16px 48px rgba(232,53,109,.1)}
+.whereby-wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--rose),var(--rose-s));z-index:2}
+.whereby-header{background:var(--ink);padding:.75rem 1.2rem;display:flex;align-items:center;gap:.6rem}
+.whereby-dot{width:8px;height:8px;border-radius:50%;background:var(--rose-s);animation:blink 2s ease infinite}
+.whereby-label{font-size:.65rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.whereby-label strong{color:var(--rose-s)}
+.whereby-frame{width:100%;height:480px;border:none;display:block;background:#0f0f14}
+.tele-note{font-size:.7rem;color:var(--ink3);text-align:center;margin-top:.8rem;line-height:1.5}
+
 /* PROFESIONALES */
 #pro{background:var(--bg)}
 .prog{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-top:3rem}
@@ -237,8 +255,8 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 .reveal[data-d="2"]{transition-delay:.16s}
 .reveal[data-d="3"]{transition-delay:.24s}
 
-@media(max-width:1024px){.hgrid{grid-template-columns:1fr}.himgw{display:none}.hologrid,.capsg,.prog{grid-template-columns:1fr;gap:3rem}.procard{position:static}.blogg{grid-template-columns:1fr 1fr}.blogc:first-child{grid-column:span 2}.svc:nth-child(4){grid-column:auto}}
-@media(max-width:768px){.nl{display:none}h1{font-size:2.6rem}.nosg,.svcg,.fg{grid-template-columns:1fr}.recg{grid-template-columns:repeat(2,1fr)}.dg{grid-template-columns:repeat(2,1fr)}.blogg{grid-template-columns:1fr}.blogc:first-child{grid-column:auto}}
+@media(max-width:1024px){.hgrid{grid-template-columns:1fr}.himgw{display:none}.hologrid,.capsg,.prog,.teleg{grid-template-columns:1fr;gap:3rem}.procard{position:static}.tele-info{position:static}.blogg{grid-template-columns:1fr 1fr}.blogc:first-child{grid-column:span 2}.svc:nth-child(4){grid-column:auto}}
+@media(max-width:768px){.nl{display:none}h1{font-size:2.6rem}.nosg,.svcg,.fg{grid-template-columns:1fr}.recg{grid-template-columns:repeat(2,1fr)}.dg{grid-template-columns:repeat(2,1fr)}.blogg{grid-template-columns:1fr}.blogc:first-child{grid-column:auto}.whereby-frame{height:360px}}
 
 .hslide{position:absolute;top:0;left:0;width:100%;opacity:0;animation:slide 15s infinite}
 .hslide:nth-child(1){animation-delay:0s}
@@ -263,6 +281,7 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <ul class="nl">
 <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
 <li><a href="#servicios">Servicios</a></li>
+<li><a href="#telemedicina">Telemedicina</a></li>
 <li><a href="#pro">Profesionales</a></li>
 <li><a href="#recursos">Recursos</a></li>
 <li><a href="#blog">Blog</a></li>
@@ -295,7 +314,7 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <p style="font-size:.88rem;color:#3a2d48;line-height:1.8;max-width:520px;margin-bottom:1.5rem">Tu salud es un sistema vivo. Mereces ser comprendido/a como tal. UNIMED aplica las 8 dimensiones del Sujeto Holónico para que vuelvas a tomar las riendas de tu vida.</p>
 <div class="hbtns">
 <a href="contacto.html" class="btnp">Pide Cita <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a href="#nosotros" class="btng">Conocer UNIMED</a>
+<a href="#telemedicina" class="btng">Consulta Online</a>
 </div>
 <div class="counters">
 <div class="ctr"><span class="cn">+30</span><div class="cl">Años de práctica científica</div></div>
@@ -319,7 +338,7 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <div class="nosb"><div class="nico">🎯</div><h3>Tú decides, <em>con conocimiento real</em></h3><p>La mayoría de personas salen de la consulta con un diagnóstico y sin entender qué significa. En UNIMED te explicamos qué pasa en tu cuerpo, por qué, y qué opciones tienes. Porque la decisión es tuya.</p></div>
 <div class="nosb"><div class="nico">🔄</div><h3>De <em>paciente a persona</em></h3><p>Te facilitamos aprendizaje para que ganes en salud y en calidad de vida. Empodérate, cambia tu forma de pensar y pasa de ser paciente a ser una persona que participa activamente en la toma de decisiones sobre tu propia salud.</p></div>
 <div class="nosb"><div class="nico">🧬</div><h3>Más años, <em>con más vida dentro</em></h3><p>El 80% de las enfermedades crónicas son prevenibles si se actúa antes. La medicina de precisión nos permite ver los riesgos antes de que se conviertan en diagnóstico. Ese es el trabajo de UNIMED.</p></div>
-<div class="nosb"><div class="nico">💡</div><h3>La <em>Holomedicina</em></h3><p>La Holomedicina es dar atención, terapéutica y tratamiento adecuado, en el momento adecuado y a la persona adecuada. Un espacio entre tu salud y tus decisiones: conocimiento, certeza, confianza y acción.</p></div>
+<div class="nosb"><div class="nico">💡</div><h3>La <em>Holomedicina</em></h3><p>La Holomedicina es dar atención, terapéutica y tratamiento adecuado, en el momento adecuada y a la persona adecuada. Un espacio entre tu salud y tus decisiones: conocimiento, certeza, confianza y acción.</p></div>
 </div>
 </div></section>
 
@@ -375,6 +394,44 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <div class="plan"><div><span class="pname">Avanzado</span><span class="pdesc">Memoria clínica · Análisis 8D profundo · Informe PDF</span></div><div class="pp">€14,90/mes</div></div>
 <div class="plan"><div><span class="pname">Telemedicina</span><span class="pdesc">Consulta con especialista UNIMED · Seguimiento</span></div><div class="pp">€65/sesión</div></div>
 <p class="cnote">CAPS Digital orienta e informa. No diagnostica ni prescribe. Conecta con el equipo clínico de UNIMED cuando es necesario.</p>
+</div>
+</div>
+</div></section>
+
+<!-- TELEMEDICINA CON WHEREBY -->
+<section id="telemedicina"><div class="w">
+<div class="teleg">
+<div class="tele-info reveal">
+  <div class="ey">Telemedicina</div>
+  <h2>Consulta online<br/><em>desde donde estés</em></h2>
+  <p>Conéctate directamente con Samuel Carmona Aguirre desde tu dispositivo. Sin descargas, sin registros. Solo haz clic en "Iniciar consulta" y estarás en la sala en segundos.</p>
+  <div class="tele-features">
+    <div class="tele-feat">Sin instalación — funciona desde el navegador</div>
+    <div class="tele-feat">Videollamada HD con cifrado de extremo a extremo</div>
+    <div class="tele-feat">Compatible con móvil, tablet y ordenador</div>
+    <div class="tele-feat">Sala privada exclusiva UNIMED Consulting</div>
+    <div class="tele-feat">Sesiones de 45 o 90 minutos · €65/sesión</div>
+  </div>
+  <a href="https://whereby.com/unimed-consulting" target="_blank" class="btnp">
+    Iniciar consulta ahora
+    <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+  <p style="font-size:.75rem;color:var(--ink3);margin-top:1rem;line-height:1.6">¿Primera vez? <a href="contacto.html" style="color:var(--rose)">Pide cita previa</a> para acordar día y hora antes de conectarte.</p>
+</div>
+<div class="reveal" data-d="2">
+  <div class="whereby-wrap">
+    <div class="whereby-header">
+      <div class="whereby-dot"></div>
+      <div class="whereby-label">Sala UNIMED · <strong>En línea</strong></div>
+    </div>
+    <iframe
+      class="whereby-frame"
+      src="https://whereby.com/unimed-consulting"
+      allow="camera; microphone; fullscreen; speaker-selection; display-capture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <p class="tele-note">La sala está siempre disponible. El especialista se unirá en el horario acordado.<br/>Tu privacidad está protegida — la sesión no se graba sin consentimiento explícito.</p>
 </div>
 </div>
 </div></section>
@@ -451,7 +508,7 @@ UNIMED no vende medicina. Vende el único proceso consultivo y colaborativo basa
 <div class="fcon">
 <span>📍 Barcelona, España</span>
 <span>📞 +34 673 815 148</span>
-<span>✉️ salud@unimed-consulting.es</span>
+<span>✉️ samuel@unimed-consulting.es</span>
 </div>
 </div>
 <div class="fc"><h5>Servicios</h5><ul>
