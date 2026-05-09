@@ -12,7 +12,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
-:root{--rose:#e8356d;--rose-s:#f07098;--rose-xs:rgba(232,53,109,.07);--rose-gl:rgba(232,53,109,.14);--bg:#ffffff;--bg2:#f8f7f9;--bg3:#f2eff5;--card:#ffffff;--ink:#1a0f24;--ink2:#3a2d48;--ink3:#7a6880;--line:rgba(0,0,0,.08);--liner:rgba(232,53,109,.18);--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--max:1140px;--r:8px;--rlg:16px;--rxl:24px;--ease:cubic-bezier(.22,1,.36,1)}
+:root {
+--rose:   #e8356d;
+--rose-s: #f07098;
+--rose-xs:rgba(232,53,109,.07);
+--rose-gl:rgba(232,53,109,.14);
+--bg:     #ffffff;
+--bg2:    #f8f7f9;
+--bg3:    #f2eff5;
+--card:   #ffffff;
+--ink:    #1a0f24;
+--ink2:   #3a2d48;
+--ink3:   #7a6880;
+--line:   rgba(0,0,0,.08);
+--liner:  rgba(232,53,109,.18);
+--serif:  'Cormorant Garamond',Georgia,serif;
+--sans:   'Inter',system-ui,sans-serif;
+--max:    1140px;
+--r:      8px;
+--rlg:    16px;
+--rxl:    24px;
+--ease:   cubic-bezier(.22,1,.36,1);
+}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -24,23 +45,13 @@ a{color:inherit;text-decoration:none}
 .tsep{color:rgba(255,255,255,.4)}
 nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
 .navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:var(--serif);font-size:1.5rem;font-weight:500;letter-spacing:.05em;color:var(--ink)}
+.logo em{font-style:italic;color:var(--rose)}
 .nl{display:flex;align-items:center;gap:2rem;list-style:none}
 .nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
 .nl a:hover{color:var(--ink)}
 .nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
 .nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
-/* HAMBURGER */
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.5rem;background:none;border:none;z-index:400}
-.hamburger span{display:block;width:24px;height:2px;background:var(--ink);border-radius:2px;transition:all .3s var(--ease)}
-.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.hamburger.open span:nth-child(2){opacity:0}
-.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.mobile-nav{display:none;position:fixed;top:70px;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding:1.5rem 2rem;flex-direction:column;gap:0;z-index:299;box-shadow:0 8px 24px rgba(0,0,0,.08)}
-.mobile-nav.open{display:flex}
-.mobile-nav a{font-size:.95rem;font-weight:400;color:var(--ink2);padding:.75rem 0;border-bottom:1px solid var(--line);text-decoration:none;display:block}
-.mobile-nav a:last-child{border-bottom:none}
-.mobile-nav .mnbtn{background:var(--rose);color:#fff!important;border-radius:var(--r);padding:.75rem 1.2rem;text-align:center;border:none;font-weight:500;margin-top:.5rem}
-/* HERO */
 #hero{padding:6rem 0 4rem;position:relative;overflow:hidden}
 .hblob{position:absolute;top:-120px;right:-160px;width:600px;height:600px;background:radial-gradient(circle,rgba(232,53,109,.07) 0%,transparent 65%);border-radius:50%;pointer-events:none}
 .hblob2{position:absolute;bottom:-80px;left:-100px;width:380px;height:380px;background:radial-gradient(circle,rgba(232,53,109,.05) 0%,transparent 65%);border-radius:50%;pointer-events:none}
@@ -191,11 +202,14 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 .reveal[data-d="1"]{transition-delay:.08s}
 .reveal[data-d="2"]{transition-delay:.16s}
 .reveal[data-d="3"]{transition-delay:.24s}
-.hslide{position:absolute;top:0;left:0;width:100%;opacity:0}
-.hslide:nth-child(1){opacity:1}
-#heroRotating{position:relative;min-height:120px}
 @media(max-width:1024px){.hgrid{grid-template-columns:1fr}.himgw{display:none}.hologrid,.capsg,.prog{grid-template-columns:1fr;gap:3rem}.procard{position:static}.blogg{grid-template-columns:1fr 1fr}.blogc:first-child{grid-column:span 2}.svc:nth-child(4){grid-column:auto}}
-@media(max-width:768px){.nl{display:none}.hamburger{display:flex}h1{font-size:2.6rem}.nosg,.svcg,.fg{grid-template-columns:1fr}.recg{grid-template-columns:repeat(2,1fr)}.dg{grid-template-columns:repeat(2,1fr)}.blogg{grid-template-columns:1fr}.blogc:first-child{grid-column:auto}}
+@media(max-width:768px){.nl{display:none}h1{font-size:2.6rem}.nosg,.svcg,.fg{grid-template-columns:1fr}.recg{grid-template-columns:repeat(2,1fr)}.dg{grid-template-columns:repeat(2,1fr)}.blogg{grid-template-columns:1fr}.blogc:first-child{grid-column:auto}}
+.hslide{position:absolute;top:0;left:0;width:100%;opacity:0;animation:slide 15s infinite}
+.hslide:nth-child(1){animation-delay:0s}
+.hslide:nth-child(2){animation-delay:5s}
+.hslide:nth-child(3){animation-delay:10s}
+@keyframes slide{0%,28%{opacity:1}33%,100%{opacity:0}}
+#heroRotating{position:relative;min-height:120px}
 </style>
 </head>
 <body>
@@ -216,20 +230,7 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <li><a href="contacto.html">Contacto</a></li>
 <li><a href="contacto.html" class="nbtn">Pide Cita</a></li>
 </ul>
-<button class="hamburger" id="hamburger" aria-label="Menú">
-<span></span><span></span><span></span>
-</button>
 </div></nav>
-
-<div class="mobile-nav" id="mobileNav">
-<a href="quienes-somos.html">¿Quiénes Somos?</a>
-<a href="#servicios">Servicios</a>
-<a href="#pro">Profesionales</a>
-<a href="#recursos">Recursos</a>
-<a href="blog/index.html">Blog</a>
-<a href="contacto.html">Contacto</a>
-<a href="contacto.html" class="mnbtn" style="background:var(--rose);color:#fff;border-radius:var(--r);padding:.75rem 1.2rem;text-align:center;font-weight:500;margin-top:.5rem;display:block">Pide Cita</a>
-</div>
 
 <section id="hero">
 <div class="hblob"></div><div class="hblob2"></div>
@@ -237,7 +238,7 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <div class="reveal">
 <div class="htag"><i></i>UNIMED Consulting · Barcelona</div>
 <div id="heroRotating">
-<div class="hslide">
+<div class="hslide active">
 <h1 style="font-size:1.4rem!important;line-height:1.3!important;color:#1a0f24!important;font-weight:300!important;letter-spacing:0!important;margin-bottom:.8rem!important">¿Tu médico te trata como<br/>un diagnóstico o como<br/><em style="font-style:italic;color:#e8356d">una persona?</em></h1>
 </div>
 <div class="hslide">
@@ -370,9 +371,9 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <a href="blog/index.html" class="btng reveal" style="font-size:.78rem;padding:.65rem 1.3rem">Ver todos →</a>
 </div>
 <div class="blogg">
-<a href="blog/que-es-la-holomedicina.html" class="blogc reveal" data-d="1" style="text-decoration:none;color:inherit"><div class="bthumb">🧬</div><div class="bbody"><span class="btag">Holomedicina</span><h4>¿Qué es la HoloMedicina?</h4><p>El paradigma científico original que define al ser humano como sistema complejo adaptativo multidimensional. Casi 20 años de investigación.</p><div class="bmeta">Publicado · Samuel Carmona Aguirre, MSc</div></div></a>
-<a href="blog/metodo-holonico-aiap.html" class="blogc reveal" data-d="2" style="text-decoration:none;color:inherit"><div class="bthumb" style="aspect-ratio:4/3;font-size:2rem">🔬</div><div class="bbody"><span class="btag">Epistemología</span><h4>El Método Holónico MH-AIAP</h4><p>El fundamento científico de la HoloMedicina. Reconocido por la UNESCO en París 2016.</p><div class="bmeta">Publicado · Samuel Carmona Aguirre, MSc</div></div></a>
-<a href="blog/farmacogenomica-antidepresivos.html" class="blogc reveal" data-d="3" style="text-decoration:none;color:inherit"><div class="bthumb" style="aspect-ratio:4/3;font-size:2rem">💊</div><div class="bbody"><span class="btag">Farmacogenómica</span><h4>Farmacogenómica y Antidepresivos</h4><p>Por qué el mismo fármaco funciona para unos y genera reacciones adversas en otros.</p><div class="bmeta">Publicado · Samuel Carmona Aguirre, MSc</div></div></a>
+<a href="blog/que-es-la-holomedicina.html" class="blogc reveal" data-d="1" style="text-decoration:none;color:inherit"><div class="bthumb"><svg viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="display:block"><defs><radialGradient id="hg1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(232,53,109,.18)"/><stop offset="100%" stop-color="rgba(232,53,109,0)"/></radialGradient></defs><!-- Cluster A --><line x1="52" y1="48" x2="82" y2="62" stroke="#e8356d" stroke-width=".8" opacity=".4"/><line x1="52" y1="48" x2="68" y2="30" stroke="#e8356d" stroke-width=".8" opacity=".4"/><line x1="82" y1="62" x2="68" y2="30" stroke="#e8356d" stroke-width=".8" opacity=".3"/><line x1="82" y1="62" x2="98" y2="50" stroke="#e8356d" stroke-width=".8" opacity=".3"/><circle cx="52" cy="48" r="4.5" fill="none" stroke="#e8356d" stroke-width="1.2"/><circle cx="82" cy="62" r="6" fill="#e8356d" opacity=".15" stroke="#e8356d" stroke-width="1.2"/><circle cx="68" cy="30" r="3.5" fill="none" stroke="#e8356d" stroke-width="1" opacity=".7"/><circle cx="98" cy="50" r="4" fill="none" stroke="#e8356d" stroke-width="1" opacity=".6"/><!-- Cluster B --><line x1="155" y1="35" x2="138" y2="58" stroke="#3a2d48" stroke-width=".8" opacity=".3"/><line x1="155" y1="35" x2="175" y2="52" stroke="#3a2d48" stroke-width=".8" opacity=".3"/><line x1="138" y1="58" x2="162" y2="70" stroke="#3a2d48" stroke-width=".8" opacity=".25"/><line x1="175" y1="52" x2="162" y2="70" stroke="#3a2d48" stroke-width=".8" opacity=".25"/><circle cx="155" cy="35" r="5" fill="none" stroke="#3a2d48" stroke-width="1.2" opacity=".5"/><circle cx="138" cy="58" r="4" fill="none" stroke="#3a2d48" stroke-width="1" opacity=".45"/><circle cx="175" cy="52" r="3.5" fill="none" stroke="#3a2d48" stroke-width="1" opacity=".4"/><circle cx="162" cy="70" r="5.5" fill="none" stroke="#e8356d" stroke-width="1.2" opacity=".6"/><!-- Cluster C --><line x1="240" y1="45" x2="262" y2="28" stroke="#e8356d" stroke-width=".8" opacity=".35"/><line x1="240" y1="45" x2="268" y2="60" stroke="#e8356d" stroke-width=".8" opacity=".35"/><line x1="262" y1="28" x2="285" y2="40" stroke="#e8356d" stroke-width=".8" opacity=".3"/><line x1="268" y1="60" x2="285" y2="40" stroke="#e8356d" stroke-width=".8" opacity=".3"/><circle cx="240" cy="45" r="4" fill="none" stroke="#e8356d" stroke-width="1.1" opacity=".7"/><circle cx="262" cy="28" r="3.5" fill="none" stroke="#e8356d" stroke-width="1" opacity=".6"/><circle cx="268" cy="60" r="5" fill="#e8356d" opacity=".1" stroke="#e8356d" stroke-width="1.2"/><circle cx="285" cy="40" r="3" fill="none" stroke="#e8356d" stroke-width="1" opacity=".5"/><!-- Cluster D --><line x1="80" y1="115" x2="110" y2="100" stroke="#3a2d48" stroke-width=".8" opacity=".3"/><line x1="110" y1="100" x2="135" y2="118" stroke="#3a2d48" stroke-width=".8" opacity=".3"/><line x1="80" y1="115" x2="95" y2="132" stroke="#3a2d48" stroke-width=".8" opacity=".25"/><circle cx="80" cy="115" r="4.5" fill="none" stroke="#3a2d48" stroke-width="1.1" opacity=".45"/><circle cx="110" cy="100" r="5.5" fill="none" stroke="#e8356d" stroke-width="1.2" opacity=".55"/><circle cx="135" cy="118" r="3.5" fill="none" stroke="#3a2d48" stroke-width="1" opacity=".4"/><circle cx="95" cy="132" r="3" fill="none" stroke="#3a2d48" stroke-width="1" opacity=".35"/><!-- Cluster E --><line x1="195" y1="108" x2="220" y2="95" stroke="#e8356d" stroke-width=".8" opacity=".3"/><line x1="220" y1="95" x2="248" y2="112" stroke="#e8356d" stroke-width=".8" opacity=".3"/><line x1="195" y1="108" x2="210" y2="130" stroke="#e8356d" stroke-width=".8" opacity=".25"/><line x1="248" y1="112" x2="235" y2="130" stroke="#e8356d" stroke-width=".8" opacity=".25"/><circle cx="195" cy="108" r="4" fill="none" stroke="#e8356d" stroke-width="1.1" opacity=".6"/><circle cx="220" cy="95" r="6" fill="#e8356d" opacity=".12" stroke="#e8356d" stroke-width="1.3"/><circle cx="248" cy="112" r="3.5" fill="none" stroke="#e8356d" stroke-width="1" opacity=".55"/><circle cx="210" cy="130" r="3" fill="none" stroke="#3a2d48" stroke-width="1" opacity=".4"/><circle cx="235" cy="130" r="4" fill="none" stroke="#3a2d48" stroke-width="1" opacity=".4"/><!-- Inter-cluster connections --><line x1="82" y1="62" x2="138" y2="58" stroke="#e8356d" stroke-width=".6" opacity=".2" stroke-dasharray="3 3"/><line x1="162" y1="70" x2="240" y2="45" stroke="#3a2d48" stroke-width=".6" opacity=".18" stroke-dasharray="3 3"/><line x1="110" y1="100" x2="162" y2="70" stroke="#e8356d" stroke-width=".6" opacity=".2" stroke-dasharray="3 3"/><line x1="220" y1="95" x2="268" y2="60" stroke="#e8356d" stroke-width=".6" opacity=".18" stroke-dasharray="3 3"/><line x1="135" y1="118" x2="195" y2="108" stroke="#3a2d48" stroke-width=".6" opacity=".18" stroke-dasharray="3 3"/></svg></div><div class="bbody"><span class="btag">Holomedicina</span><h4>¿Qué es la HoloMedicina?</h4><p>El paradigma científico original que define al ser humano como sistema complejo adaptativo multidimensional. Casi 20 años de investigación.</p><div class="bmeta">Publicado · Samuel Carmona Aguirre, MSc</div></div></a>
+<a href="blog/metodo-holonico-aiap.html" class="blogc reveal" data-d="2" style="text-decoration:none;color:inherit"><div class="bthumb" style="aspect-ratio:4/3"><svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="display:block"><defs><linearGradient id="sg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#e8356d" stop-opacity=".7"/><stop offset="100%" stop-color="#f07098" stop-opacity=".3"/></linearGradient></defs><!-- Spiral path --><path d="M100,75 C100,75 115,60 115,45 C115,28 100,18 84,22 C68,26 60,42 65,58 C70,74 86,84 104,82 C122,80 136,66 134,48 C132,30 116,16 96,14 C76,12 58,26 54,46" fill="none" stroke="url(#sg1)" stroke-width="1.8" stroke-linecap="round" opacity=".8"/><!-- Cycle arrows for A I A P --><circle cx="100" cy="34" r="14" fill="none" stroke="#e8356d" stroke-width="1" opacity=".3"/><circle cx="100" cy="34" r="10" fill="none" stroke="#e8356d" stroke-width=".8" opacity=".2"/><!-- A node --><circle cx="100" cy="20" r="5" fill="#e8356d" opacity=".2" stroke="#e8356d" stroke-width="1.2"/><text x="100" y="23.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="#e8356d" font-weight="500">A</text><!-- I node --><circle cx="116" cy="34" r="5" fill="none" stroke="#e8356d" stroke-width="1.2" opacity=".7"/><text x="116" y="37.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="#e8356d" font-weight="500" opacity=".8">I</text><!-- A2 node --><circle cx="100" cy="48" r="5" fill="none" stroke="#3a2d48" stroke-width="1.2" opacity=".6"/><text x="100" y="51.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="#3a2d48" font-weight="500" opacity=".7">A</text><!-- P node --><circle cx="84" cy="34" r="5" fill="none" stroke="#3a2d48" stroke-width="1.2" opacity=".6"/><text x="84" y="37.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="#3a2d48" font-weight="500" opacity=".7">P</text><!-- Connectors --><path d="M104,21 Q116,21 116,29" fill="none" stroke="#e8356d" stroke-width=".9" opacity=".5" marker-end="none"/><path d="M116,39 Q116,48 104,48" fill="none" stroke="#e8356d" stroke-width=".9" opacity=".4"/><path d="M96,48 Q84,48 84,39" fill="none" stroke="#3a2d48" stroke-width=".9" opacity=".4"/><path d="M84,29 Q84,20 96,20" fill="none" stroke="#3a2d48" stroke-width=".9" opacity=".4"/><!-- Outer ring --><circle cx="100" cy="34" r="30" fill="none" stroke="#e8356d" stroke-width=".5" opacity=".12" stroke-dasharray="2 4"/><!-- Orbiting nodes --><circle cx="100" cy="4" r="2.5" fill="none" stroke="#e8356d" stroke-width=".8" opacity=".4"/><circle cx="130" cy="34" r="2.5" fill="none" stroke="#e8356d" stroke-width=".8" opacity=".35"/><circle cx="100" cy="64" r="2.5" fill="none" stroke="#3a2d48" stroke-width=".8" opacity=".3"/><circle cx="70" cy="34" r="2.5" fill="none" stroke="#3a2d48" stroke-width=".8" opacity=".3"/><!-- Label --><text x="100" y="88" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="7" fill="#e8356d" opacity=".5" font-style="italic">Método Holónico</text><!-- Bottom nodes/connections --><line x1="60" y1="110" x2="90" y2="100" stroke="#e8356d" stroke-width=".7" opacity=".25"/><line x1="90" y1="100" x2="110" y2="110" stroke="#e8356d" stroke-width=".7" opacity=".25"/><line x1="110" y1="110" x2="140" y2="100" stroke="#3a2d48" stroke-width=".7" opacity=".2"/><circle cx="60" cy="110" r="3" fill="none" stroke="#e8356d" stroke-width=".9" opacity=".4"/><circle cx="90" cy="100" r="4" fill="none" stroke="#e8356d" stroke-width="1" opacity=".45"/><circle cx="110" cy="110" r="3.5" fill="none" stroke="#3a2d48" stroke-width=".9" opacity=".4"/><circle cx="140" cy="100" r="3" fill="none" stroke="#3a2d48" stroke-width=".9" opacity=".35"/></svg></div><div class="bbody"><span class="btag">Epistemología</span><h4>El Método Holónico MH-AIAP</h4><p>El fundamento científico de la HoloMedicina. Reconocido por la UNESCO en París 2016.</p><div class="bmeta">Publicado · Samuel Carmona Aguirre, MSc</div></div></a>
+<a href="blog/farmacogenomica-antidepresivos.html" class="blogc reveal" data-d="3" style="text-decoration:none;color:inherit"><div class="bthumb" style="aspect-ratio:4/3"><svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="display:block"><defs><linearGradient id="dg1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#e8356d" stop-opacity=".8"/><stop offset="100%" stop-color="#3a2d48" stop-opacity=".5"/></linearGradient></defs><!-- Double helix left strand --><path d="M75,10 C75,10 90,22 90,35 C90,48 75,60 75,73 C75,86 90,98 90,111 C90,124 75,136 75,136" fill="none" stroke="#e8356d" stroke-width="1.8" stroke-linecap="round" opacity=".75"/><!-- Double helix right strand --><path d="M125,10 C125,10 110,22 110,35 C110,48 125,60 125,73 C125,86 110,98 110,111 C110,124 125,136 125,136" fill="none" stroke="#3a2d48" stroke-width="1.8" stroke-linecap="round" opacity=".55"/><!-- Rungs --><line x1="90" y1="18" x2="110" y2="18" stroke="#e8356d" stroke-width="1.1" opacity=".5"/><line x1="83" y1="29" x2="117" y2="29" stroke="#3a2d48" stroke-width="1" opacity=".35"/><line x1="90" y1="35" x2="110" y2="35" stroke="#e8356d" stroke-width="1.1" opacity=".5"/><line x1="83" y1="46" x2="117" y2="46" stroke="#3a2d48" stroke-width="1" opacity=".35"/><line x1="90" y1="57" x2="110" y2="57" stroke="#e8356d" stroke-width="1.1" opacity=".45"/><line x1="83" y1="63" x2="117" y2="63" stroke="#3a2d48" stroke-width="1" opacity=".3"/><line x1="90" y1="73" x2="110" y2="73" stroke="#e8356d" stroke-width="1.1" opacity=".45"/><line x1="83" y1="84" x2="117" y2="84" stroke="#3a2d48" stroke-width="1" opacity=".3"/><line x1="90" y1="95" x2="110" y2="95" stroke="#e8356d" stroke-width="1.1" opacity=".4"/><line x1="83" y1="101" x2="117" y2="101" stroke="#3a2d48" stroke-width="1" opacity=".28"/><line x1="90" y1="111" x2="110" y2="111" stroke="#e8356d" stroke-width="1.1" opacity=".4"/><line x1="83" y1="122" x2="117" y2="122" stroke="#3a2d48" stroke-width="1" opacity=".25"/><!-- Base dots --><circle cx="90" cy="35" r="2.5" fill="#e8356d" opacity=".5"/><circle cx="110" cy="35" r="2.5" fill="#3a2d48" opacity=".4"/><circle cx="90" cy="73" r="2.5" fill="#e8356d" opacity=".5"/><circle cx="110" cy="73" r="2.5" fill="#3a2d48" opacity=".4"/><circle cx="90" cy="111" r="2.5" fill="#e8356d" opacity=".45"/><circle cx="110" cy="111" r="2.5" fill="#3a2d48" opacity=".35"/><!-- Side labels --><text x="52" y="35" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" fill="#e8356d" opacity=".45">CYP2D6</text><text x="148" y="73" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" fill="#3a2d48" opacity=".4">SERT</text><text x="52" y="111" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" fill="#e8356d" opacity=".4">CYP2C19</text><!-- Connecting lines to labels --><line x1="62" y1="35" x2="75" y2="35" stroke="#e8356d" stroke-width=".6" opacity=".3"/><line x1="138" y1="73" x2="125" y2="73" stroke="#3a2d48" stroke-width=".6" opacity=".25"/><line x1="62" y1="111" x2="75" y2="111" stroke="#e8356d" stroke-width=".6" opacity=".25"/></svg></div><div class="bbody"><span class="btag">Farmacogenómica</span><h4>Farmacogenómica y Antidepresivos</h4><p>Por qué el mismo fármaco funciona para unos y genera reacciones adversas en otros.</p><div class="bmeta">Publicado · Samuel Carmona Aguirre, MSc</div></div></a>
 </div>
 </div></section>
 
@@ -437,10 +438,6 @@ const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.targe
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 var S=document.querySelectorAll('.hslide'),C=0;
 setInterval(function(){S[C].style.opacity='0';C=(C+1)%S.length;S[C].style.opacity='1';},5000);
-const hb=document.getElementById('hamburger');
-const mn=document.getElementById('mobileNav');
-hb.addEventListener('click',function(){hb.classList.toggle('open');mn.classList.toggle('open');});
-mn.querySelectorAll('a').forEach(a=>{a.addEventListener('click',()=>{hb.classList.remove('open');mn.classList.remove('open');});});
 </script>
 <script src="/cookie-banner.js"></script>
 </body>
