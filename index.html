@@ -39,14 +39,10 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 .w{max-width:var(--max);margin:0 auto;padding:0 2rem}
-
-/* TICKER */
 .ticker{background:var(--rose);height:30px;display:flex;align-items:center;overflow:hidden}
 .ttrack{display:flex;gap:2.5rem;white-space:nowrap;animation:tick 40s linear infinite;font-size:.62rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.9)}
 @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .tsep{color:rgba(255,255,255,.4)}
-
-/* NAV */
 nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
 .navi{display:flex;align-items:center;justify-content:space-between;height:70px}
 .logo{font-family:var(--serif);font-size:1.5rem;font-weight:500;letter-spacing:.05em;color:var(--ink)}
@@ -56,8 +52,6 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .nl a:hover{color:var(--ink)}
 .nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
 .nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
-
-/* HERO */
 #hero{padding:6rem 0 4rem;position:relative;overflow:hidden}
 .hblob{position:absolute;top:-120px;right:-160px;width:600px;height:600px;background:radial-gradient(circle,rgba(232,53,109,.07) 0%,transparent 65%);border-radius:50%;pointer-events:none}
 .hblob2{position:absolute;bottom:-80px;left:-100px;width:380px;height:380px;background:radial-gradient(circle,rgba(232,53,109,.05) 0%,transparent 65%);border-radius:50%;pointer-events:none}
@@ -67,10 +61,8 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .htag i{width:6px;height:6px;border-radius:50%;background:var(--rose);animation:blink 2s ease infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
 h1{font-family:var(--serif);font-size:clamp(2.8rem,6vw,5.4rem);font-weight:300;line-height:1.07;letter-spacing:-.02em;margin-bottom:1.6rem;color:var(--ink)}
-#hero h1{font-size:clamp(1.1rem,1.6vw,1.5rem)!important;line-height:1.3!important;letter-spacing:0!important;margin-bottom:.7rem!important;color:#fff!important}
 h1 em{font-style:italic;color:var(--rose)}
 .hdesc{font-size:1rem;color:var(--ink2);max-width:460px;line-height:1.8;margin-bottom:2.5rem}
-#hero .hdesc{color:rgba(255,255,255,.7)!important}
 .hdesc strong{color:var(--ink);font-weight:500}
 .hbtns{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:3rem}
 .btnp{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:500;padding:.82rem 1.7rem;border-radius:var(--r);background:var(--rose);color:#fff;transition:all .25s var(--ease);border:none;cursor:pointer;box-shadow:0 4px 16px var(--rose-gl)}
@@ -87,19 +79,12 @@ h1 em{font-style:italic;color:var(--rose)}
 .himgbox{border-radius:var(--rxl);overflow:hidden;background:var(--bg3);border:1px solid var(--liner);box-shadow:0 16px 60px rgba(232,53,109,.1),0 2px 8px rgba(0,0,0,.06);padding:2.5rem;position:relative}
 .himgbox img{width:100%;display:block}
 .himgbox::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--rose),var(--rose-s))}
-.hbadge{position:absolute;bottom:-1.2rem;right:1.5rem;background:var(--ink);color:#fff;border-radius:var(--rlg);padding:.9rem 1.3rem;box-shadow:0 4px 16px rgba(0,0,0,.2)}
-.hbn{font-family:var(--serif);font-size:1.6rem;color:var(--rose-s);display:block;line-height:1}
-.hbl{font-size:.6rem;color:rgba(255,255,255,.5);letter-spacing:.12em;text-transform:uppercase;margin-top:.2rem}
-
-/* SECTIONS */
 section{padding:5.5rem 0}
 .ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.9rem}
 .ey::before{content:'';width:16px;height:1.5px;background:var(--rose)}
 h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.9rem);font-weight:300;line-height:1.15;letter-spacing:-.01em;color:var(--ink)}
 h2 em{font-style:italic;color:var(--rose)}
 .sdesc{font-size:.9rem;color:var(--ink2);max-width:520px;line-height:1.78;margin-top:.8rem}
-
-/* NOSOTROS */
 #nosotros{background:var(--bg2)}
 .nosg{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
 .nosb{background:var(--card);border:1px solid var(--line);border-radius:var(--rxl);padding:2.4rem 2.2rem;position:relative;overflow:hidden;transition:all .3s var(--ease)}
@@ -110,8 +95,6 @@ h2 em{font-style:italic;color:var(--rose)}
 .nosb h3{font-family:var(--serif);font-size:1.45rem;font-weight:400;line-height:1.2;margin-bottom:.8rem;color:var(--ink)}
 .nosb h3 em{font-style:italic;color:var(--rose)}
 .nosb p{font-size:.85rem;color:var(--ink2);line-height:1.78}
-
-/* HOLOMED */
 #holomed{background:var(--bg);position:relative;overflow:hidden}
 #holomed::before{content:'HOLO';position:absolute;right:-2rem;top:50%;transform:translateY(-50%);font-family:var(--serif);font-size:16vw;font-weight:600;color:transparent;-webkit-text-stroke:1px rgba(232,53,109,.05);pointer-events:none;user-select:none}
 .hologrid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
@@ -132,8 +115,6 @@ h2 em{font-style:italic;color:var(--rose)}
 .df{grid-column:1/-1;background:var(--rose-xs);border-top:1px solid var(--liner);padding:.7rem 1rem;display:flex;align-items:center;justify-content:center;gap:.8rem}
 .df span{font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3)}
 .df strong{font-family:var(--serif);font-size:.8rem;font-style:italic;color:var(--rose);font-weight:400}
-
-/* SERVICIOS */
 #servicios{background:var(--bg2)}
 .svcg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
 .svc{background:var(--card);border:1px solid var(--line);border-radius:var(--rxl);padding:2.2rem 2rem;display:flex;flex-direction:column;transition:all .3s var(--ease);cursor:pointer;position:relative;overflow:hidden}
@@ -148,8 +129,6 @@ h2 em{font-style:italic;color:var(--rose)}
 .svc p{font-size:.83rem;color:var(--ink2);line-height:1.75;flex:1}
 .sa{display:inline-flex;align-items:center;gap:.35rem;margin-top:1.3rem;font-size:.73rem;font-weight:500;color:var(--ink3);transition:all .2s}
 .svc:nth-child(4){grid-column:span 2}
-
-/* CAPS */
 #caps{background:var(--ink);padding:5rem 0}
 .capsg{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
 .ctag{display:inline-flex;align-items:center;gap:.5rem;font-size:.65rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-s);margin-bottom:1.3rem}
@@ -164,26 +143,6 @@ h2 em{font-style:italic;color:var(--rose)}
 .pp{font-family:var(--serif);font-size:1rem;color:var(--rose-s);white-space:nowrap}
 .plan.free .pp{color:#6ee7b7}
 .cnote{font-size:.68rem;color:rgba(255,255,255,.3);line-height:1.6;margin-top:.9rem}
-
-/* TELEMEDICINA */
-#telemedicina{background:var(--bg2);padding:5.5rem 0}
-.teleg{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.tele-info{position:sticky;top:6rem}
-.tele-info h2{margin-bottom:1rem}
-.tele-info p{font-size:.88rem;color:var(--ink2);line-height:1.78;margin-bottom:1.5rem}
-.tele-features{display:flex;flex-direction:column;gap:.7rem;margin-bottom:2rem}
-.tele-feat{display:flex;align-items:center;gap:.7rem;font-size:.83rem;color:var(--ink2)}
-.tele-feat::before{content:'✓';width:20px;height:20px;border-radius:50%;background:var(--rose-xs);border:1px solid var(--liner);color:var(--rose);font-size:.65rem;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.whereby-wrap{position:relative;border-radius:var(--rxl);overflow:hidden;border:1px solid var(--liner);box-shadow:0 16px 48px rgba(232,53,109,.1)}
-.whereby-wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--rose),var(--rose-s));z-index:2}
-.whereby-header{background:var(--ink);padding:.75rem 1.2rem;display:flex;align-items:center;gap:.6rem}
-.whereby-dot{width:8px;height:8px;border-radius:50%;background:var(--rose-s);animation:blink 2s ease infinite}
-.whereby-label{font-size:.65rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)}
-.whereby-label strong{color:var(--rose-s)}
-.whereby-frame{width:100%;height:480px;border:none;display:block;background:#0f0f14}
-.tele-note{font-size:.7rem;color:var(--ink3);text-align:center;margin-top:.8rem;line-height:1.5}
-
-/* PROFESIONALES */
 #pro{background:var(--bg)}
 .prog{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-top:3rem}
 .prolist{display:flex;flex-direction:column}
@@ -198,8 +157,6 @@ h2 em{font-style:italic;color:var(--rose)}
 .procard h3{font-family:var(--serif);font-size:1.45rem;font-weight:300;color:var(--ink);margin-bottom:.9rem}
 .procard h3 em{font-style:italic;color:var(--rose)}
 .procard p{font-size:.84rem;color:var(--ink2);line-height:1.78;margin-bottom:1.1rem}
-
-/* RECURSOS */
 #recursos{background:var(--bg2)}
 .recg{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
 .rec{background:var(--card);border:1px solid var(--line);border-radius:var(--rlg);padding:1.8rem 1.5rem;transition:all .25s var(--ease);cursor:pointer;position:relative;overflow:hidden}
@@ -210,31 +167,23 @@ h2 em{font-style:italic;color:var(--rose)}
 .rico{font-size:1.3rem;margin-bottom:.8rem}
 .rn{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink);line-height:1.3;margin-bottom:.3rem;transition:color .2s}
 .rs{font-size:.67rem;color:var(--ink3);line-height:1.4}
-
-/* BLOG */
 #blog{background:var(--bg)}
 .bloghdr{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem}
 .blogg{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1.5rem}
 .blogc{background:var(--card);border:1px solid var(--line);border-radius:var(--rxl);overflow:hidden;transition:all .3s var(--ease);cursor:pointer;display:flex;flex-direction:column}
 .blogc:hover{box-shadow:0 8px 28px rgba(232,53,109,.08);transform:translateY(-3px);border-color:var(--liner)}
 .bthumb{aspect-ratio:16/8;background:linear-gradient(135deg,var(--rose-xs),rgba(232,53,109,.03));display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:3rem;color:var(--rose);opacity:.6;border-bottom:1px solid var(--line)}
-.blogc:not(:first-child) .bthumb{aspect-ratio:4/3;font-size:2rem}
 .bbody{padding:1.4rem;flex:1;display:flex;flex-direction:column}
 .btag{display:inline-block;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--rose);background:var(--rose-xs);padding:.2rem .55rem;border-radius:100px;margin-bottom:.65rem}
 .blogc h4{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--ink);line-height:1.3;margin-bottom:.4rem}
-.blogc:first-child h4{font-size:1.4rem}
 .blogc p{font-size:.79rem;color:var(--ink2);line-height:1.7;flex:1}
 .bmeta{font-size:.65rem;color:var(--ink3);margin-top:.9rem}
-
-/* CTA */
 #cta{padding:8rem 0;text-align:center;background:var(--bg2);position:relative;overflow:hidden}
 #cta::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:700px;height:500px;background:radial-gradient(ellipse,rgba(232,53,109,.07) 0%,transparent 70%);pointer-events:none}
 #cta .ey{justify-content:center;margin-bottom:1.2rem}
 #cta h2{font-size:clamp(2.2rem,4.5vw,4rem);margin-bottom:1rem}
 #cta p{font-size:.95rem;color:var(--ink2);max-width:440px;margin:0 auto 2.5rem;line-height:1.78}
 .ctarow{display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap}
-
-/* FOOTER */
 footer{background:var(--ink);padding:4rem 0 2rem}
 .fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:2rem}
 .flogo{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:#fff;margin-bottom:.6rem}
@@ -248,25 +197,19 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 .fc li a:hover,.fc li:hover{color:var(--rose-s)}
 .fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
 .fbtm em{color:var(--rose-s);font-style:normal}
-
 .reveal{opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease)}
 .reveal.in{opacity:1;transform:translateY(0)}
 .reveal[data-d="1"]{transition-delay:.08s}
 .reveal[data-d="2"]{transition-delay:.16s}
 .reveal[data-d="3"]{transition-delay:.24s}
-
-@media(max-width:1024px){.hgrid{grid-template-columns:1fr}.himgw{display:none}.hologrid,.capsg,.prog,.teleg{grid-template-columns:1fr;gap:3rem}.procard{position:static}.tele-info{position:static}.blogg{grid-template-columns:1fr 1fr}.blogc:first-child{grid-column:span 2}.svc:nth-child(4){grid-column:auto}}
-@media(max-width:768px){.nl{display:none}h1{font-size:2.6rem}.nosg,.svcg,.fg{grid-template-columns:1fr}.recg{grid-template-columns:repeat(2,1fr)}.dg{grid-template-columns:repeat(2,1fr)}.blogg{grid-template-columns:1fr}.blogc:first-child{grid-column:auto}.whereby-frame{height:360px}}
-
+@media(max-width:1024px){.hgrid{grid-template-columns:1fr}.himgw{display:none}.hologrid,.capsg,.prog{grid-template-columns:1fr;gap:3rem}.procard{position:static}.blogg{grid-template-columns:1fr 1fr}.blogc:first-child{grid-column:span 2}.svc:nth-child(4){grid-column:auto}}
+@media(max-width:768px){.nl{display:none}h1{font-size:2.6rem}.nosg,.svcg,.fg{grid-template-columns:1fr}.recg{grid-template-columns:repeat(2,1fr)}.dg{grid-template-columns:repeat(2,1fr)}.blogg{grid-template-columns:1fr}.blogc:first-child{grid-column:auto}}
 .hslide{position:absolute;top:0;left:0;width:100%;opacity:0;animation:slide 15s infinite}
 .hslide:nth-child(1){animation-delay:0s}
 .hslide:nth-child(2){animation-delay:5s}
 .hslide:nth-child(3){animation-delay:10s}
 @keyframes slide{0%,28%{opacity:1}33%,100%{opacity:0}}
 #heroRotating{position:relative;min-height:120px}
-.hero-dots{display:flex;gap:.5rem;margin:.8rem 0 1.5rem}
-.hdot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);cursor:pointer;border:none;padding:0;transition:background .3s}
-.hdot.active{background:#e8356d}
 </style>
 </head>
 <body>
@@ -281,11 +224,10 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <ul class="nl">
 <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
 <li><a href="#servicios">Servicios</a></li>
-<li><a href="#telemedicina">Telemedicina</a></li>
 <li><a href="#pro">Profesionales</a></li>
 <li><a href="#recursos">Recursos</a></li>
-<li><a href="#blog">Blog</a></li>
-<li><a href="#cta">Contacto</a></li>
+<li><a href="blog/index.html">Blog</a></li>
+<li><a href="contacto.html">Contacto</a></li>
 <li><a href="contacto.html" class="nbtn">Pide Cita</a></li>
 </ul>
 </div></nav>
@@ -306,15 +248,10 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <h1 style="font-size:1.4rem!important;line-height:1.3!important;color:#1a0f24!important;font-weight:300!important;letter-spacing:0!important;margin-bottom:.8rem!important">La medicina convencional<br/>trata enfermedades.<br/><em style="font-style:italic;color:#e8356d">UNIMED trata personas.</em></h1>
 </div>
 </div>
-<div class="hero-dots" style="display:none">
-<button class="hdot active" onclick="goSlide(0)"></button>
-<button class="hdot" onclick="goSlide(1)"></button>
-<button class="hdot" onclick="goSlide(2)"></button>
-</div>
 <p style="font-size:.88rem;color:#3a2d48;line-height:1.8;max-width:520px;margin-bottom:1.5rem">Tu salud es un sistema vivo. Mereces ser comprendido/a como tal. UNIMED aplica las 8 dimensiones del Sujeto Holónico para que vuelvas a tomar las riendas de tu vida.</p>
 <div class="hbtns">
 <a href="contacto.html" class="btnp">Pide Cita <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a href="#telemedicina" class="btng">Consulta Online</a>
+<a href="contacto.html" class="btng">Consulta Online</a>
 </div>
 <div class="counters">
 <div class="ctr"><span class="cn">+30</span><div class="cl">Años de práctica científica</div></div>
@@ -326,7 +263,6 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.9rem;font-weight:300;font-style:italic;color:#e8356d;line-height:1.15;letter-spacing:-.01em;margin-bottom:1.2rem">La ciencia<br/>en tu salud.</p>
 <div class="himgbox">
 <img src="assets/cerebro_clinico.jpg" alt="UNIMED Consulting" style="width:100%;height:100%;object-fit:cover;display:block"/>
-</div>
 </div>
 </div>
 </div></div>
@@ -392,46 +328,8 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <div class="plans">
 <div class="plan free"><div><span class="pname">Esencial</span><span class="pdesc">Orientación 24/7 · HoloMed 8D · Guías OMS</span></div><div class="pp">Gratis</div></div>
 <div class="plan"><div><span class="pname">Avanzado</span><span class="pdesc">Memoria clínica · Análisis 8D profundo · Informe PDF</span></div><div class="pp">€14,90/mes</div></div>
-<div class="plan"><div><span class="pname">Telemedicina</span><span class="pdesc">Consulta con especialista UNIMED · Seguimiento</span></div><div class="pp">€65/sesión</div></div>
+<div class="plan"><div><span class="pname">Consulta con especialista</span><span class="pdesc">Consulta con especialista UNIMED · Seguimiento</span></div><div class="pp">€65/sesión</div></div>
 <p class="cnote">CAPS Digital orienta e informa. No diagnostica ni prescribe. Conecta con el equipo clínico de UNIMED cuando es necesario.</p>
-</div>
-</div>
-</div></section>
-
-<!-- TELEMEDICINA CON WHEREBY -->
-<section id="telemedicina"><div class="w">
-<div class="teleg">
-<div class="tele-info reveal">
-  <div class="ey">Telemedicina</div>
-  <h2>Consulta online<br/><em>desde donde estés</em></h2>
-  <p>Conéctate directamente con Samuel Carmona Aguirre desde tu dispositivo. Sin descargas, sin registros. Solo haz clic en "Iniciar consulta" y estarás en la sala en segundos.</p>
-  <div class="tele-features">
-    <div class="tele-feat">Sin instalación — funciona desde el navegador</div>
-    <div class="tele-feat">Videollamada HD con cifrado de extremo a extremo</div>
-    <div class="tele-feat">Compatible con móvil, tablet y ordenador</div>
-    <div class="tele-feat">Sala privada exclusiva UNIMED Consulting</div>
-    <div class="tele-feat">Sesiones de 45 o 90 minutos · €65/sesión</div>
-  </div>
-  <a href="https://whereby.com/unimed-consulting" target="_blank" class="btnp">
-    Iniciar consulta ahora
-    <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </a>
-  <p style="font-size:.75rem;color:var(--ink3);margin-top:1rem;line-height:1.6">¿Primera vez? <a href="contacto.html" style="color:var(--rose)">Pide cita previa</a> para acordar día y hora antes de conectarte.</p>
-</div>
-<div class="reveal" data-d="2">
-  <div class="whereby-wrap">
-    <div class="whereby-header">
-      <div class="whereby-dot"></div>
-      <div class="whereby-label">Sala UNIMED · <strong>En línea</strong></div>
-    </div>
-    <iframe
-      class="whereby-frame"
-      src="https://whereby.com/unimed-consulting"
-      allow="camera; microphone; fullscreen; speaker-selection; display-capture"
-      allowfullscreen
-    ></iframe>
-  </div>
-  <p class="tele-note">La sala está siempre disponible. El especialista se unirá en el horario acordado.<br/>Tu privacidad está protegida — la sesión no se graba sin consentimiento explícito.</p>
 </div>
 </div>
 </div></section>
@@ -473,20 +371,17 @@ footer{background:var(--ink);padding:4rem 0 2rem}
 <a href="blog/index.html" class="btng reveal" style="font-size:.78rem;padding:.65rem 1.3rem">Ver todos →</a>
 </div>
 <div class="blogg">
-<div class="blogc reveal" data-d="1"><div class="bthumb">H</div><div class="bbody"><span class="btag">Holomedicina</span><h4>¿Qué es la Holomedicina?</h4><p>Una introducción al paradigma científico que supera la medicina positivista clásica integrando todas las dimensiones del ser humano.</p><div class="bmeta">Publicado · UNIMED Consulting</div></div></div>
+<a href="blog/que-es-la-holomedicina.html" class="blogc reveal" data-d="1" style="text-decoration:none;color:inherit"><div class="bthumb">🧬</div><div class="bbody"><span class="btag">Holomedicina</span><h4>¿Qué es la HoloMedicina?</h4><p>El paradigma científico original que define al ser humano como sistema complejo adaptativo multidimensional. Casi 20 años de investigación.</p><div class="bmeta">Publicado · Samuel Carmona Aguirre, MSc</div></div></a>
+<a href="blog/metodo-holonico-aiap.html" class="blogc reveal" data-d="2" style="text-decoration:none;color:inherit"><div class="bthumb" style="aspect-ratio:4/3;font-size:2rem">🔬</div><div class="bbody"><span class="btag">Epistemología</span><h4>El Método Holónico MH-AIAP</h4><p>El fundamento científico de la HoloMedicina. Reconocido por la UNESCO en París 2016.</p><div class="bmeta">Publicado · Samuel Carmona Aguirre, MSc</div></div></a>
+<a href="blog/farmacogenomica-antidepresivos.html" class="blogc reveal" data-d="3" style="text-decoration:none;color:inherit"><div class="bthumb" style="aspect-ratio:4/3;font-size:2rem">💊</div><div class="bbody"><span class="btag">Farmacogenómica</span><h4>Farmacogenómica y Antidepresivos</h4><p>Por qué el mismo fármaco funciona para unos y genera reacciones adversas en otros.</p><div class="bmeta">Publicado · Samuel Carmona Aguirre, MSc</div></div></a>
 </div>
 </div></section>
 
-<!-- QUOTE BAND -->
 <section style="padding:5rem 0;background:#1a0f24;position:relative;overflow:hidden">
 <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:700px;height:300px;background:radial-gradient(ellipse,rgba(232,53,109,.12) 0%,transparent 70%);pointer-events:none"></div>
 <div class="w" style="text-align:center;position:relative;z-index:1">
-<p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:300;font-style:italic;color:#f0eaf4;line-height:1.4;max-width:800px;margin:0 auto 1.5rem">
-UNIMED no vende medicina. Vende el único proceso consultivo y colaborativo basado en la persona como sistema complejo, en un sistema sanitario que la trata como diagnóstico.
-</p>
-<p style="font-family:'Inter',system-ui,sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#e8356d">
-«Somos lo que falta.» — Samuel Carmona Aguirre
-</p>
+<p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:300;font-style:italic;color:#f0eaf4;line-height:1.4;max-width:800px;margin:0 auto 1.5rem">UNIMED no vende medicina. Vende el único proceso consultivo y colaborativo basado en la persona como sistema complejo, en un sistema sanitario que la trata como diagnóstico.</p>
+<p style="font-family:'Inter',system-ui,sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#e8356d">«Somos lo que falta.» — Samuel Carmona Aguirre</p>
 </div>
 </section>
 
@@ -506,9 +401,9 @@ UNIMED no vende medicina. Vende el único proceso consultivo y colaborativo basa
 <div class="flogo">UNI<em>MED</em> Consulting</div>
 <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona.</p>
 <div class="fcon">
-<span>📍 Barcelona, España</span>
+<span>📍 Barcelona, España · Västerås, Suecia</span>
 <span>📞 +34 673 815 148</span>
-<span>✉️ samuel@unimed-consulting.es</span>
+<span>✉️ salud@unimed-consulting.es</span>
 </div>
 </div>
 <div class="fc"><h5>Servicios</h5><ul>
@@ -521,32 +416,28 @@ UNIMED no vende medicina. Vende el único proceso consultivo y colaborativo basa
 <div class="fc"><h5>Recursos</h5><ul>
 <li><a href="recursos/tu-consulta-comienza-aqui.html">Tu consulta comienza aquí</a></li>
 <li><a href="recursos/formulario-fhh.html">Formulario FHH</a></li>
-<li>Sanalogía</li>
-<li>CAPS Digital</li>
 <li><a href="blog/index.html">Blog</a></li>
+<li><a href="https://clinicaerus.github.io/caps-digital/" target="_blank">CAPS Digital</a></li>
 </ul></div>
 <div class="fc"><h5>UNIMED</h5><ul>
 <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
-<li>Nuestro Equipo</li>
 <li><a href="#pro">Para Profesionales</a></li>
 <li><a href="contacto.html">Pide Cita</a></li>
-<li><a href="contacto.html">Contacto</a></li>
+<li><a href="politica-de-privacidad.html">Privacidad</a></li>
+<li><a href="politica-de-cookies.html">Cookies</a></li>
 </ul></div>
 </div>
 <div class="fbtm">
 <p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
-<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona</em></p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
 </div>
 </div></footer>
 
 <script>
 const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:0.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-</script>
-<script>
-var S=document.querySelectorAll('.hslide'),D=document.querySelectorAll('.hdot'),C=0;
-function goSlide(n){S[C].classList.remove('active');D[C].classList.remove('active');C=n;S[C].classList.add('active');D[C].classList.add('active');}
-setInterval(function(){goSlide((C+1)%S.length);},5000);
+var S=document.querySelectorAll('.hslide'),C=0;
+setInterval(function(){S[C].style.opacity='0';C=(C+1)%S.length;S[C].style.opacity='1';},5000);
 </script>
 <script src="/cookie-banner.js"></script>
 </body>
