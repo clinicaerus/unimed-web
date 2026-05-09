@@ -19,8 +19,6 @@ a{color:inherit;text-decoration:none}
 .w{max-width:var(--max);margin:0 auto;padding:0 2rem}
 nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .navi{display:flex;align-items:center;justify-content:space-between;height:70px}
-.logo{font-family:var(--serif);font-size:1.5rem;font-weight:500;color:var(--ink)}
-.logo em{font-style:italic;color:var(--rose)}
 .nl{display:flex;align-items:center;gap:2rem;list-style:none}
 .nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
 .nl a:hover{color:var(--ink)}
@@ -61,6 +59,9 @@ nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-
 .bcard.featured .bcard-body{padding:2.2rem 2.4rem}
 .bcard.featured h2{font-size:1.7rem;margin-bottom:1rem}
 .bcard.featured p{font-size:.88rem;margin-bottom:1.5rem}
+.proxima{border-style:dashed;opacity:.6}
+.proxima:hover{transform:none;box-shadow:none}
+.proxima .bcard-img{background:var(--bg3)}
 .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;padding:4rem 0 6rem;align-items:start}
 .newsletter-box{position:sticky;top:6rem;background:var(--ink);border-radius:var(--rxl);padding:2rem}
 .newsletter-box h3{font-family:var(--serif);font-size:1.3rem;font-weight:300;color:#fff;margin-bottom:.6rem;line-height:1.3}
@@ -105,6 +106,7 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </style>
 </head>
 <body>
+
 <nav><div class="w navi">
 <a href="../index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink);text-decoration:none">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
 <ul class="nl">
@@ -117,11 +119,15 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <a href="../contacto.html" class="nbtn">Pide Cita</a>
 </ul>
 </div></nav>
-<div class="bhero"><div class="w">
+
+<div class="bhero">
+<div class="w">
 <div class="ey">Blog · HoloMedicina · Medicina de Precisión</div>
 <h1>Conocimiento que el sistema<br/>sanitario no tiene <em>tiempo de darte.</em></h1>
 <p>Artículos sobre medicina personalizada, farmacogenómica, nutrigenómica y salud desde el paradigma de la complejidad. Por Samuel Carmona Aguirre, MSc · Científico Biomédico Clínico.</p>
-</div></div>
+</div>
+</div>
+
 <div class="filtros"><div class="w"><div class="ftags">
 <span class="ftag active">Todos</span>
 <span class="ftag">HoloMedicina</span>
@@ -131,22 +137,26 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <span class="ftag">Enfermedades Crónicas</span>
 <span class="ftag">Medicina de Precisión</span>
 </div></div></div>
+
 <div class="w"><div class="blog-layout">
 <div>
 <div class="blog-grid">
 
-<!-- ARTÍCULO 1 — DESTACADO -->
+<!-- ARTÍCULO 1 — DESTACADO: HoloMedicina SVG -->
 <a href="que-es-la-holomedicina.html" class="bcard featured reveal">
 <div class="bcard-img">
-<div class="bcard-ico">🧬</div>
+<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="display:block">
+<!-- Cluster A --><line x1="52" y1="68" x2="88" y2="88" stroke="#e8356d" stroke-width="1.4" opacity=".85"/><line x1="52" y1="68" x2="72" y2="44" stroke="#e8356d" stroke-width="1.4" opacity=".85"/><line x1="88" y1="88" x2="72" y2="44" stroke="#f07098" stroke-width="1.2" opacity=".6"/><line x1="88" y1="88" x2="110" y2="72" stroke="#f07098" stroke-width="1.2" opacity=".7"/><circle cx="52" cy="68" r="6" fill="none" stroke="#e8356d" stroke-width="1.8"/><circle cx="88" cy="88" r="8" fill="rgba(232,53,109,.3)" stroke="#e8356d" stroke-width="1.8"/><circle cx="72" cy="44" r="5" fill="none" stroke="#f07098" stroke-width="1.5"/><circle cx="110" cy="72" r="6" fill="none" stroke="#f07098" stroke-width="1.5"/>
+<!-- Cluster B --><line x1="200" y1="50" x2="178" y2="80" stroke="#f07098" stroke-width="1.3" opacity=".7"/><line x1="200" y1="50" x2="224" y2="72" stroke="#f07098" stroke-width="1.3" opacity=".7"/><line x1="178" y1="80" x2="208" y2="96" stroke="#e8356d" stroke-width="1.2" opacity=".6"/><line x1="224" y1="72" x2="208" y2="96" stroke="#e8356d" stroke-width="1.2" opacity=".6"/><circle cx="200" cy="50" r="7" fill="rgba(232,53,109,.2)" stroke="#e8356d" stroke-width="1.8"/><circle cx="178" cy="80" r="5.5" fill="none" stroke="#f07098" stroke-width="1.5"/><circle cx="224" cy="72" r="5" fill="none" stroke="#f07098" stroke-width="1.5"/><circle cx="208" cy="96" r="7" fill="rgba(240,112,152,.25)" stroke="#f07098" stroke-width="1.8"/>
+<!-- Cluster C --><line x1="320" y1="58" x2="348" y2="36" stroke="#e8356d" stroke-width="1.4" opacity=".8"/><line x1="320" y1="58" x2="356" y2="80" stroke="#e8356d" stroke-width="1.4" opacity=".8"/><line x1="348" y1="36" x2="378" y2="52" stroke="#f07098" stroke-width="1.2" opacity=".65"/><line x1="356" y1="80" x2="378" y2="52" stroke="#f07098" stroke-width="1.2" opacity=".65"/><circle cx="320" cy="58" r="6" fill="none" stroke="#e8356d" stroke-width="1.8"/><circle cx="348" cy="36" r="5" fill="none" stroke="#f07098" stroke-width="1.5"/><circle cx="356" cy="80" r="7" fill="rgba(232,53,109,.25)" stroke="#e8356d" stroke-width="1.8"/><circle cx="378" cy="52" r="4.5" fill="none" stroke="#f07098" stroke-width="1.4"/>
+<!-- Cluster D --><line x1="80" y1="180" x2="118" y2="160" stroke="#f07098" stroke-width="1.3" opacity=".7"/><line x1="118" y1="160" x2="150" y2="185" stroke="#f07098" stroke-width="1.3" opacity=".7"/><line x1="80" y1="180" x2="96" y2="210" stroke="#e8356d" stroke-width="1.2" opacity=".6"/><circle cx="80" cy="180" r="5.5" fill="none" stroke="#f07098" stroke-width="1.5"/><circle cx="118" cy="160" r="7.5" fill="rgba(232,53,109,.25)" stroke="#e8356d" stroke-width="1.8"/><circle cx="150" cy="185" r="5" fill="none" stroke="#f07098" stroke-width="1.5"/><circle cx="96" cy="210" r="4.5" fill="none" stroke="#e8356d" stroke-width="1.4"/>
+<!-- Cluster E --><line x1="256" y1="172" x2="288" y2="152" stroke="#e8356d" stroke-width="1.3" opacity=".75"/><line x1="288" y1="152" x2="324" y2="176" stroke="#e8356d" stroke-width="1.3" opacity=".75"/><line x1="256" y1="172" x2="270" y2="200" stroke="#f07098" stroke-width="1.2" opacity=".6"/><line x1="324" y1="176" x2="308" y2="200" stroke="#f07098" stroke-width="1.2" opacity=".6"/><circle cx="256" cy="172" r="5.5" fill="none" stroke="#e8356d" stroke-width="1.5"/><circle cx="288" cy="152" r="8.5" fill="rgba(232,53,109,.3)" stroke="#e8356d" stroke-width="1.8"/><circle cx="324" cy="176" r="5" fill="none" stroke="#f07098" stroke-width="1.5"/><circle cx="270" cy="200" r="4.5" fill="none" stroke="#f07098" stroke-width="1.4"/><circle cx="308" cy="200" r="5.5" fill="none" stroke="#e8356d" stroke-width="1.5"/>
+<!-- Inter-cluster --><line x1="88" y1="88" x2="178" y2="80" stroke="#f07098" stroke-width="1" opacity=".5" stroke-dasharray="5 4"/><line x1="208" y1="96" x2="320" y2="58" stroke="#f07098" stroke-width="1" opacity=".45" stroke-dasharray="5 4"/><line x1="118" y1="160" x2="208" y2="96" stroke="#e8356d" stroke-width="1" opacity=".5" stroke-dasharray="5 4"/><line x1="288" y1="152" x2="356" y2="80" stroke="#e8356d" stroke-width="1" opacity=".45" stroke-dasharray="5 4"/><line x1="150" y1="185" x2="256" y2="172" stroke="#f07098" stroke-width="1" opacity=".45" stroke-dasharray="5 4"/>
+</svg>
 <span class="bcard-carril carril-b">Carril B · Constructor de visión</span>
 </div>
 <div class="bcard-body">
-<div class="bcard-meta">
-<span class="bcard-cluster">HoloMedicina</span>
-<span>· 8 min lectura</span>
-<span>· Publicado</span>
-</div>
+<div class="bcard-meta"><span class="bcard-cluster">HoloMedicina</span><span>· 8 min lectura</span><span>· Publicado</span></div>
 <h2>¿Qué es la HoloMedicina?<br/><em>El paradigma que trata a la persona, no al diagnóstico.</em></h2>
 <p>La medicina convencional divide al ser humano en especialidades. HoloMedicina lo contempla como sistema complejo vivo — biológico, cognitivo, emocional, social y transgeneracional. Este artículo explica por qué esa diferencia lo cambia todo.</p>
 <div class="bcard-foot">
@@ -156,20 +166,24 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </div>
 </a>
 
-<!-- ARTÍCULO 2 -->
-<a href="metodo-holonico-aiap.html" class="bcard reveal" data-d="1">
+<!-- ARTÍCULO 2: Farmacogenómica SVG -->
+<a href="farmacogenomica-antidepresivos.html" class="bcard reveal" data-d="1">
 <div class="bcard-img">
-<div class="bcard-ico">🔬</div>
-<span class="bcard-carril carril-b">Carril B · Constructor de visión</span>
+<svg viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="display:block">
+<!-- Hebra izquierda --><path d="M75,10 C75,10 90,24 90,40 C90,56 75,70 75,86 C75,102 90,116 90,132 C90,148 75,162 75,170" fill="none" stroke="#e8356d" stroke-width="2.5" stroke-linecap="round"/>
+<!-- Hebra derecha --><path d="M125,10 C125,10 110,24 110,40 C110,56 125,70 125,86 C125,102 110,116 110,132 C110,148 125,162 125,170" fill="none" stroke="#f07098" stroke-width="2.5" stroke-linecap="round" opacity=".85"/>
+<!-- Peldaños --><line x1="90" y1="20" x2="110" y2="20" stroke="#e8356d" stroke-width="1.8"/><line x1="90" y1="40" x2="110" y2="40" stroke="#e8356d" stroke-width="1.8"/><line x1="90" y1="68" x2="110" y2="68" stroke="#f07098" stroke-width="1.5" opacity=".8"/><line x1="90" y1="86" x2="110" y2="86" stroke="#e8356d" stroke-width="1.8"/><line x1="90" y1="114" x2="110" y2="114" stroke="#f07098" stroke-width="1.5" opacity=".8"/><line x1="90" y1="132" x2="110" y2="132" stroke="#e8356d" stroke-width="1.8"/>
+<!-- Peldaños secundarios --><line x1="83" y1="30" x2="117" y2="30" stroke="#f07098" stroke-width="1.2" opacity=".6"/><line x1="83" y1="54" x2="117" y2="54" stroke="#f07098" stroke-width="1.2" opacity=".55"/><line x1="83" y1="77" x2="117" y2="77" stroke="#e8356d" stroke-width="1.2" opacity=".6"/><line x1="83" y1="100" x2="117" y2="100" stroke="#e8356d" stroke-width="1.2" opacity=".55"/><line x1="83" y1="123" x2="117" y2="123" stroke="#f07098" stroke-width="1.2" opacity=".55"/><line x1="83" y1="148" x2="117" y2="148" stroke="#f07098" stroke-width="1.2" opacity=".5"/>
+<!-- Puntos base --><circle cx="90" cy="40" r="3.5" fill="#e8356d"/><circle cx="110" cy="40" r="3.5" fill="#f07098"/><circle cx="90" cy="86" r="3.5" fill="#e8356d"/><circle cx="110" cy="86" r="3.5" fill="#f07098"/><circle cx="90" cy="132" r="3.5" fill="#e8356d"/><circle cx="110" cy="132" r="3.5" fill="#f07098"/>
+<!-- Etiquetas --><text x="48" y="40" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="#e8356d" opacity=".9">CYP2D6</text><text x="152" y="86" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="#f07098" opacity=".85">SERT</text><text x="48" y="132" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="#e8356d" opacity=".85">CYP2C19</text>
+<!-- Líneas a etiquetas --><line x1="60" y1="40" x2="75" y2="40" stroke="#e8356d" stroke-width=".7" opacity=".6"/><line x1="140" y1="86" x2="125" y2="86" stroke="#f07098" stroke-width=".7" opacity=".55"/><line x1="60" y1="132" x2="75" y2="132" stroke="#e8356d" stroke-width=".7" opacity=".55"/>
+</svg>
+<span class="bcard-carril carril-a">Carril A · Despertador de dolor</span>
 </div>
 <div class="bcard-body">
-<div class="bcard-meta">
-<span class="bcard-cluster">HoloMedicina · Epistemología</span>
-<span>· 10 min lectura</span>
-<span>· Publicado</span>
-</div>
-<h2>El Método Holónico <em>MH-AIAP</em><br/>Una revolución epistemológica</h2>
-<p>El fundamento científico de la HoloMedicina. Un cambio epistémico reconocido por la UNESCO en el Congreso Mundial del Pensamiento Complejo, París 2016.</p>
+<div class="bcard-meta"><span class="bcard-cluster">Farmacogenómica</span><span>· 7 min lectura</span><span>· Publicado</span></div>
+<h2>Por qué el mismo antidepresivo <em>funciona para unos y genera reacciones adversas en otros.</em></h2>
+<p>La farmacogenómica explica algo que tu psiquiatra sabe pero el sistema no le da tiempo de aplicar: tu genoma determina cómo metabolizas los fármacos. Lo que para uno es la dosis estándar, para ti puede ser insuficiente o potencialmente tóxica.</p>
 <div class="bcard-foot">
 <div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
 <span class="bcard-read">Leer artículo →</span>
@@ -177,26 +191,36 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </div>
 </a>
 
-<!-- ARTÍCULO 3 -->
-<a href="farmacogenomica-antidepresivos.html" class="bcard reveal" data-d="2">
-<div class="bcard-img">
-<div class="bcard-ico">💊</div>
-<span class="bcard-carril carril-a">Carril A · Despertador de dolor</span>
-</div>
+<!-- PRÓXIMOS — emojis se mantienen -->
+<div class="bcard proxima reveal" data-d="2">
+<div class="bcard-img"><div class="bcard-ico">🥗</div><span class="bcard-carril carril-a">Próximamente</span></div>
 <div class="bcard-body">
-<div class="bcard-meta">
-<span class="bcard-cluster">Farmacogenómica</span>
-<span>· 7 min lectura</span>
-<span>· Publicado</span>
-</div>
-<h2>Por qué el mismo antidepresivo <em>funciona para unos y genera reacciones adversas en otros.</em></h2>
-<p>La farmacogenómica explica algo que tu psiquiatra sabe pero el sistema no le da tiempo de aplicar: tu genoma determina cómo metabolizas los fármacos.</p>
-<div class="bcard-foot">
-<div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div>
-<span class="bcard-read">Leer artículo →</span>
+<div class="bcard-meta"><span class="bcard-cluster">Nutrigenómica</span></div>
+<h2>Llevas años con la dieta perfecta y no funciona. <em>Puede que tu genoma sepa por qué.</em></h2>
+<p>Lo que comes importa. Pero cómo tus genes procesan lo que comes importa igual o más. La nutrigenómica personaliza la nutrición al nivel del ADN.</p>
+<div class="bcard-foot"><div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div><span class="bcard-read" style="color:var(--ink3)">Próximamente</span></div>
 </div>
 </div>
-</a>
+
+<div class="bcard proxima reveal">
+<div class="bcard-img"><div class="bcard-ico">🧠</div><span class="bcard-carril carril-a">Próximamente</span></div>
+<div class="bcard-body">
+<div class="bcard-meta"><span class="bcard-cluster">Neurocognitivo</span></div>
+<h2>TDAH en adultos: lo que la neurología detecta y <em>lo que la medicina de precisión puede añadir.</em></h2>
+<p>El diagnóstico de TDAH en adultos es solo el inicio. La farmacogenómica, la nutrigenómica y el análisis del eje intestino-cerebro amplían el mapa.</p>
+<div class="bcard-foot"><div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div><span class="bcard-read" style="color:var(--ink3)">Próximamente</span></div>
+</div>
+</div>
+
+<div class="bcard proxima reveal" data-d="1">
+<div class="bcard-img"><div class="bcard-ico">🛡️</div><span class="bcard-carril carril-c">Próximamente</span></div>
+<div class="bcard-body">
+<div class="bcard-meta"><span class="bcard-cluster">Enfermedades Crónicas</span></div>
+<h2>Fibromialgia: por qué no es «psicológica» y <em>qué dice la ciencia real sobre su substrato biológico.</em></h2>
+<p>La fibromialgia tiene mecanismos biológicos documentados. La sensibilización central, la neuroinflamación y el microbioma son parte de la historia que el sistema no termina de leer.</p>
+<div class="bcard-foot"><div class="bcard-author"><span>SC</span> Samuel Carmona Aguirre, MSc</div><span class="bcard-read" style="color:var(--ink3)">Próximamente</span></div>
+</div>
+</div>
 
 </div>
 </div>
@@ -230,7 +254,7 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 <div>
 <div class="flogo">UNI<em>MED</em> Consulting</div>
 <p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona · Västerås.</p>
-<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ salud@unimed-consulting.es</span></div>
+<div class="fcon"><span>📍 Barcelona · Västerås</span><span>📞 +34 673 815 148</span><span>✉️ hola@unimed-consulting.es</span></div>
 </div>
 <div class="fc"><h5>Servicios</h5><ul>
 <li><a href="../servicios/atencion-consultiva.html">Atención Consultiva</a></li>
@@ -241,13 +265,12 @@ footer{background:var(--ink);padding:3.5rem 0 2rem;border-top:1px solid rgba(255
 </ul></div>
 <div class="fc"><h5>Blog</h5><ul>
 <li><a href="que-es-la-holomedicina.html">¿Qué es la HoloMedicina?</a></li>
-<li><a href="metodo-holonico-aiap.html">El Método Holónico MH-AIAP</a></li>
 <li><a href="farmacogenomica-antidepresivos.html">Farmacogenómica y antidepresivos</a></li>
 </ul></div>
 <div class="fc"><h5>Legal</h5><ul>
 <li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
-<li><a href="../politica-de-cookies.html">Política de Cookies</a></li>
 <li><a href="../aviso-legal.html">Aviso Legal</a></li>
+<li>Política de Cookies</li>
 <li><a href="../contacto.html">Contacto</a></li>
 </ul></div>
 </div>
