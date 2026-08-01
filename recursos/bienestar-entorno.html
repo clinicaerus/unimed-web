@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tu entorno — Kit HoloMed de Bienestar | UNIMED Consulting</title>
+<meta name="description" content="Tu entorno desde la Holomedicina: consejos prácticos organizados por las 8 dimensiones del Sujeto Holónico. UNIMED Consulting."/>
+<link rel="canonical" href="https://www.unimed-consulting.es/recursos/bienestar-entorno.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+--rose:   #e8356d;
+--rose-s: #f07098;
+--rose-xs:rgba(232,53,109,.07);
+--rose-gl:rgba(232,53,109,.14);
+--bg:     #ffffff;
+--bg2:    #f8f7f9;
+--bg3:    #f2eff5;
+--card:   #ffffff;
+--ink:    #1a0f24;
+--ink2:   #3a2d48;
+--ink3:   #7a6880;
+--line:   rgba(0,0,0,.08);
+--liner:  rgba(232,53,109,.18);
+--serif:  'Cormorant Garamond',Georgia,serif;
+--sans:   'Inter',system-ui,sans-serif;
+--max:    880px;
+--r:      8px;
+--rxl:    24px;
+--ease:   cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:1140px;margin:0 auto;padding:0 2rem}
+.wf{max-width:var(--max);margin:0 auto;padding:0 2rem}
+nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navi{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{display:flex;align-items:center;gap:2rem;list-style:none}
+.nl a{font-size:.8rem;font-weight:400;color:var(--ink2);transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.nbtn{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:500;background:var(--rose);color:#fff!important;padding:.42rem 1.2rem;border-radius:var(--r);transition:all .2s!important}
+.nbtn:hover{background:#c82c5c!important;transform:translateY(-1px)!important}
+.phero{background:var(--bg2);padding:3.5rem 0 2.6rem;border-bottom:1px solid var(--line)}
+.ey{display:inline-flex;align-items:center;gap:.45rem;font-size:.67rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.9rem}
+.ey::before{content:'';width:16px;height:1.5px;background:var(--rose)}
+.phero h1{font-family:var(--serif);font-size:clamp(1.9rem,4vw,3.1rem);font-weight:300;line-height:1.15;color:var(--ink)}
+.phero h1 em{font-style:italic;color:var(--rose)}
+.phero p{font-size:.92rem;color:var(--ink3);margin-top:1rem;max-width:640px;line-height:1.85}
+.phero p strong{color:var(--ink2);font-weight:500}
+.pillnav{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem}
+.pill{font-size:.7rem;font-weight:500;color:var(--ink3);background:var(--bg);border:1px solid var(--line);border-radius:100px;padding:.4rem 1rem;transition:all .2s}
+.pill:hover{border-color:var(--liner);color:var(--rose)}
+.pill.active{background:var(--rose);border-color:var(--rose);color:#fff}
+.dimtag{display:inline-flex;align-items:center;gap:.35rem;font-size:.6rem;letter-spacing:.09em;text-transform:uppercase;color:var(--rose);background:var(--rose-xs);border:1px solid var(--liner);border-radius:100px;padding:.22rem .6rem;white-space:nowrap}
+.holoq{border-left:3px solid var(--rose);padding:.9rem 1.3rem;background:var(--bg);border-radius:0 var(--r) var(--r) 0;margin-top:1.4rem;max-width:640px}
+.holoq p{font-family:var(--serif);font-size:1.05rem;font-style:italic;color:var(--ink2);line-height:1.5}
+.strat-main{padding:3rem 0 1rem}
+.stratlist{display:flex;flex-direction:column;gap:1rem}
+.strat{background:var(--card);border:1px solid var(--line);border-radius:var(--rxl);overflow:hidden;transition:border-color .2s}
+.strat[open]{border-color:var(--liner)}
+.strat summary{list-style:none;cursor:pointer;padding:1.3rem 1.6rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.strat summary::-webkit-details-marker{display:none}
+.strat-h{display:flex;align-items:center;gap:.9rem;flex:1}
+.strat-ico{font-size:1.3rem;flex-shrink:0}
+.strat-title{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--ink);line-height:1.3}
+.strat-arrow{font-size:.7rem;color:var(--ink3);transition:transform .25s var(--ease);flex-shrink:0}
+.strat[open] .strat-arrow{transform:rotate(180deg)}
+.strat-body{padding:0 1.6rem 1.6rem}
+.strat-body p{font-size:.85rem;color:var(--ink2);line-height:1.8;margin-bottom:1rem;max-width:620px}
+.strat-body ul{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.strat-body li{font-size:.83rem;color:var(--ink2);line-height:1.65;padding-left:1.3rem;position:relative}
+.strat-body li::before{content:'';position:absolute;left:0;top:.55rem;width:5px;height:5px;border-radius:50%;background:var(--rose)}
+.strat-foot{margin-top:1.1rem}
+.about-sec{background:var(--bg2);padding:3.5rem 0;border-top:1px solid var(--line);margin-top:2rem}
+.about-sec h2{font-family:var(--serif);font-size:1.5rem;font-weight:300;color:var(--ink);margin-bottom:1rem}
+.about-sec h2 em{font-style:italic;color:var(--rose)}
+.about-sec p{font-size:.86rem;color:var(--ink2);line-height:1.85;max-width:680px;margin-bottom:.8rem}
+.about-sec a{color:var(--rose)}
+.cta-sec{padding:4rem 0}
+.cta-box{background:var(--ink);border-radius:var(--rxl);padding:2.6rem 2.4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;position:relative;overflow:hidden;max-width:var(--max);margin:0 auto}
+.cta-box::before{content:'';position:absolute;left:0;top:0;width:400px;height:100%;background:radial-gradient(ellipse,rgba(232,53,109,.14) 0%,transparent 70%);pointer-events:none}
+.cta-box h3{font-family:var(--serif);font-size:1.4rem;font-weight:300;color:#fff;line-height:1.25;position:relative;z-index:1}
+.cta-box h3 em{font-style:italic;color:var(--rose-s)}
+.cta-box p{font-size:.8rem;color:rgba(255,255,255,.55);margin-top:.5rem;max-width:380px;line-height:1.7;position:relative;z-index:1}
+.btn-p{display:inline-flex;align-items:center;gap:.45rem;font-size:.83rem;font-weight:500;padding:.8rem 1.6rem;border-radius:var(--r);background:var(--rose);color:#fff;border:none;cursor:pointer;box-shadow:0 4px 16px var(--rose-gl);transition:all .25s var(--ease);white-space:nowrap;position:relative;z-index:1}
+.btn-p:hover{background:#c82c5c;transform:translateY(-1px);box-shadow:0 8px 24px var(--rose-gl)}
+.btn-g{display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--ink2);border:1.5px solid var(--line);border-radius:var(--r);padding:.65rem 1.3rem;transition:all .2s}
+.btn-g:hover{border-color:var(--rose);color:var(--rose)}
+.footnav{display:flex;justify-content:space-between;align-items:center;max-width:var(--max);margin:0 auto;padding:0 2rem 2rem;flex-wrap:wrap;gap:1rem}
+footer{background:var(--ink);padding:3.5rem 0 2rem}
+.fg-f{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.5rem}
+.flogo{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fff}
+.flogo em{font-style:italic;color:var(--rose-s)}
+.fdesc{font-size:.77rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:220px;margin:.6rem 0 1.2rem}
+.fcon{display:flex;flex-direction:column;gap:.3rem;font-size:.75rem;color:rgba(255,255,255,.5)}
+.fc h5{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem}
+.fc ul{list-style:none}
+.fc li{font-size:.79rem;color:rgba(255,255,255,.45);margin-bottom:.45rem}
+.fc li a{color:rgba(255,255,255,.45)}
+.fc li a:hover{color:var(--rose-s)}
+.fbtm{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.69rem;color:rgba(255,255,255,.25)}
+.fbtm em{color:var(--rose-s);font-style:normal}
+@media(max-width:768px){
+  .nl{display:none}
+  .fg-f{grid-template-columns:1fr 1fr}
+  .cta-box{flex-direction:column;align-items:flex-start;text-align:left}
+  .footnav{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="w navi">
+<a href="../index.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;color:var(--ink)">UNI<em style="font-style:italic;color:#e8356d">MED</em></a>
+<ul class="nl">
+<li><a href="../quienes-somos.html">¿Quiénes Somos?</a></li>
+<li><a href="../index.html#servicios">Servicios</a></li>
+<li><a href="../index.html#pro">Profesionales</a></li>
+<li><a href="../recursos.html">Recursos</a></li>
+<li><a href="../blog/index.html">Blog</a></li>
+<a href="../contacto.html" class="nbtn">Pide Cita</a>
+</ul>
+</div></nav>
+
+<div class="phero"><div class="w">
+<div class="ey">Kit HoloMed · Recursos</div>
+<h1>Tu <em>entorno</em></h1>
+<p>Lo que te rodea cada día —tu casa, tu trabajo, tu barrio— entra en tu cuerpo antes de que lo decidas: en el aire que respiras, en el agua que tocas, en los productos que usas. En HoloMed esto es <strong>dimensión Biológica</strong> cruzada con <strong>dimensión Política</strong>: tu entorno no es solo química, también es qué tanto acceso y control tienes sobre él.</p>
+<div class="holoq"><p>No puedes gestionar lo que no observas. El primer gesto de salud ambiental es simplemente mirar alrededor.</p></div>
+<div class="pillnav">
+<a href="kits-de-herramientas-bienestar.html" class="pill">Todos los kits</a>
+<a href="bienestar-entorno.html" class="pill active">🌿 Tu entorno</a>
+<a href="bienestar-sentimientos.html" class="pill">💭 Tus sentimientos</a>
+<a href="bienestar-cuerpo.html" class="pill">🫀 Tu cuerpo</a>
+<a href="bienestar-relaciones.html" class="pill">🤝 Tus relaciones</a>
+<a href="bienestar-defensa.html" class="pill">🛡️ Tu defensa</a>
+</div>
+</div></div>
+
+<div class="strat-main"><div class="wf">
+<div class="stratlist">
+<details class="strat" open>
+<summary>
+<div class="strat-h"><span class="strat-ico">🧽</span><span class="strat-title">Un hogar que no te intoxique</span></div>
+<div style="display:flex;align-items:center;gap:.7rem"><span class="dimtag">Biológica</span><span class="strat-arrow">▾</span></div>
+</summary>
+<div class="strat-body">
+<p>Los productos de limpieza, el polvo acumulado y el aire estancado son fuentes silenciosas de exposición química. Reducir esa carga es un gesto de higiene ambiental, no una obsesión.</p>
+<ul>
+<li>Limpia con productos de baja toxicidad y evita mezclar químicos agresivos.</li>
+<li>Usa paño húmedo para el polvo y friega en húmedo en vez de barrer en seco.</li>
+<li>Aspira con filtro HEPA cuando puedas.</li>
+<li>Ventila mientras limpias: abre una ventana o enciende un extractor.</li>
+<li>Lávate las manos con frecuencia, y enseña a hacerlo a los niños de la casa.</li>
+</ul>
+</div>
+</details>
+<details class="strat">
+<summary>
+<div class="strat-h"><span class="strat-ico">🤧</span><span class="strat-title">Alergias bajo control</span></div>
+<div style="display:flex;align-items:center;gap:.7rem"><span class="dimtag">Biológica</span><span class="strat-arrow">▾</span></div>
+</summary>
+<div class="strat-body">
+<p>Los cambios de estación traen polen y partículas en suspensión. Anticiparte reduce días perdidos por estornudos, picor y congestión.</p>
+<ul>
+<li>Evita salir en las horas de mayor concentración de polen.</li>
+<li>Dúchate y cambia de ropa al volver a casa tras estar al aire libre.</li>
+<li>Mantén la humedad interior baja para frenar ácaros.</li>
+<li>Lava la ropa de cama con agua caliente una vez por semana.</li>
+<li>Habla con tu equipo médico sobre medicación o vacunas de alergia si los síntomas persisten.</li>
+</ul>
+</div>
+</details>
+<details class="strat">
+<summary>
+<div class="strat-h"><span class="strat-ico">☀️</span><span class="strat-title">Calor extremo, cuerpo protegido</span></div>
+<div style="display:flex;align-items:center;gap:.7rem"><span class="dimtag">Biológica</span><span class="strat-arrow">▾</span></div>
+</summary>
+<div class="strat-body">
+<p>El calor sostenido es más peligroso de lo que parece: puede derivar en golpe de calor en pocas horas, especialmente en mayores y niños.</p>
+<ul>
+<li>Concentra el ejercicio y las tareas al aire libre en las horas más frescas.</li>
+<li>Usa ropa ligera, de manga larga y sombrero para bloquear el sol directo.</li>
+<li>Aplica protector solar SPF 30+ y renuévalo cada pocas horas.</li>
+<li>Busca sombra en las horas centrales del día.</li>
+<li>Bebe agua con frecuencia; evita alcohol y cafeína en exceso.</li>
+</ul>
+</div>
+</details>
+<details class="strat">
+<summary>
+<div class="strat-h"><span class="strat-ico">❄️</span><span class="strat-title">Frío, sin bajar la guardia</span></div>
+<div style="display:flex;align-items:center;gap:.7rem"><span class="dimtag">Biológica</span><span class="strat-arrow">▾</span></div>
+</summary>
+<div class="strat-body">
+<p>El frío afecta tanto dentro como fuera de casa. Reconocer los signos de hipotermia a tiempo puede marcar la diferencia.</p>
+<ul>
+<li>En casa, abrígate en capas y mantén una temperatura mínima confortable.</li>
+<li>Al salir, usa ropa resistente al viento y a la lluvia, y viste por capas.</li>
+<li>Vigila especialmente a personas mayores y niños pequeños.</li>
+<li>Si alguien muestra confusión, temblor intenso o piel fría al tacto, busca ayuda médica sin demora.</li>
+</ul>
+</div>
+</details>
+<details class="strat">
+<summary>
+<div class="strat-h"><span class="strat-ico">🌫️</span><span class="strat-title">El aire que respiras, dentro y fuera</span></div>
+<div style="display:flex;align-items:center;gap:.7rem"><span class="dimtag">Biológica · Política</span><span class="strat-arrow">▾</span></div>
+</summary>
+<div class="strat-body">
+<p>La mala calidad del aire —por contaminación externa o por hábitos dentro de casa— tiene efectos acumulativos sobre tu energía y tu respiración.</p>
+<ul>
+<li>Evita actividad física intensa al aire libre en días con mala calidad del aire.</li>
+<li>Consulta el índice de calidad del aire de tu zona antes de planificar actividades exigentes.</li>
+<li>No fumes dentro de casa y evita velas o incienso en espacios cerrados.</li>
+<li>Ventila mientras cocinas y usa aspiradora con filtro HEPA en vez de barrer.</li>
+</ul>
+</div>
+</details>
+<details class="strat">
+<summary>
+<div class="strat-h"><span class="strat-ico">🔍</span><span class="strat-title">Peligros invisibles en casa</span></div>
+<div style="display:flex;align-items:center;gap:.7rem"><span class="dimtag">Biológica · Política</span><span class="strat-arrow">▾</span></div>
+</summary>
+<div class="strat-body">
+<p>Plomo, moho y radón son riesgos que no se ven ni se huelen fácilmente, pero se pueden detectar y corregir.</p>
+<ul>
+<li>Si tu vivienda es antigua, considera analizar pintura y tuberías.</li>
+<li>Usa extractores en baños y cocina para evitar la aparición de moho.</li>
+<li>Ante humedades o filtraciones, actúa rápido para retirar materiales dañados.</li>
+<li>Si vives en zona con riesgo conocido de radón, solicita una prueba de detección.</li>
+</ul>
+</div>
+</details>
+<details class="strat">
+<summary>
+<div class="strat-h"><span class="strat-ico">💧</span><span class="strat-title">Agua, diversión sin sorpresas</span></div>
+<div style="display:flex;align-items:center;gap:.7rem"><span class="dimtag">Biológica</span><span class="strat-arrow">▾</span></div>
+</summary>
+<div class="strat-body">
+<p>Piscinas, ríos y playas son fuente de bienestar en verano, pero también pueden ser vía de contagio si no se toman precauciones simples.</p>
+<ul>
+<li>Dúchate antes y después de nadar.</li>
+<li>Evita tragar agua y no entres si tienes heridas abiertas sin cubrir.</li>
+<li>No te bañes si has tenido diarrea recientemente.</li>
+<li>Consulta el estado del agua y las señales de advertencia del lugar.</li>
+</ul>
+</div>
+</details>
+</div>
+</div></div>
+
+<div class="footnav">
+<a href="bienestar-defensa.html" class="btn-g">← Tu defensa</a>
+<a href="bienestar-sentimientos.html" class="btn-g">Tus sentimientos →</a>
+</div>
+
+
+<div class="cta-sec"><div class="w">
+<div class="cta-box">
+<div>
+<h3>¿Quieres ir más allá<br/>de la información <em>general</em>?</h3>
+<p>Habla con CAPS Digital, gratis y sin registro, o pide cita con el equipo UNIMED para un abordaje 8-dimensional de tu salud.</p>
+</div>
+<a href="https://clinicaerus.github.io/caps-digital/" target="_blank" rel="noopener" class="btn-p">Iniciar con CAPS Digital <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+</div></div>
+
+
+<footer><div class="w">
+<div class="fg-f">
+<div>
+<div class="flogo">UNI<em>MED</em> Consulting</div>
+<p class="fdesc">Centro de desarrollo e innovación médica. Holomedicina y Medicina Personalizada de Precisión. Barcelona.</p>
+<div class="fcon">
+<span>📍 Barcelona, España · Västerås, Suecia</span>
+<span>📞 +34 673 815 148</span>
+<span>✉️ salud@unimed-consulting.es</span>
+</div>
+</div>
+<div class="fc"><h5>Servicios</h5><ul>
+<li><a href="../servicios/atencion-consultiva.html">Atención Consultiva</a></li>
+<li><a href="../servicios/asesoramiento-genetico.html">Asesoramiento Genético</a></li>
+<li><a href="../servicios/nutrigenomica.html">Nutrigenómica</a></li>
+<li><a href="../servicios/neurocognitivo.html">Neurocognitivo</a></li>
+<li><a href="../servicios/enfermedades-cronicas.html">Enfermedades Crónicas</a></li>
+</ul></div>
+<div class="fc"><h5>Recursos</h5><ul>
+<li><a href="tu-consulta-comienza-aqui.html">Tu consulta comienza aquí</a></li>
+<li><a href="formulario-fhh.html">Formulario FHH</a></li>
+<li><a href="kits-de-herramientas-bienestar.html">Kit HoloMed de Bienestar</a></li>
+<li><a href="../recursos.html">Todos los recursos</a></li>
+</ul></div>
+<div class="fc"><h5>Legal</h5><ul>
+<li><a href="../politica-de-privacidad.html">Política de Privacidad</a></li>
+<li><a href="../aviso-legal.html">Aviso Legal</a></li>
+<li><a href="../contacto.html">Contacto</a></li>
+</ul></div>
+</div>
+<div class="fbtm">
+<p>© 2026 <em>UNIMED Consulting</em> · Todos los derechos reservados</p>
+<p>Holomedicina · Medicina Personalizada de Precisión · <em>Barcelona · Västerås</em></p>
+</div>
+</div></footer>
+
+</body>
+</html>
